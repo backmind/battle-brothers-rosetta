@@ -33396,14 +33396,14 @@ local pairs = [
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]%teacher% the unretired soldier has taking a liking to %apprentice%. You find the two practicing their craft whenever possible. The old grunt believes in the value of the offensive, showing the apprentice how to turn a blade, axe, or mace in such a manner that it inflicts the most damage. Unfortunately, they are using the company dining equipment to set up little dolls to beat up. The young lad has certainly made a mess of those pots and pans in his continuous pursuit of being a better fighter."
@@ -33412,8 +33412,8 @@ local pairs = [
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]It appears as though %teacher% the ol' sellsword has a little bird following him around: young %apprentice%. Now in the company of mercenaries, the apprentice must want to learn from those with plenty of experience on the road earning blood money. While they train, you notice that the sellsword puts most of his emphasis on exercising one's body. Being faster than your opponent and outlasting him are just as important as putting a blade through his brainbox. The earnest lad seems increasingly sturdy, earning some sense of vigor you did not notice before."
@@ -33422,14 +33422,14 @@ local pairs = [
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + stamina + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]A couple of times now you've caught %apprentice% watching %teacher% from a distance. The young apprentice seems rather enraptured by the hedge knight's brute violence. After a few days, the knight relents, asking the lad to come and have a chat. You know not what they say, but now you've noticed they have been training together. The hedge knight is not a kind trainer, either. He beats the boy frequently, toughening him up. At first, the apprentice flinches before every strike, but now you see that he is showing a little more resolve in the face of such towering adversity. The hedge knight is also showing the man how to kill fast and efficiently. Little mind is paid to defense in these talks you overhear, but who needs to defend themselves from a dead opponent?"
@@ -33438,8 +33438,8 @@ local pairs = [
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Hitpoints"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         // this.m.Apprentice.getFlags().add("learned");
@@ -33517,14 +33517,14 @@ local pairs = [
     {
         // text = _event.m.Clown.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Archer.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Skill"
         mode = "pattern"
-        en = "<_event.m.Archer.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Ranged Skill"
-        es = "<_event.m.Archer.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Habilidad de disparo"
+        en = "<actor:str> gains <v:val_tag> Ranged Skill"
+        es = "<actor> gana <v> Habilidad de disparo"
     }
     {
         en = "Took part in a show"
@@ -33644,14 +33644,14 @@ local pairs = [
     {
         // text = _event.m.Cursed.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Monk.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // Text = "[img]gfx/ui/events/event_05.png[/img]You snap your fingers, suddenly remembering %sorcerer%, the so-called sorcerer. Wanting to not spend another minute being a part of this bizarre affair, you refer %superstitious% to the sorcerer. He is quick to leave, but unfortunately returns a few minutes later, explaining that %sorcerer% has set him free from his curse.%SPEECH_ON%All I had to do was...%SPEECH_OFF%You hold your hand up, stopping the man\'s story right where it be. He asks if you want to hear the rest of it and you give a firm no.",
@@ -34063,8 +34063,8 @@ local pairs = [
     {
         // text = _event.m.Student.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + skill + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "[img]gfx/ui/events/event_06.png[/img]The brawler has %noncom% stand completely still. He circles about the man, cracking his knuckles as he sizes him up. Finally, he lets his intentions be known.%SPEECH_ON%I am going to beat you until you break.%SPEECH_OFF%A moment is given to the trainee to acknowledge what is about to happen. He sucks in a great gulp of breath and then nods. %brawler% wastes no time wheeling a bola punch right into the man's chest. He bowls over at which point he is kicked in the shoulder repeatedly until he stands back up.\n\nThere the brawler continues to circle and deliver blows. Not every strike is thrown with conviction: most are meant to inflict pain, but not what could be called irreversible damage. The brawler, if he wanted to, could kill this man with his bare fists, but that is not the purpose of this training. You realize that this mode of 'toughening up' probably happened to the brawler himself at some point or another."
@@ -34077,8 +34077,8 @@ local pairs = [
     {
         // text = _event.m.Student.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + skill + "[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Hitpoints"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         // text = _event.m.Student.getName() + " suffers light wounds"
@@ -34097,14 +34097,14 @@ local pairs = [
     {
         // text = _event.m.Student.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + attack + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.Student.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + defense + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         en = "noncom"
@@ -34265,8 +34265,8 @@ local pairs = [
     {
         // text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Flagellant.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Melee Skill"
-        es = "<_event.m.Flagellant.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> habilidad de combate"
     }
     {
         // text = _event.m.Flagellant.getName() + " suffers " + injury.getNameOnly()
@@ -34438,8 +34438,8 @@ local pairs = [
     {
         // text = _event.m.Ratcatcher.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Ratcatcher.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Initiative"
-        es = "<_event.m.Ratcatcher.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> iniciativa"
     }
     {
         en = "Impressed everyone with his swiftness"
@@ -34517,8 +34517,8 @@ local pairs = [
     {
         // text = _event.m.Monk.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Saved some children from certain doom"
@@ -34541,8 +34541,8 @@ local pairs = [
     {
         // text = _event.m.Traveller.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // bro.improveMood(0.5, "Glad that " + _event.m.Traveller.getName() + " saved children from certain doom");
@@ -34706,14 +34706,14 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         // text = bro.getName() + " suffers light wounds"
@@ -34736,8 +34736,8 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + rangedSkill + "[/color] Ranged Skill"
         mode = "pattern"
-        en = "<bro.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<rangedSkill>[/color] Ranged Skill"
-        es = "<bro.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<rangedSkill>[/color] Habilidad de tiro"
+        en = "<actor:str> gains <v:val_tag> Ranged Skill"
+        es = "<actor> gana <v> Habilidad de tiro"
     }
     {
         // text = bro.getName() + " is exhausted"
@@ -34760,14 +34760,14 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + stamina + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "oldguard"
@@ -34975,8 +34975,8 @@ local pairs = [
     {
         // text = _event.m.Strong.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Strong.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Max Fatigue"
-        es = "<_event.m.Strong.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "Has shown off of his physical prowess"
@@ -34999,8 +34999,8 @@ local pairs = [
     {
         // text = _event.m.Cocky.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // bro.improveMood(0.5, "Witnessed " + _event.m.Cocky.getName() + "\'s entertaining failure");
@@ -35086,8 +35086,8 @@ local pairs = [
     {
         // text = _event.m.Thief.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "Has used his unique talents to great success"
@@ -35110,8 +35110,8 @@ local pairs = [
     {
         // text = _event.m.Minstrel.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "[img]gfx/ui/events/event_19.png[/img]%butcher% the butcher spits and says he'll do it. You tell him that he's not exactly the thieving sort. He shakes his head.%SPEECH_ON%Naw. I mean I'll give him a finger. Just one, but it'll be a doozy and worth its weight in gold as far as this old fart's concerned. As far as you're concerned, captain, I want half the reward.%SPEECH_OFF%The creepy stranger nods as a smile crackles his dried, flaky skin.%SPEECH_ON%Yes... yes! A man who would do this would certainly fit the profile of the ingredients I need. Do it. Do it!%SPEECH_OFF%Before you can even agree to this, the butcher grabs a tong hanging off a nearby wall, leverages it atop an anvil, wedges a finger between the pincers, and presses his knee to the handle, promptly severing a finger all in one go. He wraps the hand before giving up the extremity to the stranger.%SPEECH_ON%There you have it: one especially cruel man's finger.%SPEECH_OFF%The stranger grabs it as though it were the key to the world. 'Marvelous!', you think he says, but it's hard to hear as he hurriedly gives you some crowns and runs off. It's actually more than you originally agreed to. The butcher has certainly 'earned' his half and you hand it over."
@@ -35134,8 +35134,8 @@ local pairs = [
     {
         // text = _event.m.Butcher.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+3[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Butcher.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Resolve"
-        es = "<_event.m.Butcher.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "thief"
@@ -35161,20 +35161,20 @@ local pairs = [
     {
         // text = _event.m.Cripple.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Cripple.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + fatigue + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // text = _event.m.Cripple.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // _event.m.Cripple.improveMood(2.0, "Was motivated by " + _event.m.Veteran.getName());
@@ -36760,8 +36760,8 @@ local pairs = [
     {
         // text = _event.m.OldGods.getName() + " loses [color=" + this.Const.UI.Color.NegativeEventValue + "]-1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.OldGods.getName()> loses [color=<this.Const.UI.Color.NegativeEventValue>]-1[/color] Resolve"
-        es = "<_event.m.OldGods.getName()> pierde [color=<this.Const.UI.Color.NegativeEventValue>]-1[/color] Resolución"
+        en = "<actor:str> loses <v:val_tag> Resolve"
+        es = "<actor> pierde <v> Resolución"
     }
     {
         // text = _event.m.Cultist.getName() + " suffers " + injury.getNameOnly()
@@ -36772,8 +36772,8 @@ local pairs = [
     {
         // text = _event.m.Cultist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Cultist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolve"
-        es = "<_event.m.Cultist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "[img]gfx/ui/events/event_03.png[/img] The way things are going, you've hardly a man to spare. Just as fists are about to start flying, you step in between the two men and put an end to it. You tell %oldgods% he is better than this, and you tell %cultist% nothing, for the cultist is almost bowled over in fits of laughter. He points, grinning madly.%SPEECH_ON%The light steps in, but darkness is patient. Davkul awaits you all.%SPEECH_OFF%"
@@ -36971,8 +36971,8 @@ local pairs = [
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Had a good talk with you"
@@ -37682,8 +37682,8 @@ local pairs = [
     {
         // text = _event.m.Refugee.getName() + " loses [color=" + this.Const.UI.Color.NegativeEventValue + "]-" + bravery + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Refugee.getName()> loses [color=<this.Const.UI.Color.NegativeEventValue>]-<bravery>[/color] Resolve"
-        es = "<_event.m.Refugee.getName()> pierde [color=<this.Const.UI.Color.NegativeEventValue>]-<bravery>[/color] Resolución"
+        en = "<actor:str> loses <v:val_tag> Resolve"
+        es = "<actor> pierde <v> Resolución"
     }
     {
         en = "Got humiliated in front of the company"
@@ -37700,8 +37700,8 @@ local pairs = [
     {
         // text = _event.m.Refugee.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + bravery + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // _event.m.Refugee.improveMood(1.0, "Got some recognition from " + _event.m.HedgeKnight.getName());
@@ -38784,8 +38784,8 @@ local pairs = [
     {
         // text = _event.m.Miner.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + stamina + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "miner"
@@ -39006,8 +39006,8 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // bro.improveMood(0.5, "Happy to have a bro in " + _event.m.Teamplayer.getName());
@@ -39153,8 +39153,8 @@ local pairs = [
     {
         // text = _event.m.Callbrother.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
         mode = "pattern"
-        en = "<_event.m.Callbrother.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experience"
-        es = "<_event.m.Callbrother.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         en = "Had an alp invade his mind"
@@ -39163,8 +39163,8 @@ local pairs = [
     {
         // text = _event.m.Other.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
         mode = "pattern"
-        en = "<_event.m.Callbrother.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experience"
-        es = "<_event.m.Callbrother.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         en = "[img]gfx/ui/events/event_33.png[/img]\x7bYou tell the men to ignore the alp. If it were of any danger it would have already proven so. Instead, it has let you know it is there, whether by ignorance or arrogance, neither of which bother you none. A few of the men do not agree with this decision and they stay up all night watching for the beast.\x7d"
@@ -39201,8 +39201,8 @@ local pairs = [
     {
         // text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + hitpoints + "[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Hitpoints"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         en = "callbrother"
@@ -39687,8 +39687,8 @@ local pairs = [
     {
         // text = _event.m.Servant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Cultist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolve"
-        es = "<_event.m.Cultist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "%terrainImage%\x7bAs you approach the drunkard, a sharp whistle cracks across the path. You and the drunkard both look to see %thief% the thief standing there with a weapon to the back of another man.%SPEECH_ON%That feller's no nobleman, and probably aint no drunk neither. They're working together to either ambush travelers or threaten them with blackmail. They're robbers, sir.%SPEECH_OFF%You look back to see the man smiling nervously. He explains with suddenly sharpened clarity.%SPEECH_ON%We'd no interest in robbing sellswords, sir, I-I-I swear I was about to explain myself soon as I sawr yer swords.%SPEECH_OFF%%thief% yells out, asking where the cache is. You look back at the man and tell him to hand over everything he's stolen. He nods and asks if you'll gut him if he refuses. You nod and tell him the gutting will come last, and by that point it'll be a relief. The man puts a little pep in his step.%SPEECH_ON%Yessir gotcha sir, right this way.%SPEECH_OFF%\x7d "
@@ -39758,8 +39758,8 @@ local pairs = [
     {
         // text = _event.m.Athletic.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Strong.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Max Fatigue"
-        es = "<_event.m.Strong.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // bro.improveMood(1.0, "Felt entertained by " + _event.m.Athletic.getName() + " racing a horse");
@@ -39778,8 +39778,8 @@ local pairs = [
     {
         // text = _event.m.Fat.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // bro.improveMood(1.0, "Felt entertained by " + _event.m.Fat.getName() + " racing a horse");
@@ -39899,38 +39899,38 @@ local pairs = [
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Melee Defense"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> Defensa cuerpo a cuerpo"
     }
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Ranged Defense"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+12[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+12[/color] Melee Skill"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+12[/color] Habilidad cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> Habilidad cuerpo a cuerpo"
     }
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+10[/color] Max Fatigue"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+10[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+10[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+10[/color] Initiative"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+10[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.Dude.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+15[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Dude.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+15[/color] Hitpoints"
-        es = "<_event.m.Dude.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+15[/color] Puntos de salud"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de salud"
     }
     {
         en = "guard"
@@ -40244,8 +40244,8 @@ local pairs = [
     {
         // text = _event.m.Sledder.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Sledder.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Initiative"
-        es = "<_event.m.Sledder.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // Text = "[img]gfx/ui/events/event_143.png[/img]{%sledder% takes the sled from the mountain man.%SPEECH_ON%I\'ll beat ya to them rock dicks in proper time.%SPEECH_OFF%Everyone raises an eyebrow as he sets the sled down. He jacks his boots against its front and tips it toward the edge of the hillside.%SPEECH_ON%Ready when you are.%SPEECH_OFF%The mountain man gives a signal to start the race and the two zip down the snow in an instant. Rooster tails of powder shower in their wake and it seems like %sledder% is going to win until he angles incorrectly and smashes right into one of the rock cocks. The sled shatters to pieces and the sellsword goes flying over the stone and lands limply into the snow. Laughing, the company rushes to his aide and brings him back to his feet. He\'s got some raspberries and something is clicking, but he\'ll live. The mountain man cheers.%SPEECH_ON%Ye almost had me, but yer s\'posed to split the dicks, not ride up them!%SPEECH_OFF%This brings your men to their knees in crying laughter.}",
@@ -40374,8 +40374,8 @@ local pairs = [
     {
         // text = _event.m.Hunter.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Concerned that there's something big out there"
@@ -40422,8 +40422,8 @@ local pairs = [
     {
         // text = _event.m.Expendable.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+200[/color] Experience"
         mode = "pattern"
-        en = "<_event.m.Callbrother.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experience"
-        es = "<_event.m.Callbrother.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+200[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         en = "Had an excellent adventure"
@@ -41172,8 +41172,8 @@ local pairs = [
     {
         // text = _event.m.Juggler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         en = "[img]gfx/ui/events/event_163.png[/img]\x7bYou shake your head. The fire juggler lowers his.%SPEECH_ON%Oh. I thought we had a thing here.%SPEECH_OFF%Pursing your lips, you shake your head again.%SPEECH_ON%No...there is no 'thing' here. I just don't want you in my company, no hard feelings. Keep, uh, practicing. You know, with the fire, and the sticks, you'll get it someday I'm sure.%SPEECH_OFF%The fire juggler nods.%SPEECH_ON%Of course. And though you have rejected me, I believe the Gilder has us both just where we are meant to be, and that His intention was not for our paths to cross fruitlessly. I will be sure to speak highly of your company wherever I go!%SPEECH_OFF%\x7d"
@@ -41949,8 +41949,8 @@ local pairs = [
     {
         // text = _event.m.Anatomist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+100[/color] Experience"
         mode = "pattern"
-        en = "<_event.m.Anatomist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+100[/color] Experience"
-        es = "<_event.m.Anatomist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+100[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         en = "[img]gfx/ui/events/event_141.png[/img]\x7bYou think it over for a time, and decide to let the anatomist do as he pleases. Stepping aside, you turn to watch the goings on, hoping that this won't be an event to tarnish the %companyname%'s name any more than these quacks already seem determined to do. %anatomist% sidles next to the old man and they look at each other for a moment, and a few peasants stare over as well. The anatomist pops a squat and asks the old man if he realizes he is a charlatan. You put your head in your hands. The old man stands up and pushes the anatomist backward.%SPEECH_ON%And who the fark are you, huh? A traveler with a toolbox of fancy vocabulary, huh?%SPEECH_OFF%The anatomist holds his hands out and plainly explains himself to be an intelligent, very well educated man from- before he can even finish, a peasant comes over and decks him, knocking him right into the mud. The %companyname% jumps in to save the anatomist and in the scuffle a few more blows are exchanged, but thankfully that's where it ends. You get %anatomist% back into your ranks and order everyone to settle down before the sellswords-side of the %companyname% is drawn out into the open for all the laity to see. The elder nods and says he wishes not to invite the militia to these affairs. It seems everyone barely escaped a far more gruesome affair. %anatomist% only looks at the blood coming out of his nose and ponders if anyone has been counting time to see how long it takes to coagulate.\x7d"
@@ -42003,8 +42003,8 @@ local pairs = [
     {
         // text = _event.m.Monk.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\dlc8\anatomist_creeps_out_locals_event.nut
     {
@@ -42148,8 +42148,8 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+150[/color] Experience"
         mode = "pattern"
-        en = "<bro.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+150[/color] Experience"
-        es = "<bro.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+150[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         en = "[img]gfx/ui/events/event_141.png[/img]\x7bAfter much plying, the anatomists break down your measly defenses and you agree to go fetch the local hero's dead, cold body from the grave. There's much stealth and sneaking done in the matter as you traipse through the graveyard like a bunch of kids up to absolutely no good, which you might as well be. You get to the graveyard and ask if any of them know the name of the hero. %anatomist% says he thinks it was, ironically, Mortimer.\n\nYou find such a named grave and begin the digging, but by the time you get down to the bottom of it you just find a dead cat, curled up and grey and decrepit with more worms than fur. As the anatomists hold it up, a shout shoots in from the treeline. You turn to see a young boy there crying and pointing. Before you can grab him, he turns and runs off shouting rather descriptive prose about your ill-designed venture. In return come the murmurs of the mob, and their words are lost in a frenzy, but you can still make out the name of the %companyname% and the racket a bevy of pitchforks make when they're clattering together. You turn to tell the anatomists to quit the digging only to see they're already halfway out of the graveyard and running for their lives. Cursing, you join them in the dishonorable retreat and cut out from town altogether.\x7d"
@@ -42266,50 +42266,50 @@ local pairs = [
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+4[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+4[/color] Melee Defense"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+4[/color] Defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> Defensa cuerpo a cuerpo"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+4[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+4[/color] Ranged Defense"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+4[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+8[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+8[/color] Melee Skill"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+8[/color] Habilidad cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> Habilidad cuerpo a cuerpo"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+7[/color] Ranged Skill"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Ranged Skill"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+7[/color] Habilidad a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Skill"
+        es = "<actor> gana <v> Habilidad a distancia"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+3[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Max Fatigue"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+6[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+6[/color] Initiative"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+6[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+12[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+12[/color] Resolve"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+12[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.MilitiaCaptain.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+5[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.MilitiaCaptain.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+5[/color] Hitpoints"
-        es = "<_event.m.MilitiaCaptain.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+5[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         en = "militiacaptain"
@@ -42392,8 +42392,8 @@ local pairs = [
     {
         // text = _event.m.Anatomist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve_boost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Better understands the limits of his volition"
@@ -42452,8 +42452,8 @@ local pairs = [
     {
         // text = _event.m.Ailing.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + healthBoost + "[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Hitpoints"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<hitpoints>[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]\x7bYou give %anatomist% the go ahead. He and %ailing% step away for a time, going into a tent together. Hours pass and the company should get back on the road soon. You walk over and enter the tent. %ailing% is on a cot with his arms crossed over his head and his legs bowed at the knees. He's covered in sweat and keeps turning his head from left to right. %anatomist% is at his side taking notes.%SPEECH_ON%It appears the procedure did not work as intended, however even unintended consequences can carry information of great import.%SPEECH_OFF%Furious, you ask if the man is going to make it. The anatomist nods.%SPEECH_ON%He might suffer some delusions for a while, but ultimately he will still be a breathing animal-excuse me, a breathing man.%SPEECH_OFF%\x7d"
@@ -42794,8 +42794,8 @@ local pairs = [
     {
         // text = _event.m.SplinterBro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.SplinterBro.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Melee Defense"
-        es = "<_event.m.SplinterBro.getName()> obtiene [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> obtiene <v> Defensa cuerpo a cuerpo"
     }
     {
         en = "splinterbro"
@@ -42837,14 +42837,14 @@ local pairs = [
     {
         // text = _event.m.Anatomist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Anatomist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiativeBoost + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]\x7bYou tell %anatomist% he can take the skull. He stares at you for a time, then says he thought you were the one that was going to do it. You tell him there's no way you're taking a skull from local peasants who worship said skull. If he wishes to do the studying, then it is he who should do the stealing. %anatomist% draws a hand to his chest.%SPEECH_ON%I'm a man of science, and no ordinary scribe, I could not deign myself to a task of such lowness. It requires a man of knowhow, a man who understands the grit and grime of daily life, to steal this skull.%SPEECH_OFF%The anatomist clenches a fist, so certain that his speech is not an insult to you, and his eyes staring off with determined ferocity that could only be vicarious at best.%SPEECH_ON%What the fark you two strangers talkin' about?%SPEECH_OFF%You both turn around to see a peasant holding a pitchfork, and as a few more join him he motions toward you.%SPEECH_ON%These fellas were aimin' to steal the skull!%SPEECH_OFF%You hold your hands out, explaining that- before you finish, %anatomist% turns and sprints away. Thinking fast, you call him a thief and promise to have his head, making a grand show of drawing out your sword and waving it at the peasants. You pretend to accidentally drop a purse of crowns, turning the peasants' anger into greed, and giving you enough time to escape.\x7d"
@@ -42865,8 +42865,8 @@ local pairs = [
     {
         // text = _event.m.Thief.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiativeBoost + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "falchion"
@@ -42889,8 +42889,8 @@ local pairs = [
     {
         // text = _event.m.Wildman.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+75[/color] Experience"
         mode = "pattern"
-        en = "<_event.m.Wildman.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+75[/color] Experience"
-        es = "<_event.m.Wildman.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+75[/color] Experiencia"
+        en = "<actor:str> gains <v:val_tag> Experience"
+        es = "<actor> gana <v> Experiencia"
     }
     {
         // text = "You gain " + goods.getName()
@@ -42944,8 +42944,8 @@ local pairs = [
     {
         // text = _event.m.Apprentice.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // _event.m.Apprentice.improveMood(1.0, "Learned from " + _event.m.Oathtaker.getName());
@@ -43121,26 +43121,26 @@ local pairs = [
     {
         // text = _event.m.Brawler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve_boost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Brawler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative_boost + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.Brawler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + melee_skill_boost + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.Brawler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + melee_defense_boost + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         en = "Was allowed to fight on his own terms"
@@ -43285,14 +43285,14 @@ local pairs = [
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + attack_boost + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.Deserter.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve_boost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "deserter"
@@ -43340,26 +43340,26 @@ local pairs = [
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve_boost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative_boost + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + melee_defense_boost + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         // text = _event.m.Disowned.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + ranged_defense_boost + "[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.Disowned.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<ranged_defense_boost>[/color] Ranged Defense"
-        es = "<_event.m.Disowned.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<ranged_defense_boost>[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         en = "[img]gfx/ui/events/event_74.png[/img]\x7bYou push the letter back toward him.%SPEECH_ON%I think a man removed from his family is more in need of that family when they call him back, and certainly they must be in dire need of him. Your time with the %companyname% is over.%SPEECH_OFF%At first, the disowned nobleman appears despondent, but he then begins to nod, agreeing with your assessment that his family must be in need of him and he should not leave them twisting in the wind. He says his goodbyes to you and the rest of the company, but before he leaves for good he has prepared you a letter.%SPEECH_ON%You will have my thanks, captain. Don't think I'd ever just leave without acknowledging how important you were to saving my life, because that's precisely what you did, whether you realize it or not.%SPEECH_OFF%\x7d"
@@ -43467,50 +43467,50 @@ local pairs = [
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Hitpoints"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Hitpoints"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Puntos de vida"
+        en = "<actor:str> gains <v:val_tag> Hitpoints"
+        es = "<actor> gana <v> Puntos de vida"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Fatigue"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Fatigue"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Sledder.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Initiative"
-        es = "<_event.m.Sledder.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Melee Skill"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Habilidad cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> Habilidad cuerpo a cuerpo"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Skill"
         mode = "pattern"
-        en = "<_event.m.Archer.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Ranged Skill"
-        es = "<_event.m.Archer.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Habilidad de disparo"
+        en = "<actor:str> gains <v:val_tag> Ranged Skill"
+        es = "<actor> gana <v> Habilidad de disparo"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.SplinterBro.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Melee Defense"
-        es = "<_event.m.SplinterBro.getName()> obtiene [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> obtiene <v> Defensa cuerpo a cuerpo"
     }
     {
         // text = _event.m.Gladiator.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Ranged Defense"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         en = "Was accused of taking artificial enhancements"
@@ -43606,8 +43606,8 @@ local pairs = [
     {
         // text = _event.m.Killer.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Got to examine an interesting blighted cadaver"
@@ -43718,8 +43718,8 @@ local pairs = [
     {
         // text = _event.m.Cultist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiativeBoost + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "[img]gfx/ui/events/event_20.png[/img]\x7bYou open your mouth to answer when suddenly a woman shrieks. Both parties look over to see a half-naked man twisting at the end of a rope, his neck shunted to an angle that is most incompatible with life. However, it wasn't the fall that killed him: his body has been mangled and mutilated, carved up with all manner of torturous devices. There's a figure atop a balcony looking down, a pair of wild eyes staring out the depths of a cowl and a smirk beneath them belying any notion of a guilty conscious. The guards shout and give chase. Laughing, the figure disappears from the balcony. You listen to the footrace between guards and murderer as it carries further into %townname%. Soon, all that you can hear is the occasional spatter of blood dripping off the corpse and the lapping of alley dogs who'd come to lick it up. %anatomist% stares at it closely. He opens his mouth, but %killer% the killer on the run suddenly appears.%SPEECH_ON%Hey there captain. Thought you might enjoy these.%SPEECH_OFF%He hands over some armor attachments, the metals covered in blood. It need not take a genius to know where this item came from, but it is still yet quite nice and worth keeping. You tell him to clean it off and take it to inventory. The man nods. He takes a long great breath and lets it all out on a wide grin.%SPEECH_ON%Don't you just love life in the big city?%SPEECH_OFF%\x7d"
@@ -43793,8 +43793,8 @@ local pairs = [
     {
         // text = _event.m.Oathtaker.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Cultist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolve"
-        es = "<_event.m.Cultist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Is happy about the company's moral compass"
@@ -43908,8 +43908,8 @@ local pairs = [
     {
         // text = _event.m.Oathtaker.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Oathtaker.getName() + " is now Determined"
@@ -44277,8 +44277,8 @@ local pairs = [
     {
         // text = _event.m.Anatomist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + fatigueBoost + "[/color] Fatigue"
         mode = "pattern"
-        en = "<_event.m.Anatomist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<fatigueBoost>[/color] Fatigue"
-        es = "<_event.m.Anatomist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<fatigueBoost>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "[img]gfx/ui/events/event_97.png[/img]\x7bYou agree to let the anatomist go, but you're coming along. This draws the attention of the strange scribe. He seems reluctant about the matter now, having lost the energy which he had in his initial invitations. As you round a corner, he makes a sharp birdlike call, and a few men step out and you draw your sword and push %anatomist% back. One makes an attempt to attack. You're not in much fighting shape these days, but with a quick parry you knock him back and dissuade him of further attack. The scribe and his minions then depart in a hurry, saying you're not worth it. %anatomist% looks disappointed.%SPEECH_ON%Ah, I see. So it was a scam, an endeavor that was as creative as it was criminal.%SPEECH_OFF%Looking around, you realize that your coinpurse is gone. You look over just in time to see a child holding it, then throwing it skyward to be caught by another child hanging on some gutters. %anatomist% stands beside you, looking up, fascinated by the engineering effort put in by the scamps.%SPEECH_ON%It seems where one offender fails, another may take his place. So it is that by attrition the criminals may succeed. Interesting.%SPEECH_OFF%The anatomist suddenly realizes he also is a bit light on the hip and sees that his purse, too, has been yoinked. You look past him to see yet another child running off like a rat with its cheese. Another child runs past and tries to pickpocket you when there's nothing left to steal. Angered by his empty hands, the boy yells back.%SPEECH_ON%Get a job!%SPEECH_OFF%Sighing, you say it's probably time to head back to the company.\x7d"
@@ -44327,8 +44327,8 @@ local pairs = [
     {
         // text = _event.m.Killer.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + attackBoost + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = "You gain " + armor.getName()
@@ -44704,8 +44704,8 @@ local pairs = [
     {
         // text = _event.m.Farmer.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         en = "Realized he has some fighting knowledge"
@@ -44965,8 +44965,8 @@ local pairs = [
     {
         // text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Cultist.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolve"
-        es = "<_event.m.Cultist.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\flagellants_wounds_heal_event.nut
     {
@@ -45539,14 +45539,14 @@ local pairs = [
     {
         // text = _event.m.HedgeKnight1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + v + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.HedgeKnight1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + v + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         en = "[img]gfx/ui/events/event_35.png[/img]You look to set yourself down on a nearby stump but jump back when the two hedge knights come barreling your way. %hedgeknight1%'s head smashes face first into what was to be your seat. He quickly turns around to face his assailant. All he meets is %hedgeknight2%'s boot, the interfacing of flesh and leather sounding off with a sickening clap. Now gargling on his own teeth, %hedgeknight1% asks if that's the best %hedgeknight2%'s got. To answer, %hedgeknight2% kicks him in the head again and again, and each rearing of his boot reveals %hedgeknight1% to be in a worse state, from bloodied red to a nightmarish twisting of flesh and eyelids and a flattened nose and a grin of horror where his teeth are either missing or hanging from blood engorged gums like they were nails on a skinless finger.\n\nFinally, the brainpan is crushed, the series of splintering boneplates sounding like something falling through a winter tree's branches. You turn your gaze in abhorrence, but some brothers cannot, one spews vomit. Peeking to see what damage was done, you see %hedgeknight2%'s heel is halfway down a throat and the toe of his boot is churning another man's brain. He curses as he struggles to retrieve what delivered the killing blow.\n\nThe surviving hedge knight has to pull on his thigh to help yank his foot out of the brainpan. Turning around, he drags his foot across the grass and picks his heel up like a child coming in after a day's play, looking intently to make sure there was no mess to be dragged in after him. He peels off a slug of brain matter and throws it aside like he just shucked some corn. Rubbing his belly, he asks if anyone's hungry before grabbing a plate of grits and heading back to his own tent.\n\nLater in the night, after you've put down a short-lived plot to have the man eliminated for the safety of the company, you find %hedgeknight2% sleeping like a baby."
@@ -45642,8 +45642,8 @@ local pairs = [
     {
         // text = bro.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Ranged Defense"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         en = "[img]gfx/ui/events/event_15.png[/img]While sitting in your tent outside the abandoned temple, %historian% the historian enters in a manner best described as reluctant. In his hands are the scrolls he found in the chapel a few days back.%SPEECH_ON%Sir, uh, the scrolls... they were most interesting.%SPEECH_OFF%Bored, you inquire as to 'how interesting.' The man explains.%SPEECH_ON%Well, they've been written in a very ancient language. I'm not well versed in it, but I can certainly read portions here and there.%SPEECH_OFF%You ask him what he wants then.%SPEECH_ON%I'd like to read the scrolls, but I could use a little bit of confidence before I do. Would you grace the reading? That is what my old professors would do before any great undertaking.%SPEECH_OFF%"
@@ -45867,14 +45867,14 @@ local pairs = [
     {
         // text = _event.m.Other.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Ratcatcher.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Initiative"
-        es = "<_event.m.Ratcatcher.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> iniciativa"
     }
     {
         // text = _event.m.Other.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "[img]gfx/ui/events/event_100.png[/img]%taskedbro% is tasked with getting the corpse out of the habitat. He approaches the cage like a harlot streetwalking a particularly pious town. When he gets close the bars, he smiles like an old friend.%SPEECH_ON%Hey there buddy. That's a nice corpse you got there. A great corpse, truly one of the best I've ever seen. How about I just... take it... out...%SPEECH_OFF%When the mercenary reaches in, the wildman swipes out. It's too fast to even see. %taskedbro% slowly turns around. There's a black hole where one of his eyes used to be. The wildman squishes the eye between his teeth, a white goop bursting forth like a popped pustule, and it turns into a filmy paste as he chews. The animal tamer throws you a sack of crowns and runs off.%SPEECH_ON%Not liable! I am not liable!%SPEECH_OFF%%taskedbro% passes out as a few vengeful brothers stab the imprisoned wildman to death. All the caged beasts roar up as though you'd just slain their leader. You quickly order the men away from the caravan before one of its beasts gets free and causes more damage."
@@ -46234,14 +46234,14 @@ local pairs = [
     {
         // text = _event.m.Juggler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Juggler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Gladiator.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Melee Skill"
-        es = "<_event.m.Gladiator.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Habilidad cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> Habilidad cuerpo a cuerpo"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]A flail is retrieved and lobbed toward %juggler%. Everyone grimaces as the flail snakes and twirls and undulates toward the spinning storm of weaponry the juggler calls his 'act.' But, just like the axe, it is quickly absorbed into the maelstrom of metal. Louder than ever, the men get to their feet to cheer and clap. A few sigh in relief, wiping sweat from their brow, while others can only grin and clap, being rather disappointed that nothing spectacularly awful didn't happen, but impressed nonetheless."
@@ -46250,8 +46250,8 @@ local pairs = [
     {
         // text = _event.m.Juggler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Ranged Defense"
         mode = "pattern"
-        en = "<_event.m.Juggler.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Ranged Defense"
-        es = "<_event.m.Juggler.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Defensa a distancia"
+        en = "<actor:str> gains <v:val_tag> Ranged Defense"
+        es = "<actor> gana <v> Defensa a distancia"
     }
     {
         en = "nonjuggler"
@@ -46958,8 +46958,8 @@ local pairs = [
     {
         // text = _event.m.Monk1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Lost his composure and resorted to violence"
@@ -47344,8 +47344,8 @@ local pairs = [
     {
         // text = _event.m.Houndmaster.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Gave a lecture on the nature of animals"
@@ -47381,8 +47381,8 @@ local pairs = [
     {
         // text = _event.m.Peddler.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Made a profit peddling wares"
@@ -47599,8 +47599,8 @@ local pairs = [
     {
         // text = _event.m.Tailor.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+2[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Ratcatcher.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] Initiative"
-        es = "<_event.m.Ratcatcher.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+2[/color] iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> iniciativa"
     }
     {
         en = "Cut a pimp down to size"
@@ -47994,8 +47994,8 @@ local pairs = [
     {
         // text = _event.m.Rookie.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+3[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Butcher.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Resolve"
-        es = "<_event.m.Butcher.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+3[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "[img]gfx/ui/events/event_22.png[/img]Unfortunately, telling the man to 'suck it up' gets him nowhere. He turns to you, face covered in the blood and gore of battle, but before any words can come out his lip quivers and keels over again. You ask the man if he wishes to be cut from the company, but he shakes his head no. He'll get better, he explains. You nod and walk off, but there's little doubt that this poor show of resolve has hurt the man's pride."
@@ -48008,8 +48008,8 @@ local pairs = [
     {
         // text = _event.m.Rookie.getName() + " loses [color=" + this.Const.UI.Color.NegativeEventValue + "]-3[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Rookie.getName()> loses [color=<this.Const.UI.Color.NegativeEventValue>]-3[/color] Resolve"
-        es = "<_event.m.Rookie.getName()> pierde [color=<this.Const.UI.Color.NegativeEventValue>]-3[/color] Resolución"
+        en = "<actor:str> loses <v:val_tag> Resolve"
+        es = "<actor> pierde <v> Resolución"
     }
     {
         en = "Lost confidence in himself"
@@ -48589,8 +48589,8 @@ local pairs = [
     {
         // text = _event.m.Archer1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Ranged Skill"
         mode = "pattern"
-        en = "<_event.m.Archer.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Ranged Skill"
-        es = "<_event.m.Archer.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Habilidad de disparo"
+        en = "<actor:str> gains <v:val_tag> Ranged Skill"
+        es = "<actor> gana <v> Habilidad de disparo"
     }
     {
         en = "[img]gfx/ui/events/event_10.png[/img]Feeling as though their arguments will never end, you give them the go-ahead to have their little competition before retiring back to your tent. Soon thereafter you hear the arrows nocking, releasing, and finding targets. Things which go 'thwang' soon go 'thwap' and the air is slowly filled with the din of a watching crowd. As you try to focus, you notice that the men have been shooting fervently for quite some time now. You step back out of your tent to find the two archers bickering some more, each one pointing a finger at the other before picking up an arrow and angrily launching it downrange. Their targets aren't even targets anymore, but small bushes of arrow shafts upon which break every other shot that lands upon them.\n\nShaking your head, you order the two men to stop at once before they use up every last arrow the company has."
@@ -48603,8 +48603,8 @@ local pairs = [
     {
         // text = _event.m.Archer1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Clown.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolve"
-        es = "<_event.m.Clown.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "You shake your head no for supplies are far too low to enage in such behavior. The men sigh and walk away, continuing to argue with one another long and loud into the distance."
@@ -48972,8 +48972,8 @@ local pairs = [
     {
         // text = _event.m.Squire.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         en = "Has been shaken in his beliefs"
@@ -48993,8 +48993,8 @@ local pairs = [
     {
         // text = _event.m.Strong1.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+1[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Strong.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Max Fatigue"
-        es = "<_event.m.Strong.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+1[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         // _event.m.Strong1.improveMood(1.0, "Bonded with " + _event.m.Strong2.getName());
@@ -49070,14 +49070,14 @@ local pairs = [
     {
         // text = _event.m.Witchhunter.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // text = _event.m.Witchhunter.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Initiative"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<initiative>[/color] Iniciativa"
+        en = "<actor:str> gains <v:val_tag> Initiative"
+        es = "<actor> gana <v> Iniciativa"
     }
     {
         en = "Saw an evil spirit meet its end"
@@ -49114,8 +49114,8 @@ local pairs = [
     {
         // text = _event.m.Cultist.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolve + "[/color] Resolve"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolve"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<resolve>[/color] Resolución"
+        en = "<actor:str> gains <v:val_tag> Resolve"
+        es = "<actor> gana <v> Resolución"
     }
     {
         // bro.worsenMood(1.0, _event.m.Cultist.getName() + " freed a witch");
@@ -49162,8 +49162,8 @@ local pairs = [
     {
         // text = _event.m.Student.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeDefense + "[/color] Melee Defense"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] Melee Defense"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeDefense>[/color] en defensa cuerpo a cuerpo"
+        en = "<actor:str> gains <v:val_tag> Melee Defense"
+        es = "<actor> gana <v> en defensa cuerpo a cuerpo"
     }
     {
         en = "swordstudent"
@@ -49258,14 +49258,14 @@ local pairs = [
     {
         // text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + meleeSkill + "[/color] Melee Skill"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] Melee Skill"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<meleeSkill>[/color] en habilidad de combate"
+        en = "<actor:str> gains <v:val_tag> Melee Skill"
+        es = "<actor> gana <v> en habilidad de combate"
     }
     {
         // text = _event.m.Flagellant.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + fatigue + "[/color] Max Fatigue"
         mode = "pattern"
-        en = "<_event.m.Apprentice.getName()> gains [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Max Fatigue"
-        es = "<_event.m.Apprentice.getName()> gana [color=<this.Const.UI.Color.PositiveEventValue>]+<stamina>[/color] Fatiga máxima"
+        en = "<actor:str> gains <v:val_tag> Max Fatigue"
+        es = "<actor> gana <v> Fatiga máxima"
     }
     {
         en = "%terrainImage%%butcher% asks if the horse is still around. Its owner nods.%SPEECH_ON%Aye, freshly dead, freshly soiled by that prick. Why?%SPEECH_OFF%The butcher asks if he can take it off his hands. The owner shrugs.%SPEECH_ON%Yours if you want it. Though you'd best be careful cutting around the bits he touched with his own bits.%SPEECH_OFF%Before anymore can be said, %butcher% has the man take him to the horse corpse to, well, butcher it. The company gets some questionable meat to eat."
