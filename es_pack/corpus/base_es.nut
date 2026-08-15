@@ -58818,7 +58818,7 @@ local pairs = [
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\scenarios\world\tutorial_scenario.nut
     {
         en = "Rebuilding a Company (Tutorial)"
-        es = "Reconstruyendo la compañía (Tutorial)"
+        es = "Reconstrucción (Tutorial)"
     }
     {
         en = "[p=c][img]gfx/ui/events/event_21.png[/img][/p][p]You are second-in-command in a mercenary company that has been tracking a brigand named Hoggart for some time now. An unexpected turn of events leaves the company in shatters, and you in charge to rebuild it to its former glory.\n\n[color=#bcad8c]Recommended for new players as it includes some helpful guidance in the beginning.[/color][/p]"
