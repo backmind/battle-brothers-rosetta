@@ -1,329 +1,65 @@
-# Rosetta Translations Framework
-
-This is a framework mod aimed to facilitate translating Battle Brother mods to various languages. Design goals:
-
-- be easy to use and maintain
-- work on top of unmodified mods
-- no central infrastructure required
-- untie translation cycle from mod release cycle
-- flexibility of packaging: bundle with mod, separate mod, translations pack
-
-Currently all the translation is done in squirrel by intercepting strings either at the squirrel/js border or earlier if that is easier to implement.
+# Battle Brothers en Castellano (pack Rosetta)
 
-<!-- MarkdownTOC autolink="true" levels="1,2,3" autoanchor="false" start="here" -->
+Traduccion al castellano del juego base de Battle Brothers y sus expansiones que **no modifica ningun archivo del juego**: registra pares ingles-espanol y sustituye los textos en caliente mientras juegas, usando el framework [Rosetta](https://github.com/Suor/battle-brothers-rosetta) de Suor.
 
-- [Using Translations](#using-translations)
-- [Compatibility](#compatibility)
-- [Writing Translations](#writing-translations)
-    - [Translation Mod](#translation-mod)
-        - [Single-File](#single-file)
-        - [Multi-File](#multi-file)
-    - [Extractor](#extractor)
-    - [Extractor Usage](#extractor-usage)
-    - [Translating with AI Agents](#translating-with-ai-agents)
-    - [More Examples](#more-examples)
-- [For Mod Authors](#for-mod-authors)
-- [Limitations](#limitations)
-- [Feedback](#feedback)
-
-<!-- /MarkdownTOC -->
-
-
-# Using Translations
-
-For translation to work you need several things:
-
-1. A translation of the game installed for your language.
-2. A mod and its dependencies installed.
-3. Rosetta and its dependencies installed.
-4. Translation of the mod installed (if it's included into the mod then this is covered).
-
-Translation is simply a squirrel file, which could be shipped as a separate mod, bundled with the original mod or bundled with other translations.
-
-When a **new version of a mod** is released you can update it right away, no need to wait for a new translated version or something. Old translation will mostly work, only new and changed strings will go untranslated. This works particularly well with bugfix releases, will never need to wait on those anymore.
-
-If in trouble setting this up contact the translation author. The mod author might not be even aware of it being translated.
-
-
-# Compatibility
-
-Should be compatible with everything. It's ok to add, update or remove it midgame. Same goes for any rosetta based translations.
-
-
-# Writing Translations
-
-A Rosetta-based translation is a squirrel script registering (english, target language) pairs to be replaced during runtime. These could be literal strings, patterns and plural replacements as you can see here:
-
-```squirrel
-// Skip this file if Rosetta is not installed,
-// useful to make Rosetta an optional dependency when bundling translation into your mod.
-if (!("Rosetta" in getroottable())) return;
-
-// Provide mod and translation info
-local rosetta = {
-    mod = {id = "mod_necro", version = "0.4.0"} // the translated mod info
-    author = "hackflow"                         // the translation author
-    lang = "ru"                                 // target language, source is presumed to be english
-}
-// ... and translation pairs
-local pairs = [
-    // A literal pair
-    {
-        en = "Proper Necro"
-        ru = "Годный Некромант"
-    }
-    // Capture names and numbers using patterns
-    {
-        mode = "pattern"
-        en = "<actor:str_tag> heals for <hp:int> points"
-        ru = "<actor> восстанавливает <hp> ОЗ"
-    }
-    // Can use id for longer string
-    {
-        id = "scripts/scenarios/world/necro_scenario.Description"
-        ru = "[p=c][img]gfx/ui/events/event_76.png[/img][/p][p]После многих лет ..."
-    }
-    // Proper language dependent pluralization
-    {
-        plural = "range"
-        en = "Has a range of <range:int_tag> tiles"
-        n1 = "Имеет дальность в <range> клетку"
-        n2 = "Имеет дальность в <range> клетки"
-        n5 = "Имеет дальность в <range> клеток"
-    }
-    ...
-]
-// Register translation with rosetta
-::Rosetta.add(rosetta, pairs);
-```
-
-Then put this file to scripts or include it. See also a [full example](https://github.com/Suor/battle-brothers-mods/blob/master/necro/necro/rosetta_ru.nut).
-
-Since this is just a squirrel code you can split it into several files if you like to. It can also be shipped as a separate mod, be bundled with a mod itself or translations for several mods be bundled together.
-
-
-## Translation Mod
-
-Once you have a translation script you need to include it into a mod. To make the example less abstract we will be translating non-existing hunter mod to spanish. Since we are making a mod it will have a name, let's choose `mod_hunter_es`, which is pretty self-explanatory.
-
-There are several approaches, which would be covered in subsections here. Each section will start with a dir structure layout. Your zip file should include this dir structure exactly like this, i.e. `scripts` dir should be immediately in the zip.
-
-### Single-File
-
-```
-scripts/
-    !mods_preload/
-        mod_hunter_es.nut (translation + optional mod registration)
-```
-
-This will work well for smaller to medium size mods. Simply putting your translation file into `scripts/!mods_preload/mod_hunter_es.nut` will already work, but you won't get any messages about missing dependencies, i.e. rosetta, and won't see a version of your translation in a log. To get that you are recommended to register your mod. To do that prepend `mod_hunter_es.nut` with:
-
-```squirrel
-local def = {
-    ID = "mod_hunter_es"
-    Name = "Hunter Spanish Translation"
-    // Can use any, but matching translated mod version + "-<some-number>" will be more clear.
-    // Here we mean that we are translating mod_hunter 1.2.3 and this is out first attempt on it.
-    // Second edition will be 1.2.3-2 and so on. If mod_hunter updates to 1.3.0 we'll switch to
-    // 1.3.0-1 and continue from there.
-    Version = "1.2.3-1"
-}
+La consecuencia practica: **las actualizaciones del juego no rompen la traduccion**. Cuando sale un parche, todo lo que no cambio sigue en castellano y las frases nuevas aparecen en ingles hasta que se traducen. Se acabo esperar semanas a que la traduccion se repare.
 
-local mod = ::Hooks.register(def.ID, def.Version, def.Name);
-mod.require("mod_rosetta >= 0.1.1"); // Set the Rosetta version you were using
-
-// Here we just put the rest of the translation file.
-local rosetta = {
-    mod = {id = "mod_hunter", version = "1.2.3"} // the translated mod info
-    author = "hackflow"                          // the translation author
-    lang = "es"                                  // target language
-}
-local pairs = [
-    ...
-]
-::Rosetta.add(rosetta, pairs);
-```
-
-### Multi-File
-
-```
-mod_hunter_es/
-    config.nut (translation files)
-    events.nut
-    skills.nut
-scripts/
-    !mods_preload/
-        mod_hunter_es.nut (mod file)
-```
-
-This will work well for medium to bigger size mods. Usually one will use the extractor script from below not on the entire mod but on its subdirs to generate several translation files:
-
-```bash
-mkdir mod_hunter_es
-python rosetta.py -les path/to/mod/mod_hunter/config/ > mod_hunter_es/config.nut
-python rosetta.py -les path/to/mod/mod_hunter/hooks/ > mod_hunter_es/hooks.nut
-python rosetta.py -les path/to/mod/scripts/events/ > mod_hunter_es/events.nut
-python rosetta.py -les path/to/mod/scripts/skills/ > mod_hunter_es/skills.nut
-...
-```
-
-The granularity of subdirs you can choose yourself, may store the commands above to some `.bat` or `.sh` script, so that you will be able to repeat extraction in the future, i.e. on an updated mod. If you have split your translation into many parts then you don't need to repeat its definition `local rosetta = ...` part. May just do it once in a mod and then refer to it:
-
-```squirrel
-// script/!mods_preload/mod_hunter_es.nut
-local def = ::HunterES <- {
-    ID = "mod_hunter_es"
-    Name = "Hunter Spanish Translation"
-    Version = "1.2.3-1"
-    Rosetta = {
-        mod = {id = "mod_hunter", version = "1.2.3"} // the translated mod info
-        author = "hackflow"                          // the translation author
-        lang = "es"                                  // target language
-    }
-}
+> *English note: this branch hosts a Spanish base-game translation pack built on top of Suor's Rosetta framework. The upstream framework docs live on the `master` branch and at [Suor/battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta).*
 
-local mod = ::Hooks.register(def.ID, def.Version, def.Name);
-mod.require("mod_rosetta >= 0.1.1"); // Set the Rosetta version you were using
+## Creditos: sobre hombros de gigantes
 
-// Include all translation files
-foreach (file in ::IO.enumerateFiles("mod_hunter_es/")) ::include(file);
-```
+Este proyecto **no parte de cero**. El corpus de traduccion nace del trabajo de anos de la comunidad en [Battle Brothers - Traduccion completa al Castellano](https://www.nexusmods.com/battlebrothers/mods/640) de NexusMods:
 
-```squirrel
-// mod_hunter_es/some.nut
-local pairs = [
-    ...
-]
-::Rosetta.add(::HunterES.Rosetta, pairs); // Use rosetta translation description from the mod file
-```
+- **MagnusLioncaster, Hjensikk y AMarauder**: autores de la traduccion original.
+- **ElGranFoca**: mantenedor actual de aquella traduccion y autor de su reconstruccion 3.x.
+- **Suor (hackflow)**: autor del framework Rosetta y sus herramientas.
+- **backmind**: adaptacion del corpus al modelo Rosetta, limpieza UTF y este pack.
 
+Si esta traduccion te sirve, pasa por la pagina de Nexus original y dales tu endorse: sin ellos no habria nada que empaquetar.
 
-## Extractor
+## Instalacion paso a paso
 
-To set up translation of a new mod, i.e. extract strings to translate, you may use special extractor script:
+Necesitas 6 archivos en la carpeta `data` del juego. La carpeta esta en:
 
-```bash
-python rosetta.py -lru mod_necro > mod_necro/necro/rosetta_ru.nut
-```
+- GOG: `<instalacion>\Battle Brothers\data`
+- Steam: `<Steam>\steamapps\common\Battle Brothers\data`
 
-This will provide you with a boilerplate containing all the strings found in the `mod_necro` dir. Then you will need to fill in some metadata and translations, unless the latter are provided for you automatically, see `-t` option. In any case you will need to look those through and identify cases where you need to use patterns to capture substrings and do so.
+Descarga estos 5 mods de NexusMods (el archivo .zip de cada uno va tal cual a `data`, no hace falta renombrar nada):
 
-To **update your translation** use `-r` to reference the existing file — the extractor will output only new and changed strings:
+1. [Modding Script Hooks](https://www.nexusmods.com/battlebrothers/mods/42) (los hooks clasicos de Adam)
+2. [Modern Hooks](https://www.nexusmods.com/battlebrothers/mods/685)
+3. [MSU - Modding Standards and Utilities](https://www.nexusmods.com/battlebrothers/mods/479) (version 1.6.0 o superior)
+4. [stdlib](https://www.nexusmods.com/battlebrothers/mods/676) (version 2.5 o superior)
+5. [Rosetta Translations Framework](https://www.nexusmods.com/battlebrothers/mods/802) (version 0.4.0 o superior)
 
-```bash
-python rosetta.py -lru -r mod_necro/necro/rosetta_ru.nut mod_necro > new_rosetta_ru.nut
-# Then diff/merge new_rosetta_ru.nut into the existing file
-```
+Y por ultimo el pack de traduccion:
 
-The extractor also auto-loads `rosetta/pack_<lang>.nut` when present, using it as a silent reference so strings already covered by a common language pack are not emitted again.
+6. `mod_rosetta_base_es_<version>.zip`, desde la seccion [Releases](https://github.com/backmind/battle-brothers-rosetta/releases) de este repositorio.
 
-To verify completeness (no missing, stale or only partially covered entries) use `-c`:
+Arranca el juego. No hay que configurar nada: el pack activa el castellano solo.
 
-```bash
-python rosetta.py -c mod_necro/necro/rosetta_ru.nut mod_necro
-```
+### Como saber que funciona
 
-## Extractor Usage
+Al crear una campana nueva, los origenes de compania y sus descripciones deben verse en castellano. Si quieres comprobarlo a fondo, abre el log del juego (`Documentos\Battle Brothers\log.html`) y busca la linea `Adding NNNNN es pairs in vanilla`.
 
-This is a python script, which requires Python 3.12 and for automatic translations to work also requires python requests library.
+## Que traduce y que no (todavia)
 
-```
-Usage:
-    python rosetta.py <mod-file> > <to-file> [options]
-    python rosetta.py <mod-dir> > <to-file> [options]
+- **Traducido**: eventos, contratos, tooltips, habilidades, perks, origenes, ambiciones, rasgos, estadisticas y en general el texto que generan los scripts del juego. Mas de 12.000 textos en la v0.1.0.
+- **En proceso** (v0.2.x): los textos con partes variables (log de combate, "Paid X daily", mecanica numerica de habilidades), que requieren el formato de patrones de Rosetta. Su estado se sigue en [es_pack/corpus/PATTERNS_TODO.md](es_pack/corpus/PATTERNS_TODO.md).
+- **Pendiente de permiso**: el complemento opcional de menus (archivos js derivados de la traduccion de Nexus).
+- **Limite conocido**: los rotulos que dibuja el motor grafico directamente sobre el mapa (nombres de regiones). Detalle completo en [es_pack/corpus/KNOWN_ISSUES.md](es_pack/corpus/KNOWN_ISSUES.md).
 
-Extracts strings and prepares a rosetta style translation file.
+## Como colaborar
 
-Arguments:
-    <mod-file>  The path to a mod file
-    <mod-dir>   Process all *.nut files in a dir
-    <to-file>   Rosetta file to write, via shell redirection
+La traduccion entera es un archivo de texto: [es_pack/corpus/base_es.nut](es_pack/corpus/base_es.nut). Cada correccion es editar una linea y abrir un pull request; no hay que saber programar ni tocar el juego. Los pares pendientes estan marcados con `es = ""`. Para los patrones (textos con `<variables:tipo>`), la guia es [AGENTS_TRANSLATING.md](AGENTS_TRANSLATING.md) mas el procedimiento de [PATTERNS_TODO.md](es_pack/corpus/PATTERNS_TODO.md).
 
-Options:
-    -l<lang>    Target language to translate to, defaults to ru
-    -t<engine>  Use automatic translation. Available options are:
-                    yt (Yandex Translate), claude35 (Anthropic Claude-3.5-sonnet)
-    -r<file>    Use this as reference translation
-    -c<file>    Check mode: report new, unmatched and partial entries, exit 1 if any
-    -f          Overwrite existing files
-    -q          Less output
-    -x          Stop on error
-    --context   Include context comments into generated code
-    -h, --help  Show this help
-```
+## Para desarrolladores
 
-## Translating with AI Agents
+- Corpus canonico: `es_pack/corpus/base_es.nut` (formato Rosetta, fuente de verdad).
+- Build del zip distribuible: `PYTHONUTF8=1 uv run python es_pack/tools/build_dist.py` (filtra pares vacios y patrones invalidos, decodifica escapes, empaqueta).
+- Regeneracion tras un parche del juego: descompilar la version nueva y `PYTHONUTF8=1 uv run python es_pack/tools/extract_wrapper.py <arbol>/scripts -les -r es_pack/corpus/base_es.nut -q > es_pack/corpus/base_es.nut.nuevo`, despues `quote_fix.py`. Siempre via `extract_wrapper.py` (incluye el workaround de un bug del extractor upstream, reportado en [Suor/battle-brothers-rosetta#2](https://github.com/Suor/battle-brothers-rosetta/issues/2)).
+- Ramas: `es-pack` (este pack; solo anade archivos), `master` (espejo limpio de upstream), `legacy-es-pipeline` (archivo historico del pipeline anterior).
 
-For a step-by-step guide covering pattern types, common pitfalls, and wiring up translations see [AGENTS_TRANSLATING.md](AGENTS_TRANSLATING.md). Useful both as a reference and as a prompt for AI agents — point your agent to this file when creating or updating translations.
+## Licencia y agradecimientos
 
-## More Examples
-
-Partial translation inside tags:
-
-```squirrel
-{
-    mode = "pattern"
-    en = "Use <open:tag><ap:int> AP<close:tag> and <fat:str_tag> less fatigue to raise."
-    ru = "Тратит только <open><ap> ОД<close> и на <fat> меньше выносливости для поднятия мертвецов."
-}
-
-```
-
-
-# For Mod Authors
-
-Rosetta is designed the way that translation is put on top, i.e. you won't need to apply any changes to your mod for this to work. There still might be corner cases, where it's easier for you to provide a translation point instead of relying on intercepting strings only via hooks.
-
-This could be done via:
-
-```squirrel
-local _ = "Rosetta" in getroottable() ? Rosetta._ : @(s) s;
-
-_("Some string");
-_("Thing does " + num + " things"); // Do not split this, otherwise pluralization won't be possible
-```
-
-Note that you can bundle translations right into your mod for however many languages you like, the right translation will be activated when appropriate, see above Using and Writing Translations sections.
-
-
-# Limitations
-
-A. Language registration is global so it should better be done in Rosetta itself, now only russian, spanish, japanese and simplified chinese languages are included, so please contact me. You can still do it from any place:
-
-```squirrel
-::Rosetta.addLang("es", {
-    name = "Español"
-    function detect() {
-        return ::Const.Strings.EntityName[0] == "???";
-    }
-    plural = {
-        forms = [1 2]
-        fallback = 2
-        function choose(n) {
-            return n == 1 ? 1 : 2
-        }
-    }
-})
-```
-
-B. Currently Rosetta autodetects language to activate it. One can also activate it programmatically with `::Rosetta.activate(<code>)`. There is no user interface to switch languages so far.
-
-C. Only strings originating from squirrel .nut files is possible to intercept and translate at this point. Any string added in js will require extra work from future Rosetta.
-
-D. Some strings might not be intercepted just yet. Please contact me if you need to add something.
-
-E. Same string is translated same, wherever it originates from. The exception is matching by id.
-
-Most of these could be lifted in the future. Remember Rosetta is in an early stage still.
-
-
-# Feedback
-
-Any suggestions, bug reports, other feedback are welcome. The best place for it is this Github, i.e. just create an issue. You can also find me on BB Modding Discord by **suor.hackflow** username.
-
-
-[nexus-mods]: https://www.nexusmods.com/battlebrothers/mods/802
-[ModernHooks]: https://www.nexusmods.com/battlebrothers/mods/685
-[modhooks]: https://www.nexusmods.com/battlebrothers/mods/42
-[stdlib]: https://www.nexusmods.com/battlebrothers/mods/676
-[necro]: https://www.nexusmods.com/battlebrothers/mods/775
+El framework Rosetta es de Suor (ver su [licencia](LICENSE)). El contenido de la traduccion deriva del trabajo de los autores citados en creditos, con su conocimiento; si eres uno de ellos y quieres cualquier cambio en la atribucion o el uso del material, abre un issue y se atiende de inmediato.
