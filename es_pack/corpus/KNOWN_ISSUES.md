@@ -41,3 +41,8 @@ version quedo validada.
 7. MSU referencia gfx/fonts/cinzel en ui/mods/msu/css/misc.css sin
    distribuir la fuente: 1 error IO cosmetico en el log. Se silencia
    reinstalando el kit gfx de la traduccion antigua (fuentes Cinzel).
+   OJO empaquetado: el renderizador de UI carga las fuentes por RUTA DE
+   DISCO (data/gfx/fonts/...), no via zips. Las fuentes deben instalarse
+   como carpeta suelta gfx/ en data/; el addon de UI (zip) solo debe
+   contener ui/ (js). Verificado 2026-08-16: con las fuentes dentro del
+   zip el error IO persiste; con la carpeta suelta desaparece.
