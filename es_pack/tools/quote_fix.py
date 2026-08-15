@@ -19,18 +19,18 @@ VALUE_LINE_RE = re.compile(r'^(\s*(?:en|es|n\d+)\s*=\s*)("(?:[^"\\]|\\.)*")(,?\s
 
 
 def _encode_braces(m):
-    return m.group(1) + m.group(2).replace("{", "\\x7b").replace("}", "\\x7d") + m.group(3)
+    val = ESCAPED_QUOTE_RE.sub(r'\1\\x22', m.group(2))
+    return m.group(1) + val.replace("{", "\\x7b").replace("}", "\\x7d") + m.group(3)
 
 
 def fix(text):
-    text = ESCAPED_QUOTE_RE.sub(r'\1\\x22', text)
     return VALUE_LINE_RE.sub(_encode_braces, text)
 
 
 def main():
     path = Path(sys.argv[1])
     text = path.read_text(encoding="utf-8")
-    quotes = len(ESCAPED_QUOTE_RE.findall(text))
+    quotes = sum(len(ESCAPED_QUOTE_RE.findall(m.group(2))) for m in VALUE_LINE_RE.finditer(text))
     fixed = fix(text)
     braces = fixed.count("\\x7b") + fixed.count("\\x7d") - (text.count("\\x7b") + text.count("\\x7d"))
     path.write_text(fixed, encoding="utf-8")

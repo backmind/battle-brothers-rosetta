@@ -6,7 +6,9 @@
 - Traducidos: 13881
 - Sin traducir (es = ""): 2150
 - Patrones (mode = "pattern"): 1825
-- Tamano del fichero: 8.313.781 bytes
+- Tamano del fichero: 8.313.781 bytes (copia de trabajo en Windows, CRLF);
+  el blob de git (LF) pesa 8.243.937 bytes
+  (`git cat-file -s HEAD:es_pack/corpus/base_es.nut`).
 
 Historial de esta misma regeneracion (mismo seed, mismo arbol EN), a medida
 que se identificaron y arreglaron bugs de la cadena de herramientas:
@@ -15,6 +17,17 @@ ronda 1 (solo comillas re-codificadas, carga de refs ~29%): 16795 pares totales,
 refs 100%, pero 47 ficheros perdidos por crash de extraccion): 15477 pares
 totales, 13336 traducidos. Ronda 3 (esta; wrapper recupera los 47 ficheros):
 16031 pares totales, 13881 traducidos.
+
+## Procedencia del seed
+
+`es_pack/build/` esta en `.gitignore`, asi que `seed_base_es.nut` y
+`seed_norm.nut` no se versionan; son siempre reproducibles desde la rama de
+rescate con estos dos comandos:
+
+```bash
+git show legacy-es-pipeline:rosetta/base_es.nut > es_pack/build/seed_base_es.nut
+PYTHONUTF8=1 uv run python es_pack/tools/normalize_seed.py es_pack/build/seed_base_es.nut es_pack/build/seed_norm.nut
+```
 
 ## Comandos reales usados
 
