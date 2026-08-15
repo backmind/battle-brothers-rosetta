@@ -141,8 +141,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]1,000[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]1,000[/color] Crowns"
-        es = "Gastas [color=<this.Const.UI.Color.NegativeEventValue>]1,000[/color] Coronas"
+        en = "You spend <v:str_tag> Crowns"
+        es = "Gastas <v> Coronas"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\ambitions\cart_ambition.nut
     {
@@ -1375,8 +1375,8 @@ local pairs = [
     {
         // return "You gain extra Renown if your men become confident in battle enough times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown if your men become confident in battle enough times (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional si tus hombres adquieren 'Confiado' en la batalla suficientes veces (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown if your men become confident in battle enough times (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional si tus hombres adquieren 'Confiado' en la batalla suficientes veces (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_distinction_ambition.nut
     {
@@ -1408,8 +1408,8 @@ local pairs = [
     {
         // return "You gain extra Renown if one of your men levels up " + this.getBonusObjectiveGoal() + " times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown if one of your men levels up <this.getBonusObjectiveGoal()> times (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional si uno de tus hombres sube de nivel <this.getBonusObjectiveGoal()> veces (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown if one of your men levels up <goal:int> times (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional si uno de tus hombres sube de nivel <goal> veces (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {
@@ -1443,8 +1443,8 @@ local pairs = [
     {
         // return "You gain extra Renown for slaying beasts (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for slaying beasts (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por matar bestias (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for slaying beasts (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por matar bestias (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_endurance_ambition.nut
     {
@@ -1478,8 +1478,8 @@ local pairs = [
     {
         // return "You gain extra Renown for winning many battles (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for winning many battles (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por ganar muchas batallas (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for winning many battles (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por ganar muchas batallas (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_fortification_ambition.nut
     {
@@ -1542,8 +1542,8 @@ local pairs = [
     {
         // return "You gain extra Renown for defeating enemies without them being engaged by other combatants (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for defeating enemies without them being engaged by other combatants (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por derrotar a enemigos sin que estén comprometidos por otros combatientes (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for defeating enemies without them being engaged by other combatants (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por derrotar a enemigos sin que estén comprometidos por otros combatientes (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_humility_ambition.nut
     {
@@ -1571,14 +1571,14 @@ local pairs = [
     {
         // this.m.OathBurdenText = "You earn [color=" + this.Const.UI.Color.NegativeValue + "]25%[/color] fewer crowns from contracts.";
         mode = "pattern"
-        en = "You earn [color=<this.Const.UI.Color.NegativeValue>]25%[/color] fewer crowns from contracts."
-        es = "Ganas [color=<this.Const.UI.Color.NegativeValue>]25%[/color] menos coronas por contratos."
+        en = "You earn <v:val_tag> fewer crowns from contracts."
+        es = "Ganas <v> menos coronas por contratos."
     }
     {
         // return "You gain extra Renown for completing enough contracts (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for completing enough contracts (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por completar suficientes contratos (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for completing enough contracts (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por completar suficientes contratos (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_righteousness_ambition.nut
     {
@@ -1612,8 +1612,8 @@ local pairs = [
     {
         // return "You gain extra Renown for slaying the undead (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for slaying the undead (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por matar no-muertos (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for slaying the undead (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por matar no-muertos (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_sacrifice_ambition.nut
     {
@@ -1643,14 +1643,14 @@ local pairs = [
     {
         // return "You gain extra Renown for suffering no more than " + this.getBonusObjectiveGoal() + " combat injuries (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " injury" : " injuries") + " taken so far).";
         mode = "pattern"
-        en = "You gain extra Renown for suffering no more than <this.getBonusObjectiveGoal()> combat injuries (<this.getBonusObjectiveProgress()> injury taken so far)."
-        es = "Obtendrás renombre adicional por sufrir no más de <this.getBonusObjectiveGoal()> lesiones en combate (<this.getBonusObjectiveProgress()> lesión recibida)."
+        en = "You gain extra Renown for suffering no more than <goal:int> combat injuries (<progress:int> injury taken so far)."
+        es = "Obtendrás renombre adicional por sufrir no más de <goal> lesiones en combate (<progress> lesión recibida)."
     }
     {
         // return "You gain extra Renown for suffering no more than " + this.getBonusObjectiveGoal() + " combat injuries (" + this.getBonusObjectiveProgress() + (this.getBonusObjectiveProgress() == 1 ? " injury" : " injuries") + " taken so far).";
         mode = "pattern"
-        en = "You gain extra Renown for suffering no more than <this.getBonusObjectiveGoal()> combat injuries (<this.getBonusObjectiveProgress()> injuries taken so far)."
-        es = "Obtendrás renombre adicional por sufrir no más de <this.getBonusObjectiveGoal()> lesiones en combate (<this.getBonusObjectiveProgress()> lesiones recibidas)."
+        en = "You gain extra Renown for suffering no more than <goal:int> combat injuries (<progress:int> injuries taken so far)."
+        es = "Obtendrás renombre adicional por sufrir no más de <goal> lesiones en combate (<progress> lesiones recibidas)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_valor_ambition.nut
     {
@@ -1682,8 +1682,8 @@ local pairs = [
     {
         // return "You gain extra Renown for winning battles where you are outnumbered (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for winning battles where you are outnumbered (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional al ganar batallas en las que te superen en número (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for winning battles where you are outnumbered (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional al ganar batallas en las que te superen en número (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_vengeance_ambition.nut
     {
@@ -1717,8 +1717,8 @@ local pairs = [
     {
         // return "You gain extra Renown for slaying greenskins (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for slaying greenskins (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por matar pielesverdes (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for slaying greenskins (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por matar pielesverdes (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\ambitions\oaths\oath_of_wrath_ambition.nut
     {
@@ -1752,8 +1752,8 @@ local pairs = [
     {
         // return "You gain extra Renown for slaying your foes (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown for slaying your foes (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
-        es = "Obtendrás renombre adicional por matar enemigos (<this.getBonusObjectiveProgress()>/<this.getBonusObjectiveGoal()>)."
+        en = "You gain extra Renown for slaying your foes (<progress:int>/<goal:int>)."
+        es = "Obtendrás renombre adicional por matar enemigos (<progress>/<goal>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\config\character.nut
     {
@@ -17370,8 +17370,8 @@ local pairs = [
     {
         // "Get " + this.Contract.m.Payment.getOnCompletion() + " crowns for your victory"
         mode = "pattern"
-        en = "Get <this.Contract.m.Payment.getOnCompletion()> crowns for your victory"
-        es = "Obtendrás <this.Contract.m.Payment.getOnCompletion()> coronas por tu victoria"
+        en = "Get <n:int> crowns for your victory"
+        es = "Obtendrás <n> coronas por tu victoria"
     }
     {
         en = "Win a piece of gladiator gear"
@@ -17781,8 +17781,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "prizename"
@@ -18242,8 +18242,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "Around %objective%"
@@ -18508,8 +18508,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("MercenaryPay") + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_134.png[/img]\x7b%SPEECH_START%That's a shame.%SPEECH_OFF%%mercenary% says as he quickly jaunts back to the ranks of the %mercenarycompany%. He keeps backing up right into the soldiers defending %holysite%. His arms are wide and fanning, as though he were swimming against a current.%SPEECH_ON%A damn shame, I say! Well, captain of the %companyname%, let us see which side purchased the finer sellsword, yeah?%SPEECH_OFF%The mercenary draws his weapon, as do the southern soldiers at %holysite% behind them. Naturally, you draw your weapon as well. It is time to fight. | %SPEECH_ON%Aye, aye, I see. Well. I didn't expect much. I am, after all, also a seller of the sword. And right now...%SPEECH_OFF%He paces backward to his company, and his company to the ranks of the southern soldiers protecting %holysite%.%SPEECH_ON%Right now, the south proves to be the highest bidder.%SPEECH_OFF%\x7d"
@@ -18883,8 +18883,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("RequisitionCost") + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_96.png[/img]\x7bThe morning sun leaks into your tent, running a beam right across your eyes to really rub it in that you've a new day to put up with. | You get up and put your boots on, slapping out some spiders that thought it the place to rest overnight. | Outside your tent, a rooster loudly lets everyone know what a real asshole of an animal it is. You begrudgingly get up. | You wake to yet another day. Great. | You slept like a dead man and wake like one, too. The sunlight slipping into the tent is too blinding to go back to bed and the flaps are too far to shut. To hell with it, you'll get up. | Morning. That inevitable hour where a thousand regrets arrive on the glowy limelight of a new day.\x7d\n\n A young boy stands outside your tent with a scroll. He unfurls and struggles to read it.%SPEECH_ON%\x7bYour... co-co-commander has re... rekeestered... uh, you'd just better go and see him yourself. | %commander% wi-wishes to see you, he... he says, wait, no horses do? What? Look I can't read. Just go see the commander. | Sir, this here paper tells me to tell you that, you... uh, you should... er, uh, go see the commander. There's a lot more, but we'd be here all day if I tried finish it. | So yeah, I can't actually read, but I think the commander wishes to see you. | Let's see, this letter... I know this letter... it's the letter 'I', and I think the rest of the sentence is a whole lot of I can't read a damn lick of this shite. Look, just go see the commander. I think that's what he wants.\x7d%SPEECH_OFF%"
@@ -18963,8 +18963,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_88.png[/img]\x7b%bigdog% steps forward, wheeling a weapon around over his shoulder with ease. He nods.%SPEECH_ON%You're afraid of %commander%. I get that. You know him, you know his temperament, and what he's capable of. Question is...%SPEECH_OFF%The sellsword grins, the wily smile reflected in the sheen of his blade.%SPEECH_ON%Do you know me?%SPEECH_OFF% | The deserters look about ready to leave when %bigdog% whistles loudly.%SPEECH_ON%Hey you shits, my commander gave you an order.%SPEECH_OFF%One of the deserter scoffs.%SPEECH_ON%Yeah? He ain't our farkin' commander so you can take that order and cram it.%SPEECH_OFF%%bigdog% draws out a huge blade and plants it in the ground. He tents his hands atop the pommel.%SPEECH_ON%You're afraid of %commander% and that's alright. But you keep on being a little shit, my friend, and we'll see just which commander you should have really been afraid of.%SPEECH_OFF% | The deserters turn to leave. %bigdog% takes out a huge blade and clangs it against his armor. Slowly, the deserters turn around. %bigdog% smiles.%SPEECH_ON%Any one of you ever pissed your pants?%SPEECH_OFF%One of the deserters shakes his head.%SPEECH_ON%H-hey man, get the fark out of here with that talk.%SPEECH_OFF%%bigdog% snatches up his blade and points the tip of it at the deserter.%SPEECH_ON%Oh, you want me shut up? Keep speaking to me like that and there won't be anybody talking here real soon.%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
@@ -19598,8 +19598,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Reward + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_30.png[/img]\x7b%employer% welcomes your return with a point out his window.%SPEECH_ON%You see that? There, in the distance.%SPEECH_OFF%You join his side. He asks.%SPEECH_ON%What is it that you see?%SPEECH_OFF%There's smoke on the horizon. You let him know that's what you see.%SPEECH_ON%Right, smoke. I didn't hire you to let the brigands make smoke, understand? Of course... most of the town is still upright...%SPEECH_OFF%He heaves a satchel into your chest.%SPEECH_ON%Good work, sellsword. Just... not good enough.%SPEECH_OFF% | You return to %employer%, he looks a mix of happy and sad, somewhere between drunk and straight. This is not the look you want to see.%SPEECH_ON%You did good, sellsword. Word has it you laid those brigands utterly flat. Word also has it that they burned parts of our outskirts.%SPEECH_OFF%You nod. Not worth lying about what you can't cover up.%SPEECH_ON%You'll be getting paid, but you have to understand that it takes money to rebuild those areas. Obviously, the crowns for that will be coming out of your pockets...%SPEECH_OFF% | %employer%'s slouched in his seat when you return.%SPEECH_ON%Most in %townname% are happy, but a few are not. Can you guess which of those aren't?%SPEECH_OFF%The brigands did manage to destroy a few parts of the outskirts, but this here was rhetorical question.%SPEECH_ON%I need funds to help rebuild the territories those marauders managed to get their hands on. I'm sure you understand, then, why you'll be receiving less pay...%SPEECH_OFF%You shrug. It is what it is. | %employer%'s at his bookshelf. He takes a book, spinning around and opening it all in one move. He lays it across his table.%SPEECH_ON%There's numbers there. I'm sure you can't read them, but here's what they say: the brigands managed to destroy parts of this town and now I need crowns to help rebuild. Unfortunately, I don't have that many crowns on hand to do this. I'm sure you understand this predicament.%SPEECH_OFF%You nod and state the obvious.%SPEECH_ON%It's coming out of my pay.%SPEECH_OFF%The man nods and slides an open hand across his desk, drawing your attention to a satchel. There's no point in arguing about pay. You take the sack and make your leave.\x7d"
@@ -20146,8 +20146,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("HintBribe") + "[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Crowns"
-        es = "Has perdido [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Has perdido <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_51.png[/img]\x7bAs you and the %companyname% prepare their journey, %randombrother% states that there is a man who wishes to speak to you directly. You nod and have him led to you. He's a glum, small man who states that the 'rulers' of %townname% have no interest in the %location% other than ones of greed. Of course that's the case, so what's the problem? The man nods.%SPEECH_ON%Look, I've some folks who are interested in keeping the %location% hidden away for good. If you find it, well, talk to me first. We'll make you a pretty penny.%SPEECH_OFF% | While the %companyname% readies its trip to find the %location%, a man sidles up next to you. He hands you a note and departs without saying a word. The scroll reads: LEAVE THE %locationC% WHERE IT BE. IF YOU FIND IT, TALK TO US. OUR CROWNS FOR YOUR SILENCE. THE RULERS OF %townnameC% NEED NOT KNOW NOTHIN'! | A man approaches the company. Behind him you spy a couple of poor families staring on. You're not sure if he's their ambassador or not, but either way he comes right for you with a proposition spoken low and quiet.%SPEECH_ON%Listen here, sellsword. If you go out and find the %location%, come to us first. The rulers of %townname% need not bring their greed and lust for power to that place. Leave it to us, alright? We'll pay you well.%SPEECH_OFF%Before you can say a word, he straightens up and continues on. When you look back down the road those families are no longer around.\x7d"
@@ -20198,8 +20198,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]You tell the man that you'll keep the location of his familial home a secret. While he celebrates, you go and tell %employer% where the %location% is. Getting paid by both sides makes for a pretty sweet gig. Catching hate from both not so much, but what did they expect in dealing with a sellsword?"
@@ -20826,8 +20826,8 @@ local pairs = [
     {
         // text = "You are rewarded with [color=" + this.Const.UI.Color.PositiveValue + "]3000[/color] Crowns"
         mode = "pattern"
-        en = "You are rewarded with [color=<this.Const.UI.Color.PositiveValue>]3000[/color] Crowns"
-        es = "Eres recompensado con [color=<this.Const.UI.Color.PositiveValue>]3000[/color] Coronas"
+        en = "You are rewarded with <v:val_tag> Crowns"
+        es = "Eres recompensado con <v> Coronas"
     }
     {
         // text = "Your relations to " + this.World.FactionManager.getFaction(this.Contract.m.NobleHouseID).getName() + " improve"
@@ -21290,8 +21290,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + bribe + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_12.png[/img]\x7bYou step over a tripwire and tell %hurtbro% to be careful. He doesn't and eats a trapmaker's machinations for his carelessness. | The floor of the ruins is lined with obvious traps and deadly gadgets. You manage to go through the lot of them without issue until %hurtbro%, thinking himself in the clear, suddenly rushes ahead. Ancient machinery is triggered and you think the whole place is about to collapse on your heads. Luckily, only the mercenary pays for his lack of discretion. | The ruins are rigged with traps and %hurtbro% manages to set one off. | %hurtbro%'s foot falls on a brick that quickly depresses into the floor. Ancient machinery rumbles behind the walls and the ceiling begins to crumble. Despite all the noise, the trap itself is quite small and the sellsword will live. | Glyphs on the wall spell out ancient ruminations through the use of pictures. Unfortunately, the stick figures are so poorly drawn you don't realize they're actually warning signs until it's too late: %hurtbro% wanders into a trap and eats a lot of trouble for your poor translating skills. | You should have known better: the ruins are lined with traps and %hurtbro% walks right into one. He'll survive and you'll be safer from now on. | %hurtbro% sets off a trap and eats a lot of painful trouble for his lack of caution. | Many, many years ago, a man sat down to make a trap. Today, %hurtbro% walks right into it. | You set off a tripwire and hear the walls come alive with ancient machinery. Ducking, you think yourself in the clear only to turn around and see %hurtbro% has eaten the brunt of the trap's damage. Whoops... | You see a tripwire on the ground and laugh. So close, ancient trapmaker, so very close - suddenly, %hurtbro% walks right by you and triggers the trap. The idiot will live, but there is a lot of pain in his future. | %hurtbro%'s whistling and the tune carries deep into the ruins, but the echo seems rather off, like it's hiccupping somewhere in the walls. You tell the men to hold their ground, but the whistler walks on ahead and promptly falls through the floor into a pit. Rushing to the edge, you see that he just managed to avoid some spikes. | While walking through the ruins, %hurtbro% sets off a trap which sends him plummeting through the floor. He lands on a lower floor dotted with holes. Spikes emerge, but slowly enough for the man to get out of the way. Thankfully, the trap didn't trigger in the right order and you manage to get the sellsword out of there. | While winding through the confusing ruins, %hurtbro% suddenly drops out of view. You rush to where he was to almost fall into the same trap: a pit in the ground littered with the crunchy molts of snakeskin. Thankfully, the critters are no longer around, but the fall itself was enough to put the hurt on the poor mercenary.\x7d"
@@ -21983,8 +21983,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + bribe + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_129.png[/img]\x7bDust clouds belch from a distant cave entrance. As you draw near, you can hear the hiss of the lindwurms and intermittent growling of something else entirely.%SPEECH_ON%Look, sir!%SPEECH_OFF%%randombrother% points to the rim of the cave dugout. There's a pair of nachzehrers tackling a lindwurm, one being slung around as it holds onto the tail, the other is hand fighting its maw to not get bit. The monsters are fighting one another!\n\nShaking your head, you draw out your sword and order the men into formation. Looks like this is going to be a proper barnstormer if there ever was one.\x7d"
@@ -22746,8 +22746,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() / 2 + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\last_stand_contract.nut
     {
@@ -22930,14 +22930,14 @@ local pairs = [
     {
         // this.Contract.m.BulletpointsPayment.push("Get " + this.Contract.m.Payment.getInAdvance() + " crowns in advance");
         mode = "pattern"
-        en = "Get <this.Contract.m.Payment.getInAdvance()> crowns in advance"
-        es = "Obtendrás <this.Contract.m.Payment.getInAdvance()> coronas por adelantado"
+        en = "Get <n:int> crowns in advance"
+        es = "Obtendrás <n> coronas por adelantado"
     }
     {
         // this.Contract.m.BulletpointsPayment.push("Get " + this.Contract.m.Payment.getOnCompletion() + " crowns on completion");
         mode = "pattern"
-        en = "Get <this.Contract.m.Payment.getOnCompletion()> crowns on completion"
-        es = "Obtendrás <this.Contract.m.Payment.getOnCompletion()> coronas al completar la tarea"
+        en = "Get <n:int> crowns on completion"
+        es = "Obtendrás <n> coronas al completar la tarea"
     }
     {
         en = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer%'s slouched posture and occasional groan tells a lot about how his day is going. He massages his temples before addressing you in a shaky voice. %SPEECH_ON%A greenskin horde is terrorizing and plundering the region around %origin%. They spare no one or thing. \x7bMy men are too scared to do anything about it. | Too many of my men are wandering the land. | My men won't do it without obscene pay.\x7d You are the people's last hope to stop these brutes. If they are allowed to go where they please, we may never find the time to rebuild!%SPEECH_OFF%He slowly closes his eyes and sighs before continuing.%SPEECH_ON%They're greenskins. They leave tracks everywhere they go. Shouldn't be hard to find, right? Kill them all and avenge the good people of %origin%!%SPEECH_OFF% | Staring out his window, %employer% asks a simple question.%SPEECH_ON%Do you know what a greenskin does when it gets its hands on an infant?%SPEECH_OFF%You turn your head. A guard in the corner shrugs. You address the question.%SPEECH_ON%Yes.%SPEECH_OFF%The nobleman nods to himself and returns to his desk, taking a belabored seat there.%SPEECH_ON%There is a horde of them terrorizing %origin%. I need you to find them and slay them all. I can't... They can't... Well, just kill them all, alright?%SPEECH_OFF% | %employer% carries a candle close to one of his books, his eyes dimming to the light and focusing in on some scripts you can't read.%SPEECH_ON%They say the greenskins have a long, long history in this land. Do you believe that?%SPEECH_OFF%You shrug and answer to the best of your knowledge.%SPEECH_ON%If you wanna stay awhile in this world you gotta fight, and the greenskins do seem to have been around a long while.%SPEECH_OFF%The man nods, seemingly appreciative of your observation.%SPEECH_ON%We have a number of them marauding around %origin%. They're burning everything they come across, killing everyone... that's all quite obvious, I'm sure. What's also obvious is that I need you, sellsword, to find and destroy them. Are you interested?%SPEECH_OFF% | %employer%'s laughing to himself in his chair - he's also got his head buried in his hands, like some sort of jester hiding a giggle. Not the best look for a man. He turns up to you, weary eyed.%SPEECH_ON%Greenskins are rampaging again. I don't know where they are, only where they've been. You know those signs, right?%SPEECH_OFF%You nod and answer.%SPEECH_ON%They leave a large footprint, and I'm not just talking about their feet.%SPEECH_OFF%The man laughs again, but it's a pained one.%SPEECH_ON%Well, I clearly need you to do something about them. Are you up to it?%SPEECH_OFF% | %employer% gets up and goes to his window, stops, shakes his head, and returns to his table. He takes a slow, measured seat.%SPEECH_ON%At first I got word that it was brigands. Then I heard it were raiders from the coasts. Then the survivors began to talk. Now you know what my problem is?%SPEECH_OFF%You shrug.%SPEECH_ON%Does it matter?%SPEECH_OFF%The man raises an eyebrow.%SPEECH_ON%Greenskins, sellsword. That's who it is. They are rampaging around %origin% and I need you to stop them. Does it matter now?%SPEECH_OFF%\x7d"
@@ -23024,8 +23024,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("MerchantReward") + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "objectivedirection"
@@ -23187,8 +23187,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + reward + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_43.png[/img]\x7bThe townsfolk of %townname% are eagerly awaiting your return. A shame, because you don't have the relic that they so desperately need. %employer%, seeing your failure a step ahead of the laymen, meets you at the town entrance and talks to you in whispers.%SPEECH_ON%I take it you do not have the %item%.%SPEECH_OFF%You try to explain all that happened, but he does not seem to listen.%SPEECH_ON%It's no matter, mercenary. I can't pay you, obviously, and the townsfolk shan't hear of your shortcomings lest we have them lose their minds. They depend upon idols to find comfort in this world. I will have to come up with my own solution and, well, pray it works. Good day.%SPEECH_OFF% | %employer% meets you beside a host of geese. He's feeding them out of hand while, quite casually, a boy will occasionally come by and simply pick up one of the birds and go off with it for a slaughtering. The man smiles warmly at you, but his excitement quickly sours.%SPEECH_ON%I do not see the relic. Am I right to believe you do not have it?%SPEECH_OFF%A simple nod is all you give as an answer. He opens his arms, somewhat confused.%SPEECH_ON%Then why have you come? The townsfolk know you. They know you were out there looking for it. You should leave before they see you've returned without their godly idol.%SPEECH_OFF% | You return to %employer% emptyhanded. He takes you by the side and whispers.%SPEECH_ON%And why have you come at all? Do you not understand what import these townsfolk have put upon the idol? Without it to worship, they'll have nothing to believe in. Men of strong faith needs somewhere to put it. If he can't find it, all he finds is himself. And, like an ugly brute staring into a mirror, we needn't rush to see the anger and confusion in the reflection of the idol's absence. Leave, sellsword, before the people see you've not returned with the %item%.%SPEECH_OFF%\x7d"
@@ -23668,8 +23668,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe1") + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_41.png[/img]\x7bYou take the extra crowns, sacking them away, and then give the leader the name: %employer%. He bounces it on his tongue like some sort of poisoned nut.%SPEECH_ON%%employer%. %employer%! Yech, that name. %employer%, like some sort of... well, I won't bore you with my sudden urge to stoop my language into the pits. I thank you, sellsword, and bid you farewell.%SPEECH_OFF%You nod and make your leave. | Sacking the extra crowns, you tell the leader the word of the day: %employer%. The man laughs upon hearing it and nods repeatedly as though he expected it all along.%SPEECH_ON%You've done good, sellsword. What a day though, right? First you come here to put a sword through me, but a few minutes later and we are leaving on such good terms. Truly you are a man of business. A shame you decided to put that skill behind a blade instead of a pen. Farewell and godspeed.%SPEECH_OFF% | \x7bIn for an ounce, in for a pound. | In for an inch, in for a mile.\x7d You take the man's offer and spill the beans on %employer%'s doings. The caravan leader nods solemnly.%SPEECH_ON%You know, we men of business don't wield weapons like you do, but trust me, it's just as cutthroat. Godspeed, sellsword.%SPEECH_OFF%\x7d"
@@ -23750,8 +23750,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() * 2 + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_63.png[/img]\x7bYou return to %employer% and he turns to you, seemingly angry.%SPEECH_ON%You know folks are speaking about what you did, right?%SPEECH_OFF%Smiling, you hold up the incriminating papers.%SPEECH_ON%Would you rather they speak about this instead?%SPEECH_OFF%The man almost gasps before settling down into his chair.%SPEECH_ON%Alright, are you extorting me?%SPEECH_OFF%You put the papers on his table and shake your hand.%SPEECH_ON%I thought about it, but I'd rather not bite the hand that feeds just because it so happens to be holding something tasty this one time.%SPEECH_OFF% | %employer% waves you into his room.%SPEECH_ON%The peasantfolk are talking of ya. People in that caravan got away and between still drawing breath they saw fit to speak of what they experienced.%SPEECH_OFF%You nod and agree.%SPEECH_ON%That is quite understandable.%SPEECH_OFF%The man growls and points a finger, but you point the incriminating papers back in his face. He seizes up in rather strained silence.%SPEECH_ON%I... I see... Are you wanting more money?%SPEECH_OFF%You toss him the papers.%SPEECH_ON%No. You forget one of my faults, and I forget one of yours. Fair enough, right?%SPEECH_OFF%The man hastily stuffs the papers into his coat and nods. | You find %employer% tending to his garden. A few guard stand a ways off, and you imagine one of the handful of peasants lingering is really just a guard in disguise.%SPEECH_ON%Sellsword! It is good to see you, except for one little thing.%SPEECH_OFF%He waves you close and lowers his voice.%SPEECH_ON%You let a few of those caravan folk get away. I don't remember that being part of the deal.%SPEECH_OFF%You hold up the incriminating papers.%SPEECH_ON%I don't remember this being part of the deal either.%SPEECH_OFF%%employer% leers back, then composes himself so his guards don't get suspicious.%SPEECH_ON%Alright, I take those, and I forget about the whole letting people live who should be dead ordeal, alright?%SPEECH_OFF%You hand the papers over.\x7d"
@@ -24747,8 +24747,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]250[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]250[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]250[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_04.png[/img]\x7bYou report to %employer% that %objective% has been taken and is now under control. The man hides a smirk behind his hand, keeping some fair bit of composure as if nobility shouldn't lower themselves to the unprofessional excitement of the layman. He simply nods as though this news had been expected.%SPEECH_ON%Good. Good. Of course.%SPEECH_OFF%The man snaps his fingers and a servant hands you a satchel of %reward_completion% crowns. | Entering %employer%'s room brings silence to a throng of commanders, lieutenants, and the nobleman himself. He straightens up.%SPEECH_ON%My birds have already reported of the capture of %objective%. Your pay is outside.%SPEECH_OFF%The leaders hardly even thank you, though %reward_completion% crowns is more than enough thanks as far as you're concerned. | %employer% welcomes you to his war room. A group of commanders linger around a map on a table. You watch as they push one of their tokens over %objective%. %employer% grins.%SPEECH_ON%Those men may not let it slip, but we are might happy about the work you've done. The stories my spies have brought me ensured I did not make a poor investment with the likes of you.%SPEECH_OFF%The nobleman personally gives you a satchel of %reward_completion% crowns. | %employer%'s room is a hive of business. Commanders run to and fro, arguing with one another no matter which side of the room they're on or how far apart, while servants duck and weave to make sure they're properly fed. War is no time to waste energy on pitiful things like picking up your own cloak or cooking meals. You're surprised there are no servants forking bites into their mouths between arguments.\n\n However, %employer% is simply off to the side. He's flipping through a book like he was by himself in a chirpy garden. He looks up. Glances at his generals, then at you.%SPEECH_ON%Good job. Your pay.%SPEECH_OFF%A chest is slowly pushed your way. %reward_completion% crowns rest inside. | A servant cuts you off from entering %employer%'s room. He explains.%SPEECH_ON%I've been requested to meet you here with this satchel of %reward_completion% crowns.%SPEECH_OFF%You take the satchel and nod. | You try to enter %employer%'s room, but a guard stops you.%SPEECH_ON%Nobles only.%SPEECH_OFF%Pushing the guard's halberd out of your face, you state that you have business with %employer%. The guard lowers the halberd back down.%SPEECH_ON%Nobles only.%SPEECH_OFF%Just as you are about to start an argument, a servant steps out of the room with a large satchel. He sees the sigil of the %companyname% and hands you a satchel.%SPEECH_ON%Your %reward_completion% crowns. I'm afraid my liege and his commanders are busy.%SPEECH_OFF%And just like that the servant is gone. The guard peers down at you.%SPEECH_ON%Nobles only.%SPEECH_OFF% | The reward for helping conquer %objective% is %reward_completion% crowns and a door slammed in your face. %employer% is too busy arguing with his commanders to congratulate you any more than that. | One of %employer%'s commanders meets you in a foyer. He's got a servant with him that's carrying a large satchel. The commander speaks.%SPEECH_ON%Ah, the %companyname%. You've little honor in your vocation, sellsword. You should be a real man and fight with the nobles. There is great honor in what we do. Why not join us?%SPEECH_OFF%The large satchel of %reward_completion% crowns is placed in your hands. You smile back at the commander, a gilded reflection rimming your teeth.%SPEECH_ON%Yes, why?%SPEECH_OFF%\x7d"
@@ -24987,8 +24987,8 @@ local pairs = [
     {
         // this.Contract.m.BulletpointsObjectives.push("Recruit at least " + this.Math.max(1, 6 - this.World.getPlayerRoster().getSize()) + " more men");
         mode = "pattern"
-        en = "Recruit at least <this.Math.max(1, 6-this.World.getPlayerRoster().getSize())> more men"
-        es = "Recluta al menos <this.Math.max(1, 6-this.World.getPlayerRoster().getSize())> hombres más"
+        en = "Recruit at least <n:int> more men"
+        es = "Recluta al menos <n> hombres más"
     }
     {
         en = "Recruit at least one more man"
@@ -25293,8 +25293,8 @@ local pairs = [
     {
         // this.Contract.m.BulletpointsPayment.push("Get " + this.Contract.m.Payment.getPerCount() + " crowns per head you bring back, up to " + this.Contract.m.Payment.MaxCount + " total");
         mode = "pattern"
-        en = "Get <this.Contract.m.Payment.getPerCount()> crowns per head you bring back, up to <this.Contract.m.Payment.MaxCount> total"
-        es = "Obtendrás <this.Contract.m.Payment.getPerCount()> coronas por cabeza que traigas, hasta un máximo de <this.Contract.m.Payment.MaxCount> cabezas"
+        en = "Get <per:int> crowns per head you bring back, up to <max:int> total"
+        es = "Obtendrás <per> coronas por cabeza que traigas, hasta un máximo de <max> cabezas"
     }
     {
         // Text = this.Contract.m.Payment.Count == 0 ? "We need to be paid per head we return with." : "We need to be paid more per head we return with.",
@@ -25704,14 +25704,14 @@ local pairs = [
     {
         // text = "Acts in " + turnsToGo + (turnsToGo > 1 ? " turns" : " turn")
         mode = "pattern"
-        en = "Acts in <turnsToGo> turns"
-        es = "Actúa en <turnsToGo> turnos"
+        en = "Acts in <n:int> turns"
+        es = "Actúa en <n> turnos"
     }
     {
         // text = "Acts in " + turnsToGo + (turnsToGo > 1 ? " turns" : " turn")
         mode = "pattern"
-        en = "Acts in <turnsToGo> turn"
-        es = "Actúa en <turnsToGo> turno"
+        en = "Acts in <n:int> turn"
+        es = "Actúa en <n> turno"
     }
     {
         en = "progressbar"
@@ -26477,14 +26477,14 @@ local pairs = [
     {
         // text = "Level " + this.m.Level
         mode = "pattern"
-        en = "Level <this.m.Level>"
-        es = "Nivel <this.m.Level>"
+        en = "Level <n:int>"
+        es = "Nivel <n>"
     }
     {
         // text = "Paid [img]gfx/ui/tooltips/money.png[/img]" + this.getDailyCost() + " daily"
         mode = "pattern"
-        en = "Paid [img]gfx/ui/tooltips/money.png[/img]<this.getDailyCost()> daily"
-        es = "Cobra [img]gfx/ui/tooltips/money.png[/img]<this.getDailyCost()> diariamente"
+        en = "Paid <money:img><cost:int> daily"
+        es = "Cobra <money><cost> diariamente"
     }
     {
         en = "In the fighting line"
@@ -26626,8 +26626,8 @@ local pairs = [
     {
         // text = "Paid [img]gfx/ui/tooltips/money.png[/img]" + this.m.DailyCost + " daily"
         mode = "pattern"
-        en = "Paid [img]gfx/ui/tooltips/money.png[/img]<this.getDailyCost()> daily"
-        es = "Cobra [img]gfx/ui/tooltips/money.png[/img]<this.getDailyCost()> diariamente"
+        en = "Paid <money:img><cost:int> daily"
+        es = "Cobra <money><cost> diariamente"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\tactical\tactical_entity_manager.nut
     {
@@ -27353,8 +27353,8 @@ local pairs = [
     {
         // text = "Hired by " + f.getName()
         mode = "pattern"
-        en = "Hired by <f.getName()>"
-        es = "Contratados por <f.getName()>"
+        en = "Hired by <faction:str>"
+        es = "Contratados por <faction:t>"
     }
     {
         // text = "From " + f.getName()
@@ -33345,8 +33345,8 @@ local pairs = [
     {
         // text = _event.m.Swordmaster.getName() + " is now paid " + _event.m.Swordmaster.getDailyCost() + " crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\aging_swordmaster_preview_event.nut
     {
@@ -33608,8 +33608,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 400 + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         // Text = "[img]gfx/ui/events/event_05.png[/img]You further muddy %superstitious%\'s poor countenance with some bad news: you\'re not paying any witch anything.%SPEECH_ON%A few farcical words from some strange woman in the woods is no basis for an exchange of business. What you\'ve heard is a tramp\'s attempt to get at you, mercenary. You cannot listen to such tripe, especially a tramp\'s tripe for a tramp\'s tripe is always in pursuit of one\'s coin.%SPEECH_OFF%None of these words help %superstitious% for he quickly runs out of the tent, perhaps in pursuit of another mercenary who will give him a loan.",
@@ -33953,8 +33953,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]10[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]10[/color] Crowns"
-        es = "Gastas [color=<this.Const.UI.Color.NegativeEventValue>]10[/color] coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Gastas <v> coronas"
     }
     {
         en = "Got a few extra crowns from you"
@@ -35076,8 +35076,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + money + "[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Crowns"
-        es = "Has perdido [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Has perdido <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_43.png[/img]%thief% laughs.%SPEECH_ON%Hell, this'll be easy.%SPEECH_OFF%He goes off to the crowd and you lose sight of him in an instant. The old man chews on his gums for awhile before raising his voice.%SPEECH_ON%This feller, he is one to trust?%SPEECH_OFF%Before you can answer, %thief% emerges from behind the old man's shoulder and drops a bloody bandage into his palms. The creepy man unwraps the linens to discover freshly strewn extremities. The thief smugly smiles.%SPEECH_ON%Any thief worth his salt learns to pickpocket before anything else. I usually go after keys instead of toes, but a job is a job. Also 'picked' some other things of interest here and there. Take a look.%SPEECH_OFF%"
@@ -35104,8 +35104,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]500[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]500[/color] Crowns"
-        es = "Pierdes [color=<this.Const.UI.Color.NegativeEventValue>]500[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Pierdes <v> Coronas"
     }
     {
         // text = _event.m.Minstrel.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + initiative + "[/color] Initiative"
@@ -36000,8 +36000,8 @@ local pairs = [
     {
         // text = "You earn [color=" + this.Const.UI.Color.PositiveEventValue + "]100[/color] Crowns"
         mode = "pattern"
-        en = "You earn [color=<this.Const.UI.Color.PositiveEventValue>]100[/color] Crowns"
-        es = "Ganas [color=<this.Const.UI.Color.PositiveEventValue>]100[/color] Coronas"
+        en = "You earn <v:val_tag> Crowns"
+        es = "Ganas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_31.png[/img]You figure the halls are as good a place as any to start your search. No more than a few twists and turns later do you hear a disturbing noise coming from the treasury. Drawing your blade, you ease up next to the door and then shoulder it open, leveling your weapon at whatever may stand on the other side. Instead of a goblin, you find a young and old man who jump in a fright, each with trousers well dropped, and there's a tub of slopped butter on the desk against which they had been leaning. The room smells... awful.\n\n Dressing themselves, the younger fellow states that he is the treasurer while the elder informs you of his position as scribe. The treasurer quickly offers you a good deal of coin to keep silent about these delicate matters. You laugh.%SPEECH_ON%I won't be falling for that trick. If I take that coin, you simply run along to your lord and tell him I stole it, no? What better way to protect yourself than to ensure my execution?%SPEECH_OFF%The treasurer retreats and the scribe steps forward. He is an elderly man who smells of arse and candlewax.%SPEECH_ON%In my repository, I have many things which are owned by me, not my lord. These items might be of great interest to you. Potions, drinks, goods which a fighting man such as yourself could make use of. And... and I'll throw in a wardog! A local houndmaster owes me a favor and now is as good of a time as any to call upon it!%SPEECH_OFF%The scribe laughs nervously as you mull the idea over. If you turned them in, who knows what may happen. Sodomites bother you none, but there are lords across the realm who consider such fornications to be abhorrent. If %nobleman% is such a fellow, you might gain favor by 'rooting' these men out."
@@ -39361,8 +39361,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + 10 + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_97.png[/img]\x7bWarily, you return to the boy's home. Opening the door, you turn to the kid and tell him if he's lying once again you'll... before you can even finish the threat a scream draws your attention to the family. A large, ghoulish figure is terrorizing the mother and the father is using a broom to try and beat it back. You draw your sword, step forward, and cut the wiederganger down. Its head rolls free and splashes into a crockpot while the body crumples and spews black sludge across the floorboards.\n\n You turn to the boy and tell him that you almost didn't come for a liar's truth will always remain a lie to all others. He nods and thanks you for believing him this time. The parents thank you, too, but with a little more care: a satchel of crowns and goods.\x7d"
@@ -39738,8 +39738,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Reward + "[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Crowns"
-        es = "Has perdido [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Has perdido <v> Coronas"
     }
     {
         // bro.improveMood(1.0, "Felt entertained by " + _event.m.Other.getName() + " racing a horse");
@@ -39798,8 +39798,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Reward * 3 + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         // text = _event.m.Dumb.getName() + " suffers " + injury.getNameOnly()
@@ -40144,8 +40144,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]-2000[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]-2000[/color] Crowns"
-        es = "Pierdes [color=<this.Const.UI.Color.NegativeEventValue>]-2000[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Pierdes <v> Coronas"
     }
     {
         en = "Was bribed to have dealings with you"
@@ -40498,8 +40498,8 @@ local pairs = [
     {
         // _event.m.Dude.getBackground().m.RawDescription = "You found %name% in " + _event.m.Town.getName() + ", masked by green silk and drawing crowds with rhythmic movements and impressively precise fruit slicing. The latter skill is a boon to any mercenary company, and so you didn\'t hesitate to recruit him.";
         mode = "pattern"
-        en = "You found %name% in <_event.m.Town.getName()>, masked by green silk and drawing crowds with rhythmic movements and impressively precise fruit slicing. The latter skill is a boon to any mercenary company, and so you didn't hesitate to recruit him."
-        es = "Encontraste a %name% en <_event.m.Town.getName()>, enmascarado por seda verde y atrayendo multitudes con movimientos rítmicos y cortes de fruta impresionantemente precisos. Esta última habilidad es una ventaja para cualquier compañía de mercenarios, así que no dudaste en reclutarlo."
+        en = "You found %name% in <town:str>, masked by green silk and drawing crowds with rhythmic movements and impressively precise fruit slicing. The latter skill is a boon to any mercenary company, and so you didn't hesitate to recruit him."
+        es = "Encontraste a %name% en <town>, enmascarado por seda verde y atrayendo multitudes con movimientos rítmicos y cortes de fruta impresionantemente precisos. Esta última habilidad es una ventaja para cualquier compañía de mercenarios, así que no dudaste en reclutarlo."
     }
     {
         en = "[img]gfx/ui/events/event_163.png[/img]\x7bYou assuage his ego by saying he's one of the best with the blade you've seen. The dancer turns his hands to the dust, his fingers sliding beneath each coin and flipping it into his clay pot. His left hand reaches across the ground, but as this catches your eye, his right hand snatches a blade that had been entirely buried beneath the sands. He holds it toward your crotch.%SPEECH_ON%I'm deadly with the blade, as I'm sure you are with that stinger there. Now, I know you are merely petting things which shall make me purr, preying upon my pride as the hunter does the lions, and I will say this: it has worked. I will fight for you, captain of the Crownlings, and I will fight well.%SPEECH_OFF%Nodding, you ask that he lower the blade. He spins it in his hand and sheathes it in one swift motion. He gets to his feet, stripping himself down until he is buck naked.%SPEECH_ON%This life I will leave behind in total, and to the Crownling's life I will be devoted in whole.%SPEECH_OFF%You shake the man's hand. A passerby glances over and scratches his head.%SPEECH_ON%Wait a minute, you've a snake down there! I thought you were a lady of the dance, but this...%SPEECH_OFF%He dabs his forehead with a cloth and lowers his voice.%SPEECH_ON%This makes it even better.%SPEECH_OFF%The dancer looks at you and laughs.%SPEECH_ON%We've all dangers to confront in our respective vocations, Crownling, and I look forward to seeing yours.%SPEECH_OFF%\x7d"
@@ -40520,8 +40520,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.PositiveEventValue + "]500[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.PositiveEventValue>]500[/color] Crowns"
-        es = "Gastas [color=<this.Const.UI.Color.PositiveEventValue>]500[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Gastas <v> Coronas"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\dlc6\cannon_execution_event.nut
     {
@@ -41596,8 +41596,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]1,000[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]1,000[/color] Crowns"
-        es = "Pierdes [color=<this.Const.UI.Color.NegativeEventValue>]1,000[/color] Coronas"
+        en = "You lose <v:str_tag> Crowns"
+        es = "Pierdes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_163.png[/img]\x7b%gladiator% laughs.%SPEECH_ON%Friend, I was once a gladiator. Come with us and treat the whole world as your arena. I know you have that itch. I know it's somewhere down in there. Find it. That glee of the kill. That energy from victory. Share it with us, a band of battle brothers.%SPEECH_OFF%The elder gladiator stares at his equipment. His reflection stares back, albeit muddled and warbled from dirt and dents. He nods.%SPEECH_ON%You're right. What in the Gilder's name am I thinking? I've been piss poor and pissed on and pissed off for far too long. If your company will have me, then I shall end my days going out the way I lived it: killing!%SPEECH_OFF%\x7d"
@@ -41712,8 +41712,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + money + "[/color] Crown"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crown"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crown"
+        es = "Obtienes <v> Coronas"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\dlc6\sellsword_vs_bees_event.nut
     {
@@ -41868,8 +41868,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]50,000[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]50,000[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]50,000[/color] Coronas"
+        en = "You gain <v:str_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_174.png[/img]\x7bYuchi turns around.%SPEECH_ON%Hm?%SPEECH_OFF%You explain that he said he had come to these lands looking for two things. One was the book, what was the other? He smiles.%SPEECH_ON%There is a town in these parts by the name of Dagentear. The town is no more, but something that lived there still wanders. A being they call the 'Wight.' I wish to find it and speak with it.%SPEECH_OFF%When you ask for more information he simply parts with a graceful bow.%SPEECH_ON%Thank you for your gentle dealings, stranger.%SPEECH_OFF%\x7d"
@@ -41997,8 +41997,8 @@ local pairs = [
     {
         // _event.m.Monk.improveMood(1.0, "Stopped " + _event.m.Anatomist.getName() + " from sullying the company\'s reputation");
         mode = "pattern"
-        en = "Stopped <_event.m.Anatomist.getName()> from sullying the company's reputation"
-        es = "Se ha impedido que <this.event.m.Anatomist.getName()> manche la reputación de la compañía"
+        en = "Stopped <bro:str> from sullying the company's reputation"
+        es = "Se ha impedido que <bro> manche la reputación de la compañía"
     }
     {
         // text = _event.m.Monk.getName() + " gains [color=" + this.Const.UI.Color.PositiveEventValue + "]+" + resolveBoost + "[/color] Resolve"
@@ -43026,8 +43026,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Price + "[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Crowns"
-        es = "Has perdido [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Has perdido <v> Coronas"
     }
     {
         // text = "You gain " + part.getName()
@@ -43559,8 +43559,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + crowns + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_143.png[/img]\x7bYou take your hand off your sword and agree with the wily albeit seemingly harmless request. You say he may have a whiff of your wagon if he pays upfront for it. The man nods, and gives out a few crowns. Before cycling around to the back of the cart. He puts his bulbous nose in, snorting around like a pig rooting up the ground.\n\nSuddenly, he snatches up a few jars of incense and tears off the covers. All the dust and powder goes flying, the snowy wastes briefly vibrant, and the chortling man dances through it. You go to knock him out, but he throws the cables of kites at you, knotting you up in their wiry grasps, all the while himself making a daring escape, cackling as the incense drifts off his shoulders like some wayward transient passing a celestial meridian. Furious, and cutting yourself loose of the damned kites, you take inventory of the damage wrought.\x7d"
@@ -45375,8 +45375,8 @@ local pairs = [
     {
         // text = _event.m.Greedy.getName() + " is now paid " + _event.m.Greedy.getDailyCost() + " crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]\x7bYou decline %bro%'s request. He purses his lips, wrings his hands, then nods, turns and leaves. The silence is a bit harsh, but the message well received: he ain't a happy man. | Declining %bro%'s request leads to a sudden outburst.%SPEECH_ON%Well, fark this shit. I'll still fight fer ya, but don't expect the best out of me!%SPEECH_OFF%You nod, but tell him he'd be dead without putting forth his best, so you'll get what you want regardless. | %bro% winces when you decline the suggestion.%SPEECH_ON%Alright then, I see how this place is run. In we go, out we go. No matter to you, right? We're just the pawns you use to get what you want. That's fine. That's absolutely fine.%SPEECH_OFF%He turns and leaves. You get the feeling it is not at all 'fine.' | You tell %bro% that you do not agree with his estimations of how much he should get paid. He responds with a few swears with an estimated volume of 'loud.' When he's finished, he nods.%SPEECH_ON%But that's alright. I get the business. And I'm sure you understand that you get why I must look after the business that is myself, too.%SPEECH_OFF% | %bro% presses for more pay, but you put your foot down.%SPEECH_ON%You'll get what we agreed upon, no more.%SPEECH_OFF%He nods and then slowly back out of the tent.%SPEECH_ON%As you say, sir.%SPEECH_OFF%\x7d"
@@ -46055,8 +46055,8 @@ local pairs = [
     {
         // text = "You win [color=" + this.Const.UI.Color.PositiveEventValue + "]" + _event.m.Bet + "[/color] Crowns"
         mode = "pattern"
-        en = "You win [color=<this.Const.UI.Color.PositiveEventValue>]<_event.m.Bet>[/color] Crowns"
-        es = "Ganas [color=<this.Const.UI.Color.PositiveEventValue>]<_event.m.Bet>[/color] Coronas"
+        en = "You win <v:val_tag> Crowns"
+        es = "Ganas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_96.png[/img]Having never been to such an event, you can't help but hold your breath as the two riders barrel down the lanes toward each other. The horses are majestic, their legs in rhythm, their hooves tearing up great clods of earth, their armors glinting sundots across the crowds as they run, altogether leaving in their wake streams of giddy observers and shouting kids and drunks spilling their raised mugs and young princesses gripping their dresses and wantingly brave princes clapping their hands and, not knowing how it even came to be, you yourself are standing and shouting.\n\n%jouster% struggles to keep his aim steady, his lance bobbing up and down, the point of it wobbling in search of a true target.\n\nHe doesn't find it."
@@ -46083,8 +46083,8 @@ local pairs = [
     {
         // text = "You lose [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Bet + "[/color] Crowns"
         mode = "pattern"
-        en = "You lose [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Crowns"
-        es = "Has perdido [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(HintBribe)>[/color] Coronas"
+        en = "You lose <v:val_tag> Crowns"
+        es = "Has perdido <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]Telling %jouster% no does not go over well. He goes on a great deal about how much money he could have made at the tournament and how you are robbing him of those crowns. All very interesting complaints, sure, until he turns to you and demands %compensation% crowns, compensation for what he claims are lost earnings."
@@ -46285,8 +46285,8 @@ local pairs = [
     {
         // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + item + "[/color] Crowns"
         mode = "pattern"
-        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
-        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+        en = "You gain <v:val_tag> Crowns"
+        es = "Obtienes <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_35.png[/img]%hedgeknight% steps forward and heaves his weapon to the fore. He waves it at all the kids.%SPEECH_ON%Ah, so you want to be little bandits or heroes or some such shit? Well, that's good. That's fine. But I'll be watching to see who throws the first stone. He, or she, who does so will find out what happens when I get angry. And then after the rest of you have watched, I'll kill the lot of you. And I'll follow your little footprints all the way home, find your kin, and smash their farkin' heads in.%SPEECH_OFF%The hedge knight pauses to glare about.%SPEECH_ON%So, which of you shall throw the first stone?%SPEECH_OFF%The tyke in charge of this miniature army raises his hand and speaks.%SPEECH_ON%Let the men go. We've better things to do than quarrel with these travelers.%SPEECH_OFF%Hey, that's a wise move. With pride-swallowing smarts like that the red-headed bugger might someday lead a company to great fortunes. But this day is yours. You take the merchant's goods and make your leave."
@@ -47090,8 +47090,8 @@ local pairs = [
     {
         // text = bro.getName() + " is now paid " + bro.getDailyCost() + " crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]You look the men over. They are solemn creatures, not the ones you last saw grinning and laughing over their latest victory or triumph. While you can't yet afford to get them more men, there really is no need to cut their pay.%SPEECH_ON%I appreciate the selflessness and bravery it must've took to suggest such a thing, but I cannot possibly consider myself a man of honor and grant you this request. Your savings shall remain untouched.%SPEECH_OFF%"
@@ -47175,8 +47175,8 @@ local pairs = [
     {
         // text = _event.m.Noble.getName() + " is now paid " + _event.m.Noble.getDailyCost() + " crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     {
         en = "Got a pay raise"
@@ -47470,8 +47470,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Payment + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "Enjoyed himself with harlots"
@@ -47496,8 +47496,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Payment * 2 + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_06.png[/img]You don't say no deal so much as show it. Sword still in hand, you swing it back up and slash the pimp's face. As she stares at you in disbelief, you reverse the sword swing and cleave her head clean off. The men, trousers down, grab their gear and start to fight. A few harlots brandish daggers and get some stabs in, but they are quickly killed off. Most of the prostitutes are harmless, but get butchered in the confusion and chaos.\n\nThe robbers, who probably weren't expecting actual combat, say farewell to their short, shitty lives. When it's all said and done, there's a good twenty bodies spread over the field and most mercenaries did not come out the other side unharmed. You try and salvage what you can from the field."
@@ -48415,8 +48415,8 @@ local pairs = [
     {
         // text = _event.m.Sellsword.getName() + " is now paid " + _event.m.Sellsword.getDailyCost() + " crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     {
         en = "sellsword"
@@ -48485,8 +48485,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.PricePaid + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_45.png[/img]You take the map and give it a good read. You can identify some of the locations and, in time, translate its contents onto your own map. The %companyname% is murmuring with excitement over what might be there."
@@ -49793,8 +49793,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + 10 * this.World.getPlayerRoster().getSize() + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "[img]gfx/ui/events/event_40.png[/img]You hold your hand up, stopping the monk before he can get going again. He sighs, slowly lowering the reins out of his hand. Feeling as though he may be getting the wrong impression, you quickly ask if maybe he has beer to spare for your men. You are more than willing to pay. The monk looks back at his stock for a moment, then turns around.%SPEECH_ON%Aye. Damn it to hells if the gods wouldn't be happy with yer money crossin' m'palms. If ye fight the good fight, then I bid you to take some for free, but not all of it of course.%SPEECH_OFF%You thank the monk for his generosity and order you men to be modest with their drinking. As a few brothers circle around to the cask, the monk throws his hands up.%SPEECH_ON%Don't mind the bees 'round the top, they'll scurry when you come, but if you scurry when they scurry, they'll scurry after ya. Strange little gits.%SPEECH_OFF%"
@@ -50105,8 +50105,8 @@ local pairs = [
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Compensation + "[/color] Crowns"
         mode = "pattern"
-        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
-        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+        en = "You spend <v:val_tag> Crowns"
+        es = "Pagas <v> Coronas"
     }
     {
         en = "%townImage%Surveying the damage, you agree to compensate the businessman. But this isn't your fault, it's the wildman's. You dock his pay: for some time to come, the mercenary's earnings will be halved. Furthermore, you take what earnings he's made and hand them over to the shop owner. It doesn't even begin to cover the damages, but it's a start. One man is left happy, and another quite disgruntled.\n\nYou tell the wild cretin that now he'll think twice about smearing shit all over someone else's walls. But the wildman doesn't seem to understand you. He just understands that the gold he once owned has been given to someone else, and he eyes its departure with sadness and bottled anger."
@@ -50125,8 +50125,8 @@ local pairs = [
     {
         // text = _event.m.Wildman.getName() + " is now paid [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Wildman.getDailyCost() + "[/color] crowns a day"
         mode = "pattern"
-        en = "<_event.m.Swordmaster.getName()> is now paid <_event.m.Swordmaster.getDailyCost()> crowns a day"
-        es = "<_event.m.Swordmaster.getName()> ahora cobra <_event.m.Swordmaster.getDailyCost()> coronas al día"
+        en = "<actor:str> is now paid <n:int> crowns a day"
+        es = "<actor:t> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_141.png[/img]While leaving town, you hear a bark over your shoulder. But it is from no dog: you turn 'round to find a number of militiamen converging on the road, fanning out from homes and shops. They say you did that businessman wrong and they won't be having your kind in a place like this no more. You can either pay up right now, or they'll take it from you by force."
