@@ -33346,7 +33346,7 @@ local pairs = [
         // text = _event.m.Swordmaster.getName() + " is now paid " + _event.m.Swordmaster.getDailyCost() + " crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\aging_swordmaster_preview_event.nut
     {
@@ -45376,7 +45376,7 @@ local pairs = [
         // text = _event.m.Greedy.getName() + " is now paid " + _event.m.Greedy.getDailyCost() + " crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_64.png[/img]\x7bYou decline %bro%'s request. He purses his lips, wrings his hands, then nods, turns and leaves. The silence is a bit harsh, but the message well received: he ain't a happy man. | Declining %bro%'s request leads to a sudden outburst.%SPEECH_ON%Well, fark this shit. I'll still fight fer ya, but don't expect the best out of me!%SPEECH_OFF%You nod, but tell him he'd be dead without putting forth his best, so you'll get what you want regardless. | %bro% winces when you decline the suggestion.%SPEECH_ON%Alright then, I see how this place is run. In we go, out we go. No matter to you, right? We're just the pawns you use to get what you want. That's fine. That's absolutely fine.%SPEECH_OFF%He turns and leaves. You get the feeling it is not at all 'fine.' | You tell %bro% that you do not agree with his estimations of how much he should get paid. He responds with a few swears with an estimated volume of 'loud.' When he's finished, he nods.%SPEECH_ON%But that's alright. I get the business. And I'm sure you understand that you get why I must look after the business that is myself, too.%SPEECH_OFF% | %bro% presses for more pay, but you put your foot down.%SPEECH_ON%You'll get what we agreed upon, no more.%SPEECH_OFF%He nods and then slowly back out of the tent.%SPEECH_ON%As you say, sir.%SPEECH_OFF%\x7d"
@@ -47091,7 +47091,7 @@ local pairs = [
         // text = bro.getName() + " is now paid " + bro.getDailyCost() + " crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_05.png[/img]You look the men over. They are solemn creatures, not the ones you last saw grinning and laughing over their latest victory or triumph. While you can't yet afford to get them more men, there really is no need to cut their pay.%SPEECH_ON%I appreciate the selflessness and bravery it must've took to suggest such a thing, but I cannot possibly consider myself a man of honor and grant you this request. Your savings shall remain untouched.%SPEECH_OFF%"
@@ -47176,7 +47176,7 @@ local pairs = [
         // text = _event.m.Noble.getName() + " is now paid " + _event.m.Noble.getDailyCost() + " crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     {
         en = "Got a pay raise"
@@ -48416,7 +48416,7 @@ local pairs = [
         // text = _event.m.Sellsword.getName() + " is now paid " + _event.m.Sellsword.getDailyCost() + " crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     {
         en = "sellsword"
@@ -50126,7 +50126,7 @@ local pairs = [
         // text = _event.m.Wildman.getName() + " is now paid [color=" + this.Const.UI.Color.NegativeEventValue + "]" + _event.m.Wildman.getDailyCost() + "[/color] crowns a day"
         mode = "pattern"
         en = "<actor:str> is now paid <n:int> crowns a day"
-        es = "<actor:t> ahora cobra <n> coronas al día"
+        es = "<actor> ahora cobra <n> coronas al día"
     }
     {
         en = "[img]gfx/ui/events/event_141.png[/img]While leaving town, you hear a bark over your shoulder. But it is from no dog: you turn 'round to find a number of militiamen converging on the road, fanning out from homes and shops. They say you did that businessman wrong and they won't be having your kind in a place like this no more. You can either pay up right now, or they'll take it from you by force."
