@@ -101,3 +101,14 @@ siendo de `rosetta.py` (upstream, no parcheado en el fichero); el workaround
 vive enteramente en `es_pack/tools/extract_wrapper.py` como monkeypatch en
 memoria, y debe usarse en toda regeneracion futura hasta que se resuelva
 upstream.
+
+## Build v0.1.0
+
+Primer build completo con wrapper del mod independiente segun el modelo oficial
+de upstream (registro con Modern Hooks, require de mod_rosetta, include de pares,
+activate(es) explicito).
+
+- Distributable: 12325 pares (dist >= 10000 requerido)
+- Work-in-progress: 957 pares
+- Drop: 2150 pares
+- Zip generado: `mod_rosetta_base_es_1.5.1.8-1.zip`
