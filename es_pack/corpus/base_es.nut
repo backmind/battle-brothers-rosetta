@@ -25748,14 +25748,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + "\'s " + this.Const.Strings.BodyPartName[_hitInfo.BodyPart] + " is hit for [b]" + this.Math.floor(damage) + "[/b] damage and suffers " + injury.getNameOnly() + "!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)>'s <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]> is hit for [b]<this.Math.floor(damage)>[/b] damage and suffers <injury.getNameOnly()>!"
-        es = "¡<this.Const.UI.getColorizedEntityName(this)> ha recibido [b]<this.Math.floor(damage)>[/b] de daño en su <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]> y sufre <injury.getNameOnly()>!"
+        en = "<actor:str_tag>'s <part:str> is hit for [b]<dmg:int>[/b] damage and suffers <injury:str>!"
+        es = "¡<actor> ha recibido [b]<dmg>[/b] de daño en su <part:t> y sufre <injury:t>!"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + "\'s " + this.Const.Strings.BodyPartName[_hitInfo.BodyPart] + " is hit for [b]" + this.Math.floor(damage) + "[/b] damage");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)>'s <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]> is hit for [b]<this.Math.floor(damage)>[/b] damage"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha recibido  [b]<this.Math.floor(damage)>[/b] de daño en su <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]>"
+        en = "<actor:str_tag>'s <part:str> is hit for [b]<dmg:int>[/b] damage"
+        es = "<actor> ha recibido  [b]<dmg>[/b] de daño en su <part:t>"
     }
     {
         en = "accessory"
@@ -25772,8 +25772,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this) + " discovered!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> discovered!"
-        es = "¡<this.Const.UI.getColorizedEntityName(this)> descubierto!"
+        en = "<actor:str_tag> discovered!"
+        es = "¡<actor> descubierto!"
     }
     {
         // if (!this.hasSprite("injury"))
@@ -25784,8 +25784,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " has rallied");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has rallied"
-        es = "¡<this.Const.UI.getColorizedEntityName(this)> ha hecho una arenga!"
+        en = "<actor:str_tag> has rallied"
+        es = "¡<actor> ha hecho una arenga!"
     }
     {
         // this.logDebug(this.getName() + " is unconscious.");
@@ -25802,26 +25802,26 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_killer) + " has killed " + this.Const.UI.getColorizedEntityName(this));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_killer)> has killed <this.Const.UI.getColorizedEntityName(this)>"
-        es = "<this.Const.UI.getColorizedEntityName(_killer)> ha asesinado a <this.Const.UI.getColorizedEntityName(this)>"
+        en = "<killer:str_tag> has killed <victim:str_tag>"
+        es = "<killer> ha asesinado a <victim>"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " has died");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_killer) + " has struck down " + this.Const.UI.getColorizedEntityName(this));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_killer)> has struck down <this.Const.UI.getColorizedEntityName(this)>"
-        es = "<this.Const.UI.getColorizedEntityName(_killer)> ha derribado a <this.Const.UI.getColorizedEntityName(this)>"
+        en = "<killer:str_tag> has struck down <victim:str_tag>"
+        es = "<killer> ha derribado a <victim>"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this) + " is struck down");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> is struck down"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha sido derribado"
+        en = "<actor:str_tag> is struck down"
+        es = "<actor> ha sido derribado"
     }
     {
         // bro.worsenMood(this.Const.MoodChange.BrotherDied, this.getName() + " died in battle");
@@ -25832,8 +25832,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(this) + " has retreated from battle");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has retreated from battle"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha huido de la batalla"
+        en = "<actor:str_tag> has retreated from battle"
+        es = "<actor> ha huido de la batalla"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\tactical\enemies\alp.nut
     {
@@ -26639,8 +26639,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(entity) + " has risen from the dead");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(entity)> has risen from the dead"
-        es = "¡<this.Const.UI.getColorizedEntityName(entity)> se ha levantado de entre los muertos!"
+        en = "<actor:str_tag> has risen from the dead"
+        es = "¡<actor> se ha levantado de entre los muertos!"
     }
     {
         en = "Too few indebted in battle"
@@ -36689,8 +36689,8 @@ local pairs = [
     {
         // text = _event.m.Sacrifice.getName() + " has died"
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         // item.m.Description = "A grisly aspect of Davkul, an ancient power not from this world, and the last remnants of " + _event.m.Sacrifice.getName() + " from whose body it has been fashioned. It shall never break, but instead keep regrowing its scarred skin on the spot.";
@@ -37189,8 +37189,8 @@ local pairs = [
     {
         // text = _event.m.Victim.getName() + " has died"
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         // Text = "[img]gfx/ui/events/event_39.png[/img]{You run toward %otherbro% looking to choke the very life out of him, only for your hands to sift through the flesh like fingers into fog and your momentum sails you into the ground.%SPEECH_ON%Uh, you alright captain?%SPEECH_OFF%Looking back, you see a perfectly healthy %spiderbro% sitting beside the fire. Far off in the distance, something pale and sleek steps back from a tree trunk. When you blink, it\'s gone. You tell the men to mind the perimeter and then return to your tent, shaking your head and pinching your eyes.}",
@@ -37242,8 +37242,8 @@ local pairs = [
     {
         // text = _event.m.Addict.getName() + " has died"
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         en = "[img]gfx/ui/events/event_39.png[/img]\x7bYou rush forward and go to lift the man's head up only for it to be a jug tied to a spear. Stepping back, you bump into %addict% who is sorting the inventory.%SPEECH_ON%Captain, you doing alright?%SPEECH_OFF%Nodding, you ask him how the stores of potions are doing. He grins.%SPEECH_ON%All accounted for. Should I count again?%SPEECH_OFF%You tell him to count something else and head to your tent for a drink. Turning around, a pale figure shifts away from one of the crates. You draw your sword and chase after it only to find a sheet billowing in the wind.\x7d"
@@ -45527,8 +45527,8 @@ local pairs = [
     {
         // text = _event.m.HedgeKnight2.getName() + " has died"
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         // text = _event.m.HedgeKnight1.getName() + " suffers " + injury.getNameOnly()
@@ -46342,8 +46342,8 @@ local pairs = [
     {
         // text = _event.m.Killer.getName() + " has died"
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)> has died"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha muerto"
+        en = "<actor:str_tag> has died"
+        es = "<actor> ha muerto"
     }
     {
         // _event.m.OtherGuy1.improveMood(2.0, "Got satisfaction with " + _event.m.Killer.getNameOnly() + "\'s hanging");
@@ -51258,14 +51258,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + "\'s " + this.getName() + " is hit for [b]" + this.Math.floor(_damage) + "[/b] damage and has been destroyed!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this.getContainer().getActor())>'s <this.getName()> is hit for [b]<this.Math.floor(_damage)>[/b] damage and has been destroyed!"
-        es = "¡<this.getName()> de <this.Const.UI.getColorizedEntityName(this.getContainer().getActor())> ha recibido [b]<this.Math.floor(_damage)>[/b] de daño y ha sido destruido!"
+        en = "<actor:str_tag>'s <item:str> is hit for [b]<dmg:int>[/b] damage and has been destroyed!"
+        es = "¡<item:t> de <actor> ha recibido [b]<dmg>[/b] de daño y ha sido destruido!"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(this.getContainer().getActor()) + "\'s " + this.getName() + " is hit for [b]" + this.Math.floor(_damage) + "[/b] damage");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(this)>'s <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]> is hit for [b]<this.Math.floor(damage)>[/b] damage"
-        es = "<this.Const.UI.getColorizedEntityName(this)> ha recibido  [b]<this.Math.floor(damage)>[/b] de daño en su <this.Const.Strings.BodyPartName[_hitInfo.BodyPart]>"
+        en = "<actor:str_tag>'s <part:str> is hit for [b]<dmg:int>[/b] damage"
+        es = "<actor> ha recibido  [b]<dmg>[/b] de daño en su <part:t>"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\items\armor\barbarians\animal_hide_armor.nut
     {
@@ -51659,8 +51659,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " heals for " + healthAdded + " points");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(actor)> heals for <healthAdded> points"
-        es = "<this.Const.UI.getColorizedEntityName(actor)> sana <healthAdded> puntos de vida"
+        en = "<actor:str_tag> heals for <hp:int> points"
+        es = "<actor> sana <hp> puntos de vida"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\items\armor\light_scale_armor.nut
     {
@@ -57790,8 +57790,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + "\'s " + this.getName() + " has broken!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(actor)>'s <this.getName()> has broken!"
-        es = "¡<this.getName()> de <this.Const.UI.getColorizedEntityName(actor)> se ha roto!"
+        en = "<actor:str_tag>'s <item:str> has broken!"
+        es = "¡<item:t> de <actor> se ha roto!"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\items\weapons\winged_mace.nut
     {
@@ -58993,14 +58993,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " eats  Strange Mushrooms");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(user)> eats  Strange Mushrooms"
-        es = "<this.Const.UI.getColorizedEntityName(user)> come Hongos Extraños"
+        en = "<actor:str_tag> eats  Strange Mushrooms"
+        es = "<actor> come Hongos Extraños"
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " gives Strange Mushrooms to " + this.Const.UI.getColorizedEntityName(user));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> gives Strange Mushrooms to <this.Const.UI.getColorizedEntityName(user)>"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> le da Hongos Extraños a <this.Const.UI.getColorizedEntityName(user)>"
+        en = "<giver:str_tag> gives Strange Mushrooms to <receiver:str_tag>"
+        es = "<giver> le da Hongos Extraños a <receiver>"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\break_ally_free_skill.nut
     {
@@ -59035,14 +59035,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " breaks free (Chance: " + toHit + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> breaks free (Chance: <toHit>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> se libera (Probabilidad: <toHit>, Tirada: <rolled>)"
+        en = "<actor:str_tag> breaks free (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> se libera (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " fails to break free (Chance: " + toHit + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> fails to break free (Chance: <toHit>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> no logra liberarse (Probabilidad: <toHit>, Tirada: <rolled>)"
+        en = "<actor:str_tag> fails to break free (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> no logra liberarse (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\cascade_skill.nut
     {
@@ -59107,20 +59107,20 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " charges and is repelled");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_entity)> charges and is repelled"
-        es = "<this.Const.UI.getColorizedEntityName(_entity)> carga y es repelido"
+        en = "<actor:str_tag> charges and is repelled"
+        es = "<actor> carga y es repelido"
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " charges and stuns " + this.Const.UI.getColorizedEntityName(victim));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_entity)> charges and stuns <this.Const.UI.getColorizedEntityName(victim)>"
-        es = "<this.Const.UI.getColorizedEntityName(_entity)> carga y aturde a <this.Const.UI.getColorizedEntityName(victim)>"
+        en = "<actor:str_tag> charges and stuns <victim:str_tag>"
+        es = "<actor> carga y aturde a <victim>"
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_entity) + " charges");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_entity)> charges"
-        es = "<this.Const.UI.getColorizedEntityName(_entity)> carga"
+        en = "<actor:str_tag> charges"
+        es = "<actor> carga"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\charm_skill.nut
     {
@@ -59130,20 +59130,20 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his resolve");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(target)> resists being charmed thanks to his resolve"
-        es = "<this.Const.UI.getColorizedEntityName(target)> resiste ser encantado gracias a su resolución."
+        en = "<actor:str_tag> resists being charmed thanks to his resolve"
+        es = "<actor> resiste ser encantado gracias a su resolución."
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " resists being charmed thanks to his unnatural physiology");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(target)> resists being charmed thanks to his unnatural physiology"
-        es = "<this.Const.UI.getColorizedEntityName(target)> resiste ser encantado gracias a su fisiología antinatural."
+        en = "<actor:str_tag> resists being charmed thanks to his unnatural physiology"
+        es = "<actor> resiste ser encantado gracias a su fisiología antinatural."
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(target) + " is charmed");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(target)> is charmed"
-        es = "<this.Const.UI.getColorizedEntityName(target)> es encantado."
+        en = "<actor:str_tag> is charmed"
+        es = "<actor> es encantado."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\chop.nut
     {
@@ -59217,14 +59217,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_data.User) + " causes a flesh cradle to explode!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_data.User)> causes a flesh cradle to explode!"
-        es = "¡<this.Const.UI.getColorizedEntityName(_data.User)> hace explotar a una cuna de carne!"
+        en = "<actor:str_tag> causes a flesh cradle to explode!"
+        es = "¡<actor> hace explotar a una cuna de carne!"
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_data.User) + " causes a corpse to explode!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_data.User)> causes a corpse to explode!"
-        es = "¡<this.Const.UI.getColorizedEntityName(_data.User)> hace explotar a un cadáver!"
+        en = "<actor:str_tag> causes a corpse to explode!"
+        es = "¡<actor> hace explotar a un cadáver!"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\corpse_hurl_skill.nut
     {
@@ -59238,8 +59238,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " hurls a corpse");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(user)> hurls a corpse"
-        es = "<this.Const.UI.getColorizedEntityName(user)> lanza un cadáver"
+        en = "<actor:str_tag> hurls a corpse"
+        es = "<actor> lanza un cadáver"
     }
     {
         en = "A Fleshy Corpse"
@@ -59298,8 +59298,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " struck a blow that leaves " + this.Const.UI.getColorizedEntityName(_targetTile.getEntity()) + " dazed");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> struck a blow that leaves <this.Const.UI.getColorizedEntityName(_targetTile.getEntity())> dazed"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> asestó un golpe que dejó 'Atontado' a <this.Const.UI.getColorizedEntityName(_targetTile.getEntity())>"
+        en = "<actor:str_tag> struck a blow that leaves <victim:str_tag> dazed"
+        es = "<actor> asestó un golpe que dejó 'Atontado' a <victim>"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\darkflight.nut
     {
@@ -59309,8 +59309,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " uses Darkflight");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses Darkflight"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa Vuelo oscuro"
+        en = "<actor:str_tag> uses Darkflight"
+        es = "<actor> usa Vuelo oscuro"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\deathblow_skill.nut
     {
@@ -59405,14 +59405,14 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(user) + " drinks Antidote");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(user)> drinks Antidote"
-        es = "<this.Const.UI.getColorizedEntityName(user)> bebe Antídoto"
+        en = "<actor:str_tag> drinks Antidote"
+        es = "<actor> bebe Antídoto"
     }
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " gives Antidote to " + this.Const.UI.getColorizedEntityName(user));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> gives Antidote to <this.Const.UI.getColorizedEntityName(user)>"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> le da Antídoto a <this.Const.UI.getColorizedEntityName(user)>"
+        en = "<giver:str_tag> gives Antidote to <receiver:str_tag>"
+        es = "<giver> le da Antídoto a <receiver>"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\drums_of_war_skill.nut
     {
@@ -59427,8 +59427,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " explodes into shrapnel of bone!");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> explodes into shrapnel of bone!"
-        es = "¡<this.Const.UI.getColorizedEntityName(_user)> explota en metralla de hueso!"
+        en = "<actor:str_tag> explodes into shrapnel of bone!"
+        es = "¡<actor> explota en metralla de hueso!"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\fake_drink_night_vision_skill.nut
     {
@@ -59446,8 +59446,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " drinks Night Owl Elixir");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> drinks Night Owl Elixir"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> bebe el elixir Búho Nocturno"
+        en = "<actor:str_tag> drinks Night Owl Elixir"
+        es = "<actor> bebe el elixir Búho Nocturno"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\actives\fire_handgonne_skill.nut
     {
@@ -59500,8 +59500,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(_user) + " fires a shell high in the air");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> fires a shell high in the air"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> dispara un proyectil a gran altura"
+        en = "<actor:str_tag> fires a shell high in the air"
+        es = "<actor> dispara un proyectil a gran altura"
     }
     {
         en = "A mortar shell impacts on the battlefield"
@@ -64089,8 +64089,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " heals for " + this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), hitpointsHealed) + " points");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(actor)> heals for <healthAdded> points"
-        es = "<this.Const.UI.getColorizedEntityName(actor)> sana <healthAdded> puntos de vida"
+        en = "<actor:str_tag> heals for <hp:int> points"
+        es = "<actor> sana <hp> puntos de vida"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\effects\net_effect.nut
     {
@@ -65630,8 +65630,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.log(this.Const.UI.getColorizedEntityName(actor) + " heals for " + this.Math.min(actor.getHitpointsMax() - actor.getHitpoints(), this.Math.round(_damageInflictedHitpoints * 1.0)) + " points");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(actor)> heals for <healthAdded> points"
-        es = "<this.Const.UI.getColorizedEntityName(actor)> sana <healthAdded> puntos de vida"
+        en = "<actor:str_tag> heals for <hp:int> points"
+        es = "<actor> sana <hp> puntos de vida"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\skill.nut
     {
@@ -65759,38 +65759,38 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and the shot goes astray and hits " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and the shot goes astray and hits <this.Const.UI.getColorizedEntityName(_targetEntity)> (Chance: <this.Math.min(95, this.Math.max(5, toHit))>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> y el tiro se desvía y acierta a <this.Const.UI.getColorizedEntityName(_targetEntity)> (Probabilidad: <this.Math.min(95, this.Math.max(5, toHit))>, Tirada: <rolled>)"
+        en = "<actor:str_tag> uses <weapon:str> and the shot goes astray and hits <target:str_tag> (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> usa <weapon:t> y el tiro se desvía y acierta a <target> (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and the shot goes astray and misses " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and the shot goes astray and misses <this.Const.UI.getColorizedEntityName(_targetEntity)> (Chance: <this.Math.min(95, this.Math.max(5, toHit))>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> y el tiro se desvía y no alcanza a <this.Const.UI.getColorizedEntityName(_targetEntity)> (Probabilidad: <this.Math.min(95, this.Math.max(5, toHit))>, Tirada: <rolled>)"
+        en = "<actor:str_tag> uses <weapon:str> and the shot goes astray and misses <target:str_tag> (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> usa <weapon:t> y el tiro se desvía y no alcanza a <target> (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and the shot goes astray and hits " + this.Const.UI.getColorizedEntityName(_targetEntity));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and the shot goes astray and hits <this.Const.UI.getColorizedEntityName(_targetEntity)>"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> y el tiro se desvía y acierta a <this.Const.UI.getColorizedEntityName(_targetEntity)>"
+        en = "<actor:str_tag> uses <weapon:str> and the shot goes astray and hits <target:str_tag>"
+        es = "<actor> usa <weapon:t> y el tiro se desvía y acierta a <target>"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and hits " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and hits <this.Const.UI.getColorizedEntityName(_targetEntity)> (Chance: <this.Math.min(95, this.Math.max(5, toHit))>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> y acierta a <this.Const.UI.getColorizedEntityName(_targetEntity)> (Probabilidad: <this.Math.min(95, this.Math.max(5, toHit))>, Tirada: <rolled>)"
+        en = "<actor:str_tag> uses <weapon:str> and hits <target:str_tag> (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> usa <weapon:t> y acierta a <target> (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and misses " + this.Const.UI.getColorizedEntityName(_targetEntity) + " (Chance: " + this.Math.min(95, this.Math.max(5, toHit)) + ", Rolled: " + rolled + ")");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and misses <this.Const.UI.getColorizedEntityName(_targetEntity)> (Chance: <this.Math.min(95, this.Math.max(5, toHit))>, Rolled: <rolled>)"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> sobre <this.Const.UI.getColorizedEntityName(_targetEntity)> y falla (Probabilidad: <this.Math.min(95, this.Math.max(5, toHit))>, Tirada: <rolled>)"
+        en = "<actor:str_tag> uses <weapon:str> and misses <target:str_tag> (Chance: <chance:int>, Rolled: <rolled:int>)"
+        es = "<actor> usa <weapon:t> sobre <target> y falla (Probabilidad: <chance>, Tirada: <rolled>)"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(_user) + " uses " + this.getName() + " and hits " + this.Const.UI.getColorizedEntityName(_targetEntity));
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(_user)> uses <this.getName()> and hits <this.Const.UI.getColorizedEntityName(_targetEntity)>"
-        es = "<this.Const.UI.getColorizedEntityName(_user)> usa <this.getName()> y acierta a <this.Const.UI.getColorizedEntityName(_targetEntity)>"
+        en = "<actor:str_tag> uses <weapon:str> and hits <target:str_tag>"
+        es = "<actor> usa <weapon:t> y acierta a <target>"
     }
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(user) + " has destroyed " + this.Const.UI.getColorizedEntityName(targetEntity) + "\'s shield");
@@ -65801,8 +65801,8 @@ local pairs = [
     {
         // this.Tactical.EventLog.logEx(this.Const.UI.getColorizedEntityName(user) + " has hit " + this.Const.UI.getColorizedEntityName(targetEntity) + "\'s shield for 1 damage");
         mode = "pattern"
-        en = "<this.Const.UI.getColorizedEntityName(user)> has hit <this.Const.UI.getColorizedEntityName(targetEntity)>'s shield for 1 damage"
-        es = "<this.Const.UI.getColorizedEntityName(user)> golpea el escudo de <this.Const.UI.getColorizedEntityName(targetEntity)> y le cause 1 de daño"
+        en = "<actor:str_tag> has hit <target:str_tag>'s shield for 1 damage"
+        es = "<actor> golpea el escudo de <target> y le cause 1 de daño"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\skills\special\double_grip.nut
     {
