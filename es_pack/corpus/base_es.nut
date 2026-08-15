@@ -69179,7 +69179,7 @@ local pairs = [
     }
     {
         en = "The number of kills this character had during the battle."
-        es = "Haz clic aquí para cambiar el nombre y título del personaje."
+        es = "El número de enemigos que este personaje ha matado durante la batalla."
     }
     {
         en = "Experience Gained"
