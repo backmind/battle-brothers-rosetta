@@ -909,7 +909,9 @@ El juego ha recibido parches desde 1.5.1.8 (junio 2026). El pack v0.1.0 seguirá
 
 ### Task 14: Pieza JS (menú y UI construida en JavaScript)
 
-Insumo previo (USER, sin bloqueo para Fases 0-3): descargar de NexusMods la última versión de la traducción de elgranfoca ("Battle Brothers - Traduccion completa al Castellano", 3.0.5.02082026 o posterior) y guardarla FUERA del repo (p. ej. `D:\GOG\Battle Brothers\!Downloads\`). No se commitea: es trabajo de terceros y el permiso se gestiona en Task 15. Sirve para esta task (carpeta js) y para el re-bootstrap de Task 13/15.
+Insumo previo (USER, ya resuelto 2026-08-15): la última versión descargada está en `D:\GOG\Battle Brothers\!Downloads\Traduccion castellano Battle Brothers 640 3.0.5.02082026 2026-08-02T04-14Z s6dELHgGQ.zip`. No se commitea: es trabajo de terceros y el permiso se gestiona en Task 15. Sirve para esta task (carpeta js) y para el re-bootstrap de Task 13/15.
+
+AVISO IMPORTANTE para el re-bootstrap (Task 13/15): el corpus rescatado NO salió de esta 3.0.5 sino de una versión anterior a la que el usuario aplicó ETL considerable (corrección de UTF corrupto y compatibilidad Rosetta; hay detalles en sus comentarios de NexusMods). La 3.0.5 es cruda: cualquier string que se importe de ella necesita pasar por la misma limpieza UTF, y sus traducciones solo deben RELLENAR huecos (strings sin traducir en el corpus), nunca sobreescribir pares ya curados.
 
 - [ ] Localizar el `.dat` con la carpeta `js` traducida que el usuario ya creó (mencionado en Nexus como `zdata_011_es`): `es -r "zdata.*es" | head` y `es -r "\.dat$" bbros | head` (Everything CLI). Si aparece: archivarlo en la rama `legacy-es-pipeline` (`git add -f`) y documentar en `es_pack/README.md` cómo instalarlo como descarga aparte.
 - [ ] Si no aparece: regenerarlo empaquetando la carpeta `ui/` (js) de la descarga de elgranfoca en un zip que solo contenga `ui/...`.
