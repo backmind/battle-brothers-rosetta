@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv\\Scripts\\activate)",
+      "Bash(python -m pytest:*)",
+      "Bash(python -c:*)",
+      "Bash(uv pip install:*)",
+      "Bash(python -m rosetta_db:*)",
+      "Bash(python:*)",
+      "Bash(del translations.db)",
+      "Bash(.venvScriptsactivate)",
+      "Bash(cmd /c \".venv\\\\Scripts\\\\activate && python create_po.py \"\"D:\\\\GOG\\\\Battle Brothers\\\\!Downloads\\\\bbros\\\\bin\\\\comparer\\\\original\\\\scripts\"\" \"\"D:\\\\GOG\\\\Battle Brothers\\\\!Downloads\\\\bbros\\\\bin\\\\comparer\\\\spanish_tr\\\\scripts\"\"\")",
+      "Bash(uv run python:*)",
+      "Bash(del check_counts.py)"
+    ]
+  }
+}

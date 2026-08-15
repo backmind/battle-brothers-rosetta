@@ -114,7 +114,7 @@ Table.extend(def, {
         return true;
     }
 
-    tagsRe = regexp(@"\[img[^\]]*\][^\[]+\[/img\w*\]|\[[^\]]+]|%\w+%") // img + imgtooltip + bbcode + %name%
+    tagsRe = regexp(@"\[img[^\]]*\][^\[]+\[/img\w*\]|\[[^\]<>]+]|%\w+%") // img + imgtooltip + bbcode (without labels) + %name%
     patternKeyRe = regexp(@"([\w!-;?-~]*)<\w+:(\w+)>([\w!-;?-~]*)") // drop partial words adjacent to patterns
     stop = (function () {
         local set = {};
@@ -141,8 +141,8 @@ Table.extend(def, {
         yield "";
     }
 
-    patternRe = regexp(@"([^<]+)|<(\w+):(\w+)>")
-    placesRe = regexp(@"<(\w+)(?::(\w+))?>")
+    patternRe = regexp(@"([^<]+)|<([\w.]+):(\w+)>")
+    placesRe = regexp(@"<([\w.]+)(?::(\w+))?>")
     subRes = (function () {
         local open = @"\[[^\]]+\]", close = @"\[/[^\]]+\]";
         local res = {
@@ -165,7 +165,9 @@ Table.extend(def, {
         return rule;
     }
     function parsePattern(_pat) {
-        return Re.all(_pat, patternRe).map(
+        // Strip BBCode tags before parsing patterns to expose labels
+        local cleaned_pat = _stripTags(_pat);
+        return Re.all(cleaned_pat, patternRe).map(
             @(p) p[0] && p[0] != "" ? p[0] : {name = p[1], sub = p[2]})
     }
     RuleErr = Log.with({prefix = " in ", filter = @(k, _) k.len() == 2 || k == "mode" || k == "plural"})
@@ -173,6 +175,9 @@ Table.extend(def, {
         local labels = {};
         foreach (p in _rule.parts)
             if (typeof p == "table") labels[p.name] <- true;
+        // Also extract untyped labels from original English (e.g. color values in BBCode)
+        foreach (i, p in Re.all(_rule.en, placesRe))
+            labels[p[0]] <- true;
 
         if ("plural" in _rule && !(_rule.plural in labels)) {
             throw "Plural label is not in 'en'" + RuleErr.pp(_rule);
@@ -393,7 +398,7 @@ def.addLang("ru", {
 def.addLang("es", {
     name = "Español"
     function detect() {
-        return ::Const.Strings.EntityName[0] == "???";
+        return false;  // Activation handled by base_es.nut
     }
     plural = {
         forms = [1 2]
@@ -424,4 +429,5 @@ local mod = def.mh <- ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_msu >= 1.6.0", "stdlib >= 2.5");
 
 ::include("rosetta/hooks");
-::include("rosetta/pack_ru");
+// ::include("rosetta/pack_ru");
+::include("rosetta/base_es");

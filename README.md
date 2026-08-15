@@ -1,88 +1,411 @@
 # Rosetta Translations Framework
 
-This is a framework mod aimed to facilitate translating Battle Brother mods to various languages. Design goals:
+A framework for translating Battle Brothers mods and game files to various languages.
 
-- be easy to use and maintain
-- work on top of unmodified mods
-- no central infrastructure required
-- untie translation cycle from mod release cycle
-- flexibility of packaging: bundle with mod, separate mod, translations pack
+**Two approaches available:**
 
-Currently all the translation is done in squirrel by intercepting strings either at the squirrel/js border or earlier if that is easier to implement.
+1. **Runtime Rosetta** - Intercepts strings at runtime (original approach)
+2. **Rosetta DB** - Versioned database with CLI tools for batch extraction and compilation (new)
 
-<!-- MarkdownTOC autolink="true" levels="1,2,3" autoanchor="false" start="here" -->
+<!-- MarkdownTOC autolink="true" levels="1,2,3" autoanchor="false" -->
 
-- [Using Translations](#using-translations)
-- [Compatibility](#compatibility)
-- [Writing Translations](#writing-translations)
-    - [Translation Mod](#translation-mod)
-        - [Single-File](#single-file)
-        - [Multi-File](#multi-file)
-    - [Extractor](#extractor)
-    - [Extractor Usage](#extractor-usage)
-    - [More Examples](#more-examples)
+- [Quick Start](#quick-start)
+- [Rosetta DB - Versioned Translation Database](#rosetta-db---versioned-translation-database)
+    - [Installation](#installation)
+    - [Workflow Overview](#workflow-overview)
+    - [CLI Commands](#cli-commands)
+        - [extract](#extract---extract-strings-from-nut-files)
+        - [status](#status---show-database-status)
+        - [diff](#diff---compare-versions)
+        - [stats](#stats---translation-statistics)
+        - [compile](#compile---generate-translation-file)
+        - [auto-translate](#auto-translate---auto-translate-using-ai)
+        - [export](#export---export-to-pojson-for-translation-platforms)
+        - [import](#import---import-translations-from-po-file)
+    - [Database Structure](#database-structure)
+- [Runtime Rosetta](#runtime-rosetta)
+    - [Using Translations](#using-translations)
+    - [Writing Translations](#writing-translations)
+    - [Translation Mod Structure](#translation-mod-structure)
+    - [Legacy Extractor](#legacy-extractor)
+- [Translation Format Reference](#translation-format-reference)
 - [For Mod Authors](#for-mod-authors)
+- [Compatibility](#compatibility)
 - [Limitations](#limitations)
 - [Feedback](#feedback)
 
 <!-- /MarkdownTOC -->
 
 
-# Using Translations
+# Quick Start
 
-For translation to work you need several things:
+**For translating game files (base game + DLCs):**
 
-1. A translation of the game installed for your language.
-2. A mod and its dependencies installed.
-3. Rosetta and its dependencies installed.
-4. Translation of the mod installed (if it's included into the mod then this is covered).
+```bash
+# 1. Decrypt game .cnut files to .nut (requires external tool like nutcracker)
+nutcracker decrypt game_cnut/ game_nut/
 
-Translation is simply a squirrel file, which could be shipped as a separate mod, bundled with the original mod or bundled with other translations.
+# 2. Extract strings to database
+python -m rosetta_db extract game_nut/ --version 1.5.1.7
 
-When a **new version of a mod** is released you can update it right away, no need to wait for a new translated version or something. Old translation will mostly work, only new and changed strings will go untranslated. This works particularly well with bugfix releases, will never need to wait on those anymore.
+# 3. Check status
+python -m rosetta_db status
 
-If in trouble setting this up contact the translation author. The mod author might not be even aware of it being translated.
+# 4. Auto-translate (requires API keys in .env)
+python -m rosetta_db auto-translate 1.5.1.7 ru --engine claude35
+
+# 5. Compile to .nut file
+python -m rosetta_db compile 1.5.1.7 ru -o rosetta/pack_ru.nut
+```
+
+**For translating mods (legacy approach):**
+
+```bash
+python rosetta.py -lru path/to/mod/ > mod_translation_ru.nut
+```
 
 
-# Compatibility
+# Rosetta DB - Versioned Translation Database
 
-Should be compatible with everything. It's ok to add, update or remove it midgame. Same goes for any rosetta based translations.
+A database-backed system for managing translations across game versions. Features:
+
+- **Version tracking** - Detects added/modified/removed strings between versions
+- **Batch processing** - Extract thousands of strings from directory hierarchies
+- **Translation status** - Track pending/auto/reviewed translations
+- **Auto-translation** - Claude 3.5 Sonnet, Yandex Translate (with caching)
+- **Platform integration** - Export to PO/JSON for Weblate/Crowdin
 
 
-# Writing Translations
+## Installation
 
-A Rosetta-based translation is a squirrel script registering (english, target language) pairs to be replaced during runtime. These could be literal strings, patterns and plural replacements as you can see here:
+Requirements: Python 3.12+
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Or manually:
+pip install click polib requests
+
+# For auto-translation, set up API keys:
+cp .env.sample .env
+# Edit .env with your ANTHROPIC_TOKEN and/or YANDEX credentials
+```
+
+
+## Workflow Overview
+
+```
+[Encrypted .cnut files]
+         │
+         ▼ (external decrypt tool)
+[Decrypted .nut files]
+         │
+         ▼ python -m rosetta_db extract
+[SQLite Database: translations.db]
+         │
+         ├──▶ python -m rosetta_db auto-translate
+         │              │
+         │              ▼
+         │    [Translations in DB]
+         │
+         ▼ python -m rosetta_db compile
+[pack_<lang>.nut file]
+         │
+         ▼ (zip packaging)
+[Distributable mod]
+```
+
+
+## CLI Commands
+
+### extract - Extract strings from .nut files
+
+```bash
+python -m rosetta_db extract <directory> --version <version> [-V]
+
+# Examples:
+python -m rosetta_db extract game_decrypted/ --version 1.5.1.7
+python -m rosetta_db extract game_decrypted/ --version 1.5.1.7 -V  # verbose
+
+# Options:
+#   -v, --version  Game version identifier (required)
+#   -V, --verbose  Show detailed progress
+```
+
+Recursively processes all `.nut` files in the directory hierarchy. Automatically skips rosetta/test/mock files.
+
+**Output:**
+```
+Extracting from game_decrypted (version 1.5.1.7)...
+[1/247] scripts/skills/actives/possess_undead.nut
+[2/247] scripts/items/weapons/sword.nut
+...
+
+Extraction complete:
+  Added:     3847
+  Modified:  0
+  Unchanged: 0
+  Removed:   0
+```
+
+
+### status - Show database status
+
+```bash
+python -m rosetta_db status
+
+# Output:
+Database: C:\path\to\translations.db
+Total active strings: 3847
+
+Versions extracted:
+  1.5.1.7: 3847 strings (2024-01-15 10:30:00)
+  1.5.1.6: 3820 strings (2024-01-10 14:20:00)
+```
+
+
+### diff - Compare versions
+
+```bash
+python -m rosetta_db diff <from_version> <to_version> [-V]
+
+# Example:
+python -m rosetta_db diff 1.5.1.6 1.5.1.7 -V
+
+# Output:
+Added: 27 strings
+Modified: 5 strings
+Removed: 0 strings
+
+--- Added ---
+  scripts/skills/new_skill.nut::create.m.Description
+    EN: A powerful new ability...
+  ...
+```
+
+
+### stats - Translation statistics
+
+```bash
+python -m rosetta_db stats <version> <lang>
+
+# Example:
+python -m rosetta_db stats 1.5.1.7 ru
+
+# Output:
+Version: 1.5.1.7, Language: ru
+  Total strings:  3847
+  Translated:     3200 (83%)
+  Untranslated:   647
+  Pending review: 50
+  Reviewed:       3150
+```
+
+
+### compile - Generate translation file
+
+```bash
+python -m rosetta_db compile <version> <lang> [-o output] [--stdout]
+
+# Examples:
+python -m rosetta_db compile 1.5.1.7 ru                    # writes to rosetta/pack_ru_compiled.nut
+python -m rosetta_db compile 1.5.1.7 ru -o my_pack.nut     # custom output path
+python -m rosetta_db compile 1.5.1.7 ru --stdout           # print to console
+
+# Options:
+#   -o, --output   Output file path
+#   -a, --author   Author name for metadata (default: "community")
+#   --stdout       Print to stdout instead of file
+```
+
+**Generated format:**
+```squirrel
+// Generated by rosetta_db compiler
+// Version: 1.5.1.7, Language: ru
+// Total pairs: 3200
+
+local def = ::Rosetta;
+local rosetta = {
+    mod = {id = def.ID, version = def.Version}
+    author = "community"
+    lang = "ru"
+}
+local pairs = [
+    // scripts/skills/actives/skill.nut::create.m.Name
+    {
+        en = "Powerful Strike"
+        ru = "Мощный удар"
+    }
+    // scripts/skills/actives/skill.nut::create.m.Description
+    {
+        mode = "pattern"
+        en = "Deals <damage:int> damage"
+        ru = "Наносит <damage> урона"
+    }
+    ...
+]
+def.add(rosetta, pairs);
+```
+
+
+### auto-translate - Auto-translate using AI
+
+```bash
+python -m rosetta_db auto-translate <version> <lang> [OPTIONS]
+
+# Examples:
+python -m rosetta_db auto-translate 1.5.1.7 ru                    # use Claude 3.5 (default)
+python -m rosetta_db auto-translate 1.5.1.7 ru --engine yt        # use Yandex Translate
+python -m rosetta_db auto-translate 1.5.1.7 ru --dry-run          # check without API calls
+python -m rosetta_db auto-translate 1.5.1.7 ru -V                 # verbose progress
+
+# Options:
+#   -e, --engine [claude35|yt]   Translation engine (default: claude35)
+#   -b, --batch-size INTEGER     Strings per API call (default: 50)
+#   -s, --status [pending|auto|reviewed]
+#                                Translation status to set (default: auto)
+#   --dry-run                    Show what would be translated without calling API
+#   -V, --verbose                Show detailed progress
+```
+
+**Dry run example:**
+```
+Dry run for version 1.5.1.7, language ru:
+  Total untranslated: 647
+  Already cached:     203
+  Would call API for: 444
+```
+
+**Translation output:**
+```
+Translating 647 strings with claude35...
+Translating batch 1/13 (50 strings)...
+Translating batch 2/13 (50 strings)...
+...
+
+Translation complete:
+  Translated: 647
+  Skipped:    0 (empty results)
+```
+
+Translations are cached in the database - re-running won't call APIs for already-translated strings.
+
+
+### export - Export to PO/JSON for translation platforms
+
+```bash
+python -m rosetta_db export <version> <lang> [OPTIONS]
+
+# Examples:
+python -m rosetta_db export 1.5.1.7 ru                           # PO format (default)
+python -m rosetta_db export 1.5.1.7 ru -f json                   # JSON format
+python -m rosetta_db export 1.5.1.7 ru -o translations.po        # custom output
+python -m rosetta_db export 1.5.1.7 ru --all                     # include already translated
+python -m rosetta_db export 1.5.1.7 ru --stdout                  # print to console
+
+# Options:
+#   -f, --format [po|json]  Export format (default: po)
+#   -o, --output PATH       Output file path
+#   --all                   Include already translated strings
+#   --stdout                Print to stdout
+```
+
+**PO format (for Weblate):**
+```
+msgctxt "scripts/skills/skill.nut::create.m.Name"
+msgid "Powerful Strike"
+msgstr ""
+
+msgctxt "scripts/skills/skill.nut::create.m.Description"
+msgid "Deals {damage} damage"
+msgstr ""
+```
+
+Pattern placeholders are converted: `<damage:int>` → `{damage}` for translator-friendly display.
+
+
+### import - Import translations from PO file
+
+```bash
+python -m rosetta_db import <po_file> <lang> [OPTIONS]
+
+# Examples:
+python -m rosetta_db import translations_ru.po ru
+python -m rosetta_db import translations_ru.po ru --status reviewed
+
+# Options:
+#   -s, --status [pending|auto|reviewed]
+#                          Translation status to set (default: reviewed)
+```
+
+**Output:**
+```
+Import complete:
+  Imported:  500
+  Skipped:   10 (empty translations)
+  Not found: 5 (strings not in database)
+```
+
+Placeholders are automatically converted back: `{damage}` → `<damage:int>`.
+
+
+## Database Structure
+
+All data is stored in `translations.db` (SQLite). Tables:
+
+| Table | Purpose |
+|-------|---------|
+| `strings` | Extracted strings with file path, context, version tracking |
+| `translations` | Translations per language with status (pending/auto/reviewed) |
+| `version_changes` | Change history between versions |
+| `game_versions` | Metadata for each extracted version |
+| `translations_cache_ru` | Cache for translation API calls (from xt.py) |
+
+
+# Runtime Rosetta
+
+The original approach - intercepts strings at runtime in the game.
+
+
+## Using Translations
+
+For translation to work you need:
+
+1. A translation of the game installed for your language
+2. The mod and its dependencies installed
+3. Rosetta and its dependencies installed
+4. Translation of the mod installed
+
+When a **new version of a mod** is released you can update it right away. Old translation will mostly work, only new and changed strings will go untranslated.
+
+
+## Writing Translations
+
+A Rosetta-based translation is a squirrel script registering (english, target language) pairs:
 
 ```squirrel
-// Skip this file if Rosetta is not installed,
-// useful to make Rosetta an optional dependency when bundling translation into your mod.
+// Skip if Rosetta is not installed
 if (!("Rosetta" in getroottable())) return;
 
-// Provide mod and translation info
 local rosetta = {
-    mod = {id = "mod_necro", version = "0.4.0"} // the translated mod info
-    author = "hackflow"                         // the translation author
-    lang = "ru"                                 // target language, source is presumed to be english
+    mod = {id = "mod_necro", version = "0.4.0"}
+    author = "hackflow"
+    lang = "ru"
 }
-// ... and translation pairs
 local pairs = [
-    // A literal pair
+    // Literal pair
     {
         en = "Proper Necro"
         ru = "Годный Некромант"
     }
-    // Capture names and numbers using patterns
+    // Pattern with captures
     {
         mode = "pattern"
         en = "<actor:str_tag> heals for <hp:int> points"
         ru = "<actor> восстанавливает <hp> ОЗ"
     }
-    // Can use id for longer string
-    {
-        id = "scripts/scenarios/world/necro_scenario.Description"
-        ru = "[p=c][img]gfx/ui/events/event_76.png[/img][/p][p]После многих лет ..."
-    }
-    // Proper language dependent pluralization
+    // Pluralization
     {
         plural = "range"
         en = "Has a range of <range:int_tag> tiles"
@@ -90,218 +413,139 @@ local pairs = [
         n2 = "Имеет дальность в <range> клетки"
         n5 = "Имеет дальность в <range> клеток"
     }
-    ...
 ]
-// Register translation with rosetta
 ::Rosetta.add(rosetta, pairs);
 ```
 
-Then put this file to scripts or include it. See also a [full example](https://github.com/Suor/battle-brothers-mods/blob/master/necro/necro/rosetta_ru.nut).
 
-Since this is just a squirrel code you can split it into several files if you like to. It can also be shipped as a separate mod, be bundled with a mod itself or translations for several mods be bundled together.
+## Translation Mod Structure
 
-
-## Translation Mod
-
-Once you have a translation script you need to include it into a mod. To make the example less abstract we will be translating non-existing hunter mod to spanish. Since we are making a mod it will have a name, let's choose `mod_hunter_es`, which is pretty self-explanatory.
-
-There are several approaches, which would be covered in subsections here. Each section will start with a dir structure layout. Your zip file should include this dir structure exactly like this, i.e. `scripts` dir should be immediately in the zip.
-
-### Single-File
+### Single-File (small mods)
 
 ```
 scripts/
     !mods_preload/
-        mod_hunter_es.nut (translation + optional mod registration)
+        mod_hunter_es.nut
 ```
 
-This will work well for smaller to medium size mods. Simply putting your translation file into `scripts/!mods_preload/mod_hunter_es.nut` will already work, but you won't get any messages about missing dependencies, i.e. rosetta, and won't see a version of your translation in a log. To get that you are recommended to register your mod. To do that prepend `mod_hunter_es.nut` with:
-
-```squirrel
-local def = {
-    ID = "mod_hunter_es"
-    Name = "Hunter Spanish Translation"
-    // Can use any, but matching translated mod version + "-<some-number>" will be more clear.
-    // Here we mean that we are translating mod_hunter 1.2.3 and this is out first attempt on it.
-    // Second edition will be 1.2.3-2 and so on. If mod_hunter updates to 1.3.0 we'll switch to
-    // 1.3.0-1 and continue from there.
-    Version = "1.2.3-1"
-}
-
-local mod = ::Hooks.register(def.ID, def.Version, def.Name);
-mod.require("mod_rosetta >= 0.1.1"); // Set the Rosetta version you were using
-
-// Here we just put the rest of the translation file.
-local rosetta = {
-    mod = {id = "mod_hunter", version = "1.2.3"} // the translated mod info
-    author = "hackflow"                          // the translation author
-    lang = "es"                                  // target language
-}
-local pairs = [
-    ...
-]
-::Rosetta.add(rosetta, pairs);
-```
-
-### Multi-File
+### Multi-File (larger mods)
 
 ```
 mod_hunter_es/
-    config.nut (translation files)
+    config.nut
     events.nut
     skills.nut
 scripts/
     !mods_preload/
-        mod_hunter_es.nut (mod file)
+        mod_hunter_es.nut
 ```
 
-This will work well for medium to bigger size mods. Usualy one will use the extractor script from below not on the entire mod but on its subdirs to generate several translation files:
+
+## Legacy Extractor
+
+For extracting strings from mods without using the database:
 
 ```bash
-mkdir mod_hunter_es
-python rosetta.py -les path/to/mod/mod_hunter/config/ > mod_hunter_es/config.nut
-python rosetta.py -les path/to/mod/mod_hunter/hooks/ > mod_hunter_es/hooks.nut
-python rosetta.py -les path/to/mod/scripts/events/ > mod_hunter_es/events.nut
-python rosetta.py -les path/to/mod/scripts/skills/ > mod_hunter_es/skills.nut
-...
+python rosetta.py [options] <mod-dir> > <output-file>
+
+# Options:
+#   -l<lang>    Target language (default: ru)
+#   -t<engine>  Auto-translate: yt (Yandex), claude35 (Claude)
+#   -v          Verbose output
+
+# Examples:
+python rosetta.py -lru mod_necro/ > necro_ru.nut
+python rosetta.py -lru -tclaude35 mod_necro/ > necro_ru.nut
 ```
 
-The granularity of subdirs you can choose yourself, may store the commands above to some `.bat` or `.sh` script, so that you will be able to repeat extraction in the future, i.e. on an updated mod. If you have split your translation into many parts then you don't need to repeat its definition `local rosetta = ...` part. May just do it once in a mod and then refer to it:
+
+# Translation Format Reference
+
+## Literal Pairs
 
 ```squirrel
-// script/!mods_preload/mod_hunter_es.nut
-local def = ::HunterES <- {
-    ID = "mod_hunter_es"
-    Name = "Hunter Spanish Translation"
-    Version = "1.2.3-1"
-    Rosetta = {
-        mod = {id = "mod_hunter", version = "1.2.3"} // the translated mod info
-        author = "hackflow"                          // the translation author
-        lang = "es"                                  // target language
-    }
-}
-
-local mod = ::Hooks.register(def.ID, def.Version, def.Name);
-mod.require("mod_rosetta >= 0.1.1"); // Set the Rosetta version you were using
-
-// Include all translation files
-foreach (file in ::IO.enumerateFiles("mod_hunter_es/")) ::include(file);
+{en = "Hello", ru = "Привет"}
 ```
 
-```squirrel
-// mod_hunter_es/some.nut
-local pairs = [
-    ...
-]
-::Rosetta.add(::HunterES.Rosetta, pairs); // Use rosetta translation description from the mod file
-```
+## Pattern Pairs
 
-
-## Extractor
-
-To set up transaltion of a new mod, i.e. extract strings to translate, you may use special extractor script:
-
-```bash
-python rosetta.py -lru mod_necro > mod_necro/necro/rosetta_ru.nut
-```
-
-This will provide you with a biolerplate containing all the strings found in the `mod_necro` dir. Then you will need to fill in some metadata and translations, unless the latter are provided for you automatically, see `-t` option. In any case you will need to look those through and identify cases where you need to use patterns to capture substrings and do so.
-
-To **update your translation** you can run extractor again setting output to a new file next to the old one. Then use some file compare utility like Meld to look through and add new or changed strings to your existing translation. For this to work you will, however, need to not change translation file besides necessary, i.e. split it, reorder things in there and such.
-
-## Extractor Usage
-
-This is a python script, which requires Python 3.12 and for automatic translations to work also requires python requests library.
-
-```
-Usage:
-    python rosetta.py [options] <mod-file> > <to-file>
-    python rosetta.py [options] <mod-dir> > <to-file>
-
-Extracts strings and prepares a rosetta style translation file.
-
-Arguments:
-    <mod-file>  The path to a mod file
-    <mod-dir>   Process all *.nut files in a dir
-    <to-file>   Rosetta file to write
-
-Options:
-    -l<lang>    Target language to translate to, defaults to ru
-    -t<engine>  Use automatic translation. Available options are:
-                    yt (Yandex Translate), claude35 (Anthropic Claude-3.5-sonnet)
-    -f          Overwrite existing files
-    -v          Verbose output
-    -h, --help  Show this help
-```
-
-## More Examples
-
-Partial translation inside tags:
+Capture dynamic values:
 
 ```squirrel
 {
     mode = "pattern"
-    en = "Use <open:tag><ap:int> AP<close:tag> and <fat:str_tag> less fatigue to raise."
-    ru = "Тратит только <open><ap> ОД<close> и на <fat> меньше выносливости для поднятия мертвецов."
+    en = "<actor:str_tag> deals <damage:int> damage"
+    ru = "<actor> наносит <damage> урона"
 }
+```
 
+**Capture types:**
+- `int` - Integer number
+- `val` - Number with optional % sign
+- `str` - Any string (non-greedy)
+- `tag` - BBCode tag like `[color=...]`
+- `str_tag` - String wrapped in tags
+- `int_tag` - Integer wrapped in tags
+- `val_tag` - Value wrapped in tags
+
+## Plural Pairs
+
+Language-dependent pluralization:
+
+```squirrel
+{
+    plural = "count"
+    en = "<count:int> items"
+    n1 = "<count> предмет"    // 1, 21, 31...
+    n2 = "<count> предмета"   // 2-4, 22-24...
+    n5 = "<count> предметов"  // 5-20, 25-30...
+}
+```
+
+## ID-based Pairs
+
+For very long strings:
+
+```squirrel
+{
+    id = "scripts/scenarios/world/necro_scenario.Description"
+    ru = "[p=c][img]gfx/ui/events/event_76.png[/img][/p][p]После многих лет..."
+}
 ```
 
 
 # For Mod Authors
 
-Rosetta is designed the way that translation is put on top, i.e. you won't need to apply any changes to your mod for this to work. There still might be corner cases, where it's easier for you to provide a translation point instead of relying on intercepting strings only via hooks.
-
-This could be done via:
+Rosetta works on top of unmodified mods. For special cases, you can add translation points:
 
 ```squirrel
 local _ = "Rosetta" in getroottable() ? Rosetta.translate.bindenv(Rosetta) : @(s) s;
 
 _("Some string");
-_("Thing does " + num + " things"); // Do not split this, otherwise pluralization won't be possible
+_("Thing does " + num + " things");
 ```
 
-Note that you can bundle translations right into your mod for however many languages you like, the right translation will be activated when appropriate, see above Using and Writing Translations sections.
+
+# Compatibility
+
+Should be compatible with everything. Safe to add, update or remove mid-game.
 
 
 # Limitations
 
-A. Language registration is global so it should better be done in Rosetta itself, now only russian, spanish and japanese languages are included, so please contact me. You can still do it from any place:
-
-```squirrel
-::Rosetta.addLang("es", {
-    name = "Español"
-    function detect() {
-        return ::Const.Strings.EntityName[0] == "???";
-    }
-    plural = {
-        forms = [1 2]
-        fallback = 2
-        function choose(n) {
-            return n == 1 ? 1 : 2
-        }
-    }
-})
-```
-
-B. Currently Rosetta autodetects language to activate it. One can also activate it programmatically with `::Rosetta.activate(<code>)`. There is no user interface to switch languages so far.
-
-C. Only strings originating from squirrel .nut files is possible to intercept and translate at this point. Any string added in js will require extra work from future Rosetta.
-
-D. Some strings might not be intercepted just yet. Please contact me if you need to add something.
-
-E. Same string is translated same, wherever it originates from. The exception is matching by id.
-
-Most of these could be lifted in the future. Remember Rosetta is in an early stage still.
+- Language registration is global (contact maintainer to add new languages)
+- No UI for switching languages (use `::Rosetta.activate(<code>)`)
+- Only strings from .nut files can be intercepted (not JS)
+- Same string is translated the same everywhere (except with id matching)
 
 
 # Feedback
 
-Any suggestions, bug reports, other feedback are welcome. The best place for it is this Github, i.e. just create an issue. You can also find me on BB Modding Discord by **suor.hackflow** username.
+Suggestions, bug reports, and feedback welcome:
+- GitHub Issues: [battle-brothers-rosetta](https://github.com/Suor/battle-brothers-rosetta)
+- BB Modding Discord: **suor.hackflow**
 
 
 [nexus-mods]: https://www.nexusmods.com/battlebrothers/mods/802
 [ModernHooks]: https://www.nexusmods.com/battlebrothers/mods/685
-[modhooks]: https://www.nexusmods.com/battlebrothers/mods/42
 [stdlib]: https://www.nexusmods.com/battlebrothers/mods/676
-[necro]: https://www.nexusmods.com/battlebrothers/mods/775

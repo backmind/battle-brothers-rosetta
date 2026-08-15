@@ -1,0 +1,10 @@
+# Rosetta DB dependencies
+click>=8.0
+polib>=1.2.0
+requests>=2.28
+
+# Testing
+pytest>=7.0
+
+# Optional: for development
+# rich>=13.0  # pretty CLI output
