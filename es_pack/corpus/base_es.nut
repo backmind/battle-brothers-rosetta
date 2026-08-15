@@ -8327,6 +8327,839 @@ local pairs = [
         en = "Stormtail"
         es = ""
     }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\config\rumors.nut
+    {
+        en = "The men cheer your name as they drink."
+        es = "Los hombres vitorean tu nombre mientras beben."
+    }
+    {
+        en = "The men drink to fallen comrades."
+        es = "Los hombres beben por los camaradas caídos."
+    }
+    {
+        en = "The men cheer the company name as they drink."
+        es = "Los hombres vitorean el nombre de la compañía mientras beben."
+    }
+    {
+        en = "The men drink to women and their bosoms."
+        es = "Los hombres brindan por las mujeres y sus pechos."
+    }
+    {
+        en = "The men drink to the loyal wardogs."
+        es = "Los hombres brindan por los leales perros guardianes."
+    }
+    {
+        en = "Laughter and light-hearted stories fills the tavern as your men drink."
+        es = "Risas e historias alegres llenan la taberna mientras tus hombres beben."
+    }
+    {
+        en = "Hard mercenary life takes a rest as the men share stories of their past lives and enjoy themselves."
+        es = "La dura vida de mercenario se toma un descanso mientras los hombres comparten historias de sus vidas pasadas y se divierten."
+    }
+    {
+        en = "'Huzzah to the commander!', the men shout."
+        es = "¡'Hurra por el comandante!', gritan los hombres."
+    }
+    {
+        en = "Your men boast with their accomplishments as they drink."
+        es = "Tus hombres se jactan de sus logros mientras beben."
+    }
+    {
+        en = "The strong drinks blur the horrors of combat for a while."
+        es = "Las bebidas fuertes difuminan los horrores del combate por un tiempo."
+    }
+    {
+        en = "Your men cheer and toast to riches and a long life."
+        es = "Tus hombres vitorean y brindan por la riqueza y una larga vida."
+    }
+    {
+        en = "The beer makes the hardships of the day disappear."
+        es = "La cerveza hace que las dificultades del día desaparezcan."
+    }
+    {
+        en = "The patrons shout your name as they clink their cups. The drink loosens their tongues."
+        es = "Los visitantes gritan tu nombre mientras chocan sus tazas. La bebida afloja sus lenguas."
+    }
+    {
+        en = "The patrons nod approvingly."
+        es = "Los parroquianos asienten con aprobación."
+    }
+    {
+        en = "People raise their mugs in appreciation."
+        es = "La gente levanta sus jarras en señal de aprobación."
+    }
+    {
+        en = "The people murmur approvingly."
+        es = "La gente murmura con aprobación."
+    }
+    {
+        en = "The innkeeper rings a bell to let everyone know the next round is on you."
+        es = "El tabernero hace sonar una campana para que todos sepan que la próxima ronda corre por tu cuenta."
+    }
+    {
+        en = "There's a place called %location% %terrain% to the %direction% of here. Most people know about it, I think, but few would venture there."
+        es = "Hay un lugar llamado %location% %terrain% al %direction% de aquí. La mayoría de la gente sabe de ello, creo, pero pocos se aventurarían allí."
+    }
+    {
+        en = "%randomname% told me 'bout %location% the other day. Full of treasure he said, %distance% %direction% of here. Or maybe I'm remembering it wrong."
+        es = "%randomname% me contó sobre %location% el otro día. Dijo que estaba lleno de tesoros, %distance% %direction% de aquí. O tal vez estoy recordando mal."
+    }
+    {
+        en = "If it's adventure you seek, there's a place called %location% %terrain% %direction% of here. Don't know who lives there nowadays, though."
+        es = "Si buscas aventuras, hay un lugar llamado %location% %terrain% al %direction% de aquí. Aunque no sé quién vive allí en estos días."
+    }
+    {
+        en = "Heard of %location%? People say it's haunted, the dead walking and all. Somewhere %direction% of here. Maybe someone else in %townname% can tell you more..."
+        es = "¿Has oído hablar de %location%? La gente dice que está embrujado, que los muertos caminan y todo eso. En algún lugar al %direction% de aquí. Tal vez alguien más en %townname% pueda contarte más..."
+    }
+    {
+        en = "You know of... gosh, what was it called again? To the %direction% %distance% from here, %terrain%. Can't for the life of me remember what we used to call it..."
+        es = "¿Has oído hablar de... Dios mío, cómo se llamaba? Al %direction% %distance% de aquí, %terrain%. No puedo recordar cómo solíamos llamarlo..."
+    }
+    {
+        en = "Came across %location% on your way here? Why, it's %terrain% to the %direction%. Someone should hire you to burn that thing to the ground. Nothing good's coming from there, that's for sure."
+        es = "Nos encontramos con %location% en nuestro camino hacia aquí. ¿Por qué?, está %terrain% al %direction%. Alguien debería contratarte para quemar ese lugar hasta los cimiento. No va a salir nada bueno de allí, eso seguro."
+    }
+    {
+        en = "We spotted something on our way here, hidden way off the road, %terrain% %distance% %direction% of %townname%. Don't know what the locals call it, or if they even know about it, but it might be worth it going back there."
+        es = "Vimos algo en nuestro camino aquí, escondido lejos de la carretera, %terrain% %distance% %direction% de %townname%. No sé cómo lo llaman los lugareños, o si siquiera saben de ello, pero podría valer la pena volver allí."
+    }
+    {
+        mode = "pattern"
+        en = "I've heard the council of %settlement% is looking to hire mercenaries. Don't know what for."
+        es = "He oído que el consejo de %settlement% está buscando mercenarios. No sé para qué."
+    }
+    {
+        mode = "pattern"
+        en = "A group of young lads left for %settlement% some days ago. They're looking to hire armed men over there, willing to pay real good. I just hope they make it back alive."
+        es = "Un grupo de jóvenes se fue a %settlement% hace algunos días. Están buscando contratar hombres armados allí, dispuestos a pagar muy bien. Solo espero que regresen con vida."
+    }
+    {
+        mode = "pattern"
+        en = "If you lot is looking for work, I've heard that they're hiring sellswords over at %settlement%."
+        es = "Si estás buscando trabajo, he oído que están contratando espadas a sueldo en %settlement%."
+    }
+    {
+        mode = "pattern"
+        en = "You heard that they're looking to hire fighting men at %settlement%?"
+        es = "¿Has oído que están buscando hombres de armas en %settlement%?"
+    }
+    {
+        mode = "pattern"
+        en = "Some guy from %settlement% was here just the other day, wanted to hire strong lads for some problem they have over there. Don't think many went with him, though."
+        es = "Un tipo de %settlement% estuvo aquí el otro día, quería contratar a hombres fuertes para algún problema que tienen allí. No creo que muchos fueran con él, sin embargo."
+    }
+    {
+        mode = "pattern"
+        en = "Mercenaries, eh? We got a few of those these days. Just some days ago a bunch that called themselves %randommercenarycompany% travelled through. On their way to %settlement%, they said, good coin to be made there."
+        es = "Mercenarios, ¿eh? Tenemos algunos de esos por aquí en estos días. Hace solo unos días, pasó un grupo que se hacía llamar %randommercenarycompany%. Iban camino a %settlement%, dijeron. Buen dinero que se puede ganar allí."
+    }
+    {
+        mode = "pattern"
+        en = "If it's work you're looking for, they're taking crowns in hand over at %settlement% to hire strong men."
+        es = "Si buscas trabajo, están ofreciendo coronas en %settlement% para contratar hombres fuertes."
+    }
+    {
+        mode = "pattern"
+        en = "Heard that some fancy fat merchant or so from %settlement% is looking to hire armed guards the other day. Well, I ain't going to die for him, no thanks. Have me my house and wife right here."
+        es = "He oído que algún gordo comerciante de %settlement% está buscando contratar guardias armados el otro día. Bueno, no voy a morir por él, gracias. Tengo mi casa y esposa aquí mismo."
+    }
+    {
+        en = "If you're looking to fetch a good price for your trading goods, my friend, you should go to one of the large cities or castles and not some run-down poor village at world's ass."
+        es = "Si estás buscando obtener un buen precio por tus mercancías comerciales, amigo mío, deberías ir a alguna de las grandes ciudades o castillos y no a algún pueblo pobre en medio de la nada."
+    }
+    {
+        en = "The drinks over in %randomtown% are way better than the cat piss they serve here!"
+        es = "¡Las bebidas en %randomtown% son mucho mejores que la porquería que sirven aquí!"
+    }
+    {
+        en = "A trader came by this morning, claims he saw dead people shuffling through the hills nearby. Won't buy that humbug, that's for sure!"
+        es = "Un comerciante pasó por aquí esta mañana, afirma que vio a personas muertas deambulando por las colinas cercanas. No compro esa tontería, claro que no."
+    }
+    {
+        en = "There is many a place out there, long lost and forgotten, that holds great riches."
+        es = "Hay muchos lugares por ahí, perdidos y olvidados durante mucho tiempo, que guardan grandes riquezas."
+    }
+    {
+        en = "If you're ever visiting the tavern in %randomtown% make sure to try their roasted goat - you'll never eat that good elsewhere!"
+        es = "Si alguna vez visitas la taberna en %randomtown%, asegúrate de probar su cabrito asado; ¡nunca comerás tan bien en otro lugar!"
+    }
+    {
+        en = "Mercenaries aren't very popular around these parts. They kill, plunder and pillage like common brigands, so don't expect to be greeted with cheers and flowers."
+        es = "Los mercenarios no son muy populares por estos lugares. Matan, saquean y pillan como vulgares bandidos, así que no esperes ser recibido con vítores y flores."
+    }
+    {
+        en = "If you're in need of supplies, head over to old %randomname% on the market here in %townname%. Tell him I send you!"
+        es = "Si necesitas suministros, dirígete al viejo %randomname% en el mercado aquí en %townname%. Dile que te envío yo."
+    }
+    {
+        en = "Tomorrow night the famous minstrel %randomname% \x7bthe Songbird | the Bard | the Storyteller | the Nightingale | the Poet\x7d is coming to this very tavern, you better not miss it!"
+        es = "¡Mañana por la noche, el famoso juglar %randomname% \x7bel Ruiseñor | el Bardo | el Cuentacuentos | el Ruiseñor | el Poeta\x7d vendrá a esta misma taberna, mejor no te lo pierdas!"
+    }
+    {
+        en = "Don't trust the barber's potions! A friend of my cousin's friend's uncle drank one and it turned him into a toad, I swear!"
+        es = "¡No confíes en las pociones del barbero! ¡Un amigo del primo de mi amigo de mi tío bebió una y se convirtió en un sapo, te lo juro!"
+    }
+    {
+        en = "So I heard of a free company by the name of %randommercenarycompany% and it's said they collect the ears of their enemies and wear them 'round their necks!"
+        es = "Así que oí hablar de una compañía libre llamada %randommercenarycompany% y se dice que recolectan las orejas de sus enemigos y las llevan colgadas al cuello!"
+    }
+    {
+        en = "Don't drink the water in %randomtown%, let me tell you. It'll give you the runs in no time!"
+        es = "Yo me mantendría alejado de pantanos y marismas. Hay enfermedades espantosas esperando aferrarse a ti."
+    }
+    {
+        en = "My cousin %randomname% left town with a mercenary company like yours, %randommercenarycompany% or something like that it was called. Haven't heard from him since..."
+        es = "Mi primo %randomname% se fue de la ciudad con una compañía de mercenarios como la tuya, %randommercenarycompany% o algo así se llamaba. No he sabido nada de él desde entonces..."
+    }
+    {
+        en = "From one sellsword to another: If you value your reputation as a mercenary, you'd better not double-cross your employers. Some will go to great lengths to hunt you down, tell ill of you and make you pay."
+        es = "De un mercenario a otro: si valoras tu reputación como mercenario, más te vale no traicionar a tus empleadores. Algunos harán todo lo posible para perseguirte, hablar mal de ti y hacerte pagar."
+    }
+    {
+        en = "The noble houses act like an old couple; constant quarreling and wrangling. And who suffers most from those feuds? Not the high lords up in their castle towers, no, it's us simple folk, of course!"
+        es = "Las casas nobles actúan como una vieja pareja; pelean y discuten constantemente. ¿Y quién sufre más por esas disputas? No los grandes señores en sus torres de castillo, no, ¡por supuesto que somos nosotros, la gente común!"
+    }
+    {
+        en = "I'd stay clear of swamps and marshes. There's ghastly diseases there just waiting to latch onto you."
+        es = "He oído decir que tienen a un mago en el consejo de %randomtown%, un auténtico hechicero. No estoy seguro de si creerlo."
+    }
+    {
+        en = "I've heard they have a mage on the council of %randomtown%, a real wizard. Not sure if I believe that."
+        es = "¡Amo a las mujeres! La forma en que lucen, la forma en que hablan. No sé qué haría en un mundo sin ellas..."
+    }
+    {
+        en = "I love women! The way they look, the way they talk. Don't know what I'd do in a world without 'em..."
+        es = "La muerte es parte de la vida. Cuanto antes la aceptes, más podrás apreciar tu estancia en este mundo."
+    }
+    {
+        en = "It's you and the %companyname%! Remember me from %randomtown%? We talked about... well, I don't really remember, but here we are! Let's drink! How have you been faring?"
+        es = "¡Eres tú y la %companyname%! ¿Te acuerdas de mí cuando nos vimos en %randomtown%? ¡Hablamos de... bueno, en realidad no recuerdo, pero aquí estamos! ¡Vamos a beber! ¿Cómo te ha ido?"
+    }
+    {
+        en = "Death is a part of life. The sooner you accept it, the more you can cherish your stay in this world."
+        es = "No bebas el agua en %randomtown%, déjame decirte. ¡Te dará diarrea en poco tiempo!"
+    }
+    {
+        en = "One of my teeth fell out just the other day, see? I think the others are so loose, they're about to follow. Can you feel it? Go on, touch. They're loose, right?"
+        es = "Uno de mis dientes se cayó el otro día, ¿ves? Creo que los demás están tan flojos que están a punto de seguirlo. ¿Lo sientes? Vamos, toca. ¡Están sueltos, ¿verdad?"
+    }
+    {
+        en = "Gods, I need to take a piss. Will you watch that beer for me?"
+        es = "Dioses, necesito mear. ¿Vas a cuidar esa cerveza por mí?"
+    }
+    {
+        en = "Always be sceptical towards the nobility, my friend. You never know what their real agenda might be."
+        es = "Siempre sé escéptico hacia la nobleza, amigo mío. Nunca sabes cuál puede ser su verdadera agenda."
+    }
+    {
+        en = "Ever considered putting down your sword and settling down? Mercenaries tend to have rather short lives."
+        es = "¿Alguna vez has considerado dejar tu espada y establecerte? Los mercenarios tienden a tener vidas bastante cortas."
+    }
+    {
+        en = "They found the farm of old %randomname% burned to the ground the other day. That whole family was hanging from a nearby oak..."
+        es = "Encontraron la granja de %randomname% ardiendo hasta los cimientos el otro día. Toda esa familia estaba colgada de un roble cercano..."
+    }
+    {
+        en = "Since some brigands burned down my old man's farm I switched the pitchfork for the beer mug. I hope they get what they deserve some day."
+        es = "Desde que unos bandidos quemaron la granja de mi padre, cambié la horca por la jarra de cerveza. Espero que reciban lo que se merecen algún día."
+    }
+    {
+        en = "Our militia is in a pitiful state, rusty pikes and worm-eaten shields everywhere. I wish the council would take crowns in hand and buy the poor sods some real weapons."
+        es = "Nuestra milicia está en un estado lamentable. Picas oxidadas y escudos comidos por gusanos por todas partes. Ojalá el consejo se decidiera a comprar armas de verdad para los pobres desgraciados."
+    }
+    {
+        en = "We don't need sellswords like you here! You're nothing but trouble. Our militia can take care of us. Always has, always will."
+        es = "¡No necesitamos mercenarios como tú aquí! No traes más que problemas. Nuestra milicia puede cuidar de nosotros. Siempre lo ha hecho, siempre lo hará."
+    }
+    {
+        en = "The miller's daughter went missing last night. They found her and she is well, but she's not willing to talk about it."
+        es = "La hija del molinero desapareció anoche. La encontraron y está bien, pero no quiere hablar al respecto."
+    }
+    {
+        en = "Farkin' %randomname% and his farkin' dog. Rug of flea's barking day and night, rain or sunshine. Can't take it much longer, I really can't..."
+        es = "Maldito %randomname% y su maldito perro. La maldición de un perro ladrando día y noche, llueva o haga sol. No puedo soportarlo por mucho más tiempo, de verdad..."
+    }
+    {
+        en = "I heard some tombstones in the old graveyard have been toppled over. But no one in their right mind would go there anyways."
+        es = "Oí que algunas lápidas en el viejo cementerio han sido derribadas. Pero nadie en su sano juicio iría allí de todos modos."
+    }
+    {
+        en = "Bought me this scramasax the other day from a travelling merchant. Real bargain, he said. A man's got to protect himself and his family, see."
+        es = "Compré este scramasax el otro día a un comerciante ambulante. Un verdadero chollo, dijo. Un hombre tiene que protegerse a sí mismo y a su familia, ya sabes."
+    }
+    {
+        en = "I don't trust the militia here. One time, as a band of outlaws approached, they turned tail and ran for the hills without giving any fight!"
+        es = "No confío en la milicia de aquí. Una vez, cuando un grupo de forajidos se acercó, dieron media vuelta y huyeron a las colinas sin dar pelea alguna."
+    }
+    {
+        en = "We had a murder here. Some bastard from %randomtown% put a knife into the back of one of the merchants. He'll see the noose on Sunday, you should come watch!"
+        es = "Hubo un asesinato aquí. Algún bastardo de %randomtown% apuñaló por la espalda a uno de los comerciantes. Lo verás en la horca el domingo, ¡deberías venir a verlo!"
+    }
+    {
+        en = "They burned %randomfemalename% at the stake last week, some witchhunter did. Just appeared one day, accused her of sorcery and whatnot and had her burned. The council didn't object and that man just left soon after. Wish I knew who he was, really. Good thing he saved us from that witch, I suppose..."
+        es = "Quemaron a %randomfemalename% en la hoguera la semana pasada, lo hizo un cazador de brujas. Apareció un día, la acusó de brujería y la quemaron. El consejo no objetó y ese hombre se fue poco después. Ojalá supiera quién era, realmente. Bueno que nos salvó de esa bruja, supongo..."
+    }
+    {
+        en = "Ever fought an orc? It's said they're twice as tall and thrice as strong as a man, and that they can split us clean in half with a single strike!"
+        es = "¿Alguna vez has luchado contra un orco? Se dice que son el doble de altos y tres veces más fuertes que un hombre, y que pueden partirnos limpiamente por la mitad con un solo golpe."
+    }
+    {
+        en = "Picking up desperate farmers and fishers for your company is all good and well, but you should look for recruits in a castle like this one. Here you'll find people who actually know which end of the sword goes where."
+        es = "Reclutar granjeros y pescadores desesperados para tu compañía está bien, pero deberías buscar reclutas en un castillo como este. Aquí encontrarás personas que realmente saben qué extremo de la espada va hacia dónde."
+    }
+    {
+        en = "A sturdy shield is a real life-saver, let me tell you. Wouldn't have a man fight without one."
+        es = "Un escudo resistente es realmente un salvavidas, déjame decirte. No enviaría a un hombre a pelear sin uno."
+    }
+    {
+        en = "The garrison commander fought in the Battle of Many Names. Claims large orcs just shrug off hits to the head with a waraxe, he does. Don't know what to make of this."
+        es = "El comandante de la guarnición luchó en la Batalla de los Muchos Nombres. Afirma que los orcos grandes simplemente desestiman los golpes en la cabeza con un hacha de guerra, no sé qué pensar de eso."
+    }
+    {
+        en = "There're things out there way more scary than some group of brigands. You'll see what I mean soon enough if you head out beyond the borderlands."
+        es = "Hay cosas ahí fuera mucho más aterradoras que un grupo de bandidos. Lo verás pronto si te aventuras más allá de las tierras fronterizas."
+    }
+    {
+        en = "I always rely on my axe to smash the enemy's shield. Even the tallest man will fall quickly once he can not defend himself any more."
+        es = "Siempre confío en mi hacha para romper el escudo del enemigo. Incluso el hombre más alto caerá rápidamente una vez que no pueda defenderse más."
+    }
+    {
+        en = "If I learned one thing during my soldiering years, it's that the high ground wins battles. Trust me on this one."
+        es = "Si aprendí algo durante mis años como soldado, es que la ventaja en altura gana batallas. Créeme."
+    }
+    {
+        en = "I once was a mercenary like you but then I took an arrow to the knee."
+        es = "Una vez fui un mercenario como tú, pero luego me hirieron en la rodilla con una flecha."
+    }
+    {
+        en = "I've seen %randomnoble% at a tourney recently. Damn, what a sight, that man. The way he jousts, I mean. Took the prize and all the ladies loved him."
+        es = "He visto a %randomnoble% en un torneo recientemente. Maldición, qué espectáculo, ese hombre. La forma en que compite en justas, quiero decir. Se llevó el premio y todas las damas lo amaron."
+    }
+    {
+        en = "I'm old now, but I still remember my first battle. Pissed my pants even before the first arrow flew. Ha!"
+        es = "Ya soy viejo, pero todavía recuerdo mi primera batalla. Me meé antes de que volara la primera flecha. ¡Ja!"
+    }
+    {
+        en = "Been to %randomtown% not long ago and they told me about wolves as large as a man, with teeth as long as the fingers on my hand. Really don't want to meet one of those."
+        es = "Estuve en %randomtown% hace poco y me contaron sobre lobos del tamaño de un hombre, con dientes tan largos como los dedos de mi mano. Realmente no quiero encontrarme con uno de esos."
+    }
+    {
+        en = "You know that orcs make their armor out of what they strip from those who fall against them? Honest, I'm not making this up. They wear it as trophies or something. If you ever meet one of them large orcs, you'll see. They look like it's a knight or two wrapped around them."
+        es = "¿Sabes que los orcos hacen su armadura con lo que despojan de aquellos que caen contra ellos? Sinceramente, no lo estoy inventando. Lo usan como trofeos o algo así. Si alguna vez te encuentras con uno de esos orcos grandes, lo verás. Parecen un caballero o dos envueltos alrededor de ellos."
+    }
+    {
+        en = "1st %townname% Company. Best lot of halfwits and scallywags I've ever served with. Wouldn't trade 'em for the world."
+        es = "La 1er compañía de %townname%. El mejor grupo de necios y bribones con los que he servido. No los cambiaría por nada en el mundo."
+    }
+    {
+        en = "I miss my wife and my two daughters. Been stationed at %townname% for too long already, but a man's got to put food on the table somehow."
+        es = "Echo de menos a mi esposa y a mis dos hijas. Llevo mucho tiempo destinado en %townname%, pero un hombre tiene que poner comida en la mesa de alguna manera."
+    }
+    {
+        en = "We'll head out again soon to patrol the roads. Sometimes I feel everything would go down the shitter if it weren't for us keeping order 'round here."
+        es = "Pronto volveremos a patrullar las carreteras. A veces siento que todo se iría al demonio si no fuera por nosotros manteniendo el orden por aquí."
+    }
+    {
+        en = "Farkin' patrol duty. Barely got back 'ere, blisters on me feet still from all the marchin' and we're about to 'ead out again. Just put us on 'orses, I say!"
+        es = "Maldita patrulla. Apenas volvimos y todavía tengo ampollas en los pies por todo el camino, y estamos a punto de salir de nuevo. ¡Dadnos caballos, digo yo!"
+    }
+    {
+        en = "Got wounded bad some months back in a skirmish 'gainst goblins. Couldn't feel me legs anymore, but the lads carried me all the way back to %townname%. Gods bless 'em."
+        es = "Resulté gravemente herido hace algunos meses en un enfrentamiento contra goblins. Ya no podía sentir mis piernas, pero los muchachos me llevaron de vuelta a %townname%. Dios los bendiga."
+    }
+    {
+        en = "You'll know greenskin territory from the idols they erect out of skulls and bones. Of human skulls and bones."
+        es = "Sabrás que estás en territorio orco por los ídolos que erigen con calaveras y huesos. Calaveras y huesos humanos."
+    }
+    {
+        en = "Fourteen. That's how many men I've killed. Women I count extra, three so far. What about you?"
+        es = "Catorce. Esa es la cantidad de hombres que he matado. Mujeres las cuento aparte, tres hasta ahora. ¿Y tú?"
+    }
+    {
+        en = "I usually stand guard on the gate tower. To be honest, spitting down on some travellers is the only fun I get all day."
+        es = "Normalmente, estoy de guardia en la torre del portón de entrada. Para ser honesto, escupir sobre algunos viajeros es la única diversión que tengo durante todo el día."
+    }
+    {
+        en = "The mood amongst the garrison is pretty bad. They say that pay's been delayed a few times already and everyone's starting to lose patience."
+        es = "El ambiente en la guarnición está bastante mal. Dicen que el pago se ha retrasado varias veces y todos están empezando a perder la paciencia."
+    }
+    {
+        en = "When I was moved to %townname% I never imagined life here to be so dull and hard. But still better than working the fields until your back snaps, I suppose..."
+        es = "Cuando me trasladaron a %townname%, nunca imaginé que la vida aquí sería tan aburrida y difícil. Pero aún así, es mejor que trabajar en los campos hasta que se te rompa la espalda, supongo..."
+    }
+    {
+        en = "I prefer fighting with my flail. Hard to defend against and it don't matter if they carry a shield, I'll just swing around it and make pulp of their head!"
+        es = "Prefiero luchar con mi mayal. Es difícil defenderse de él y no importa si llevan un escudo, simplemente dará vueltas alrededor de él y hará pulpa de su cabeza."
+    }
+    {
+        en = "Damn nigh impossible to find a reliable shield 'round here, bloody things keep breaking in two. Been keeping a spare on me back now just incase. I should charge more for fighting men with axes, ha!"
+        es = "Malditamente imposible encontrar un escudo confiable por aquí, esas malditas cosas siguen rompiéndose en dos. He estado llevando un repuesto en mi espalda ahora por si acaso. Debería cobrar más por pelear contra hombres con hachas, ¡ja!"
+    }
+    {
+        en = "One day I'll be standard bearer of the company. It's only the bravest of us all and they've been with the company for years and years, y'know, but it's the greatest honor for a man with common blood. I've seen even a knight once shake the hand of ours."
+        es = "Un día seré el portador del estandarte de la compañía. Solo los más valientes de todos nosotros y que han estado en la compañía durante años y años lo llevan, ¿sabes?, pero es el mayor honor para un hombre de sangre común. Incluso he visto a un caballero una vez estrechar la mano de uno de los nuestros."
+    }
+    {
+        en = "I've trained militia before, and let me tell you, spears are the best weapons for when the men don't know what they're doing yet. Cheap and easy to hit with. Put a few men together for a spearwall and it's hard to even get close to them without a spear in your belly."
+        es = "He entrenado a la milicia antes, y déjame decirte, las lanzas son las mejores armas cuando los hombres no saben lo que están haciendo todavía. Baratas y fáciles de acertar. Reúne a unos cuantos hombres para formar una muralla de lanzas y es difícil acercarse siquiera a ellos sin un lanzazo en la barriga."
+    }
+    {
+        en = "Ever fought goblins? Nastly little buggers, don't be fooled by their size. I'd take large kite shields to protect the men from their arrows. And a pack of wardogs to run them down as they scatter, if you can afford it."
+        es = "¿Alguna vez has luchado contra goblins? Pequeños bastardos desagradables, no te dejes engañar por su tamaño. Llevaría escudos grandes de cometa para proteger a los hombres de sus flechas. Y una jauría de perros guardianes para perseguirlos mientras se dispersan, si puedes permitírtelo."
+    }
+    {
+        en = "The other day my pickaxe broke while I was hammering away. Piece of it clipped my cheek. Not much and I'd be missing an eye!"
+        es = "El otro día mi pico se rompió mientras martilleaba. ¡Un pedazo me rozó la mejilla! ¡Un poco más y podría haber perdido un ojo!"
+    }
+    {
+        en = "The mines are a real deathtrap, we're losing men every week. Even venturing with you might be better for longevity, ha!"
+        es = "Las minas son una verdadera trampa mortal, estamos perdiendo hombres cada semana. Incluso aventurarse contigo podría ser mejor para la longevidad, ¡ja!"
+    }
+    {
+        en = "Working the mines has its merits, too, you know. We never get wet from the rain, it's just the dust that kills you eventually."
+        es = "Trabajar en las minas también tiene sus méritos, ya sabes. Nunca nos mojamos con la lluvia, es solo el polvo lo que eventualmente te mata."
+    }
+    {
+        en = "In the other mine shaft, %randomname% found a nugget the size of me fist! The overseer got to him before he could hide it, though."
+        es = "En el otro pozo de la mina, %randomname% encontró una pepita del tamaño de mi puño. ¡El capataz llegó antes de que pudiera esconderla!"
+    }
+    {
+        en = "Even with the bad harvest this year the landlord won't give us a rest! The high folks got to have their feasts, you know..."
+        es = "Incluso con la mala cosecha de este año, el propietario no nos da un respiro. Los nobles tienen que tener sus banquetes, ya sabes..."
+    }
+    {
+        en = "If you're looking to stack up on food and supplies head over to the market and look for %randomname%. He has the best quality and the lowest prices!"
+        es = "Si buscas acumular comida y suministros, dirígete al mercado y busca a %randomname%. Tiene la mejor calidad y los precios más bajos!"
+    }
+    {
+        en = "I've been a farmhand all my life and sometimes I wish I'd taken the chance to venture with a company like yours... well, it's too late for that now."
+        es = "He sido un peón de granja toda mi vida y a veces desearía haber tenido la oportunidad de aventurarme con una compañía como la tuya... bueno, es demasiado tarde para eso ahora."
+    }
+    {
+        en = "There's lots of young and naive lads out there looking for adventure. I hope you take good care of them and return them safely to their families one day."
+        es = "Hay muchos jóvenes ingenuos por ahí buscando aventuras. Espero que los cuides bien y los devuelvas sanos y salvos a sus familias algún día."
+    }
+    {
+        en = "The sea is a fickle mistress. One moment it is as calm as a mirror and the next you find yourself in a tempest fighting for your life."
+        es = "El mar es una amante caprichosa. Un momento está tan tranquilo como un espejo y al siguiente te encuentras en una tempestad luchando por tu vida."
+    }
+    {
+        en = "Nobody knows what lives in the deep black waters, but you hear the old fishermen talk about giant fish larger than any ship, tentacles that crush boats like they were nutshells, and evil, dead eyes under the surface."
+        es = "Nadie sabe lo que vive en las aguas profundas y oscuras, pero escucharás a los viejos pescadores hablar de peces gigantes más grandes que cualquier barco, tentáculos que aplastan barcos como si fueran nueces, y ojos malvados y muertos bajo la superficie."
+    }
+    {
+        en = "Some of the old fishermen will tell you that those lost at sea are cursed to walk the seabed, only to be released if they drag others down to take their place. Priest says it ain't true, but I don't know. What are the elders telling it for, then?"
+        es = "Algunos de los viejos pescadores te contarán que aquellos perdidos en el mar están condenados a caminar por el lecho marino, solo para ser liberados si arrastran a otros para ocupar su lugar. El sacerdote dice que no es cierto, pero yo no sé. ¿Por qué los ancianos lo contarían, entonces?"
+    }
+    {
+        en = "The biggest fish of my catch I always place in front of %randomfemalename%'s door to woo her. Some day I'm going to reveal myself as her secret admirer and ask for her hand!"
+        es = "El pez más grande de mi pesca siempre lo coloco frente a la puerta de %randomfemalename% para cortejarla. Algún día me revelaré como su admirador secreto y le pediré su mano!"
+    }
+    {
+        en = "I've been a lumberjack all my life, just like my father before me. But the young folk these days are all 'bout adventure and seeing the lands, you may well find some hanging 'round the market that'll have no qualms 'bout coming with you on the road."
+        es = "He sido leñador toda mi vida, al igual que mi padre antes que yo. Pero los jóvenes de hoy en día están obsesionados con la aventura y explorar tierras lejanas."
+    }
+    {
+        en = "There are things in the forest... in the deep, dark parts, there are things. Nobody dares speak of them but trust me, those are no animals..."
+        es = "Hay cosas en el bosque... en las partes profundas y oscuras, hay cosas. Nadie se atreve a hablar de ellas, pero confía en mí, no son animales..."
+    }
+    {
+        en = "Say, you interested in woodcarvings? The works of %randomname% are true pieces of art and made our town known throughout the realm!"
+        es = "¿Dices, estás interesado en tallas de madera? ¡Las obras de %randomname% son verdaderas obras de arte y han hecho famosa nuestra ciudad en todo el reino!"
+    }
+    {
+        en = "Hiring a man of the woods could be a good idea for a mercenary like you, I'd say. They ought to know how to fling around those large axes!"
+        es = "Contratar a un leñador podría ser una buena idea para un mercenario como tú, supongo. Deben saber cómo blandir esas grandes hachas!"
+    }
+    {
+        en = "I've been hearing folk tell of eyes watching them from the forest's edge. Seems to be some vile creatures making their nests in these here woods. Perhaps they're sizing up their prey before striking."
+        es = "He estado escuchando a la gente hablar de ojos que los observan desde el borde del bosque. Parece que algunas criaturas viles están haciendo sus nidos en estos bosques. Tal vez estén evaluando a su presa antes de atacar."
+    }
+    {
+        en = "Long as I can remember the woods around here have been full of wildlife. Deer, boar, wolves and bear roam them in great number. Because of this it's been tradition for families to teach the art of archery at childhood. Try to outmatch any of our lads with a bow and you're sure to be disgraced."
+        es = "Desde que tengo memoria, los bosques de esta zona han estado llenos de vida silvestre. Ciervos, jabalíes, lobos y osos deambulan en gran número. Debido a esto, ha sido tradición que las familias enseñen el arte de la arquería en la infancia. Intenta superar a alguno de nuestros muchachos con un arco y seguro que serás humillado."
+    }
+    {
+        en = "You may think our land is barren and scant but once you live here you will learn to love it like no other!"
+        es = "Puede que pienses que nuestra tierra es árida y escasa, ¡pero una vez que vivas aquí, aprenderás a amarla como ninguna otra!"
+    }
+    {
+        en = "The clans and families in these parts are still strong and define who we are. Those nancy southern folks will never understand how things work here in the north."
+        es = "Los clanes y familias en estas partes todavía son fuertes y definen quiénes somos. Esos malditos sureños nunca entenderán cómo funcionan las cosas aquí en el norte."
+    }
+    {
+        en = "If you're looking to make a quick coin with some trades look around for furs. The ones from around here are the best far and wide."
+        es = "Si estás buscando ganar un poco de dinero rápido con algunos intercambios, busca pieles. Las de aquí son las mejores de lejos."
+    }
+    {
+        en = "You came to the right place if you're looking for able men to bolster your company. Us northern folk are strong, rugged and honest!"
+        es = "Has venido al lugar adecuado si estás buscando hombres capaces para fortalecer tu compañía. Nosotros, los del norte, somos fuertes, robustos y honestos!"
+    }
+    {
+        en = "The best remedy against biting winds and freezing cold can be found right here: Beer and mead!"
+        es = "El mejor remedio contra los vientos cortantes y el frío glacial se encuentra aquí mismo: ¡cerveza e hidromiel!"
+    }
+    {
+        en = "A fortnight ago %randomname% went missing on the way home from the tavern. Found him frozen rock solid the next morning. Could have sold him to some fancy noble as a statue, haha!"
+        es = "Hace quince días, %randomname% desapareció en el camino de vuelta de la taberna. Lo encontraron congelado como una roca a la mañana siguiente. Podría haberlo vendido a algún noble elegante como una estatua, ¡jaja!"
+    }
+    {
+        en = "There are tales of figures shifting in snowstorms and unearthly howls that mix with the winds... but I wouldn't want to unsettle you with the common folk's farytales."
+        es = "Hay cuentos de figuras que se desplazan en tormentas de nieve y aullidos sobrenaturales que se mezclan con los vientos... pero no quiero inquietarte con los cuentos de hadas de la gente común."
+    }
+    {
+        en = "I've been told that a long time ago this land was all green with many proud castles and awe-inspiring towers. Most of them have crumbled to ruins by now and are covered with snow. But they'll have to be out there somewhere..."
+        es = "Me han dicho que hace mucho tiempo esta tierra estaba toda verde, con muchos castillos orgullosos y torres impresionantes. La mayoría de ellos se han derrumbado en ruinas y están cubiertos de nieve. Pero tienen que estar por ahí en algún lugar..."
+    }
+    {
+        en = "Four winters. Four winters since I saw a chance for quick coin and raided a roadside chapel. Put the iron to a holy man that tried to hold me back; now no amount of crowns can repay the debt that my spirit owes."
+        es = "Cuatro inviernos. Cuatro inviernos desde que vi una oportunidad para ganar dinero rápido y saqueé una capilla en el camino. Le í acero un hombre santo que trató de detenerme... ahora ninguna cantidad de coronas puede pagar la deuda que mi espíritu debe."
+    }
+    {
+        en = "You men must be sweating like pigs under all that armor. Maybe you should travel when the moon is out?"
+        es = "Deben estar sudando como cerdos bajo toda esa armadura. ¿Quizás deberían viajar cuando salga la luna?"
+    }
+    {
+        en = "Let me tell you, the southern wine is the best you can find in all the lands. But you better start bashing in some heads or whatever it is you do so you can afford the good stuff, because it doesn't come cheap."
+        es = "Déjame decirte, el vino del sur es el mejor que puedes encontrar en todas las tierras. Pero mejor empieza a golpear algunas cabezas o lo que sea que hagas para que puedas permitirte el buen vino, porque no es barato."
+    }
+    {
+        en = "A trader from the north got lost in the steppe the other week. He made it back but did not stop fantasizing about some lake he discovered surrounded by lush plants and strange animals."
+        es = "Un comerciante del norte se perdió en la estepa la semana pasada. Regresó, pero no dejaba de fantasear con un lago que descubrió rodeado de plantas exuberantes y animales extraños."
+    }
+    {
+        en = "Tell your men to keep their mitts off of the innkeeper's daughter. The last lover boy who tried something had his nose cut right off."
+        es = "Dile a tus hombres que mantengan las manos lejos de la hija del posadero. El último chico amante que intentó algo le cortaron la nariz de inmediato."
+    }
+    {
+        en = "I'm from up north originally, moved to %townname% just some years ago. Never could stand the cold; snow and wind, day in and out. So one day I just said to myself, %randomname%, I said, go where the sun warms the earth and you're not shivering every time you go out to collect fire wood. And so I did. Didn't regret it since."
+        es = "Soy del norte originalmente, me mudé a %townname% hace solo algunos años. Nunca pude soportar el frío; nieve y viento, día tras día. Así que un día simplemente me dije a mí mismo 'al diablo'. %randomname%, me dije, ve a donde el sol caliente la tierra y no tiembles cada vez que salgas a recoger leña. Y así lo hice. No me he arrepentido desde entonces."
+    }
+    {
+        en = "You like mushrooms? Well, I most certainly hate them! But there's not much else to be found in this stinking swamp besides biting midges and spiders."
+        es = "¿Te gustan los champiñones? ¡Bueno, yo ciertamente los odio! Pero no hay mucho más que se pueda encontrar en este maldito pantano además de los mosquitos y las arañas que pican."
+    }
+    {
+        en = "Traders don't come here often. Their large carriages tend to get stuck in the mud and guess who has to help them out once that happens..."
+        es = "Los comerciantes no vienen aquí a menudo. Sus grandes carros suelen quedar atrapados en el barro y adivina quién tiene que ayudarles una vez que eso sucede..."
+    }
+    {
+        en = "There once was a stone road leading here bringing traders, customers and all kinds of folk. One day it completely sunk into the swamp and look at this place now..."
+        es = "Una vez hubo un camino de piedra que llevaba aquí trayendo comerciantes, clientes y todo tipo de gente. Un día se hundió por completo en el pantano y mira cómo está este lugar ahora..."
+    }
+    {
+        en = "Don't wander through the swamps at night! You might get lost, yes, but out in the swamp at night there's far worse things that can happen to a man. Just ask anyone around here."
+        es = "¡No te aventures por los pantanos de noche! Puedes perderte, sí, pero en el pantano por la noche hay cosas mucho peores que pueden sucederle a un hombre. Solo pregunta a cualquiera por aquí."
+    }
+    {
+        en = "Those northeners pay good coin for our silk and spices, so we have caravans going up all the time. And caravans need escorts, you know."
+        es = "Los del norte pagan buena moneda por nuestra seda y especias, así que tenemos caravanas que suben todo el tiempo. Y las caravanas necesitan escoltas, ¿sabes?"
+    }
+    {
+        en = "If I can give you one piece of advice, it's this: don't venture too far out in the desert. There are things far worse than heat and sand at the edge of the world."
+        es = "Si puedo darte un consejo, es este: no te aventures demasiado en el desierto. Hay cosas mucho peores que el calor y la arena en el borde del mundo."
+    }
+    {
+        en = "Those northern dogs have no right to come into our lands, they should stay where they belong!"
+        es = "Esos perros del norte no tienen derecho a venir a nuestras tierras, ¡deberían quedarse donde les corresponde!"
+    }
+    {
+        en = "A caravan transporting some valuable ceremonial weapon has been raided %direction% of here. Rumor is the victims had every single bone broken, and a terrible stench hangs in the air."
+        es = "Una caravana que transportaba una valiosa arma ceremonial ha sido saqueada al %direction% de aquí. El rumor es que las víctimas tenían todos los huesos rotos y un terrible hedor en el aire."
+    }
+    {
+        en = "A patron recently spoke of some weapon called the %item% he wanted to sell. Said he got spooked by some greenskinned beasts on his way to town and abandoned it %terrain% %direction% from here."
+        es = "Un cliente habló recientemente de un arma llamada %item% que quería vender. Dijo que se asustó con algunas bestias de piel verde en su camino hacia la ciudad y la abandonó en %terrain% al %direction% de aquí."
+    }
+    {
+        en = "A traveler told me the other day that he saw the biggest man alive wielding what he called %item% with his own eyes. Sounds like hogwash to me, but if you're interested the guy left here towards the %direction%."
+        es = "Un viajero me contó el otro día que vio al hombre más grande que jamás haya visto empuñando lo que llamó %item% con sus propios ojos. Suena a tonterías para mí, pero si estás interesado, el tipo se fue hacia el %direction%."
+    }
+    {
+        en = "Big cocked adventurer with a pretty face came by here a few nights ago. He headed %direction% of here looking to slay some greenskins. Wore a fancy shield on his back, looked like some type o' knight, but told me he wasn't."
+        es = "Un aventurero bien armado con una cara bonita pasó por aquí hace algunas noches. Se dirigió hacia el %direction% buscando eliminar a algunos pieles verdes. Llevaba un escudo elegante en la espalda, parecía algún tipo de caballero, pero me dijo que no lo era."
+    }
+    {
+        en = "They say that some famous shield, I forgot what it was called, once stopped a boulder from rolling down a hill and crushing a camp. Sounds like shite to me. Not that we'll ever find out if it's true that it's an orc war trophy now, hidden somewhere %distance% to the %direction% of here."
+        es = "Dicen que algún escudo famoso, olvidé cómo se llama, una vez detuvo una roca que rodaba por una colina y aplastaría un campamento. Suena como tonterías para mí. No creo que vayamos a descubrir si es cierto ahora que es un trofeo de guerra orco, oculto en algún lugar al %direction% %distance% de aquí."
+    }
+    {
+        en = "Don't take my word for it, but supposedly some big green oafs %direction% of here are toting around with an incredible shield simply called %item%. How they might've gotten it is beyond me."
+        es = "No me creas, pero supuestamente algunos grandotes verdes al %direction% de aquí están cargando con un escudo increíble llamado %item%. Cómo lo habrán obtenido está más allá de mí."
+    }
+    {
+        en = "Some nobleman's manor got raided by greenskins a few days ago. They made off with some famous shield or relic. Supposedly those greenskinned bastards are holed up somewhere %direction% of here."
+        es = "Hace unos días, una mansión de un noble fue saqueada por pieles verdes. Se llevaron un escudo o reliquia familiar. Supuestamente, esos bastardos de piel verde están escondidos en algún lugar al %direction% de aquí."
+    }
+    {
+        en = "Familiar with orcs? Massive beasts and strong as oxen! A mercenary band that called themselves %randommercenarycompany% came through and headed %direction% to hunt them down some weeks ago. They never returned, but their leader wore the most impressive armor I've ever seen in my life!"
+        es = "¿Estás familiarizado con los orcos? ¡Bestias masivas y fuertes como bueyes! Una banda de mercenarios que se hacían llamar %randommercenarycompany% pasó por aquí y se dirigió al %direction% para cazarlos hace algunas semanas. Nunca regresaron, pero su líder llevaba la armadura más impresionante que he visto en mi vida."
+    }
+    {
+        en = "Oh, have you heard of %item%? It's said to have been stolen ages ago during the last orc invasion. There were sightings of it reported %direction% of here, but me, I don't know any details. I didn't mean to get your hopes up about it."
+        es = "Oh, ¿has oído hablar de %item%? Se dice que fue robado hace siglos durante la última invasión de orcos. Hubo avistamientos de él informados al %direction% de aquí, pero yo, no sé ningún detalle. No quiero hacerte ilusiones al respecto."
+    }
+    {
+        en = "Some famed armorsmith got slain a few days ago. Rumor has it orcs ransacked his place and ran off with his masterpiece to somewhere %direction% from here. Maybe someone else can tell you more."
+        es = "Algunos armeros famosos fueron asesinados hace unos días. El rumor dice que los orcos saquearon su lugar y se llevaron su obra maestra a algún lugar al %direction% de aquí. Tal vez alguien más pueda contarte más detalles."
+    }
+    {
+        en = "Word has it %randomnoble% got forever put to sleep by a band of greenskins %direction% of here. He was well known for abusing all his servants so you won't find anyone crying for him 'round here. Just a shame for the mastercrafted armor he used to boast, that one could buy us a lot of pigs and cows. And chickens!"
+        es = "Se rumorea que %randomnoble% quedó dormido para siempre a manos de una banda de pieles verdes al %direction% de aquí. Era conocido por abusar de todos sus sirvientes, así que no encontrarás a nadie llorando por él por aquí. Solo es una lástima por la armadura de alta calidad que solía presumir, esa podría comprarnos muchos cerdos, vacas y pollos."
+    }
+    {
+        en = "A really pissed-off nobleman told me the other day that some stunty greenskins made off with his family heirloom after poisoning his trusted guard dogs. He swears they hid %terrain% somewhere %distance% from here, but I don't think he ever convinced anyone to retrieve it for him. Certainly not me."
+        es = "Un noble muy enfadado me contó el otro día que unos verdes enanos se llevaron su reliquia familiar después de envenenar a sus perros guardianes de confianza. Jura que la escondieron %terrain% en algún lugar %distance% de aquí, pero no creo que haya convencido a nadie para que la recupere por él. Ciertamente no yo."
+    }
+    {
+        en = "Afraid of greenskins? Some real beaten up soldiers passed down through here the other day. Said they wanted to wrestle a well-known weapon from goblins %direction% of here, but it sure looked like it didn't go down as planned and they had to pull back. Guess their prize is still up for the taking."
+        es = "¿Tienes miedo de los verdes? Algunos soldados realmente golpeados pasaron por aquí el otro día. Dijeron que querían arrebatar un arma muy conocida a los trasgos al %direction% de aquí, pero parecía que no salió como habían planeado y tuvieron que retirarse. Supongo que su premio todavía está esperando ser reclamado."
+    }
+    {
+        en = "A farmer from up %direction% told me he saw some small, sinister creatures on his land carrying a large, shiny shield and making devilish noises. He says it was goblins, but I say he got pranked by some youngsters!"
+        es = "Un granjero que vino del %direction% me dijo que vio a algunas criaturas pequeñas y siniestras en su tierra llevando un gran escudo brillante y haciendo ruidos diabólicos. Él dice que eran goblins, ¡pero yo digo que fue engañado por algunos jóvenes!"
+    }
+    {
+        en = "They found the best shieldmaker in the whole region dead with a dart sticking out of his neck %direction% of here. People said they saw little creatures running off with half his wares."
+        es = "Encontraron al mejor fabricante de escudos de toda la región muerto con un dardo clavado en el cuello al %direction% de aquí. La gente dijo que vio a pequeñas criaturas huyendo con la mitad de sus mercancías."
+    }
+    {
+        en = "Somewhere %direction% of here be some goblins. The only reason I know it is because every swinging dick that comes this way talks about how they just barely got away with their life. One even claims he lost his mastercrafted shield when legging it."
+        es = "En algún lugar al %direction% de aquí hay algunos goblins. La única razón por la que lo sé es porque cada persona que pasa por aquí habla de cómo apenas escaparon con vida. Uno incluso afirma que perdió su escudo de alta calidad cuando se escapaba."
+    }
+    {
+        en = "Word has it that some overpriced and overvalued piece of armor  was stolen from the guardhouse by some small devil creatures that hauled it to the %direction%. %randomname% said it must've been goblins, but no one here really knows what they look like."
+        es = "Se dice que kobolds y goblins tienen un interés especial en todo lo que brilla. Nunca creí que fuera cierto, pero vi algo brillando al sol %terrain% al %direction% de aquí y escuché historias extrañas sobre criaturas pequeñas y regordetas que merodean por esa área."
+    }
+    {
+        en = "It's said that kobolds and goblins take a special interest in everything shiny. I never believed this to be true myself, but I repeatedly saw something glistening in the sun %terrain% %direction% from here and heard strange stories about short and stubby creatures roaming that area."
+        es = "Puede que te interese saber que nuestro viejo herborista fuera de la ciudad fue robado anoche justo cuando un rico caballero lo visitó. Los asaltantes, según él, eran pequeñas criaturas que parecían niños deformes, mataron al caballero y deben encontrarse %terrain% al %direction%."
+    }
+    {
+        en = "You may be interested to learn that our old herbalist outside of town got robbed last night just as a wealthy knight payed him a visit. The assailants, he claims it was small creatures looking like deformed kids, killed the knight and made off to %terrain% in the %direction%."
+        es = ""
+    }
+    {
+        en = "Word has it that a bunch of ne'er do wells %direction% from here got their hands on something real fancy and sharp through a brash heist."
+        es = "Se rumorea que un grupo de sinvergüenzas al %direction% de aquí obtuvo algo realmente elegante y afilado a través de un atrevido robo."
+    }
+    {
+        en = "Buncha lowlifes tried raiding a caravan %terrain% %distance% from here. They all got slain, but rumor has it that some valuable weapon went missing during the fight. The caravan guards have been searching for it frantically since."
+        es = "Un montón de maleantes intentaron saquear una caravana %terrain% %distance% de aquí. Todos fueron asesinados, pero se rumorea que durante la pelea desapareció un arma valiosa. Los guardias de la caravana la han estado buscando frenéticamente desde entonces."
+    }
+    {
+        en = "A bewildered patron told me he was held prisoner by some rogues %terrain% %distance% from here. Said they had something real pretty with them. Some sort of curious looking weapon."
+        es = "Un cliente confundido me contó que estuvo prisionero de algunos bandidos %terrain% %distance% de aquí. Dijo que tenían algo realmente bonito con ellos. Algo así como un arma de aspecto curioso."
+    }
+    {
+        en = "The captain of the guard deserted a while ago to join a raider camp hidden %terrain% to the %direction%. My uncle, who served under him, claims he raided the armory before leaving and grabbed a real prize."
+        es = "El capitán de la guardia desertó hace un tiempo para unirse a un campamento de bandidos oculto %terrain% al %direction%. Mi tío, que sirvió bajo su mando, afirma que saqueó la armería antes de irse y se llevó un verdadero tesoro."
+    }
+    {
+        en = "I hear the famous shield %item% has been sighted. %randomname% claims that it belongs to a band of hard boiled raiders camping out %direction% of here. But then, %randomname% talks lots about things he knows nothing about."
+        es = "Oíste hablar del famoso escudo %item%? %randomname% dice que pertenece a una banda de bandidos duros que acampan al %direction% de aquí. Pero bueno, %randomname% habla mucho de cosas de las que no sabe nada."
+    }
+    {
+        en = "All anyone talks 'bout 'round these parts are damned raiders. 'Suppose they're the toast of Rumorville 'cause they gots their hands on the %item% or some such thing now. Where at? Oh, somewhere %terrain%."
+        es = "Todo el mundo habla de los malditos bandidos por aquí. Supongo que son el tema de conversación de Villachisme porque pusieron sus manos en el %item% o algo así. ¿Dónde está? Oh, en algún lugar %terrain%."
+    }
+    {
+        en = "A friend of a friend got robbed %direction% from here by a group of outlaws the other day. He claims the leader donned the most astonishing armor!"
+        es = "Un amigo de un amigo fue asaltado al %direction% de aquí por un grupo de forajidos el otro día. Él afirma que el líder llevaba una armadura asombrosa."
+    }
+    {
+        en = "A brash young man came through just the other day, nobility methinks, looking for an old family heirloom called %item%. Last I saw, he was heading %direction% of here."
+        es = "Un joven audaz pasó por aquí el otro día, probablemente de la nobleza, buscando un antiguo objeto familiar llamado %item%. La última vez que lo vi, se dirigía al %direction% de aquí."
+    }
+    {
+        en = "Now, I don't want to start any rumors, but I saw a dead man walking around %direction% of here. His rotten hands clutched an extraordinary weapon but I'd never dare go there again in my life!"
+        es = "La verdad, no quiero empezar rumores, pero vi a un hombre muerto caminando al %direction% de aquí. Sus manos podridas sujetaban un arma extraordinaria, pero nunca me atrevería a volver allí en mi vida."
+    }
+    {
+        en = "Some drunk scavenger came by last night, told us he'd tried to wrestle a weapon beset with gems from a dead man's hands %distance% to the %direction%. Said his grip was like a vice, and then he made a sound, so he ran off. Such nonsense, but he looked spooked as all hell."
+        es = "Un chatarrero borracho pasó por aquí la noche pasada y nos contó que intentó arrebatar un arma adornada con gemas de las manos de un hombre muerto %distance% al %direction%. Dijo que su agarre era como una tenaza y luego emitió un sonido, así que se fue corriendo. Un disparate, pero parecía asustado como el infierno."
+    }
+    {
+        en = "There's lots of talk about the dead walking the earth again. %randomname% says there's some to the %direction% of here. Sounds like hogwash to me."
+        es = "Se habla mucho de los muertos que caminan de nuevo por la tierra. %randomname% dice que hay algunos al %direction% de aquí. Suena a tonterías para mí."
+    }
+    {
+        en = "Supposedly a bunch of graves %direction% of here are turning up empty. Someone said graverobbers were looking for a famed shield buried there. Strangely, nobody's actually seen those graverobbers, so maybe it's all hogwash."
+        es = "Supuestamente un montón de tumbas al %direction% de aquí están apareciendo vacías. Alguien dijo que los saqueadores de tumbas estaban buscando un escudo famoso enterrado allí. Extrañamente, nadie ha visto realmente a esos saqueadores de tumbas, así que tal vez todo sea una tontería."
+    }
+    {
+        en = "So I watched over the steward's books and came across old maps that depicted an ancient noble burial ground %terrain% %distance% from here. However, nobody was able to find it yet. Well, some things are just not meant to be found, I suppose."
+        es = "...así que supervisé los libros del mayordomo y encontré mapas antiguos que mostraban un antiguo cementerio noble %terrain% %distance% de aquí. Sin embargo, nadie ha podido encontrarlo todavía. Bueno, algunas cosas simplemente no están destinadas a ser encontradas, supongo."
+    }
+    {
+        en = "So %terrain% %direction% of here is supposedly the last resting place of a mystical piece of armor. Don't know the name myself, I just know a lot of adventurers go there and don't come back. Dunno why I told you, really. I like your business."
+        es = "Así que %terrain% al %direction% de aquí es supuestamente el último lugar de descanso de una pieza de armadura mística. No conozco el nombre, pero sé que muchos aventureros van allí y no regresan. No sé por qué te lo conté, realmente. Me agrada tu compañía."
+    }
+    {
+        en = "You heard of %location%? Ask anyone around here, it's been haunting %townname% since before I was born. Folks say some armor from the gods is sealed there for all time, back from when man first settled here."
+        es = "¿Has oído hablar de %location%? Pregunta a cualquiera por aquí, ha estado acosando a %townname% desde antes de que yo naciera. La gente dice que hay una armadura de los dioses sellada allí para siempre, desde los primeros tiempos de la humanidad."
+    }
+    {
+        en = "Nothing is holy to those barbarian brutes! A completely naked priest stumbled in here from %direction%. He was on the way to bring a revered relic to the temple but they took it from him."
+        es = "¡Nada es sagrado para esas brutales hordas bárbaras! Un sacerdote completamente desnudo tropezó aquí desde el %direction%. Iba camino al templo para llevar una reliquia venerada, pero se la quitaron."
+    }
+    {
+        en = "A mercenary company came by here hunting barbarians. The leader wielded a weapon unlike anything I ever saw before. They turned %direction% and were never to be seen again."
+        es = "Una compañía de mercenarios pasó por aquí cazando bárbaros. El líder empuñaba un arma como nada que hubiera visto antes. Se dirigieron al %direction% y nunca volvieron a ser vistos."
+    }
+    {
+        en = "When you head out %terrain% %direction%, keep your eyes peeled for a group of fierce wild men. They may lead you to their stash where a famed stolen weapon is said to be found."
+        es = "Cuando te dirijas %terrain% al %direction%, mantén los ojos bien abiertos para encontrar a un grupo de hombres salvajes feroces. Pueden llevarte a su escondite, donde se dice que se encuentra un arma robada famosa."
+    }
+    {
+        en = "Hark! A tribe of uncultured barbarians has been seen %direction% of here with a shield called %item% in their dirty hands! Slay them and get it back!"
+        es = "¡Escucha! ¡Se ha visto a una tribu de bárbaros incultos %direction% de aquí con un escudo llamado %item% en sus sucias manos! ¡Mátalos y recupéralo!"
+    }
+    {
+        en = "A friend of a friend spotted some wildmen in the distance %direction% of here. He swears they carried a finely crafted shield. I call horseshit, as everbody knows they do not use shields like we do!"
+        es = "Un amigo de un amigo vio a algunos salvajes en la distancia %direction% de aquí. Jura que llevaban un escudo finamente elaborado. Yo digo que es una tontería, ya que todos sabemos que no usan escudos como nosotros!"
+    }
+    {
+        en = "Only a good defense allows for a strong offense they say. Rumors has it, a band of barbarians %distance% to the %direction% are in the possession of a famed shield..."
+        es = "Dicen que solo una buena defensa permite un buen ataque. Se rumorea que una banda de bárbaros %distance% al %direction% posee un famoso escudo..."
+    }
+    {
+        en = "I used to be trading with some of the not-so-wild barbarians %direction% of here. When I last visited them there was a magnificent shield hanging in one of their huts. They might still be hanging out there %terrain%."
+        es = "Solía comerciar con algunos bárbaros no tan salvajes al %direction% de aquí. La última vez que los visité, había un magnífico escudo colgado en una de sus chozas. Todavía podrían estar allí %terrain%."
+    }
+    {
+        en = "You look like you could use some better armor, my friend. If you are not scared of taking on fierce barbarians, there is a mighty fine armor to be claimed in one of their camps called %location%, %terrain% %direction% of here."
+        es = "Pareces que podrías usar una mejor armadura, amigo mío. Si no tienes miedo de enfrentarte a los bárbaros feroces, hay una armadura muy buena que se puede reclamar en uno de sus campamentos llamado %location%, %terrain% al %direction% de aquí."
+    }
+    {
+        en = "The famed %item% has been guarded in the armory for decades, but when the wild men from the north came they took everything with them. They are said to be camping out somewhere %terrain% %distance% from here."
+        es = "El famoso %item% ha estado custodiado en la armería durante décadas, pero cuando llegaron los hombres salvajes del norte, se llevaron todo con ellos. Se dice que están acampando en algún lugar %terrain% %distance% de aquí."
+    }
+    {
+        en = "I came here to pick up an heirloom from my late grandfather just to get to know it has been stolen by marauding barbarians. They are said to loiter somewhere %terrain% %direction% of here, but I fear I will never get it back."
+        es = "Vine aquí a recoger una reliquia de mi difunto abuelo solo para enterarme de que fue robada por bárbaros saqueadores. Se dice que merodean por algún lugar %terrain% al %direction% de aquí, pero temo que nunca la recuperaré."
+    }
+    {
+        en = "Are you also here to look for %item% like all those other fools? It is said to lie somewhere %terrain% %direction%. Nothing but hogwash if you ask me..."
+        es = "¿Estás aquí para buscar %item% como todos esos otros tontos? Se dice que está en algún lugar %terrain% al %direction%. Nada más que tonterías si me preguntas..."
+    }
+    {
+        en = "The nomads take what they want and hide out in the desert. The guards have been looking for them %terrain% %direction% of here. I think they're %distance%."
+        es = "Los nómadas toman lo que quieren y se esconden en el desierto. Los guardias los han estado buscando %terrain% al %direction% de aquí. Creo que están %distance% de aqui."
+    }
+    {
+        en = "The days here in the south are as bright as the nights are dark. I must have stumbled and lost my precious weapon %distance% to the %direction%, but I gave up looking for it."
+        es = "Los días aquí en el sur son tan brillantes como las noches son oscuras. Debo haber tropezado y perdido mi preciosa arma %distance% al %direction%, pero desistí de buscarla."
+    }
+    {
+        en = "The craftsmen of the ancient times really knew how to make remarkable weapons. Rumors has it such a weapon is with a nomad tribe hiding out in the %direction%, but who should take it from them - me? Ha!"
+        es = "Los artesanos de la antigüedad realmente sabían cómo hacer armas notables. Se rumorea que una de esas armas está con una tribu nómada escondida al %direction%, pero ¿quién debería quitársela, yo? ¡Ja!"
+    }
+    {
+        en = "A shield reflecting the sunlight like a mirror, more blinding than the midday in the desert! Where I saw that? Some Nomads had it in the %direction% %distance% from here, if I recall correctly."
+        es = "¡Un escudo que refleja la luz del sol como un espejo, más deslumbrante que el mediodía en el desierto! ¿Dónde lo vi? Algunos nómadas lo tenían al %direction% %distance% de aquí, si recuerdo correctamente."
+    }
+    {
+        en = "All my life I've been hunting nomads across the borders %terrain%, but I never saw one wield a shield like this one before. It was %distance% to the %direction% at one of their camps."
+        es = "Toda mi vida he estado cazando nómadas a través de las fronteras %terrain%, pero nunca vi a uno empuñar un escudo como este antes. Estaba %distance% al %direction% en uno de sus campamentos."
+    }
+    {
+        en = "Nomads do not only take from the living but from the dead as well! Word has it they plundered the so-called %item% from a tomb %direction% of here where they have their camp still. They really do not have any decency."
+        es = "¡Los nómadas no solo toman de los vivos sino también de los muertos! Se dice que saquearon el llamado %item% de una tumba al %direction% de aquí donde tienen su campamento todavía. Realmente no tienen ningún decoro."
+    }
+    {
+        en = "I used to be first quartermaster to a Vizier. When the famed armor I ordered for a guest of honor did not arrive, I lost my position. The caravan with it was ambushed by nomads, I later learned, %direction% of here."
+        es = "Solía ser el primer intendente de un visir. Cuando la famosa armadura que encargué para un invitado de honor no llegó, perdí mi posición. La caravana con ella fue emboscada por nómadas, supe luego, al %direction% de aquí."
+    }
+    {
+        en = "An opulent armor is said to be hidden out %terrain% %direction% from here. Many treasure seekers failed to claim it so far but maybe you have more luck?"
+        es = "Se dice que una opulenta armadura está oculta %terrain% al %direction% de aquí. Muchos buscadores de tesoros han fracasado en reclamarla hasta ahora, pero tal vez tengas más suerte."
+    }
+    {
+        en = "The most skilled armorsmith around, who happens to be a friend of mine, got tricked by those damned nomads and they made off with one of his prize armors. If you come across any nomads %direction% of here, search their bodies thoroughly!"
+        es = "El armero más hábil de la región, que resulta ser un amigo mío, fue engañado por esos malditos nómadas y se llevaron una de sus armaduras más preciadas. Si te encuentras con nómadas al %direction% de aquí, ¡revuelve bien sus cuerpos!"
+    }
+    {
+        en = "The nobles are quarreling again like two old hags at the garden fence. They just can't get over their pride!"
+        es = "Los nobles están peleando nuevamente como dos viejas chismosas en la cerca del jardín. ¡Simplemente no pueden superar su orgullo!"
+    }
+    {
+        en = "The nobles will take all your crowns, and your sons and husbands too, and burn them in their pointless struggles - a thousand curses 'pon them!"
+        es = "Los nobles se llevarán todas tus coronas, y también a tus hijos y esposos, y los quemarán en sus luchas sin sentido, ¡mil maldiciones sobre ellos!"
+    }
+    {
+        en = "I've served my time in the army twenty years ago. Lost an ear, see? Now my boy's marching. Was snatched right out the stables and forced into the frontline. Different war, same old shit. I pray he stays low and keeps his shield up."
+        es = "Serví en el ejército hace veinte años. Perdí una oreja, ¿ves? Ahora mi hijo está marchando. Lo arrancaron de los establos y lo forzaron al frente. Distinta guerra, misma mierda. Rezo para que se mantenga bajo y con su escudo en alto."
+    }
+    {
+        en = "The green tide keeps washing away one army after the other! We're all doomed! Doomed!"
+        es = "¡La marea verde sigue arrasando con un ejército tras otro! ¡Estamos todos condenados! ¡Condenados!"
+    }
+    {
+        en = "All are running from the greenskins but not me! I will stand my ground, club in one hand, pitcher in the other! Send them my way!"
+        es = "Todos huyen de los pieles verdes, ¡pero yo no! ¡Permaneceré firme, con un garrote en una mano y una jarra en la otra! ¡Envíalos hacia mí!"
+    }
+    {
+        en = "We barely fought off the greenskins last time at the Battle of Many Names, just barely made it, and now they're back."
+        es = "A duras penas nos defendimos de los pieles verdes la última vez en la Batalla de los Muchos Nombres, apenas lo logramos, y ahora han vuelto."
+    }
+    {
+        en = "We hear stories of more and more farms and hamlets getting burned every day. It's greenskins raiding the countryside."
+        es = "Escuchamos historias de más y más granjas y aldeas quemándose todos los días. Son los pieles verdes saqueando el campo."
+    }
+    {
+        en = "May the old gods help us! The dead are stirring in their graves all over the lands. They will come and claim the living. Repent, repent and pray!"
+        es = "¡Que los viejos dioses nos ayuden! Los muertos se agitan en sus tumbas por todo el país. Vendrán y reclamarán a los vivos. ¡Arrepiéntete, arrepiéntete y reza!"
+    }
+    {
+        en = "The nobles are on their back foot, and nobody knows how to stop the undead menace coming for us. I have to keep my mind off of it - inkeeper! Another!"
+        es = "Los nobles están acorralados, y nadie sabe cómo detener la amenaza de los no muertos que se acerca. Tengo que mantener mi mente alejada de eso. ¡Tabernero! ¡Otro!"
+    }
+    {
+        en = "Maybe I should just hang myself, get it over with and join the ranks of the marching dead. This waiting is driving me insane!"
+        es = "Tal vez debería ahorcarme, acabar con esto y unirme a las filas de los muertos vivientes. Esta espera me está volviendo loco!"
+    }
+    {
+        en = "A man was found dead on the road. He sat upright on a donkey cart, all dried up, like a puppet of skin, tendrils, and bone. The donkey too. 'Tis like the blood was sucked right out of 'em."
+        es = "Encontraron a un hombre muerto en el camino. Estaba sentado derecho en un carro de burros, todo seco, como una marioneta de piel, tendones y hueso. El burro también. Es como si les hubieran chupado la sangre."
+    }
+    {
+        en = "Ghastly ghosts, empty graves, otherworldly mindless slaves!\nHave a glass, find a wench before your teeth will clench!\nKill the can, don't stay dry, three days until we die!"
+        es = "Fantasmas espantosos, tumbas vacías, esclavos mentales de otro mundo!\n¡Toma una copa, encuentra a una mujer antes de que tus dientes se aprieten!\n¡Mata al barril, no te quedes seco, tres días hasta que estemos todos muertos!"
+    }
+    {
+        en = "%randomnoble% had his lunch come back from the dead. Was about to take a healthy bite of stuffed goose when the thing jumped from his plate and started flapping in circles. Sprayed baked apples across the living quarters. Must've been a sight to remember."
+        es = "%randomnoble% vió a su almuerzo regresar de entre los muertos. Estaba a punto de darle un buen mordisco al ganso relleno cuando la cosa saltó de su plato y comenzó a dar vueltas en círculos. Roció manzanas horneadas por todo el comedor. Debe haber sido un espectáculo para recordar."
+    }
+    {
+        en = "Did you hear the news? Armies are rallying at %randomtown% to march south. I just hope the gilded don't strike back some day..."
+        es = "¿Oíste las noticias? Los ejércitos se están reuniendo en %randomtown% para marchar hacia el sur. Solo espero que los dorados no contraataquen algún día..."
+    }
+    {
+        en = "If you are looking for coin you should head south and teach those sun-worshippers a lesson!"
+        es = "Si estás buscando monedas, deberías dirigirte al sur y enseñarles una lección a esos adoradores del sol!"
+    }
+    {
+        en = "What.... WHAT!? I can't hear you! I was fighting those Gilder followers at the Oracle and something loud went up near my ear..."
+        es = "¿Qué... QUÉ!? ¡No puedo oírte! Estaba luchando contra esos seguidores del Dorado en el Oráculo y algo sonó fuerte cerca de mi oído..."
+    }
+    {
+        en = "Want some soup? I got beef and potatoes in there. No spices, though. Ran out of 'em on account of the war."
+        es = "¿Quieres sopa? Tengo carne de res y papas ahí. Sin especias, sin embargo. Se acabaron debido a la guerra."
+    }
+    {
+        en = "The priest says that the old gods will take you in if you don't make it back from the crusade. 'Tis a good thing to know, right? Those Gilder fanatics are a dangerous lot."
+        es = "El sacerdote dice que los viejos dioses te aceptarán si no regresas de la cruzada. Es bueno saberlo, ¿verdad? Esos fanáticos del Dorado son un grupo peligroso."
+    }
+    {
+        en = "Can you believe it? %randomnoble% paid some nomad folk to guide his host through the desert. Bloody folly if true, that. Wouldn't trust those snakes as far as I can piss."
+        es = "¿Puedes creerlo? %randomnoble% pagó a algunos nómadas para que guiaran a su ejército a través del desierto. Una locura sangrienta si es verdad. No confiaría en esas serpientes, ni siquiera para orinar."
+    }
+    {
+        en = "A nephew of mine got killed in the desert. Poor lad. Set out to protect the faith and was ran through with a spear for it. Bastard who did it is still alive. Make 'em pay for it, I say. Make the thrice cursed lot o'em pay!"
+        es = "Un sobrino mío fue asesinado en el desierto. Pobre chico. Salió a proteger la fe y lo atravesaron con una lanza. El bastardo que lo hizo todavía está vivo. ¡Haz que paguen por ello! ¡Haz que el maldito grupo pague tres veces!"
+    }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\config\strings.nut
     {
         // return this.isFirstCharacter(_object, [
@@ -17839,6 +18672,406 @@ local pairs = [
         en = "[img]gfx/ui/events/event_04.png[/img]\x7b%employer% is sitting beneath the glow of a golden bauble, an enormous piece of metal like the sun with chains holding it from the ceiling. It must have been erected while you were away. When you come forward, a holy man stops you and shakes his head. He draws a circle in the air with his hand and then touches his fingertip upon your pate. Smiling, he warmly guides you to another side of the room where %reward% crowns have been stacked neatly inside wooden trays.\n\n The man bows, points his hands to the golden bauble, shaping his palms as though he carried the very construct, and then he seems to guide its sublimity upon your payment, the coins crackling with light. Some sort of trick, but the pay is real so you take it and go. | When you enter %employer%'s room, a number of guards bow and prostrate themselves momentarily and then get to their feet. In the distance, the Vizier is silently sitting on a throne with silk-wearing holy men all around him. It seems you will not be approaching him on this day, but a group of young boys carry trays of coins to you one at a time until you have %reward% crowns. The Vizier nods and turns his hand over. You take the payment and go. | You enter the grand hall to find %employer% seemingly ensorcelled by a swirl of golden mist. He stands upon a rotating platform - revolving rather roughly with the help of nearly unseen slaves beneath the floor itself - and there are strips of cloth tied to his wrists. His harem stands off to the side filling their mouths with some golden liquid before spraying it out in lip-spattering mists. Upon closer inspection, it is not so glorious an event as you first thought walking in here. Fortunately, you will not be afforded a closer look: a large man in religious frock cuts you off and guides you to a table at the back of the room. It is lined with trays filled with coin, their entirety being your reward of %reward% crowns. With your pay in hand, you are hurriedly ushered out of the room.\x7d"
         es = "[img]gfx/ui/events/event_04.png[/img]\x7b%employer% está sentado bajo el resplandor de una bola dorada, una enorme pieza de metal como el sol, con cadenas que la sostienen desde el techo. Debe haber sido erigida mientras estabas fuera. Cuando te acercas, un hombre santo te detiene y niega con la cabeza. Dibuja un círculo en el aire con la mano y luego toca la punta de su dedo en tu frente. Sonriendo, te guía cálidamente a otro lado de la habitación donde %reward% coronas han sido apiladas ordenadamente en una bandeja de madera.\n\nEl hombre se inclina, apunta sus manos hacia la bola dorada, moldeando sus palmas como si llevara la misma construcción, y parece guiar su sublimidad hacia tu pago, las monedas chisporrotean con luz. Algo así como un truco, pero el pago es real, así que lo tomas y te vas. | Cuando entras en la habitación de %employer%, varios guardias se inclinan y se postran momentáneamente y luego se ponen de pie. A lo lejos, el Visir está sentado en silencio en un trono con hombres santos vestidos de seda a su alrededor. Parece que no te acercarás a él en este día, pero un grupo de jóvenes llevan unas bandeja de monedas hacia ti una por una hasta que tienes %reward% coronas. El Visir asiente y gira su mano. Tomas el pago y te vas. | Entras en el gran salón y ves que %employer% parece hechizado por un remolino de niebla dorada. Está parado sobre una plataforma giratoria, que gira bastante bruscamente con la ayuda de esclavos casi invisibles bajo el suelo mismo, y tiene tiras de tela atadas a sus muñecas. Su corte está al lado llenando sus bocas con algún líquido dorado antes de rociarlo en neblinas que salpican los labios. Al observar más de cerca, no es un evento tan glorioso como pensaste al entrar aquí por primera vez. Afortunadamente, no se te permitirá una mirada más cercana: un hombre grande con una vestimenta religiosa te corta el paso y te guía a una mesa al fondo de la habitación. Está llena de bandejas llenas de monedas, que en su totalidad son tu recompensa de %reward% coronas. Con tu pago en mano, te apresuran a salir de la habitación.\x7d"
     }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\decisive_battle_contract.nut
+    {
+        en = "The Battle"
+        es = "La Batalla"
+    }
+    {
+        en = "Move to the war camp and report to %commander%"
+        es = "Dirígete al campamento de guerra y repórtate al %commander%"
+    }
+    {
+        en = "Assist the army in their battle against %feudfamily%"
+        es = "Ayuda al ejército en su batalla contra %feudfamily%"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).addPlayerRelation(-99.0, "Took sides in the war");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "Wait in the war camp until your services are called upon"
+        es = "Espera en el campamento de guerra hasta que necesiten tus servicios"
+    }
+    {
+        en = "Intercept scouts of %feudfamily% last seen %direction% of the warcamp"
+        es = "Intercepta a los exploradores de %feudfamily% vistos por última vez hacia el %direction% del campamento de guerra"
+    }
+    {
+        en = "Let no one escape alive"
+        es = "No dejes que nadie escape con vida"
+    }
+    {
+        en = "Scouts"
+        es = ""
+    }
+    {
+        en = "Return to the war camp"
+        es = "Regresa al campamento de guerra"
+    }
+    {
+        en = "Requisition supplies at %objective% to the %direction% of the warcamp"
+        es = "Requisa suministros en %objective% hacia el %direction% del campamento de guerra"
+    }
+    {
+        mode = "pattern"
+        en = "Intercept supplies enroute from %supply_start% to %supply_dest%"
+        es = "Intercepta los suministros en ruta desde %supply_start% hasta %supply_dest%"
+    }
+    {
+        en = "Follow the footprints and approach the deserters"
+        es = "Sigue las huellas y persigue a los desertores"
+    }
+    {
+        en = "Either convince them to come back or kill them"
+        es = "Convéncelos de que regresen o mátalos"
+    }
+    {
+        en = "Deserters2"
+        es = ""
+    }
+    {
+        en = "Win the battle for %noblehouse%"
+        es = "Gana la batalla para %noblehouse%"
+    }
+    {
+        // "Return to " + this.Contract.m.Home.getName() + " to claim your payment"
+        mode = "pattern"
+        en = "Return to <this.Contract.m.Home.getName()> to claim your payment"
+        es = "Regresa a <this.Contract.m.Home.getName()> para reclamar tu pago"
+    }
+    {
+        en = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer% welcomes you inside. He's wearing armor, though his commanders seem to be trying to talk him out of doing any actual fighting. The man welcomes you warmly nonetheless and quickly explains what he needs from you.%SPEECH_ON%We are about to conclude this silly war. My largest forces are organizing %direction% from here. I need you to go there and meet with %commander%. He will explain his uses for you. If you manage to help us swing the tides, then you will be paid handsomely, sellsword.%SPEECH_OFF% | You walk into %employer%'s room to see him feeding a %feudfamily% banner to some dogs. The mongrels tear at it with practiced viciousness. %employer% looks up at you.%SPEECH_ON%Ah, sellsword. Glad that you are finally here. I need you to go visit %commander% %direction% of here. We are beginning the final stages of this damned war and I believe men such as yourself can help quicken its end. I can't tell you what to expect other than that these wars usually end most spectacularly. Your pay, too, will be spectacular.%SPEECH_OFF% | You walk into %employer%'s room to find him surrounded by his generals. They're looking down at a map where a great number of opposing tokens are facing off. The nobleman looks at you.%SPEECH_ON%Ah, sellsword. I need you to go here.%SPEECH_OFF%He drops a stick on the map.%SPEECH_ON%And meet with %commander%. We are preparing to end this war once and for all and your help will be most crucial.%SPEECH_OFF%You nod, but linger. The man raises his eyebrows then a finger.%SPEECH_ON%Oh yes, your help will be paid for! Make no mistake about that.%SPEECH_OFF% | You cannot enter %employer%'s room. Instead, one of his commanders meets you outside with a map and a contract. He explains that a great battle is coming and that your help is needed. If you choose to accept, you'll go to %commander% %direction% of here and there await further instruction. | A guard outside %employer%'s room stops you from going in. He stares at the sigil you have of the %companyname% then speaks to you directly.%SPEECH_ON%I'm supposed to give you this.%SPEECH_OFF%He slaps a scroll into your chest. The instructions state that a war-ending battle is coming and, if you so choose to help, you are to report to %commander% at his camp for further instruction. You ask if you are to barter with the guard or with %employer%. The guard swallows hard and a bead of sweat runs down his cheek.%SPEECH_ON%If you must haggle, you are to try and haggle with me.%SPEECH_OFF% | %employer% greets you and takes you outside to his personal houndmaster. The dogs sit obediently as he walks down their line. He takes a hand across the tops of their heads, an easy, commandeering pet.%SPEECH_ON%%commander% is leading my men %direction% of here and he has reported to me that a large battle may be on the horizon.%SPEECH_OFF%The nobleman stops and turns to you.%SPEECH_ON%He thinks this could end the war with %feudfamily%. So I want you to go there and help out, anything to put an end to his horrid conflict.%SPEECH_OFF% | You meet with %employer% in a room full of generals. His commanders stare at you suspiciously, but the man invites you to a corner to talk personally.%SPEECH_ON%Don't mind them. Quickly now, I have an army being led by %commander% just %direction% of here. I need you to go and meet him for further instructions. My commanders believe a final battle may be soon upon us and we need all the help we can get. If this fight does indeed end this war, you'll be rewarded accordingly.%SPEECH_OFF% | A guard lets you into %employer%'s room and there you find the man surrounded by squabbling generals. They yell over one another, knocking over war tokens on a map, and making a mess of the arrangement that is battle planning. %employer% stands up and meets with you personally.%SPEECH_ON%Don't mind the noise. The men are on edge because it's quite possible that we are at the cusp of ending this damned war with %feudfamily%. %commander% and most of my army is resting %direction% of here. He has called for as many reinforcements as he can get, including mercenaries. If you go there and help put an end to this shite we call war, then you will be most rewarded, sellsword.%SPEECH_OFF% | %employer% takes you outside to some pig pens. There you find the swine chomping on a corpse. Nearby, a few goats munch a banner of %feudfamily%. %employer% turns to you with a grin.%SPEECH_ON%A spy, you understand how these things are. Anyway, %commander% has reported to me that he believes a final battle with %feudfamily% may be at hand. He has asked for all the help he can get and I plan on sending it. If you go there, meet with him, and do as he asks, you will be rewarded most handsomely.%SPEECH_OFF% | You meet with one of %employer%'s guards who takes you to the man personally. He's roosted in a small room that must be a sort of cubby away from the annoyances of the world. A candle flickers as he flips through a book. He speaks without looking at you.%SPEECH_ON%Hello, sellsword. My field commander, %commander%, has sent me a little bird that the armies of %feudfamily% may be coming together. He believes we have a chance at ending this war once and for all.%SPEECH_OFF%The nobleman licks his thumb and slowly turns a page. He continues.%SPEECH_ON%I want you to go and join him. Naturally, your pay will accommodate what you have to offer, which I suspect is quite a lot.%SPEECH_OFF% | One of %employer%'s guards takes you to the top of a tower where you find the nobleman himself. He looks to you.%SPEECH_ON%Nice view, no?%SPEECH_OFF%You glance around. The land stretches and people become small mites bounding across it. A little donkey-pulled cart rattles its way beneath the tower, entering %townname% for business. You shrug. %employer% nods.%SPEECH_ON%I figured you for one to enjoy sights such as these, but I suppose a man of business wouldn't have such thoughts on this mind when business is at hand. And, dear sellsword, business is at hand. One of my commander has reported that the armies of %feudfamily% are coming together. He thinks that it's possible we can end this war with them in a big, final battle. Understand?%SPEECH_OFF%You nod. He continues.%SPEECH_ON%If this goes according to plan, you'll be paid according to your services. I don't know if you have ever helped end a war before, sellsword, but many men would pay a king's ransom for such services.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_45.png[/img]\x7b%employer% te da la bienvenida al entrar. Lleva una armadura, aunque sus comandantes parecen estar tratando de disuadirlo de entrar en combate real. El hombre te recibe cálidamente y rápidamente te explica lo que necesita de ti.%SPEECH_ON%Estamos a punto de concluir esta guerra absurda. Mis fuerzas principales se están organizando al %direction% de aquí. Necesito que vayas allí y te reúnas con %commander%. Él te explicará para qué te necesita. Si logras ayudarnos a cambiar el rumbo de la batalla, se te recompensará generosamente, mercenario.%SPEECH_OFF% | Entras en la habitación de %employer% y lo ves alimentando a unos perros con una bandera de %feudfamily%. Los perros la destrozan con una ferocidad practicada. %employer% te mira.%SPEECH_ON%Ah, mercenario. Me alegra que finalmente estés aquí. Necesito que vayas a visitar a %commander% %direction% de aquí. Estamos comenzando las etapas finales de esta maldita guerra y creo que hombres como tú pueden ayudar a acelerar su fin. No puedo decirte qué esperar, excepto que estas guerras suelen terminar de manera espectacular. Tu paga también será espectacular.%SPEECH_OFF% | Entras en la habitación de %employer% y lo ves rodeado de sus generales. Están mirando un mapa donde un gran número de fichas enemigas están enfrentadas. El noble te mira.%SPEECH_ON%Ah, mercenario. Necesito que vayas aquí.%SPEECH_OFF%Suelta un palo sobre el mapa.%SPEECH_ON%Y te reúnas con %commander%. Nos estamos preparando para poner fin a esta guerra de una vez por todas y tu ayuda será crucial.%SPEECH_OFF%Asientes con la cabeza, pero te detienes. El hombre levanta las cejas y luego un dedo.%SPEECH_ON%¡Oh sí, tu ayuda será recompensada! No tengas dudas al respecto.%SPEECH_OFF% | No puedes entrar en la habitación de %employer%. En su lugar, uno de sus comandantes te recibe afuera con un mapa y un contrato. Explica que una gran batalla se acerca y que necesitan tu ayuda. Si decides aceptar, irás a ver a %commander% al %direction% de aquí y allí esperarás más instrucciones. | Un guardia afuera de la habitación de %employer% te impide entrar. Observa el emblema de %companyname% que tienes y te habla sin rodeos.%SPEECH_ON%Debo darte esto.%SPEECH_OFF%Él te entrega un pergamino. Las instrucciones indican que se avecina una batalla que podría poner fin a la guerra y, si decides ayudar, debes presentarte en el campamento de %commander% para recibir más instrucciones. Le preguntas si debes negociar con el guardia o con %employer%. El guardia traga saliva con dificultad y una gota de sudor recorre su mejilla.%SPEECH_ON%Si necesitas regatear, intenta hacerlo conmigo.%SPEECH_OFF% | %employer% te saluda y te lleva afuera con su adiestrador personal de perros. Los perros se sientan obedientemente mientras él camina por enfrente de ellos. Pasa la mano por las cabezas de los perros, acariciándolos con autoridad.%SPEECH_ON%%commander% está dirigiendo a mis hombres al %direction% de aquí y me ha informado que una gran batalla podría estar a punto de suceder.%SPEECH_OFF%El noble se detiene y se gira hacia ti.%SPEECH_ON%Cree que esto podría poner fin a la guerra con %feudfamily%. Así que quiero que vayas allí y los ayudes en lo que sea necesario para acabar con este horrible conflicto.%SPEECH_OFF% | Te reúnes con %employer% en una habitación llena de generales. Sus comandantes te miran con suspicacia, pero el hombre te invita a un rincón para hablar en privado.%SPEECH_ON%No les prestes atención. Rápido, tengo un ejército liderado por %commander% justo al %direction% de aquí. Necesito que vayas y te reúnas con él para recibir más instrucciones. Mis comandantes creen que una batalla final podría estar cerca y necesitamos toda la ayuda que podamos conseguir. Si esta pelea realmente pone fin a esta guerra, se te recompensará adecuadamente, mercenario.%SPEECH_OFF% | Un guardia te permite entrar en la habitación de %employer% y allí encuentras al hombre rodeado de generales discutiendo. Gritan uno sobre el otro, derribando fichas de guerra en un mapa y haciendo un desorden en la planificación de la batalla. %employer% se levanta y se encuentra contigo en persona.%SPEECH_ON%No te preocupes por el ruido. Los hombres están tensos porque es muy posible que estemos al borde de poner fin a esta maldita guerra con %feudfamily%. %commander% y la mayoría de mi ejército acampan al %direction% de aquí. Ha pedido tantos refuerzos como pueda proporcinarle, incluidos mercenarios. Si vas allí y ayudas a poner fin a esta necedad que llamamos guerra, entonces serás ampliamente recompensado, mercenario.%SPEECH_OFF% | %employer% te lleva afuera a unos corrales de cerdos. Allí encuentras a los gorrinos devorando un cadáver. Cerca, algunas cabras mastican una bandera de %feudfamily%. %employer% se gira hacia ti con una sonrisa.%SPEECH_ON%Un espía, ya sabes cómo son estas cosas. De todos modos, %commander% me ha informado que cree que se avecina la batalla final con %feudfamily%. Ha pedido toda la ayuda que pueda obtener y planeo proporcionársela. Si vas allí, te reúnes con él y haces lo que te pida, serás recompensado generosamente.%SPEECH_OFF% | Te reúnes con uno de los guardias de %employer% que te lleva con el hombre en persona. Está en una pequeña habitación que debe ser una especie de refugio lejos de las molestias del mundo. Una vela parpadea mientras pasa las páginas de un libro. Habla sin mirarte.%SPEECH_ON%Hola, mercenario. Mi comandante de campo, %commander%, me ha enviado un mensajero informandome que los ejércitos de %feudfamily% podrían estar agrupandose. Cree que tenemos la oportunidad de poner fin a esta guerra de una vez por todas.%SPEECH_OFF%El noble lame su dedo pulgar y pasa lentamente una página. Continúa.%SPEECH_ON%Quiero que vayas y te unas a él. Naturalmente, tu paga se ajustará a tu empeño, lo que sospecho que será bastante.%SPEECH_OFF% | Uno de los guardias de %employer% te lleva a lo alto de una torre donde encuentras al propio noble. Te mira.%SPEECH_ON%Bonitas vistas, ¿verdad?%SPEECH_OFF%Miras a tu alrededor. La tierra se extiende y las personas se convierten en pequeños puntos que se mueven por ella. Un carrito tirado por un burro hace su camino debajo de la torre, entrando en %townname% para hacer negocios. Encoges los hombros. %employer% asiente.%SPEECH_ON%Supuse que disfrutarías de vistas como estas, pero supongo que un hombre de negocios no tendría tales pensamientos en mente cuando hay asuntos que atender. Y, querido mercenario, hay asuntos que atender. Uno de mis comandantes me ha informado que los ejércitos de %feudfamily% se están agrupando. Él piensa que es posible que podamos poner fin a esta guerra con una gran batalla final. ¿Comprendes?%SPEECH_OFF%Asientes. Él continúa.%SPEECH_ON%Si todo va según lo planeado, se te pagará según tus servicios. No sé si alguna vez has ayudado a poner fin a una guerra, mercenario, pero muchos hombres pagarían un rescate real por tales servicios.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "A great battle, you say?"
+        es = "¿Una gran batalla, díces?"
+    }
+    {
+        en = "\x7bI won't submit the %companyname% to another man's command. | I have to decline. | We're needed elsewhere.\x7d"
+        es = "\x7bNo dejaré a %companyname% al mando de otro hombre. | Por desgracia, tendré que declinar la oferta. | Nos necesitan en otra parte.\x7d"
+    }
+    {
+        en = "At the war camp..."
+        es = "En el campamento de guerra..."
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7bYou arrive at the camp, which is more akin to a tent city, and find %commander%. He welcomes you into his tent which is more akin to a map city as he surveys where his army is, and where he thinks %feudfamily%'s army might be.%SPEECH_ON%Welcome, sellsword. You arrived just in time.%SPEECH_OFF% | %commander%'s war camp is filled with bored men. They're stirring stews or playing card games. The most exciting thing available is a battle between a beetle and a worm, a fight neither side seems particularly interested in. %commander% himself welcomes you and takes you inside his tent which is adorned with maps and other tools of planning. | You come into %commander%'s tent to find a less than enthused group of men. One calls out.%SPEECH_ON%You are not the wenches we asked for.%SPEECH_OFF%The soldiers laugh. %randombrother% barks back.%SPEECH_ON%Your mothers took care of us first.%SPEECH_OFF%Predictably, all sides begin drawing their weapons. %commander% himself intervened to stop an outright bloodletting battle from breaking out. He takes you to his tent.%SPEECH_ON%Glad you're here, although your men could be less of a nuisance if we are to win farkin' war.%SPEECH_OFF% | You come into %commander%'s camp to find the men partaking in a beetle race. They cheer on the beetles which, halfway down a track made of haystraw, turn on one another and start fighting. The soldiers' cheers get ever louder. %commander% finds you through the crowds and takes you to his tent.%SPEECH_ON%I am glad you are here, sellsword. I have something for you to do right now.%SPEECH_OFF% | Arriving at %commander%'s war camp, you find the men cheering on a barely dressed woman riding around on a donkey. The lady and the ass ride off into a tent which quickly swells with men. %randombrother% asks if he can go. You state that you're going too, so yes, of course. Just then, %commander% grabs you. He leads you to his command tent.%SPEECH_ON%Trust me, you don't want to see that.%SPEECH_OFF%You do not trust him. | %commander%'s war camp has turned the land into mud. They've cut down all the nearby trees, constructing in their place little poorly made hovels that slant wherever the mud gives. Tents go out as far as your eye can see. Fires brim along the way, like stars glowing along a white sky.\n\n You meet with %commander% in his tent which is full of maps and lieutenants awaiting orders. | The war camp is full of clinking and clanking. Blacksmiths work to repair equipment, cooks stew what horrid messes they suggest is food, and soldiers hammer in posts for their tents. You meet with %commander% in his tent. Stolen away from all that metal noise, it is instead replaced by the arguments of his lieutenants. He shakes his head.%SPEECH_ON%When a large battle draws nigh, the men get nervous. Do not mind their bickering.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7bLlegas al campamento, que se asemeja más a una ciudad de tiendas, y encuentras a %commander%. Él te da la bienvenida a su tienda, que se asemeja más a una ciudad en un mapa mientras supervisa dónde está su ejército y dónde podría estar el ejército de %feudfamily%.%SPEECH_ON%Bienvenido, mercenario. Llegaste justo a tiempo.%SPEECH_OFF% | El campamento de guerra de %commander% está lleno de hombres aburridos. Revuelven guisos o juegan a las cartas. Lo más emocionante disponible es una pelea entre un escarabajo y un gusano, una lucha que a ninguno de los dos bandos parece interesarle especialmente. %commander% te da la bienvenida y te lleva a su tienda, que está adornada con mapas y otras herramientas de planificación. | Entras en la tienda de %commander% y encuentras a un grupo de hombres poco entusiasmados. Uno de ellos grita.%SPEECH_ON%No eres las damiselas que pedimos.%SPEECH_OFF%Los soldados se ríen. %randombrother% responde.%SPEECH_ON%Tus madres se ocuparon de nosotros primero.%SPEECH_OFF%Predeciblemente, todos los bandos comienzan a sacar sus armas. %commander% interviene para detener que estalle una batalla sangrienta. Te lleva a su tienda.%SPEECH_ON%Me alegra que estés aquí, aunque tus hombres deberían ser menos molestos si queremos ganar esta maldita guerra.%SPEECH_OFF% | El campamento de guerra de %commander% ha convertido la tierra en un lodazal. Han talado todos los árboles cercanos, construyendo en su lugar pequeñas chozas mal hechas que se inclinan donde el barro cede. Las tiendas se extienden tan lejos como alcanza la vista. Los fuegos brillan en el camino, como estrellas resplandeciendo en un cielo despejado.\n\nTe encuentras con %commander% en su tienda, que está llena de mapas y capitanes esperando órdenes. | El campamento de guerra está lleno de tintineos y golpes. Los herreros trabajan para reparar equipos, los cocineros preparan lo que sugieren que es comida, y los soldados martillan postes para sus tiendas. Te encuentras con %commander% en su tienda. Alejado de todo ese ruido de metal, este es remplazado por las discusiones de sus capitanes. Él niega con la cabeza.%SPEECH_ON%Cuando se avecina una gran batalla, los hombres se ponen nerviosos. No les prestes atención a sus peleas.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "What do you need the %companyname% to do?"
+        es = "Descansad bien, pronto nos llamarán de nuevo."
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7bYou return to the war camp and order your men to get some rest. Who knows what awaits you tomorrow. | Well, %commander%'s orders have been fulfilled, but there's surely to be more tomorrow. Get some rest while you can! | The war camp is just as you left it. You're not sure if that's good or bad. Tomorrow will bring more shite to take care of so you order the %companyname% to get some rest.\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7bRegresas al campamento de guerra y ordenas a tus hombres que descansen. Quién sabe qué te espera mañana. | Bueno, las órdenes de %commander% se han cumplido, pero seguramente habrá más mañana. ¡Descansa mientras puedas! | El campamento de guerra está igual que cuando lo dejaste. No estás seguro si eso es bueno o malo. Mañana llegarán más asuntos que atender, así que ordenas a los hombres de %companyname% que descansen.\x7d"
+    }
+    {
+        en = "Rest well, we'll soon be called upon again."
+        es = "Estoy seguro de que los nobles %noblehouse% lo apreciarán."
+    }
+    {
+        en = "[img]gfx/ui/events/event_54.png[/img]%commander% explains the situation.%SPEECH_ON%\x7bOur scouts have located their scouts. Unfortunately, I did not arm my scouts for battle so they have requested help. The enemy is located %direction% of here. Kill them all and %feudfamily% will be left in the dark about our army's movements. | A few of my pathfinders have located some of %feudfamily%'s scouts just %direction% of here. They're rummaging around looking for the main army, but they won't find it because you'll be going out there to kill them all. Got it? | %feudfamily%'s scouts have been spotted %direction% from here. I need you to go and kill them all before they find us or report whatever they've learned in the past days. | In war, information is god. And I have recently acquired information that %feudfamily%'s scouts are on the prowl just %direction% of here. If I can learn things about them, and then destroy what they've learned about us, then we have acquired quite the advantage for the upcoming fights.\x7d%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_54.png[/img]%commander% explica la situación.%SPEECH_ON%\x7bNuestros rastreadores han localizado a sus exploradores. Desafortunadamente, no armé a esos hombres para la batalla, así que han pedido ayuda. El enemigo se encuentra al %direction% de aquí. Mátalos a todos y %feudfamily% quedarán a oscuras acerca de los movimientos de nuestro ejército. | Algunos de mis rastreadores han localizado a algunos exploradores de %feudfamily% justo al %direction% de aquí. Están tanteando el terreno en busca del ejército principal, pero no lo encontrarán porque saldrás allá afuera para matarlos a todos. ¿Entendido? | Se ha avistado a los exploradores de %feudfamily% al %direction% desde aquí. Necesito que vayas y los mates a todos antes de que nos encuentren o informen lo que han averiguado en los últimos días. | En la guerra, la información es clave. Y recientemente he obtenido un reporte de que los exploradores de %feudfamily% están merodeando justo al %direction% de aquí. Si puedo aprender cosas sobre ellos y luego destruir lo que han aprendido sobre nosotros, habremos adquirido una gran ventaja para las próximas peleas.\x7d%SPEECH_OFF%"
+    }
+    {
+        en = "The company will head out immediately."
+        es = "¿Qué necesita que haga %companyname%?"
+    }
+    {
+        // local party = this.World.FactionManager.getFaction(this.Flags.get("EnemyNobleHouse")).spawnEntity(tile, "Scouts", false, this.Const.World.Spawn.Noble, 60 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_22.png[/img]\x7bUnfortunately, one or more of the scouts managed to slip out of the battle. Whatever information they had collected is now in the hands of %feudfamily%. | Damn it all! Some of the scouts managed to escape and no doubt make their way back to %feudfamily%.\x7d"
+        es = "[img]gfx/ui/events/event_22.png[/img]\x7bDesafortunadamente, alguno de los exploradores lograron escapar de la batalla. Cualquier información que hubieran recopilado ahora está en manos de %feudfamily%. | ¡Maldición! Algunos de los exploradores lograron escapar y sin duda regresarán con %feudfamily%.\x7d"
+    }
+    {
+        en = "Damnit!"
+        es = "¡Maldición!"
+    }
+    {
+        en = "[img]gfx/ui/events/event_22.png[/img]\x7bAll of the scouts have been slain. Whatever information they had died with them. This will be a great boon for the upcoming battle. | The scouts are dead and whatever they had learned is dead with them.\x7d"
+        es = "[img]gfx/ui/events/event_22.png[/img]\x7bTodos los exploradores han sido abatidos. Cualquier información que tuvieran murió con ellos. Esto será una gran ventaja para la próxima batalla. | Los exploradores están muertos y cualquier información que hayan obtenido está muerta con ellos.\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7b%commander% sighs and begins to talk.%SPEECH_ON%I don't mean to waste your talents, sellsword, but I need someone to go out and requisition food supplies for the army. We are running low on supplies and need all the help we can get.%SPEECH_OFF%Hey, if you're getting paid then it is no insult to you. | %commander% stuffs a dried leaf behind his lip and crosses his arms.%SPEECH_ON%Hell, I know you're here to fight. I know you're here to kill men and get paid well for doing it. But right now, my army needs to be fed and to get fed I need someone to go out there and get the food.%SPEECH_OFF%He goes to one of his maps and points down at it.%SPEECH_ON%I need you to visit these farmers and load up their food. They will be expecting you so there shouldn't be any problems. Consider this an easy day before the battle, yeah?%SPEECH_OFF% | %commander% points at a scroll laid across one of his maps. There are numbers down it, and the numbers are shrinking the lower they get down the page.%SPEECH_ON%We are running low on food supplies. We usually requisition stores by visiting the farmers %direction% of here. I need you to go down there and pick more up. They'll be expecting you there shouldn't be any problems.%SPEECH_OFF% | You look down at a plate with a dried loaf of bread on it. There's meat on the plate next to it, half-eaten, the rest taken to by the flies. A well-fed, healthy dog wags its tail in one of the corners. %commander% walks around to one of his maps.%SPEECH_ON%We're running very low on food stores. If my men go hungry, they won't fight, and if they won't fight then we lose!%SPEECH_OFF%You nod. The math checks out. He continues.%SPEECH_ON%We've been taking food from farmers %direction% of here for some time now. I need you to go there and do the same. One of my guards will get you a list of things to get. The farmers themselves will not oppose you. They know what happens if they do.%SPEECH_OFF% | You see a studious man in the corner of the tent. He's running a dried quill pen down a scroll, shaking his head all the while. Suddenly, he rises to his feet and hands the page to %commander%. The commander nods a few times then looks at you.%SPEECH_ON%This might seem beneath some mercenaries, but I need the %companyname% to visit the farms %direction% of here and 'requisition' the foods that they have. It will not be the first time our army has made requests of these farmers. The last time we went, they tried to resist but, well, lessons were learned. My scribe will write down everything we need. Think of it as a day shopping at the markets.%SPEECH_OFF%The commander grins wryly.\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7b%commander% suspira y comienza a hablar.%SPEECH_ON%No quiero desaprovechar tus talentos, mercenario, pero necesito que alguien salga a requisar suministros de comida para el ejército. Estamos escasos de provisiones y necesitamos toda la ayuda que podamos conseguir.%SPEECH_OFF%Hey, mientras te paguen, no es un insulto para ti. | %commander% se coloca una hoja seca en el labio y cruza los brazos.%SPEECH_ON%Mira, sé que estás aquí para pelear. que sabes como matar hombres y que te paguen bien por hacerlo. Pero en este momento, mi ejército necesita ser alimentado y para ser alimentado necesito a alguien que salga y consiga la comida.%SPEECH_OFF%Se acerca a uno de sus mapas y señala en él.%SPEECH_ON%Necesito que visites a estos agricultores y obtengas sus alimentos. Te estarán esperando, así que no debería haber problemas. Considera esto un día fácil antes de la batalla, ¿de acuerdo?%SPEECH_OFF% | %commander% señala un pergamino que yace sobre uno de sus mapas. Hay números en él y los números disminuyen a medida que bajan por la página.%SPEECH_ON%Estamos escasos de suministros de alimentos. Por lo general, requisamos suministros visitando a los agricultores al %direction% de aquí. Necesito que vayas allá y recojas más. Te estarán esperando, así que no debería haber problemas.%SPEECH_OFF% | Miras un plato con un trozo de pan seco en él. Al lado del plato hay carne, medio comida, el resto consumido por las moscas. Un perro saludable y bien alimentado menea la cola en una de las esquinas. %commander% se acerca a uno de sus mapas.%SPEECH_ON%Estamos quedando muy escasos de suministros de comida. Si mis hombres pasan hambre, no pelearán, y si no pelean, ¡perderemos!%SPEECH_OFF%Asientes. La lógica es clara. Él continúa.%SPEECH_ON%Hemos estado obteniendo comida de los agricultores al %direction% de aquí desde hace un tiempo. Necesito que vayas allí y hagas lo mismo. Uno de mis guardias te entregará una lista de lo que necesitamos. Los propios agricultores no se opondrán. Saben lo que les sucede si lo hacen.%SPEECH_OFF% | Ves a un hombre estudioso en una esquina de la tienda. Está pasando una pluma de ave seca por un pergamino, sacudiendo la cabeza todo el tiempo. De repente, se pone de pie y le entrega la página a %commander%. El comandante asiente varias veces y luego te mira.%SPEECH_ON%Esto podría parecer por debajo de algunos mercenarios, pero necesito que %companyname% visite las granjas al %direction% de aquí y 'requisite' los alimentos que tengan. No será la primera vez que nuestro ejército haga solicitudes a estos agricultores. La última vez que fuimos, intentaron resistirse, pero, bueno, se aprendieron lecciones. Mi escriba anotará todo lo que necesitamos. Piensa en esto como un día de compras en los mercados.%SPEECH_OFF%El comandante sonríe irónicamente.\x7d"
+    }
+    {
+        en = "The company will move out within the hour."
+        es = "Démonos prisa y volvamos al campamento de guerra."
+    }
+    {
+        en = "At the farm..."
+        es = "En la granja..."
+    }
+    {
+        en = "[img]gfx/ui/events/event_72.png[/img]\x7bThe farmhouses draw near. A sea of crops stretches before you, the fields gliding wavelike as the winds soar through. %randombrother% runs his hand through a field of wheat. %randombrother2% slugs him in the shoulder.%SPEECH_ON%You wanna bring sawflies home with us? Get yer hand out of there.%SPEECH_OFF%The mercenary rubs his shoulder before slugging back.%SPEECH_ON%Fark you. My hand goes where it please, just ask yer mother.%SPEECH_OFF%The punches rapidly increase in volume and the idyllic scene breaks. | The farmhouses are in the distance. Fields of crops seesaw to a crisp wind, rustling like calm ocean waves. Farmhands chop through the fields with scythes, a crew of followers heaving the remains with pitchforks. Donkeys bring up the rear, drawing carts through the roughshod terrain. | The farms roll amongst the hills, the soil too good to let a bit of geography get in the way. Every field is flush with crops, and piping through them are the farmhands, scythes and pitchforks glinting as they rise and fall. In the distance, you see the owners of the farms standing together. They look mighty pissed, but rarely does anyone stay angry in front of the %companyname%.\x7d"
+        es = "[img]gfx/ui/events/event_72.png[/img]\x7bLas granjas se acercan poco a poco. Un mar de cultivos se extiende ante ti, los campos se ondulan como olas mientras el viento sopla a través de ellos. %randombrother% pasa la mano por un campo de trigo. %randombrother2% le da un golpe en el hombro.%SPEECH_ON%¿Quieres traer pulgones a casa con nosotros? Saca la mano de ahí.%SPEECH_OFF%El mercenario se frota el hombro antes de devolverle el golpe.%SPEECH_ON%Al diablo contigo. Mi mano va donde quiera, solo pregúntale a tu madre.%SPEECH_OFF%Los golpes aumentan rápidamente en volumen y la escena idílica se rompe. | Las casas de campo están a lo lejos. Campos de cultivo se balancean con el viento fresco, susurran como olas calmadas del océano. Trabajadores agrícolas cortan los campos con guadañas, un grupo de segadores arrastra los restos con horcas. Burros cierran la marcha, tirando de carros por el terreno accidentado. | Las granjas se despliegan entre las colinas, el suelo es demasiado bueno como para dejar que la geografía se interponga. Cada campo rebosa de cultivos, y a través de ellos circulan los jornaleros, las guadañas y las horcas brillan mientras suben y bajan. A lo lejos, ves a los dueños de las granjas parados juntos. Parecen bastante enfadados, pero rara vez alguien se mantiene enojado frente al %companyname%.\x7d"
+    }
+    {
+        en = "Let's get what we're here for."
+        es = "Consigamos lo que vinimos a buscar."
+    }
+    {
+        en = "Ambush"
+        es = ""
+    }
+    {
+        en = "[img]gfx/ui/events/event_10.png[/img]\x7bAs you near the farmers, a shout comes from your sides and out jumps a group of well-armed men. This is an ambush! | Closing in on the farmhouses, the food-filled carts begin to trundle backwards. As they shuffle away, they slowly reveal a troop of well-armed men. The farmers quickly clear out. %randombrother% draws his weapon.%SPEECH_ON%This is an ambush!%SPEECH_OFF% | You draw in on the food carts. The farmers step aside as %randombrother% goes forward and throws the tarp off one of the wagons. There's nothing inside. Suddenly, an arrow slams against the wagon side with a wooden thwang. The farmers duck down and run off as well-armed men stream in from the sides. This is an ambush!\x7d"
+        es = "[img]gfx/ui/events/event_10.png[/img]\x7bMientras te acercas a los agricultores, un grito te sorprende de uno de los costados y de repente salta un grupo de hombres bien armados. ¡Es una emboscada! | A medida que te acercas a las casas de campo, los carros llenos de comida comienzan a retroceder. A medida que se alejan, revelan lentamente a un grupo de hombres bien armados. Los agricultores se retiran rápidamente. %randombrother% saca su arma.%SPEECH_ON%¡Es una emboscada!%SPEECH_OFF% | Te acercas a los carros de comida. Los agricultores se apartan mientras %randombrother% avanza y quita la lona de uno de los vagones. No hay nada adentro. De repente, una flecha golpea contra el costado del vagón haciendo crujir madera. Los agricultores se agachan y se huyen mientras unos hombres bien armados salen de tus flancos. ¡Es una emboscada!\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_43.png[/img]You get up to the farmers only for them to resist. Their leader crosses his arms and shakes his head.%SPEECH_ON%\x7bLook. My men have already loaded the carts. I'm willing to meet halfway here, you know? Because we got families to feed and debts to pay just like anybody else. How about you pay us %cost% crowns and we'll let all this go up to %commander%. | You're mercenaries, right? Then you'd understand the need for gold more than most. We're simple farmers, not money changers. All we ask for is a little compensation for our work. You give us %cost% crowns, and we'll give you the food. We're still taking a loss with that agreement, but I still think it's fair. | You come up here you're your gaudy outfit thinking you're just going to bully us into submission. %commander%'s already taken too much, I say, and it's about time he pays for his food just like everybody else! So here's the deal. I'll sell you the food for %cost% crowns. I think that is perfectly fair for what we have to offer.\x7d%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_43.png[/img]Te acercas a los agricultores solo para ver si se resisten. Su líder cruza los brazos y niega con la cabeza.%SPEECH_ON%\x7bMira, mis hombres ya han cargado los carros. Estoy dispuesto a ceder un poco aquí, ¿sabes? Porque tenemos familias que alimentar y deudas que pagar, al igual que cualquier otra persona. ¿Qué te parece si nos pagas %cost% coronas y dejamos que todo esto llegue hasta %commander%? | Ustedes son mercenarios, ¿verdad? Entonces comprenderían la necesidad de oro mejor que la mayoría. Somos simples agricultores, no hermanas de la caridad. Todo lo que pedimos es una pequeña compensación por nuestro trabajo. Nos das %cost% coronas y te damos la comida. Aún estaremos perdiendo con ese acuerdo, pero aún creo que es justo. | Vienen aquí con sus trajes llamativos pensando que nos van a intimidar hasta que nos rindamos. %commander% ya ha tomado demasiado, digo yo, y ya es hora de que pague por su comida como todos los demás. Así que aquí está el trato. Te venderé la comida por %cost% coronas. Creo que es perfectamente justo por lo que tenemos para ofrecer.\x7d%SPEECH_OFF%"
+    }
+    {
+        en = "You forget your place, farmer. You want us to take it by force?"
+        es = "Olvidas tu lugar, granjero. ¿Quieres que lo tomemos por la fuerza?"
+    }
+    {
+        en = "I understand. You shall have your %cost% crowns and we the supplies."
+        es = "Entiendo. Toma tus %cost% coronas y nosotros tomaremos los suministros."
+    }
+    {
+        en = "[img]gfx/ui/events/event_22.png[/img]The ambush is too strong! You take what men are still standing and beat a retreat. %commander%'s men will have to ration even more now and news of the %companyname%'s defeat here will no doubt spread."
+        es = "[img]gfx/ui/events/event_22.png[/img]¡La emboscada es demasiado fuerte! Tomas a los hombres que aún están en pie y te retiras. Los hombres de %commander% tendrán que racionar aún más ahora, y sin duda se propagará la noticia de la derrota de %companyname% aquí."
+    }
+    {
+        en = "Damn this!"
+        es = "¡Maldita sea!"
+    }
+    {
+        en = "[img]gfx/ui/events/event_60.png[/img]\x7bThe farmers and their hired swords are put down. One of the farmhands, kicking backward with his guts hanging out, begs for mercy as you close in for the kill. You shake your head.%SPEECH_ON%You're all turned out, kid. This right here is mercy.%SPEECH_OFF%The blade slides easily through his throat. He gargles, but it's over very quickly. You order the men to collect the foodstuffs and prepare to return to %commander%. | The farmers and their hired ambush have been slain to a man. You order the men to gather the foodstuffs. %commander% and his men should be happy to see your return. | There's blood on some of the food, but a little water will rub that right out. %commander%'s men will appreciate your work here. | %randombrother% picks up a farmer that was playing dead and slashes him across the throat. The man gargles and wriggles free of the mercenary's grip. He jaunts over to one of the wagons, spewing blood all over the food. You call out.%SPEECH_ON%Goddammit, get him off there!%SPEECH_OFF%The farmer is quickly disposed of, but that shipment is no doubt ruined. You shake your head.%SPEECH_ON%Put a blanket on those ones. Maybe no one will notice.%SPEECH_OFF% | Getting the food required a little more work than you bargained for, but it's all in your hands now. You bestow ownership of the farmlands to a poor farmhand with woolsacks for shoes.%SPEECH_ON%Don't you forget what happened to your master here, because it sure as shit can happen to you to, got it?%SPEECH_OFF%The kid quickly nods. You order the %companyname% to prepare its return to %commander%.\x7d"
+        es = "[img]gfx/ui/events/event_60.png[/img]\x7bLos granjeros y sus mercenarios han sido eliminados. Uno de los granjeros, arrastrandose hacia atrás con sus intestinos colgando, suplica por piedad mientras te acercas para rematarlo. Niegas con la cabeza.%SPEECH_ON%Ya estás acabado, chico. Esto de aquí es clemencia.%SPEECH_OFF%La hoja se desliza fácilmente por su garganta. Gorgotea, pero todo termina muy rápido. Ordenas a los hombres que recojan los alimentos y se preparen para regresar con %commander%. | Los granjeros y sus mercenarios han sido eliminados sin dejar supervivientes. Ordenas a los hombres que recojan los alimentos. %commander% y su gente estarán felices de ver tu regreso. | Hay sangre en algunos de los alimentos, pero un poco de agua lo limpiará. Los hombres de %commander% apreciarán tu trabajo aquí. | %randombrother% toma a un granjero que estaba haciéndose el muerto y le corta la garganta. El hombre gorgotea y se retuerce, liberándose del agarre del mercenario. Se acerca tambaleándose a uno de los carros, escupiendo sangre sobre la comida. Gritas.%SPEECH_ON%¡Maldita sea, sácalo de ahí!%SPEECH_OFF%El granjero es eliminado rápidamente, pero ese envío está sin duda arruinado. Niegas con la cabeza.%SPEECH_ON%Mete una manta en esos. Tal vez nadie lo note.%SPEECH_OFF% | Obtener la comida requirió un poco más de trabajo del que esperabas, pero ahora todo está en tus manos. Concedes la propiedad de las tierras de cultivo a un pobre campesino con sacos de lana como zapatos.%SPEECH_ON%No olvides lo que le pasó a tu amo aquí, porque seguro como el infierno te puede pasar a ti también, ¿entendido?%SPEECH_OFF%El chico asiente rápidamente. Ordenas a %companyname% que se prepare para regresar con %commander%.\x7d"
+    }
+    {
+        en = "Fools."
+        es = "Tontos."
+    }
+    {
+        en = "[img]gfx/ui/events/event_55.png[/img]\x7bThe farmers greet you warmly.%SPEECH_ON%Lemme guess, %commander% sent y'all?%SPEECH_OFF%You nod. The farmer spits and nods back.%SPEECH_ON%Well alright. You'll have no trouble here. Men, help them get on the road.%SPEECH_OFF%Farmhands come out to help your men take the foodstuffs and prepare the journey home to %commander%. | You meet the leader of the farmers. He shakes your hand.%SPEECH_ON%%commander%'s little bird told me he'd sent mercenaries, but your outfit looks a step above any company I've ever seen. My boys'll help you load the carts so you can be on your way.%SPEECH_OFF% | The farmers begin loading the carts as you near. Their leader steps forward.%SPEECH_ON%I ain't happy about doing this, but I'm happier here in these fields than sitting in some war camp waitin' to die in a war I don't care about. My men will help you load the carts so you can be on yer way. When you see %commander%, put in a good for me, would ya? I'd like to keep farming.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_55.png[/img]\x7bLos granjeros te reciben cálidamente.%SPEECH_ON%Déjame adivinar, ¿os envia %commander%?%SPEECH_OFF%Asientes con la cabeza. El granjero escupe y asiente de vuelta.%SPEECH_ON%Bien, está bien. No tendréis problemas aquí. Hombres, ayudadles a cargar la comida en los carros.%SPEECH_OFF%Los peones salen para ayudar a tus hombres a cargar los alimentos y preparar el viaje de regreso con %commander%. | Te encuentras con el líder de los granjeros. Te estrecha la mano.%SPEECH_ON%Un pajarito de %commander% me dijo que había enviado mercenarios, pero tu atuendo parece un paso por encima de cualquier compañía que haya visto. Mis muchachos te ayudarán a cargar los carros para que puedas seguir tu camino.%SPEECH_OFF% | Los granjeros comienzan a cargar los carros mientras te acercas. Su líder da un paso adelante.%SPEECH_ON%No estoy contento de hacer esto, pero estoy más feliz aquí en estos campos que sentado en un campamento de guerra esperando morir en una guerra que no me importa. Mis hombres te ayudarán a cargar los carros para que podáis continuar cuestro camino. Cuando veas a %commander%, háblales bien de mí, ¿de acuerdo? Me gustaría seguir trabajando en la agricultura.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "I'm sure %noblehouse% will appreciate it."
+        es = "Esto debería ayudarnos en la batalla que se avecina."
+    }
+    {
+        en = "[img]gfx/ui/events/event_43.png[/img]\x7bYou draw out your sword. The farmers step back and a clatter of pitchforks being grabbed rattles through their lines. Their leader spits and runs a sleeve across his mouth.%SPEECH_ON%Hell, you wanna take it there? Then we'll go there.%SPEECH_OFF% | You shake your head.%SPEECH_ON%No deal. Give up the foodstuffs or face our wrath.%SPEECH_OFF%The farmer swings a pitchfork from side to side. His men slowly begin picking up arms. He nods.%SPEECH_ON%We're farmers, asshole. Wrath chose us a long, long time ago.%SPEECH_OFF% | You did not come here to broker deals.%SPEECH_ON%There will be no compensation. %commander% sent us here to...%SPEECH_OFF%The farmer laughs and interrupts.%SPEECH_ON%The commander sent some lapdogs. Well I'll tell you what little doggie, let's see if your men are more bark than bite.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_43.png[/img]\x7bSacaste tu espada. Los granjeros retroceden y un tintineo de horquillas tomadas resuena entre sus filas. Su líder escupe y se pasa una manga por la boca.%SPEECH_ON%Vaya, ¿quieres llevarlo a ese nivel? Entonces iremos a ese nivel.%SPEECH_OFF% | Sacudes la cabeza.%SPEECH_ON%No hay acuerdo. Entrega los alimentos o enfrenta nuestra ira.%SPEECH_OFF%El granjero ondea una horquilla de un lado a otro. Sus hombres comienzan a desenvainar las armas lentamente. Asiente.%SPEECH_ON%Somos granjeros, idiota. La ira nos eligió hace mucho, mucho tiempo atrás.%SPEECH_OFF% | No viniste aquí para hacer tratos.%SPEECH_ON%No habrá compensación. %commander% nos envió aquí para...%SPEECH_OFF%El granjero se ríe y te interrumpe.%SPEECH_ON%El comandante envió a unos perritos falderos. Bueno, te diré lo que, perrito, vamos a ver si tus hombres son más ladradores que mordedores.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "Let's make this quick."
+        es = "Hagamos esto rápido."
+    }
+    {
+        en = "[img]gfx/ui/events/event_55.png[/img]\x7bYou see no reason to shed the blood of some poor farmers just trying to live their lives. Handing over the crowns, you warn the farmer to be careful trying to cut deals like this.%SPEECH_ON%Not everyone is so kind as to try and broker with you.%SPEECH_OFF%The farmer turns his head, revealing a long scar the runs from scalp to shoulder.%SPEECH_ON%I know well enough. Thank you for your consideration, sellsword.%SPEECH_OFF% | You're only in the farmer-kill business if someone pays you to do just that. %commander% did not. You agree to the farmers' terms. Their leader shakes your hand.%SPEECH_ON%Thank you mercenary. It's rare to see a man willing to cede some ground. I took you for a brute, but clearly you are a man of much acumen.%SPEECH_OFF% | You did not come out all this way to slaughter some poor farmers. You agree to the man's terms. He thanks you for not coming out all this way to slaughter some poor farmers. %randombrother%, however, quietly states that he did not come all this way to... You loudly tell him to shut his mouth and start loading the carts.\x7d"
+        es = "[img]gfx/ui/events/event_55.png[/img]\x7bNo ves razón para derramar la sangre de unos pobres granjeros que solo intentan vivir sus vidas. Entregas las monedas y adviertes al granjero que tenga cuidado al intentar hacer tratos como este.%SPEECH_ON%No todos son tan amables como para intentar negociar contigo.%SPEECH_OFF%El granjero voltea la cabeza, revelando una larga cicatriz que le recorre desde el cuero cabelludo hasta el hombro.%SPEECH_ON%Lo sé bastante bien. Gracias por tu consideración, mercenario.%SPEECH_OFF% | Solo estás en el negocio de matar granjeros si alguien te paga para hacer precisamente eso. %commander% no lo hizo. Aceptas los términos de los granjeros. Su líder te estrecha la mano.%SPEECH_ON%Gracias, mercenario. Es raro ver a un hombre dispuesto a ceder terreno. Te tomé por un bruto, pero claramente eres un hombre de mucho sagacidad.%SPEECH_OFF% | No viniste hasta aquí para masacrar a unos pobres granjeros. Aceptas los términos del hombre. Él te lo agradece por no haber venido hasta aquí para masacrar a unos pobres granjeros. Sin embargo, %randombrother% declara en voz baja que él no vino hasta aquí para... Le dices en voz alta que cierre la boca y comience a cargar los carros.\x7d"
+    }
+    {
+        en = "Let's hurry up and get back to the war camp."
+        es = "¡Adelante, hermanos, hay una batalla que ganar!"
+    }
+    {
+        // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("RequisitionCost") + "[/color] Crowns"
+        mode = "pattern"
+        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
+        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7bThe morning sun leaks into your tent, running a beam right across your eyes to really rub it in that you've a new day to put up with. | You get up and put your boots on, slapping out some spiders that thought it the place to rest overnight. | Outside your tent, a rooster loudly lets everyone know what a real asshole of an animal it is. You begrudgingly get up. | You wake to yet another day. Great. | You slept like a dead man and wake like one, too. The sunlight slipping into the tent is too blinding to go back to bed and the flaps are too far to shut. To hell with it, you'll get up. | Morning. That inevitable hour where a thousand regrets arrive on the glowy limelight of a new day.\x7d\n\n A young boy stands outside your tent with a scroll. He unfurls and struggles to read it.%SPEECH_ON%\x7bYour... co-co-commander has re... rekeestered... uh, you'd just better go and see him yourself. | %commander% wi-wishes to see you, he... he says, wait, no horses do? What? Look I can't read. Just go see the commander. | Sir, this here paper tells me to tell you that, you... uh, you should... er, uh, go see the commander. There's a lot more, but we'd be here all day if I tried finish it. | So yeah, I can't actually read, but I think the commander wishes to see you. | Let's see, this letter... I know this letter... it's the letter 'I', and I think the rest of the sentence is a whole lot of I can't read a damn lick of this shite. Look, just go see the commander. I think that's what he wants.\x7d%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7bLa luz del sol de la mañana se filtra en tu tienda, atravesando tus ojos para recordarte que tienes otro día por delante. | Te levantas y te pones las botas, golpeando algunas arañas que pensaron que era un buen lugar para pasar la noche. | Fuera de tu tienda, un gallo deja saber a todos lo grandioso que es al cantar. Te levantas a regañadientes. | Te despiertas otro día más. Genial. | Dormiste como un muerto y despiertas como uno también. La luz del sol que entra en la tienda es demasiado brillante para volver a la cama y las solapas están demasiado lejos para cerrarlas. Mascullando una maldición, te levantas. | Es de mañana. Esa hora inevitable en la que mil arrepentimientos llegan con la luz brillante de un nuevo día.\x7d\n\n Un joven está parado afuera de tu tienda con un pergamino. Lo desenrolla y lucha por leerlo.%SPEECH_ON%\x7bTu... co-co-comandante se ha re... reque... espera, mejor toma y miralo tú mismo. | %commander% de-sea ver-te, él... dice, espera, ¿no, caballos hacen? ¿Qué? Mira, no sé leer. Solo ve a ver al comandante. | Señor, este papel me dice que le diga que, tú... eh, deberías... eh, ir a ver al comandante. Hay mucho más, pero nos pasaríamos todo el día si intentara terminarlo. | Sí, no puedo leer en realidad, pero creo que el comandante desea verte. | Veamos, esta carta... conozco esta parte... es la letra 'Y', y creo que el resto de la oración es un montón de... no puedo leer una pizca de esta porquería. Mira, solo ve a ver al comandante. Creo que eso es lo que él quiere.\x7d%SPEECH_OFF%"
+    }
+    {
+        en = "Time to pay a visit to the commander..."
+        es = "La compañía saldrá dentro de una hora."
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]You meet with %commander% in his tent. He looks rather excited. A shrewd and shrouded little man stands by his side. The commander talks hurriedly.%SPEECH_ON%\x7bMy little bird here has reported that a shipment of equipment is heading toward %feudfamily%'s army. If we can intercept and destroy it, they won't be nearly as ready to fight in the future! | Hello, sellsword. My spies tell me that %feudfamily% has a much needed shipment of equipment heading toward their camp. I need you to go and destroy it. | Aren't spies the best? Look at this little man. He tells me, sir, %feudfamily% has a large shipment of goods coming in. Weapons, armor, food, so and so forth. Well I say, I've got just the man to take advantage of this news: you! Go and find this shipment and lay it to waste. | Battles are oft won before they ever take place, you know that, right? My little spy here tells me that %feudfamily% has a shipment of arms and armor coming in. If you can manage to take it out, then their army will be far less prepared for a fight on open ground. | Did you know I once won a battle without so much as raising a sword? I managed to intercept a shipment of goods which left my enemy wholly unready to fight, so they surrendered instead. My little spy here tells me that %feudfamily% has a similar shipment of equipment coming in. I'm sure it won't end the war, but if you could go and take it out that would be a huge boon. | Did you know that an army without equipment is hardly an army to begin with? %feudfamily%'s army is running low on supplies. In fact, the reason they haven't attacked yet is because they're waiting for more arms and armor to arrive! Well, my little spy here has spotted that shipment. And I want you to go and destroy it. | I've acquired a bit of most excellent news, sellsword. %feudfamily% is awaiting the arrival of arms and armor - and we know exactly where it's coming from. I just need you to go and do the obvious: destroy that shipment and cripple my enemy before he even knows what's hit him.\x7d%SPEECH_OFF%"
+        es = "[img]gfx/ui/events/event_96.png[/img]Te encuentras con %commander% en su tienda. Parece bastante emocionado. Un hombre astuto y reservado está a su lado. El comandante habla apresuradamente.%SPEECH_ON%\x7bMi pequeño pájarito aquí me ha informado que un envío de suministros se dirige al ejército de %feudfamily%. Si podemos interceptarlo y destruirlo, entorpeceremos sus preparativos para luchar en el futuro. | Saludos, mercenario. Mis espías me dicen que %feudfamily% tiene un envío muy necesario de suministros de camino a su campamento. Necesito que vayas y lo destruyas. | ¿No son los espías lo mejor? Mira a este hombrecillo. Me dice: señor, %feudfamily% está esperando un gran envío de bienes. Armas, armaduras, comida y demás. Pues bien, digo que tengo al hombre adecuado para aprovechar esta noticia: ¡tú! Ve y encuentra esos suministros y destrúyelos. | Las batallas a menudo se ganan antes de que tengan lugar, ¿lo sabías, verdad? Mi pequeño espía aquí me dice que %feudfamily% tiene un envío de armas y armaduras en camino. Si logras eliminarlo, entonces su ejército estará mucho menos preparado para un combate en terreno abierto. | ¿Sabías que una vez gané una batalla sin siquiera levantar una espada? Logré interceptar un envío de suministros que dejó a mi enemigo completamente incapacitadp para luchar, así que se rindieron en su lugar. Mi pequeño espía aquí me dice que %feudfamily% tienen un envío similar de equipo en camino. Por desgracia no pondrá fin a la guerra, pero si pudieras encargarte de eso sería de gran ayuda. | ¿Sabías que un ejército sin equipo apenas es un ejército para empezar? El ejército de %feudfamily% está escaso de suministros. De hecho, la razón por la que aún no han atacado es porque están esperando más armas y armaduras. Bueno, mi pequeño espía ha avistado ese envío. Y quiero que vayas y lo destruyas. | He adquirido una noticia bastante excelente, mercenario. %feudfamily% esperan la llegada de armas y armaduras, y sabemos exactamente de dónde vienen. Solo necesito que vayas y hagas lo obvio: destruye ese envío y debilita a mi enemigo antes de que siquiera se dé cuenta de lo que le ha golpeado.\x7d%SPEECH_OFF%"
+    }
+    {
+        en = "Supply Caravan"
+        es = "Caravana de suministros"
+    }
+    {
+        en = "A caravan with armed escorts transporting provisions, supplies and equipment between settlements."
+        es = "Una caravana con escoltas armadas transportando provisiones, suministros y equipo entre asentamientos."
+    }
+    {
+        en = "[img]gfx/ui/events/event_55.png[/img]\x7bYou failed to destroy the caravan. Obviously, all its goods have reached %feudfamily%'s army which will make the fighting much harder in the coming days. | The caravan was not destroyed. You can be most assured that %feudfamily%'s army will be near full-strength for the big battle ahead. | Well, shite. The caravan was not destroyed. Now, %feudfamily%'s army is going to be very well prepared for the battle ahead.\x7d"
+        es = "[img]gfx/ui/events/event_55.png[/img]\x7bNo lograste destruir la caravana. Evidentemente, todos sus bienes han llegado al ejército de %feudfamily%, lo que dificultará mucho la lucha en los próximos días. | La caravana no fue destruida. Puedes estar seguro de que el ejército de %feudfamily% estará en plena forma para la gran batalla que se avecina. | Vaya, maldición. La caravana no fue destruida. Ahora el ejército de %feudfamily% estará bien preparado para la batalla que se avecina.\x7d"
+    }
+    {
+        en = "We should head back to the camp..."
+        es = "Deberíamos regresar al campamento..."
+    }
+    {
+        en = "[img]gfx/ui/events/event_60.png[/img]\x7bYou had hoped to perhaps raid all that you could from the caravan, but the guards set fire to everything before it could be stolen away. Unfortunate, but all that matters is that %feudfamily%'s army did not get their hands on all this equipment. | You destroyed much of the caravan and that which you didn't the guards did themselves in an effort to keep the equipment out of enemy hands. %commander% will be most pleased by these results. | It was hard fought, but you managed to kill off the caravan guards. Unfortunately, the troop seems to have employed a scorched earth policy as they managed to raze every wagon before they could be captured. They knew better than to let all this equipment fall into enemy hands. %commander% will be more than happy nonetheless. | The caravan guards put up a good fight, all considered, but the %companyname% manages to slay them to a man. Or so you think: during the battle, one of the guards managed to slip away and employ a bit of scorched earth. Every wagon has been set alight. Obviously, if %feudfamily% could not get the equipment, then nobody could. Annoying, but smart. Nonetheless, %commander% and his men will appreciate the news. | The caravan has been put to waste. You had hoped to perhaps capture the wagons and take the equipment for yourself, but one of the guards managed to burn them all, no doubt to keep such gear out of enemy hands. Regardless, %feudfamily%'s army has most definitely been weakened.\x7d"
+        es = "[img]gfx/ui/events/event_60.png[/img]\x7bHabías esperado quizás saquear todo lo que pudieras de la caravana, pero los guardias le prendieron fuego a todo antes de que pudiera ser robado. Lamentable, pero lo único que importa es que el ejército de %feudfamily% no puso sus manos en todo este equipo. | Destruiste gran parte de la caravana y lo que no destruiste, los guardias se encargaron ellos mismos en un esfuerzo por evitar que el equipo cayera en manos enemigas. %commander% estará muy satisfecho con estos resultados. | Fue una lucha difícil, pero lograste matar a los guardias de la caravana. Lamentablemente, parece que el grupo adoptó una política de tierra quemada, ya que lograron arrasar todos los carros antes de que pudieran ser capturados. Sabían que era mejor no dejar caer todo este equipo en manos enemigas. %commander% estará más que contento de todos modos. | Los guardias de la caravana ofrecieron una buena pelea, considerandolo todo, pero %companyname% logró eliminarlos igualmente. O eso creías: durante la batalla, uno de los guardias logró escapar y aplicar una táctica de tierra quemada. Todos los carros han sido incendiados. Obviamente, si %feudfamily% no podían obtener el equipo, entonces nadie más podría. Molesto, pero inteligente. De todos modos, %commander% y sus hombres apreciarán la noticia. | La caravana ha sido arrasada. Habías esperado quizás capturar los carros y quedarte con el equipo, pero uno de los guardias logró quemarlos todos, sin duda para evitar que dicho equipo cayera en manos enemigas. Sin embargo, el ejército de %feudfamily% definitivamente ha quedado debilitado.\x7d"
+    }
+    {
+        en = "One less problem to deal with in the coming battle."
+        es = "Un problema menos con el que lidiar en la batalla que se avecina."
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7bYou enter %commander%'s tent just in time to watch a candle go flying by your face. Its wick sizzles into the mud as you watch a table follow after it, flipping over and over with all its maps going flying. A red-faced %commander% stands at the foot of the carnage, his hands on his hips, breathing heavy as he recollects himself. He explains himself.%SPEECH_ON%Deserters! They've deserted! On the eve of the most important battle of my life, I can't even keep my goddam men around. Look, I cannot have this army coming apart at the seams. I need you to go and find those deserters and bring them back to me. If they refuse to return, well, kill them all. One of the sentries said he saw them going %direction% of here. Now hurry up!%SPEECH_OFF% | Just as you are about to enter %commander%'s tent, a man comes flying out. %commander% rushes forth from the tent and slams him into the mud. He grabs him by the collars and picks him up like a ragdoll.%SPEECH_ON%Where did they go? I swear by the old gods I will have you begging for death if you do not answer me honestly!%SPEECH_OFF%The man cries out and points.%SPEECH_ON%%direction%! They went that way, I swear!%SPEECH_OFF%%commander% drops the man who is quickly dragged away by a pair of guards. The commander stands up straight and runs a hand through his hair.%SPEECH_ON%Sellsword, a few of my men thought it best to desert the camp. Find them. Bring them back. Got it?%SPEECH_OFF%You nod, but ask what if the men refuse. The commander shrugs.%SPEECH_ON%Slaughter them, of course.%SPEECH_OFF% | You enter %commander%'s tent to find him stepping away from a seated man. The commander has pliers in his hands and there's a white tooth clamped in between the prongs. You notice that the seated man is passed out, head lolling, blood dripping from his mouth. %commander% throws the pliers on his table and runs a reddened hand through his hair.%SPEECH_ON%A few of my men have deserted. I cannot risk this army coming undone, not at this hour, not when the battle is so close. My little friend here, when he was still speaking anyway, told me that his compatriots saw fit to run off %direction% of here. Go, sellsword, and bring those deserters back to me.%SPEECH_OFF%Before you go, you ask what to do if the deserters refuse to return. The commander glares at you.%SPEECH_ON%What do you think? Kill them all!%SPEECH_OFF% | You find %commander% brooding over his maps. His knuckles turn into his table, the legs groaning and wobbling. He looks up. His eyes flash, a quick glance of unbelievable anger.%SPEECH_ON%A few of my men saw fit to desert my army. The sentries tell me they saw them running %direction% of here. Go and bring them back.%SPEECH_OFF%You ask if he wants them alive. He nods.%SPEECH_ON%I want them back healthy as can be so I can better remind them what it means to abandon my army. Of course, if they absolutely refuse then I want them dead. That is also a good reminder to not abandon the army, wouldn't you agree?%SPEECH_OFF% | %commander%'s got one of his lieutenants tied to one of the tent poles. The commander's got a long stick in hand and uses it bash the lieutenant across the chest and legs. The man cries out, spinning himself around only for his back to be beaten. When the lieutenant spins back around, his purpled face is snorting into unconsciousness.\n\n %commander% throws the stick down and starts pulling splinters out of his fingers.%SPEECH_ON%Glad you came, sellsword. A few of my men have deserted and I need you to go and find them. Bring them back alive, kill them all if they refuse. This here friend of mine said that they ran %direction%. For his sake, I hope he's telling the truth.%SPEECH_OFF%You hope he's telling the truth, too.\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7bEntras en la tienda de %commander% justo a tiempo para ver cómo una vela pasa volando junto a tu rostro. Su mecha chisporrotea al caer en el barro, mientras observas cómo una mesa la sigue, dando vueltas y vueltas, con todos sus mapas volando por el aire. %commander%, con el rostro enrojecido, está parado entre los destrozos, las manos en las caderas, jadeando mientras se recompone. Se explica a sí mismo.%SPEECH_ON%\x7b¡Cobardes! ¡Han desertado! En vísperas de la batalla más importante de mi vida, ni siquiera puedo mantener a mis malditos hombres a mi lado. Mira, no puedo permitir que este ejército se desintegre. Necesito que vayas y encuentres a esos desertores y los traigas de vuelta. Si se resisten a regresar, bueno, mátalos a todos. Uno de los centinelas dijo que los vio yendo al %direction% desde aquí. ¡Apúrate!\x7d%SPEECH_OFF% | Justo cuando estás a punto de entrar en la tienda de %commander%, un hombre sale volando. %commander% sale disparado de la tienda y lo estrella en el barro. Lo agarra por el cuello y lo levanta como si fuera un muñeco de trapo.%SPEECH_ON%\x7b¿Dónde se fueron? ¡Juro por los antiguos dioses que te haré rogar por la muerte si no me respondes honestamente!\x7d%SPEECH_OFF% El hombre grita y señala.%SPEECH_ON%\x7b¡Al %direction%! Fueron por ahí, ¡lo juro!\x7d%SPEECH_OFF%%commander% suelta al hombre, que es rápidamente arrastrado por un par de guardias. El comandante se endereza y se pasa una mano por el cabello.%SPEECH_ON%\x7bMercenario, algunos de mis hombres pensaron que era mejor desertar del campamento. Encuéntralos. Tráelos de vuelta. ¿Entendido?\x7d%SPEECH_OFF%Tú asientes, pero preguntas qué hacer si los hombres se niegan. El comandante encoge los hombros.%SPEECH_ON%\x7bMátalos, por supuesto.\x7d%SPEECH_OFF% | Entras en la tienda de %commander% y lo ves alejándose de un hombre sentado. El comandante tiene unas tenazas en las manos y entre las pinzas hay un diente blanco. Te das cuenta de que el hombre sentado está inconsciente, la cabeza balanceándose, la sangre goteando de su boca. %commander% arroja las tenazas sobre su mesa y pasa una mano enrojecida por su cabello.%SPEECH_ON%\x7bAlgunos de mis hombres han desertado. No puedo arriesgarme a que este ejército se desmorone, no hora, no cuando la batalla está tan cerca. Mi pequeño amigo aquí, cuando aún hablaba de todos modos, me dijo que sus compañeros consideraron prudente huir al %direction% de aquí. Ve, mercenario, y trae de vuelta a esos desertores.\x7d%SPEECH_OFF%Antes de que te vayas, preguntas qué hacer si los desertores se niegan a regresar. El comandante te mira con desprecio.%SPEECH_ON%\x7b¿Qué crees? ¡Mátalos a todos!\x7d%SPEECH_OFF% | Encuentras a %commander% cavilando sobre sus mapas. Sus nudillos golpean la mesa, las patas crujen y tambaleándose. Levanta la vista. Sus ojos parpadean, una rápida mirada de una ira crepitante.%SPEECH_ON%\x7bAlgunos de mis hombres consideraron prudente desertar de mi ejército. Los centinelas me dicen que los vieron correr al %direction% desde aquí. Ve y tráelos de vuelta.\x7d%SPEECH_OFF%Le preguntas si los quiere vivos. Asiente.%SPEECH_ON%\x7bQuiero que vuelvan en perfecto estado para que pueda recordarles mejor lo que significa abandonar mi ejército. Por supuesto, si se niegan rotundamente, quiero que estén muertos. Eso también es un buen recordatorio para no abandonar el ejército, ¿no crees?\x7d%SPEECH_OFF% | %commander% tiene a uno de sus lugartenientes atado a uno de los postes de la tienda. %commander% tiene una vara larga en la mano y la usa para golpear al hombre en el pecho y las piernas. El hombre grita, girándose solo para que su espalda sea golpeada. Cuando el hombre gira de nuevo, su rostro enrojecido resopla hacia la inconsciencia.%SPEECH_ON%\x7bMe alegra que vinieras, mercenario. Algunos de mis hombres han desertado y necesito que los encuentres. Tráelos de vuelta con vida, mátalos a todos si se niegan. Este amigo mío aquí dijo que corrieron al %direction%. Por su bien, espero que esté diciendo la verdad.\x7d%SPEECH_OFF% Tú también esperas que esté diciendo la verdad.\x7d"
+    }
+    {
+        en = "The company will head out within the hour."
+        es = "No todas las batallas se pueden ganar..."
+    }
+    {
+        // local party = this.World.FactionManager.getFaction(this.Contract.getFaction()).spawnEntity(tile, "Deserters", false, this.Const.World.Spawn.Noble, 80 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7bYou come upon the deserters sitting around a smoldering campfire, one of them desperately kicking dust over the coals. He stops when he sees you. The rest of the deserters follow his gaze before springing to their feet.%SPEECH_ON%We ain't going back. You can tell %commander% to go to hell.%SPEECH_OFF% | The deserters are arguing amongst themselves when you crash their little runaway party. One of the men jumps back.%SPEECH_ON%%commander% sent you, didn't he? Well, you can tell him to go to hell.%SPEECH_OFF%Another man pumps his fist.%SPEECH_ON%Yeah, we ain't going back!%SPEECH_OFF%They're an unruly bunch, no doubt. | %randombrother% points out a group of men standing at a road sign. They're arguing too loudly amongst themselves to hear you approach. You give out a sharp whistle which simultaneously silences and spins the men around. One rears back.%SPEECH_ON%That rat commander sent mercenaries after us?%SPEECH_OFF%You nod and explain that they should come on back with you. Another deserter shakes his head.%SPEECH_ON%Go on back? How about you go on and get the hell out of here? We ain't going back so you go on and tell the commander just that.%SPEECH_OFF% | The deserters are found sharing food out of a wool sack. They pause at the sight of you and one elects to try and swallow his food whole. He chokes. The rest of the men don't move. The choker scrambles around for help, his face going purple. His legs scissor over the wool sack, kicking food everywhere. You nod.%SPEECH_ON%Help your man.%SPEECH_OFF%The deserters quickly run to the choking man and knock the food out of his throat. He gasps for air. You begin to explain what %commander% has asked of you, but one of the deserters interrupts.%SPEECH_ON%No. We are not going back. This war is a waste and we want no part of it.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7bTe encuentras con los desertores alrededor de una hoguera humeante, uno de ellos patea desesperadamente el polvo sobre las brasas. Se detiene cuando te ve. El resto de los desertores siguen su mirada antes de ponerse de pie.%SPEECH_ON%\x7bNo vamos a regresar. Puedes decirle a %commander% que se vaya al infierno.\x7d%SPEECH_OFF% | Los desertores están discutiendo entre ellos cuando irrumpes en su pequeña fiesta de escapada. Uno de los hombres salta hacia atrás.%SPEECH_ON%\x7b%commander% te envió, ¿verdad? Bueno, puedes decirle que vaya al infierno.\x7d%SPEECH_OFF%Otro hombre levanta el puño.%SPEECH_ON%\x7b¡Sí, no vamos a regresar!\x7d%SPEECH_OFF%Son un grupo indisciplinado, sin duda. | %randombrother% señala a un grupo de hombres parados junto a un letrero en el camino. Están discutiendo entre ellos con tanto escandalo que no perciben que te acercas. Emites un silbido agudo que silencia y hace voltear a los soprendidos desertores. Uno retrocede.%SPEECH_ON%\x7b¿Ese comandante rastrero nos envió mercenarios?\x7d%SPEECH_OFF%Asientes y explicas que deberían regresar contigo. Otro desertor niega con la cabeza.%SPEECH_ON%\x7b¿Regresar? ¿Por qué no te largas y te vas al infierno? No vamos a regresar, así que ve y dile al comandante justo eso.\x7d%SPEECH_OFF% | Los desertores se encuentran compartiendo comida de un saco de lana. Se detienen al verte y uno decide intentar tragarse su comida entera. Se atraganta. El resto de los hombres no se mueve. El que se atraganta lucha por ayuda, su rostro poniéndose morado. Sus piernas se entrecruzan sobre el saco de lana, haciendo volar la comida por todas partes. Tú asientes.%SPEECH_ON%Ayudad a ese hombre.%SPEECH_OFF%Los desertores corren rápidamente hacia el hombre que se atraganta y le sacan la comida de la garganta. Jadea por aire. Comienzas a explicar lo que %commander% te ha pedido, pero uno de los desertores interrumpe.%SPEECH_ON%\x7bNo. No vamos a regresar. Esta guerra es una pérdida de tiempo y no queremos tener nada que ver con ella.\x7d%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "Is this who you want to be? Cowards that won't defend their own lands?"
+        es = "Vuestra elección es simple. Luchad por vuestro señor, o morid aquí."
+    }
+    {
+        en = "Your choice is simple. Fight for your lord, or die here."
+        es = "¡Descansad bien esta noche, porque mañana os espera la batalla!"
+    }
+    {
+        en = "Let's be honest what this is about. Here's %bribe% crowns if you return."
+        es = "Seamos honestos sobre de lo qué trata todo esto. Os entregaré %bribe% coronas si regresáis."
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7bYou take out a bag and put %bribe% crowns into it.%SPEECH_ON%I will personally pay you men to come back with me to the war camp. %commander% is furious with you, make no farkin' mistake about it, but he needs every man he can get. If you fight for him in this coming battle, I've no doubt he'll pardon this little error you have made.%SPEECH_OFF% | You offer the deserters %bribe% crowns. The men look at one another, then speak to you.%SPEECH_ON%And what good is money when the commander hangs us all?%SPEECH_OFF%You nod and answer.%SPEECH_ON%Good question, but %commander% is no fool. He needs all the men he can muster for the coming battle. Prove yourself in that battle and this little pity party you've thrown for yourselves will be forgotten.%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7bSacas una bolsa y colocas %bribe% coronas en ella.%SPEECH_ON%\x7bYo personalmente os pagaré para que regreseis conmigo al campamento de guerra. %commander% está furioso con vosotros, que no os quepa ninguna duda, pero necesita a cada hombre que pueda conseguir. Si lucháis por él en la próxima batalla, no tengo ninguna duda de que os perdonará este pequeño error que habéis cometido.\x7d%SPEECH_OFF% | Ofreces a los desertores %bribe% coronas. Los hombres se miran entre sí y luego te hablan.%SPEECH_ON%\x7b¿Y de qué sirve el dinero cuando el comandante nos colgará a todos?\x7d%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%\x7bBuena pregunta, pero %commander% no es ningún estúpido. Necesita a todos los hombres que pueda reunir para la próxima batalla. Demostrad vuestra valía en esa batalla y esta pequeña fiesta de autocompasión que se han montado será olvidada.\x7d%SPEECH_OFF% | Los desertores consideran sus opciones y finalmente aceptan regresar contigo. | Los desertores se agrupan y llegan a algún tipo de acuerdo. Separandose del grupo, su líder se adelanta.%SPEECH_ON%A pesar de algunas objeciones, aceptamos regresar contigo al campamento de guerra. Espero no lamentarlo.\x7d%SPEECH_OFF% | Después de un breve debate sobre qué hacer, los desertores lo someten a votación. No es unánime, pero llegan a un acuerdo: volverán contigo al campamento de %commander%. | Los desertores discuten sobre qué hacer a continuación. Inevitablemente, se somete a votación. Predeciblemente, el voto termina en un empate. Luego acuerdan lanzar una corona: cara irán de vuelta al campamento, cruz se marcharán. Su líder lanza la moneda y todos los hombres observan cómo gira y brilla. La moneda cae en cara. Todos suspiran al verla, como si la casualidad y la fortuna los hubieran liberado de una enorme responsabilidad más allá de su elección.\x7d"
+    }
+    {
+        en = "This should help us in the coming battle."
+        es = "Tomasteis la decisión correcta."
+    }
+    {
+        // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + this.Flags.get("Bribe") + "[/color] Crowns"
+        mode = "pattern"
+        en = "You spend [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Crowns"
+        es = "Pagas [color=<this.Const.UI.Color.NegativeEventValue>]<this.Flags.get(MercenaryPay)>[/color] Coronas"
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7b%bigdog% steps forward, wheeling a weapon around over his shoulder with ease. He nods.%SPEECH_ON%You're afraid of %commander%. I get that. You know him, you know his temperament, and what he's capable of. Question is...%SPEECH_OFF%The sellsword grins, the wily smile reflected in the sheen of his blade.%SPEECH_ON%Do you know me?%SPEECH_OFF% | The deserters look about ready to leave when %bigdog% whistles loudly.%SPEECH_ON%Hey you shits, my commander gave you an order.%SPEECH_OFF%One of the deserter scoffs.%SPEECH_ON%Yeah? He ain't our farkin' commander so you can take that order and cram it.%SPEECH_OFF%%bigdog% draws out a huge blade and plants it in the ground. He tents his hands atop the pommel.%SPEECH_ON%You're afraid of %commander% and that's alright. But you keep on being a little shit, my friend, and we'll see just which commander you should have really been afraid of.%SPEECH_OFF% | The deserters turn to leave. %bigdog% takes out a huge blade and clangs it against his armor. Slowly, the deserters turn around. %bigdog% smiles.%SPEECH_ON%Any one of you ever pissed your pants?%SPEECH_OFF%One of the deserters shakes his head.%SPEECH_ON%H-hey man, get the fark out of here with that talk.%SPEECH_OFF%%bigdog% snatches up his blade and points the tip of it at the deserter.%SPEECH_ON%Oh, you want me shut up? Keep speaking to me like that and there won't be anybody talking here real soon.%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7b%bigdog% avanza, balanceando con facilidad el arma sobre su hombro. Asiente.%SPEECH_ON%Le tienes miedo a %commander%. Lo entiendo. Lo conoces, sabes cómo es, y lo que es capaz de hacer. La pregunta es...%SPEECH_OFF%El mercenario sonríe, la astuta sonrisa reflejada en el brillo de su hoja.%SPEECH_ON%¿Me conoces a mí?%SPEECH_OFF% | Los desertores parecen estar listos para marcharse cuando %bigdog% silba fuertemente.%SPEECH_ON%Eh, mierdas, mi comandante les dio una orden.%SPEECH_OFF%Uno de los desertores responde con desprecio.%SPEECH_ON%Sí, ¿y qué? Él no es nuestro maldito comandante, así que podéis tomar esa orden y metérosla por donde os quepa.%SPEECH_OFF%%bigdog% saca una gran hoja y la clava en el suelo. Apoya sus manos sobre la empuñadura.%SPEECH_ON%Le tienes miedo a %commander% y está bien. Pero si sigues siendo un pequeño mierda, amigo mío, veremos cuál comandante deberías haber temido de verdad.%SPEECH_OFF% | Los desertores se dan la vuelta para marcharse. %bigdog% saca una gran hoja y la golpea contra su armadura. Lentamente, los desertores se voltean. %bigdog% sonríe.%SPEECH_ON%¿Alguno de vosotros se ha meado en sus pantalones alguna vez?%SPEECH_OFF%Uno de los desertores niega con la cabeza.%SPEECH_ON%E-ey, amigo, nadie está hablando contigo.%SPEECH_OFF%%bigdog% agarra su hoja y levanta la punta hacia el desertor.%SPEECH_ON%Oh, ¿quieres que me calle? Sigue hablándome así y pronto nadie estará hablando aquí.%SPEECH_OFF%\x7d\x7bLos desertores consideran sus opciones y finalmente aceptan regresar contigo. | Los desertores se agrupan y llegan a algún tipo de acuerdo. Rompiendo el círculo, su líder da un paso adelante.%SPEECH_ON%A pesar de algunas objeciones, aceptamos regresar contigo al campamento de guerra. Espero no lamentar esta decisión.%SPEECH_OFF% | Después de un breve debate sobre qué hacer, los desertores lo someten a votación. No es unánime, pero llegan a un acuerdo: volverán contigo ante %commander%. |Los desertores discuten sobre qué hacer a continuación. Inevitablemente, se somete a votación. Predeciblemente, el voto termina en un empate. Luego acuerdan lanzar una corona: cara irán de vuelta al campamento, cruz se marcharán. Su líder lanza la moneda y todos los hombres observan cómo gira y brilla. La moneda cae en cara. Todos suspiran al verla, como si la casualidad y la fortuna los hubieran liberado de una enorme responsabilidad más allá de su elección.\x7d"
+    }
+    {
+        en = "You made the right decision."
+        es = "Una lástima, pero tenía que hacerse."
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7bAs the deserters turn to leave, %motivator% steps forward and clears his throat.%SPEECH_ON%So, that's how it's going to be, huh? You're going to wiggle out of your responsibilities like a bunch of limp dicks? I know how you're feeling. I know you see no point in this war or risking your life for some stuck up nobleman who has no idea what you go through. That's fair. But you're gonna wake up years from now, bouncing your grandson on your knee, and he's going to ask you questions about when you fought in the war. And you are going to have to lie to that little boy.%SPEECH_OFF% | %motivator% puts his fingers to his lips and draws a sharp whistle. The deserters turn to him as he begins to speak.%SPEECH_ON%So that's it, huh? You're going to intentionally burden yourself with this? And what will you tell your little ones when the time comes, hm? That you were a no good deserter who left your comrades to die in your stead? And make no mistake, your absence will have men die who should not have. Your not being there will have effects beyond your measure!%SPEECH_OFF% | %motivator% calls out to the deserters.%SPEECH_ON%Alright, so you leave now. Throw down your banner and call it a campaign. And what happens when %feudfamily% wins, huh?%SPEECH_OFF%One of the deserters shrugs.%SPEECH_ON%They don't know me. I'm gonna go back to my family and farm.%SPEECH_OFF%Laughing, %motivator% shakes his head.%SPEECH_ON%Is that right? And what will you do when these foreign men come around your stead? When they see your wife? When they see your children? What, exactly, do you think this war is about? There won't be any home for you to go back to, you fool!%SPEECH_OFF%\x7d\x7bThe deserters mull their options and eventually agree to come back with you. | The deserters huddle and come to some sort of agreement. Breaking the huddle, their leader steps forward.%SPEECH_ON%Despite some objections, we agree to come back with you to the war camp. I hope I do not come to regret this.%SPEECH_OFF% | After a short time debating on what to do, the deserters put it to a vote. It isn't unanimous, but they come to an agreement: they'll go back with you to %commander%. | The deserters argue about what to do next. Inevitably, it comes to a vote. Predictably, that vote is a tie. The men then agree to toss a crown: heads they go back to camp, tails they leave. Their leader flips the coin and all the men watch as it turns and glints. The coin lands heads. Every single one of them sighs upon seeing it, as if chance and fortune relieved them of an enormous responsibility beyond their own choosing.\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7bMientras los desertores se dan la vuelta para marcharse, %motivator% da un paso adelante y aclara su garganta.%SPEECH_ON%Así que, ¿así es como será, eh? ¿Vais a evadir vuestras responsabilidades como un montón de cobardes inútiles? Entiendo cómo os sentis. Sé que no veis sentido en esta guerra ni en arriesgar vuestras vidas por algún noble engreído que no tiene ni idea de por lo que pasáis. Eso es justo. Pero un día despertareis, con vuestro nieto en vuestras rodillas, y él os hará preguntas sobre cuando pelearon en la guerra. Y tendréis que mentirle a ese niño.%SPEECH_OFF% | %motivator% pone sus dedos en sus labios y emite un agudo silbido. Los desertores se vuelven hacia él mientras comienza a hablar.%SPEECH_ON%Así que eso es, ¿eh? ¿Vais a cargar intencionalmente con esto? ¿Y qué les diréis a vuestros pequeños cuando llegue el momento, eh? ¿Que fuisteis unos desertores inútiles que dejaron a sus camaradas morir en vuestro lugar? Y no os equivoquéis, vuestra ausencia hará que hombres que no deberían mueran. ¡Si no estáis ahí esto os afectará más allá de lo que os imaginais!%SPEECH_OFF% | %motivator% llama a los desertores.%SPEECH_ON%Está bien, marchaos ahora. Dejad caer vuestros estandarte y dad por terminada la campaña. ¿Y qué pasará cuando %feudfamily% ganen, eh?%SPEECH_OFF%Uno de los desertores encoge los hombros.%SPEECH_ON%Ellos no me conocen. Voy a regresar con mi familia y trabajar en la granja.%SPEECH_OFF%Riendo, %motivator% sacude la cabeza.%SPEECH_ON%¿En serio? ¿Y qué harás cuando estos hombres extranjeros lleguen a tu hogar? ¿Cuando vean a tu esposa? ¿Cuando vean a tus hijos? ¿En qué, exactamente, crees que trata esta guerra? ¡No habrá ningún hogar al que puedas regresar, idiota!%SPEECH_OFF%\x7d\x7bLos desertores consideran sus opciones y finalmente aceptan regresar contigo. | Los desertores se agrupan y llegan a algún tipo de acuerdo. Rompiendo el círculo, su líder da un paso adelante.%SPEECH_ON%A pesar de algunas objeciones, aceptamos regresar contigo al campamento de guerra. Espero no lamentar esta decisión.%SPEECH_OFF% | Después de un breve debate sobre qué hacer, los desertores lo someten a votación. No es unánime, pero llegan a un acuerdo: volverán contigo ante %commander%. |Los desertores discuten sobre qué hacer a continuación. Inevitablemente, se somete a votación. Predeciblemente, el voto termina en un empate. Luego acuerdan lanzar una corona: cara irán de vuelta al campamento, cruz se marcharán. Su líder lanza la moneda y todos los hombres observan cómo gira y brilla. La moneda cae en cara. Todos suspiran al verla, como si la casualidad y la fortuna los hubieran liberado de una enorme responsabilidad más allá de su elección.\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7b%bigdog% steps forward, wheeling a weapon around over his shoulder with ease. He nods.%SPEECH_ON%You're afraid of %commander%. I get that. You know him, you know his temperament, and what he's capable of. Question is...%SPEECH_OFF%The sellsword grins, the wily smile reflected in the sheen of his blade.%SPEECH_ON%Do you know me?%SPEECH_OFF% | The deserters look about ready to leave when %bigdog% whistles loudly.%SPEECH_ON%Hey you shits, my commander gave you an order.%SPEECH_OFF%One of the deserter scoffs.%SPEECH_ON%Yeah? He ain't our farkin' commander so you can take that order and cram it.%SPEECH_OFF%%bigdog% draws out a huge blade and plants it in the ground. He tents his hands atop the pommel.%SPEECH_ON%You're afraid of %commander% and that's alright. But you keep on being a little shit, my friend, and we'll see just which commander you should have really been afraid of.%SPEECH_OFF% | The deserters turn to leave. %bigdog% takes out a huge blade and clangs it against his armor. Slowly, the deserters turn around. %bigdog% smiles.%SPEECH_ON%Any one of you ever pissed your pants?%SPEECH_OFF%One of the deserters shakes his head.%SPEECH_ON%H-hey man, get the fark out of here with that talk.%SPEECH_OFF%%bigdog% snatches up his blade and points the tip of it at the deserter.%SPEECH_ON%Oh, you want me shut up? Keep speaking to me like that and there won't be anybody talking here real soon.%SPEECH_OFF%\x7d\x7bThe deserters cannot decide amongst themselves and put it to a vote. The choice to keep running carries the majority. Their leader informs you of this democratic result and bids you farewell. %commander% won't be happy, but you draw out your sword and tell the men there's only one other path for them to go. The leader turns around, unsheathing his blade and nodding.%SPEECH_ON%Alright, I figured you didn't come all this way just to hear us say goodbye. At arms, men.%SPEECH_OFF% | %commander% will hate it, but the deserters refuse to come back. They see no reason to jump back into the fray. You tell their leader good luck. He thanks you, but quickly falls silent as you draw out your weapon, the rest of the %companyname% following suit. The leader sighs.%SPEECH_ON%Yeah, I thought this is how it'd go.%SPEECH_OFF%You nod.%SPEECH_ON%Nothing personal. I don't care what you do, but this here is a matter of business and we have to see it to its conclusion.%SPEECH_OFF% | The deserters are unable to come to a decision so they turn to chance: their leader takes out a coin and flips it through the air. Heads they go back to camp, tails they keep on leaving. It lands tails. The deserters collectively breathe a sigh of relief. Their leader claps you on the shoulder.%SPEECH_ON%Fortune has decided our fates.%SPEECH_OFF%You nod and draw out your sword, the rest of the company following suit.%SPEECH_ON%You keep that in mind when we're killing the lot of you.%SPEECH_OFF%The leader smiles weakly as he draws his blade.%SPEECH_ON%It's quite alright. We'd rather die on freedom's doorstep than go back to that grind.%SPEECH_OFF% | The leader politely refuses to come back.%SPEECH_ON%We didn't choose this path lightly, sellsword. We're not coming back.%SPEECH_OFF%You order the %companyname% to draw out their weapons. The deserter's leader sighs, but nods understandingly.%SPEECH_ON%I suppose it is what it is. We talked of this, and we are prepared to die here, walking where we wish, than die out there on some dog's orders. This is all the world to us now.%SPEECH_OFF%Shrugging, you respond.%SPEECH_ON%Tis only business for us.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7b%bigdog% avanza, balanceando con facilidad el arma sobre su hombro. Asiente.%SPEECH_ON%Le tienes miedo a %commander%. Lo entiendo. Lo conoces, sabes cómo es, y lo que es capaz de hacer. La pregunta es...%SPEECH_OFF%El mercenario sonríe, la astuta sonrisa reflejada en el brillo de su hoja.%SPEECH_ON%¿Me conoces a mí?%SPEECH_OFF% | Los desertores parecen estar listos para marcharse cuando %bigdog% silba fuertemente.%SPEECH_ON%Eh, mierdas, mi comandante les dio una orden.%SPEECH_OFF%Uno de los desertores responde con desprecio.%SPEECH_ON%Sí, ¿y qué? Él no es nuestro maldito comandante, así que podéis tomar esa orden y metérosla por donde os quepa.%SPEECH_OFF%%bigdog% saca una gran hoja y la clava en el suelo. Apoya sus manos sobre la empuñadura.%SPEECH_ON%Le tienes miedo a %commander% y está bien. Pero si sigues siendo un pequeño mierda, amigo mío, veremos cuál comandante deberías haber temido de verdad.%SPEECH_OFF% | Los desertores se dan la vuelta para marcharse. %bigdog% saca una gran hoja y la golpea contra su armadura. Lentamente, los desertores se voltean. %bigdog% sonríe.%SPEECH_ON%¿Alguno de vosotros se ha meado en sus pantalones alguna vez?%SPEECH_OFF%Uno de los desertores niega con la cabeza.%SPEECH_ON%E-ey, amigo, nadie está hablando contigo.%SPEECH_OFF%%bigdog% agarra su hoja y levanta la punta hacia el desertor.%SPEECH_ON%Oh, ¿quieres que me calle? Sigue hablándome así y pronto nadie estará hablando aquí.%SPEECH_OFF%\x7d\x7bLos desertores no pueden decidir entre ellos y lo someten a votación. La elección de seguir huyendo sale como la mayoría. Su líder te informa de este resultado democrático y te dice adiós. A %commander% no le gustará, pero sacas tu espada y les dices a los hombres que solo hay otro camino para ellos. El líder se da vuelta, desenvainando su hoja y asintiendo.%SPEECH_ON%Está bien, supuse que no vinisteis hasta aquí solo para escucharnos decir adiós. A las armas, hombres.%SPEECH_OFF% | %commander% lo odiará, pero los desertores se niegan a regresar. No ven razón para volver a la refriega. Les deseas suerte a su líder. Él te agradece, pero rápidamente cae en silencio mientras sacas tu arma, el resto de %companyname% hace lo mismo. El líder suspira.%SPEECH_ON%Sí, pensé que sería así al final.%SPEECH_OFF%Asientes.%SPEECH_ON%No es nada personal. No me importa lo que hagáis, pero esto es un asunto de negocios y debemos llevarlo a su conclusión.%SPEECH_OFF% | Los desertores no pueden llegar a una decisión, así que recurren al azar: su líder saca una moneda y la lanza al aire. Cara van de regreso al campamento, cruz siguen su camino. Aterriza en cruz. Los desertores suspiran colectivamente aliviados. Su líder te da una palmada en el hombro.%SPEECH_ON%La fortuna ha decidido nuestro destino.%SPEECH_OFF%Asientes y sacas tu espada, el resto de la compañía hace lo mismo.%SPEECH_ON%Recuérdalo cuando estemos matándoos a todos.%SPEECH_OFF%El líder sonríe débilmente mientras desenvaina su hoja.%SPEECH_ON%Está bien. Preferimos morir en el umbral de la libertad que regresar a esa rutina.%SPEECH_OFF% | El líder rechaza educadamente regresar.%SPEECH_ON%No elegimos este camino a la ligera, mercenario. No regresaremos.%SPEECH_OFF%Ordenas a %companyname% que saquen sus armas. El líder de los desertores suspira, pero asiente comprensivamente.%SPEECH_ON%Supongo que es lo que es. Hablamos de esto, y estamos preparados para morir aquí, caminando donde deseamos, en lugar de morir bajo las órdenes de algún perro. Esto es todo el mundo para nosotros ahora.%SPEECH_OFF%Encogiéndote de hombros, respondes.%SPEECH_ON%Para nosotros solo es un asunto de negocios.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "Let's get this over with..."
+        es = "Terminemos con esto..."
+    }
+    {
+        en = "Deserters"
+        es = ""
+    }
+    {
+        en = "[img]gfx/ui/events/event_88.png[/img]\x7bAs the deserters turn to leave, %motivator% steps forward and clears his throat.%SPEECH_ON%So, that's how it's going to be, huh? You're going to wiggle out of your responsibilities like a bunch of limp dicks? I know how you're feeling. I know you see no point in this war or risking your life for some stuck up nobleman who has no idea what you go through. That's fair. But you're gonna wake up years from now, bouncing your grandson on your knee, and he's going to ask you questions about when you fought in the war. And you are going to have to lie to that little boy.%SPEECH_OFF% | %motivator% puts his fingers to his lips and draws a sharp whistle. The deserters turn to him as he begins to speak.%SPEECH_ON%So that's it, huh? You're going to intentionally burden yourself with this? And what will you tell your little ones when the time comes, hm? That you were a no good deserter who left your comrades to die in your stead? And make no mistake, your absence will have men die who should not have. Your not being there will have effects beyond your measure!%SPEECH_OFF% | %motivator% calls out to the deserters.%SPEECH_ON%Alright, so you leave now. Throw down your banner and call it a campaign. And what happens when %feudfamily% wins, huh?%SPEECH_OFF%One of the deserters shrugs.%SPEECH_ON%They don't know me. I'm gonna go back to my family and farm.%SPEECH_OFF%Laughing, %motivator% shakes his head.%SPEECH_ON%Is that right? And what will you do when these foreign men come around your stead? When they see your wife? When they see your children? What, exactly, do you think this war is about? There won't be any home for you to go back to, you fool!%SPEECH_OFF%\x7d\x7bThe deserters cannot decide amongst themselves and put it to a vote. The choice to keep running carries the majority. Their leader informs you of this democratic result and bids you farewell. %commander% won't be happy, but you draw out your sword and tell the men there's only one other path for them to go. The leader turns around, unsheathing his blade and nodding.%SPEECH_ON%Alright, I figured you didn't come all this way just to hear us say goodbye. At arms, men.%SPEECH_OFF% | %commander% will hate it, but the deserters refuse to come back. They see no reason to jump back into the fray. You tell their leader good luck. He thanks you, but quickly falls silent as you draw out your weapon, the rest of the %companyname% following suit. The leader sighs.%SPEECH_ON%Yeah, I thought this is how it'd go.%SPEECH_OFF%You nod.%SPEECH_ON%Nothing personal. I don't care what you do, but this here is a matter of business and we have to see it to its conclusion.%SPEECH_OFF% | The deserters are unable to come to a decision so they turn to chance: their leader takes out a coin and flips it through the air. Heads they go back to camp, tails they keep on leaving. It lands tails. The deserters collectively breathe a sigh of relief. Their leader claps you on the shoulder.%SPEECH_ON%Fortune has decided our fates.%SPEECH_OFF%You nod and draw out your sword, the rest of the company following suit.%SPEECH_ON%You keep that in mind when we're killing the lot of you.%SPEECH_OFF%The leader smiles weakly as he draws his blade.%SPEECH_ON%It's quite alright. We'd rather die on freedom's doorstep than go back to that grind.%SPEECH_OFF% | The leader politely refuses to come back.%SPEECH_ON%We didn't choose this path lightly, sellsword. We're not coming back.%SPEECH_OFF%You order the %companyname% to draw out their weapons. The deserter's leader sighs, but nods understandingly.%SPEECH_ON%I suppose it is what it is. We talked of this, and we are prepared to die here, walking where we wish, than die out there on some dog's orders. This is all the world to us now.%SPEECH_OFF%Shrugging, you respond.%SPEECH_ON%Tis only business for us.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_88.png[/img]\x7b\x7bMientras los desertores se dan la vuelta para marcharse, %motivator% da un paso adelante y aclara su garganta.%SPEECH_ON%Así que, ¿así es como será, eh? ¿Vais a evadir vuestras responsabilidades como un montón de cobardes inútiles? Entiendo cómo os sentis. Sé que no veis sentido en esta guerra ni en arriesgar vuestras vidas por algún noble engreído que no tiene ni idea de por lo que pasáis. Eso es justo. Pero un día despertareis, con vuestro nieto en vuestras rodillas, y él os hará preguntas sobre cuando pelearon en la guerra. Y tendréis que mentirle a ese niño.%SPEECH_OFF% | %motivator% pone sus dedos en sus labios y emite un agudo silbido. Los desertores se vuelven hacia él mientras comienza a hablar.%SPEECH_ON%Así que eso es, ¿eh? ¿Vais a cargar intencionalmente con esto? ¿Y qué les diréis a vuestros pequeños cuando llegue el momento, eh? ¿Que fuisteis unos desertores inútiles que dejaron a sus camaradas morir en vuestro lugar? Y no os equivoquéis, vuestra ausencia hará que hombres que no deberían mueran. ¡Si no estáis ahí esto os afectará más allá de lo que os imaginais!%SPEECH_OFF% | %motivator% llama a los desertores.%SPEECH_ON%Está bien, marchaos ahora. Dejad caer vuestros estandarte y dad por terminada la campaña. ¿Y qué pasará cuando %feudfamily% ganen, eh?%SPEECH_OFF%Uno de los desertores encoge los hombros.%SPEECH_ON%Ellos no me conocen. Voy a regresar con mi familia y trabajar en la granja.%SPEECH_OFF%Riendo, %motivator% sacude la cabeza.%SPEECH_ON%¿En serio? ¿Y qué harás cuando estos hombres extranjeros lleguen a tu hogar? ¿Cuando vean a tu esposa? ¿Cuando vean a tus hijos? ¿En qué, exactamente, crees que trata esta guerra? ¡No habrá ningún hogar al que puedas regresar, idiota!%SPEECH_OFF%\x7d\x7bLos desertores no pueden decidir entre ellos y lo someten a votación. La elección de seguir huyendo sale como la mayoría. Su líder te informa de este resultado democrático y te dice adiós. A %commander% no le gustará, pero sacas tu espada y les dices a los hombres que solo hay otro camino para ellos. El líder se da vuelta, desenvainando su hoja y asintiendo.%SPEECH_ON%Está bien, supuse que no vinisteis hasta aquí solo para escucharnos decir adiós. A las armas, hombres.%SPEECH_OFF% | %commander% lo odiará, pero los desertores se niegan a regresar. No ven razón para volver a la refriega. Les deseas suerte a su líder. Él te agradece, pero rápidamente cae en silencio mientras sacas tu arma, el resto de %companyname% hace lo mismo. El líder suspira.%SPEECH_ON%Sí, pensé que sería así al final.%SPEECH_OFF%Asientes.%SPEECH_ON%No es nada personal. No me importa lo que hagáis, pero esto es un asunto de negocios y debemos llevarlo a su conclusión.%SPEECH_OFF% | Los desertores no pueden llegar a una decisión, así que recurren al azar: su líder saca una moneda y la lanza al aire. Cara van de regreso al campamento, cruz siguen su camino. Aterriza en cruz. Los desertores suspiran colectivamente aliviados. Su líder te da una palmada en el hombro.%SPEECH_ON%La fortuna ha decidido nuestro destino.%SPEECH_OFF%Asientes y sacas tu espada, el resto de la compañía hace lo mismo.%SPEECH_ON%Recuérdalo cuando estemos matándoos a todos.%SPEECH_OFF%El líder sonríe débilmente mientras desenvaina su hoja.%SPEECH_ON%Está bien. Preferimos morir en el umbral de la libertad que regresar a esa rutina.%SPEECH_OFF% | El líder rechaza educadamente regresar.%SPEECH_ON%No elegimos este camino a la ligera, mercenario. No regresaremos.%SPEECH_OFF%Ordenas a %companyname% que saquen sus armas. El líder de los desertores suspira, pero asiente comprensivamente.%SPEECH_ON%Supongo que es lo que es. Hablamos de esto, y estamos preparados para morir aquí, caminando donde deseamos, en lugar de morir bajo las órdenes de algún perro. Esto es todo el mundo para nosotros ahora.%SPEECH_OFF%Encogiéndote de hombros, respondes.%SPEECH_ON%Para nosotros solo es un asunto de negocios.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_22.png[/img]\x7b%randombrother% cleans his blade on the tabard of one of the corpses.%SPEECH_ON%Shame they went out that way. They could have lived. They had a choice.%SPEECH_OFF%You shrug and respond.%SPEECH_ON%They had death on all sides of them. They merely chose us as the executioner.%SPEECH_OFF% | The deserters are dead all around you. One is crawling along the ground, ever putting distance between himself and %commander%'s army. You crouch beside him, dagger in hand to finish the job. He laughs at you.%SPEECH_ON%No need to dirty the dirk, sellsword. Just give me time. That's all I g-got, augh.%SPEECH_OFF%A spurt of blood runs down his chin. His eyes narrow, staring straight, and he slowly sinks to the ground. You stand and tell the company to get ready to leave. | The last deserter is found leaning against a rock, his hands limp at his sides, both turned up like a beggar with plenty of business. There's blood running down his chest and legs and pooling about the ground. He stares at it.%SPEECH_ON%I'm alright, thanks for asking, sellsword.%SPEECH_OFF%You tell him you didn't say anything. He looks at you, genuinely confused.%SPEECH_ON%You didn't? Well then.%SPEECH_OFF%A moment later and he falls to a side, face frozen in that deadened way. | Some men fancy the hilarity of a doomed life. With all choices and freedom stripped from them, what else is there to do but laugh in the face of such cruel fate? Every deserter died with a look of absolute aplomb across their faces. | The last deserter alive is found staring at the sky. He pedals a hand in the air.%SPEECH_ON%Goddammit, I just wanna see one.%SPEECH_OFF%You ask what it is he wishes to see. He laughs, a hearty chuckle quickly interrupted by a surge of pain.%SPEECH_ON%A bird. Oh, there's one. It's so big, so beautiful.%SPEECH_OFF%He points and you look up. A vulture cycles overhead. When you look back down, the man is dead.\x7d"
+        es = "[img]gfx/ui/events/event_22.png[/img]\x7b%randombrother% limpia su hoja en el tabardo de uno de los cadáveres.%SPEECH_ON%Lástima que hayan terminado así. Podrían haber vivido. Tubieron su elección.%SPEECH_OFF%Encoges los hombros y respondes.%SPEECH_ON%La muerte nos rodeaba por todos lados. Simplemente nos eligieron a nosotros como verdugos.%SPEECH_OFF% | Los desertores yacen muertos a tu alrededor. Uno de ellos se arrastra por el suelo, alejándose cada vez más del ejército de %commander%. Te agachas a su lado, daga en mano para terminar el trabajo. Él se ríe de ti.%SPEECH_ON%No hace falta ensuciar la daga, mercenario. Dame tiempo. Eso es todo lo que t-tengo, arg.%SPEECH_OFF%Un chorro de sangre baja por su barbilla. Sus ojos se estrechan, mirando fijamente, y poco a poco se hunde en el suelo. Te pones de pie y dices a la compañía que se prepare para marchar. | El último desertor se encuentra apoyado contra una roca, sus manos colgando a los lados, ambas vueltas hacia arriba como un mendigo con mucho trabajo. Hay sangre corriendo por su pecho y piernas, formando charcos en el suelo. Él te mira fijamente.%SPEECH_ON%Estoy bien, gracias por preguntar, mercenario.%SPEECH_OFF%Le dices que no dijiste nada. Te mira, genuinamente confundido.%SPEECH_ON%¿No lo hiciste? Bueno, entonces.%SPEECH_OFF%Un momento después, cae de costado, con el rostro petreo en esa expresión de muerte. | Algunos hombres se imaginan la hilaridad de una vida condenada. Con todas las elecciones y libertades arrebatadas, ¿qué más pueden hacer sino reírse ante tan cruel destino? Cada desertor murió con una expresión de absoluta desafio en sus rostros. | El último desertor vivo está mirando el cielo. Agita una mano en el aire.%SPEECH_ON%Maldición, solo quiero ver uno.%SPEECH_OFF%Le preguntas qué es lo que desea ver. Se ríe, una risa sincera interrumpida rápidamente por una oleada de dolor.%SPEECH_ON%Un pájaro. Oh, hay uno. Es tan grande, tan hermoso.%SPEECH_OFF%Él señala y tú miras hacia arriba. Un buitre gira en círculos en el cielo. Cuando vuelves a mirar hacia abajo, el hombre está muerto.\x7d"
+    }
+    {
+        en = "Unfortunate, but it had to be done."
+        es = "La compañía saldrá inmediatamente."
+    }
+    {
+        en = "[img]gfx/ui/events/event_96.png[/img]\x7b%commander% informs you that tomorrow is the big day. You return to your tent for a good and earned rest. | You return to %commander% and inform him of the news. He is very subdued, his thoughts consumed with what is coming tomorrow: a large and decisive battle. The day over, you decide to turn in and wait for morning. | You report to %commander%, but he hardly even responds. He's practically living in his battle maps.%SPEECH_ON%I'll see you tomorrow, mercenary. Get a good night's rest because you'll be needing it.%SPEECH_OFF% | %commander% welcomes you into his tent, but seemingly ignores your reports. Instead, he is focused in on his maps and is continuing debates with his lieutenants on tomorrow's battle plans. You decide to turn in and get a good night's rest. | %commander% nods to your reports, but is otherwise not really paying any attention to you. A bunch of battle maps are laid out on a table and his eyes are focused in on those instead. You understand it: tomorrow's the big battle and he has better things to think about. You decide to turn in for the night.\x7d"
+        es = "[img]gfx/ui/events/event_96.png[/img]\x7b%commander% te informa que mañana es el gran día. Regresas a tu tienda para un buen y merecido descanso. | Vuelves junto a %commander% y le comunicas la noticia. Está muy abatido, sus pensamientos consumidos por lo que sucederá mañana: una batalla grande y decisiva. Concluido el día, decides retirarte y esperar el amanecer. | Informas a %commander%, pero apenas reacciona. Prácticamente vive entre sus mapas de batalla.%SPEECH_ON%Nos vemos mañana, mercenario. Descansa bien esta noche porque lo necesitarás.%SPEECH_OFF% | %commander% te da la bienvenida en su tienda, pero aparentemente ignora tus informes. En lugar de ello, está concentrado en sus mapas y sigue debatiendo con sus lugartenientes los planes de batalla para mañana. Decides retirarte y descansar bien durante la noche. | %commander% asiente ante tus informes, pero por lo demás no te presta mucha atención. Varios mapas de batalla están desplegados sobre una mesa y sus ojos están centrados en esos. Lo entiendes: mañana es la gran batalla y tiene cosas más importantes en las que pensar. Decides retirarte para la noche.\x7d"
+    }
+    {
+        en = "Rest well this night, for tomorrow battle awaits!"
+        es = "Coronas bien merecidas."
+    }
+    {
+        en = "[img]gfx/ui/events/event_78.png[/img]\x7b%commander% walks before an assembly of his soldiers. Some idle with weary faces, having not slept through the night. Others still shake with the jitters. Their commander calls to them.%SPEECH_ON%Are you afraid? Are you scared? That's fine. I'd be worried if you weren't.%SPEECH_OFF%Scattered laughter lifts the mood. He continues.%SPEECH_ON%But right now I'm asking you not to be scared for your own hide, but instead to be scared for the lives of your countrymen, your families! They are who we fight for this day! Let us worry about ourselves tomorrow, for today we will be men!%SPEECH_OFF%The laughter turns into roaring cheers. | %commander% has his men assembled before him. Footmen, archers, reserves, all standing in a stiff wind. The commander looks them up and down.%SPEECH_ON%I know what you're thinking, 'What am I doing fighting for this sorry git. If he's so noble, where's his high horse to stand on?'%SPEECH_OFF%The soldiers laugh, easing some tension. %commander% continues.%SPEECH_ON%Well, ugly sod or not, I like nothing better than a good fight. And that's where I'll be, men. I'll be in there with you, fighting until I can't, fighting until the very end, because that is what a fighter is supposed to do!%SPEECH_OFF%The soldiers raise their arms and cheer. Their commander turns around, sword raised.%SPEECH_ON%Now follow me, and we'll show %feudfamily% what it is to be men!%SPEECH_OFF% | %commander%'s motley army has come together for the big battle. Walking up and down the battle lines, the commander starts in on a speech.%SPEECH_ON%Some of y'all looked sapped of sleep. What are you, nervous? Me too! Didn't sleep a wink.%SPEECH_OFF%This loosens some of the men up. It is good to know you are not alone, whether in flesh or spirit. He continues.%SPEECH_ON%But I am awake for today, for this fight. I wouldn't miss it for the world. So rub that sleep from your eyes men, for today we show those %feudfamily% bastards they should have stayed in their beds!%SPEECH_OFF% | %commander% addresses his readying men. You don't listen to a word of it. Instead, you prepare your men for the coming fight. | You watch as %commander% goes to his men and peppers them with lines of inspiration. Many you've heard before. In fact, did these lines come from some scroll of old? A motivational speaker whose energy has been passed down through the generations? %randombrother% comes up to you chuckling.%SPEECH_ON%I know that commander speaks empty rhetoric, yet I feel compelled to do a pushup or two anyway.%SPEECH_OFF%Laughing, you tell the man to get in line with the rest of the company. He barbs back.%SPEECH_ON%Will there be a speech?%SPEECH_OFF%You push the man as he turns laughing. | %commander% walks up and down his battle lines. He comes to a boy who is shaking so hard his armor is rattling.%SPEECH_ON%You remind me of myself, kid, you know that? You think I haven't been where you are? Heh, take it easy, because someday you might be where I am.%SPEECH_OFF%The kid looks up with a new glint in his eye. He steadies himself and nods determinedly. The commander raises his voice, barking at his men to prepare for the battle of their lives. | %commander% goes about his men, yelling out that this battle is the most important event that they will ever experience in their lives. You're not so sure, but what is sure is that it will be the last thing many of them will ever experience. The cruelties of war don't make for the best of motivation, though, so you keep your mouth shut. | You tighten your boots as %commander% readies his men with a big, pompous speech about the grand importance of a war between the noble houses. It's very convincing. It has to be, if men with nothing to gain from fighting are going to be doing the dying. | %commander% comes to stand in front of his men. He's attired in spectacular battle garments, standing astride his men like a pearl among beach sands. He explains that they must win the battle, for losing it might just as well lose the entire war. He's saying anything to get the men invested, you think. You sure as shit wouldn't die for dainty nobility just because some honor-seeking commander divined it from political spirits. Then again, that attitude is why you're a mercenary to begin with. | War is a hell of a thing. How does one sell a man on it? %commander% does his best, pontificating on numerous subjects as he addresses his men. First, he states that it is the honorable thing to do. Then he states that they are many soldiers here, no doubt increasing the odds that some other schmuck will die instead of you. Health in numbers! Then he argues that losing this battle might mean losing their wives, their children, their country. This last number seems to work the best as the men roar with anger and energy. Through the now cheering crowd of soldiers, you can easily spot the cynics and sodomites. | %commander% addresses his men with a deep, strong tone.%SPEECH_ON%Ah, some of you are looking very giddy. Can't wait to slaughter %feudfamily%'s men, huh? I know that feeling.%SPEECH_OFF%A scattering of nervous laughter. The commander continues.%SPEECH_ON%Keep your families in mind, men, for they are surely depending upon us this day!%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_78.png[/img]\x7b%commander% se coloca frente a una asamblea de sus soldados. Algunos lucen cansados, con rostros fatigados por no haber dormido en toda la noche. Otros tiemblan nerviosos. Su comandante se dirige a ellos.%SPEECH_ON%¿Tenéis miedo? ¿Estáis asustados? Está bien. Me preocuparía si no lo estuvierais.%SPEECH_OFF%Risas dispersas alivian el ambiente. Continúa.%SPEECH_ON%Pero ahora mismo os pido que no tengáis miedo por vuestra propia piel, sino que tengáis miedo por las vidas de vuestros compatriotas, ¡vuestras familias! ¡Por ellos luchamos hoy! Preocupémonos por nosotros mismos mañana, ¡porque hoy seremos hombres!%SPEECH_OFF%Las risas se convierten en vítores estruendosos. | %commander% tiene a sus hombres reunidos frente a él. Soldados de infantería, arqueros, reservas, todos de pie bajo un viento fuerte. El comandante los observa de arriba a abajo.%SPEECH_ON%Sé lo que estáis pensando: '¿Por qué estoy peleando por este desgraciado? Si es tan noble, ¿dónde está su caballo alto para montar?'%SPEECH_OFF%Los soldados se ríen, aliviando algo de tensión. %commander% prosigue.%SPEECH_ON%Bueno, sea con feas criaturas o no, no hay nada que me guste más que una buena pelea. Y ahí estaré, hombres. Estaré allí con vosotros, peleando hasta que no pueda más, peleando hasta el final, porque eso es lo que un guerrero debe hacer.%SPEECH_OFF%Los soldados levantan los brazos y vitorean. Su comandante se da la vuelta, levantando la espada.%SPEECH_ON%Ahora seguidme, ¡y mostraremos a %feudfamily% lo que significa ser hombres!%SPEECH_OFF% | El variopinto ejército de %commander% se ha reunido para la gran batalla. Paseando arriba y abajo de las líneas de batalla, el comandante comienza un discurso.%SPEECH_ON%Algunos de vosotros parecéis agotados por la falta de sueño. ¿Estáis nerviosos? ¡Yo también lo estoy! No pegué un ojo en toda la noche.%SPEECH_OFF%Esto relaja a algunos de los hombres. Es bueno saber que no estás solo, ya sea en carne o espíritu. Continúa.%SPEECH_ON%Pero estoy despierto para hoy, para esta lucha. No me la perdería por nada del mundo. Así que lavaos el sueño de los ojos, hombres, ¡porque hoy les mostraremos a esos bastardos de %feudfamily% que deberían haberse quedado en sus camas!%SPEECH_OFF% | %commander% se dirige a sus hombres mientras se preparan. Tú no escuchas ni una palabra. En cambio, preparas a tus hombres para la próxima lucha. | Observas cómo %commander% se acerca a sus hombres y les lanza palabras inspiradoras. Muchas las has oído antes. De hecho, ¿estas líneas provienen de algún antiguo pergamino? ¿Un orador motivacional cuya energía se ha transmitido a través de las generaciones? %randombrother% se acerca riendo.%SPEECH_ON%Sé que el comandante habla con retórica vacía, pero aún así siento la necesidad de hacer uno o dos flexiones de todos modos.%SPEECH_OFF%Riendo, le dices al hombre que se alinee con el resto de la compañía. Él responde con sarcasmo.%SPEECH_ON%¿Habrá un discurso?%SPEECH_OFF%Empujas al hombre mientras se aleja riendo. | %commander% pasea arriba y abajo de las líneas de batalla. Llega hasta un chico que tiembla tan fuerte que su armadura hace ruido.%SPEECH_ON%Me recuerdas a mí mismo, chico, ¿sabes? ¿Crees que no he estado donde tú estás? Je, tómalo con calma, porque algún día podrías estar donde estoy yo.%SPEECH_OFF%El chico levanta la mirada con un nuevo brillo en sus ojos. Se estabiliza y asiente decididamente. El comandante eleva su voz, ordenando a sus hombres que se preparen para la batalla de sus vidas. | %commander% recorre a sus hombres, gritando que esta batalla es el evento más importante que jamás experimentarán en sus vidas. Tú no estás tan seguro, pero lo que sí sabes es que será lo último que muchos de ellos experimentarán. Las crueldades de la guerra no son la mejor motivación, así que mantienes la boca cerrada. | Te ajustas las botas mientras %commander% prepara a sus hombres con un gran discurso grandilocuente sobre la gran importancia de una guerra entre las casas nobles. Es muy convincente. Debe serlo, si hombres que no tienen nada que ganar peleando van a ser los que mueran. | %commander% se sitúa frente a sus hombres. Está vestido con espléndidas prendas de batalla, de pie entre sus hombres como una joya entre granos de arena en la playa. Explica que deben ganar la batalla, porque perderla podría significar perder toda la guerra. Está diciendo cualquier cosa para involucrar a los hombres, piensas. Claro que no morirías por la nobleza caprichosa solo porque algún comandante en busca de honor lo haya deducido de intrigas políticas. Pero por otro lado, esa actitud es por lo que eres un mercenario en primer lugar. | La guerra es un infierno. ¿Cómo se convence a un hombre de lo contrario? %commander% hace lo mejor que puede, pronunciando varios discursos mientras se dirige a sus hombres. Primero, declara que es lo honorable. Luego afirma que hay muchos soldados aquí, aumentando sin duda las probabilidades de que algún otro pobre diablo muera en tu lugar. ¡La seguridad en los números! Luego argumenta que perder esta batalla podría significar perder a sus esposas, a sus hijos, a su país. Este último punto parece funcionar mejor, ya que los hombres rugen de ira y energía. Entre la multitud de soldados que ahora vitorean, puedes identificar fácilmente a los cínicos y a los escépticos. | %commander% se dirige a sus hombres con un tono profundo y firme.%SPEECH_ON%Ah, algunos de vosotros tenéis una mirada muy animada. ¿No podéis esperar para masacrar a los hombres de %feudfamily%, ¿verdad? Conozco esa sensación.%SPEECH_OFF%Algunas risas nerviosas. El comandante continúa.%SPEECH_ON%Mantened a vuestras familias en mente, hombres, ¡pues seguramente dependen de nosotros en este día!%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "Onwards, brothers, there's a battle to be won!"
+        es = "Es hora de visitar al comandante..."
+    }
+    {
+        en = "[img]gfx/ui/events/event_86.png[/img]\x7bDead bodies everywhere. The silhouette of %commander% atop the corpses, his armor glinting, a shiny encasement of a fleshen ruin. %employer% will no doubt be saddened by the loss of the battle here, but there is nothing more that can be done. | The battle is lost! %commander%'s men have been slain to a scattering of survivors and the commander himself has been struck down. Vultures are already cycling overhead and %feudfamily%'s men steadily work through the mounds of bodies to kill off any man pretending to be dead. You quickly gather the remnants of the %companyname% to retreat. %employer% will no doubt be horrified by the results here, but there's nothing that can be done now.\x7d"
+        es = "[img]gfx/ui/events/event_86.png[/img]\x7bCuerpos sin vida por todas partes. La silueta de %commander% encima de los cadáveres, su armadura destellando, un brillante envoltorio de una ruina carnal. Sin duda, %employer% estará entristecido por la pérdida de la batalla aquí, pero no hay nada más que se pueda hacer. | ¡La batalla está perdida! Los hombres de %commander% han caído, quedando solo unos pocos sobrevivientes, y el propio comandante ha sido derribado. Los buitres ya están sobrevolando y los hombres de %feudfamily% trabajan sin cesar a través de las montañas de cuerpos para eliminar a cualquier hombre que pretenda estar muerto. Rápidamente reúnes a los restos de %companyname% para retirarte. Sin duda, %employer% estará horrorizado por los resultados aquí, pero ahora no hay nada que se pueda hacer.\x7d"
+    }
+    {
+        en = "Not every battle can be won..."
+        es = "¿Es esto lo que quereis ser? ¿Cobardes que no defienden ni sus propias tierras?"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Lost an important battle");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_87.png[/img]\x7bYou've triumphed! Well, you and %commander%'s men both. The battle has been won, that's what is most important. You step over the mounds of bodies to prepare a return to your employer. | Corpses in piles five deep. Vultures plucking morsels from the mounds. Wounded begging for help. Surely, to a stranger's eye, there does not appear to be any winner here. %commander%, however, comes over with a wide grin.%SPEECH_ON%\x7bGood work, sellsword! You should get on back to your employer and tell him what's happened here. | Well if it isn't the sellsword. Wasn't sure if you'd make it. You should get on back to your employer and tell him what happened here.\x7d%SPEECH_OFF% | A wounded man begs at your feet. You can't tell if he's one of %commander%'s or an enemy. Suddenly, a spearhead jets in and pierces the man through the head, leaving him permanently side-eyed. You look over to see the killer tenting his hands atop the spear with an accomplished look on his face. He points a finger.%SPEECH_ON%You're that sellsword, right? %commander% told me to tell you that you should head on back to your employer. That sound right to you?%SPEECH_OFF%You nod. A groan rises from the piles of corpses. The man picks his spear back up, catching it in his other hand.%SPEECH_ON%Whelp, back to it!%SPEECH_OFF% | The battle over, you find %commander% roaring and ripping off his armor and undershirt. He shows off his wounds, flexing so they open agape like seeping rinds of freshly cut fruit. He demands his men to do the same, turning each around so that he can see their back.%SPEECH_ON%You see, good warriors like us carry our wounds here, here, and here...%SPEECH_OFF%He points to every spot on the front of his body, and then he points to his back.%SPEECH_ON%But here, no man carries an injury here. Because we die going forward, not one step back! Isn't that right?%SPEECH_OFF%The men cheer, though some are woozy on their feet, blood trickling from their injuries. You ignore the theatrics and gather the men of the %companyname%. Your employer will surely be happy to hear of the results here and that's all you really care about. | %commander% greets you after the battle. He's drenched in blood as if he cut someone's head off and bathed beneath the spewing trunk. A white stroke of teeth glimmers when he smiles.%SPEECH_ON%Now that is what I call a fight.%SPEECH_OFF%You ask if he'd say the same had he lost. He laughs.%SPEECH_ON%Oh, the cynic are we? No, I had no intention of losing here and, if I did, I had no intention of being alive to witness my own defeat.%SPEECH_OFF%You nod and respond.%SPEECH_ON%Rare is the man who gets to still be around to see his greatest defeat. It was good fighting with you, commander, but I must return to your employer now.%SPEECH_OFF%The commander nods and then turns around, yelling for someone to fetch him a towel. | You find %commander% squatting over a wounded enemy soldier. He's running a dagger along the poor man's chest, back and forth, scraping it along the armor. The commander looks at you.%SPEECH_ON%What do you think, sellsword? Should I let him live?%SPEECH_OFF%The prisoner stares at you, he juts his head forward, blinking hard. You suppose this is a 'yes.' You shrug.%SPEECH_ON%That is not up to me. Look, it was good fighting with you, but I must return to your employer now.%SPEECH_OFF%%commander% nods.%SPEECH_ON%Be seeing you, then.%SPEECH_OFF%As you leave, the commander is still back there hunched beside his prisoner, the blade clinking as it goes back and forth, back and forth, back and forth. | You find %commander% punching a dagger into the side of a wounded man's chest. The felled enemy seizes to the pain, but he quickly fades thereafter, going limp in mere moments. A gush of blood follows the blade's retrieval as the commander wipes it on his pantleg.%SPEECH_ON%Right to the heart, quick and easy. What man could hope for better?%SPEECH_OFF%You nod and tell the commander that you are returning to your employer for your pay. | You watch as %commander% and a troop of soldiers bandy about the battlefield, killing any wounded enemies they discover. %randombrother% asks if we should report to the commander. You shake your head.%SPEECH_ON%No. We report to your employer. To hell with this place, let's go get paid.%SPEECH_OFF% | The battlefield is littered with the dead and those who wish they were. %commander%'s men go about collecting their wounded and killing any enemies they find. The commander himself claps you on the shoulder, a fleck of blood splattering your cheek.%SPEECH_ON%Good work, sellsword. I wasn't sure if your men would hold their end of the bargain, but you damn well did. Your employer should be very happy to see you, I believe.%SPEECH_OFF% | You go around gathering the men of the %companyname%. %commander% comes to you, wiping a cloth over a sword, blood washing off in thick gobs.%SPEECH_ON%Leaving so soon?%SPEECH_OFF%You nod.%SPEECH_ON%Your employer is the one who is paying us, so to him we go.%SPEECH_OFF%The commander sheathes his weapon and nods back.%SPEECH_ON%Makes sense. Good fightin' with you, sellsword. A shame I couldn't have you in my outfit. Guess you blokes gotta keep chasing that coin, huh?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_87.png[/img]\x7b¡Has triunfado! Bueno, tú y los hombres de %commander%. La batalla ha sido ganada, eso es lo más importante. Pasas por encima de las montañas de cuerpos para preparar el regreso a tu empleador. | Montones de cadáveres apilados hasta cinco cuerpos de altura. Buitres arrancando bocados de los montículos. Heridos suplicando ayuda. Seguramente, a los ojos de un extraño, no parece haber ningún ganador aquí. Sin embargo, %commander% se acerca con una amplia sonrisa.%SPEECH_ON%\x7b¡Buen trabajo, mercenario! Deberías regresar con tu empleador y contarle lo que ha sucedido aquí. | Bueno, si es el mercenario. No estaba seguro de si lograrías sobrevivir. Deberías regresar con tu empleador y contarle lo que sucedió aquí.\x7d%SPEECH_OFF% | Un hombre herido suplica a tus pies. No puedes decir si es uno de los hombres de %commander% o un enemigo. De repente, una punta de lanza aparece y atraviesa al hombre por la cabeza, dejándolo con la mirada fija de costado. Miras hacia el asesino, que coloca sus manos encima de la lanza con una expresión de logro en su rostro. Señala con un dedo.%SPEECH_ON%Tú eres el mercenario, ¿verdad? %commander% me dijo que te dijera que deberías regresar con tu empleador. ¿Te parece correcto?%SPEECH_OFF%Asientes. Un gemido surge de los montones de cadáveres. El hombre recoge su lanza nuevamente, sosteniéndola con la otra mano.%SPEECH_ON%¡Bueno, de vuelta al trabajo!%SPEECH_OFF% | Terminada la batalla, encuentras a %commander% rugiendo y arrancándose la armadura y la camiseta interior. Muestra sus heridas, flexionando para que se abran como cáscaras húmedas de fruta recién cortada. Exige a sus hombres que hagan lo mismo, girándolos para que pueda ver sus espaldas.%SPEECH_ON%Veis, buenos guerreros como nosotros llevamos nuestras heridas aquí, aquí y aquí...%SPEECH_OFF%Señala cada punto en la parte delantera de su cuerpo y luego señala su espalda.%SPEECH_ON%Pero aquí, ningún hombre lleva una herida aquí. ¡Porque morimos avanzando, no dando la espalda al enemigo! ¿No es así?%SPEECH_OFF%Los hombres vitorean, aunque algunos están tambaleándose, con sangre goteando de sus heridas. Ignoras el teatro y reúnes a los hombres de %companyname%. Seguramente tu empleador estará contento de conocer los resultados aquí y eso es lo único que realmente te importa. | %commander% te saluda después de la batalla. Está empapado en sangre como si hubiera decapitado a alguien y se hubiera bañado bajo el chorro que brota. Un destello blanco de dientes brilla cuando sonríe.%SPEECH_ON%Ahora eso es lo que yo llamo una pelea.%SPEECH_OFF%Le preguntas si diría lo mismo si hubiera perdido. Él se ríe.%SPEECH_ON%¿Oh, eres un cínico? No, no tenía intención de perder aquí y, si lo hubiera hecho, no tenía intención de estar vivo para presenciar mi propia derrota.%SPEECH_OFF%Asientes y respondes.%SPEECH_ON%Raro es el hombre que aún puede estar aquí para ver su mayor derrota. Fue bueno luchar contigo, comandante, pero debo regresar con mi empleador ahora.%SPEECH_OFF%El comandante asiente y luego se da la vuelta, gritando a alguien que le traiga una toalla. | Encuentras a %commander% agachado sobre un soldado enemigo herido. Está pasando un puñal por el pecho del pobre hombre, de un lado a otro, raspándolo contra la armadura. El comandante te mira.%SPEECH_ON%¿Qué opinas, mercenario? ¿Debería dejarlo vivir?%SPEECH_OFF%El prisionero te mira, mueve la cabeza hacia adelante, parpadea fuerte. Supones que eso es un 'sí'. Encoges los hombros.%SPEECH_ON%Eso no depende de mí. Mira, fue bueno luchar contigo, pero debo regresar con mi empleador ahora.%SPEECH_OFF%%commander% asiente.%SPEECH_ON%Nos vemos entonces.%SPEECH_OFF%Mientras te alejas, el comandante sigue allí agachado junto a su prisionero, la hoja tintinea al moverse de un lado a otro, de un lado a otro, de un lado a otro. | Encuentras a %commander% clavando un puñal en el costado del pecho de un hombre herido. El enemigo derribado se retuerce de dolor, pero se desvanece rápidamente, quedando inmóvil en cuestión de momentos. Un chorro de sangre sigue a la recuperación de la hoja mientras el comandante la limpia en su pantalón.%SPEECH_ON%Directo al corazón, rápido y fácil. ¿Qué hombre podría esperar algo mejor?%SPEECH_OFF%Asientes y le dices al comandante que estás regresando con tu empleador para recibir tu pago. | Observas cómo %commander% y un grupo de soldados recorren el campo de batalla, matando a cualquier enemigo herido que encuentran. %randombrother% pregunta si deberíamos informar al comandante. Niegas con la cabeza.%SPEECH_ON%No. Informamos a nuestro empleador. Al diablo con este lugar, vamos a cobrar.%SPEECH_OFF% | El campo de batalla está lleno de muertos y de aquellos que desearían estarlo. Los hombres de %commander% se encargan de recoger a sus heridos y matar a cualquier enemigo que encuentran. El propio comandante te da una palmada en el hombro, una salpicadura de sangre mancha tu mejilla.%SPEECH_ON%Buen trabajo, mercenario. No estaba seguro de si tus hombres cumplirían su parte del trato, pero lo hicieron muy bien. Tu empleador debería estar muy contento de verte, creo.%SPEECH_OFF% | Te dedicas a reunir a los hombres de %companyname%. %commander% se acerca a ti, limpiando una espada con un paño, la sangre se desprende en gruesos grumos.%SPEECH_ON%¿Ya te vas, mercenario?%SPEECH_OFF%Asientes.%SPEECH_ON%Tu señor es el que nos está pagando, así que vamos a verlo a él.%SPEECH_OFF%El comandante enfunda su arma y asiente de nuevo.%SPEECH_ON%Tiene sentido. Buena lucha, mercenario. Una lástima que no pudieras unirte a mi equipo. Supongo que  tipos como vosotros deben seguir persiguiendo esas monedas, ¿verdad?%SPEECH_OFF%\x7d"
+    }
+    {
+        // local party = faction.spawnEntity(this.World.State.getPlayer().getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.Noble, 150);
+        mode = "pattern"
+        en = "<this.Contract.getHome().getName()> Company"
+        es = "<this.Contract.getHome().getName()> Compañia"
+    }
+    {
+        en = "[img]gfx/ui/events/event_04.png[/img]\x7bYou find %employer% drunk as a skunk. He stares at you over the lip of a cup and speaks in the bowl of it before drinking.%SPEECH_ON%Ah hell, you're back.%SPEECH_OFF%The cup falls away as he swallows. You quickly report of your success. The man smiles although he's so drunk he almost looks confused.%SPEECH_ON%Then it is done. Victory is mine. That is what I wanted. I hope too many didn't die doing what I wanted.%SPEECH_OFF%He breaks into laughter. One of his guards hands you a satchel and ushers you out of the room. | %employer% welcomes you with a satchel of crowns.%SPEECH_ON%\x7bVictory is ours. Thank you, sellsword. | Hell of a job out there, sellsword. Victory belongs to us and we have, in part, you to thank for that. Your %reward_completion% crowns is right here. | What was it, %reward_completion% crowns? A small price to pay for defeating that army and bringing us one step closer to ending this war. | My little birds told me you did well out there, sellsword. Of course, they also tell me that the army of %feudfamily% is in retreat. What more could I ask for? Your %reward_completion% crowns, as promised.\x7d%SPEECH_OFF% | You find %employer% barking orders at his commanders. Seeing you, he quickly points your way.%SPEECH_ON%See this man right here? He's a man that gets things done. Guards! Hand him %reward_completion% crowns. If only I could pay you sorry dogs to do half as good of a job as him!%SPEECH_OFF% | %employer% is found in his garden telling jokes to a group of women. You break into their group, soaked in blood, covered in mud. The women gasp and step away. %employer% laughs.%SPEECH_ON%Ah, the sellsword returns! You're such a lady's man, mercenary. I wish I could offer one of these fine women to you, but I'm afraid their fathers would have your nuts if you even so much as touched one.%SPEECH_OFF%One of the ladies runs a hand along her bosom.%SPEECH_ON%He can touch me if he likes.%SPEECH_OFF%%employer% laughs again.%SPEECH_ON%Oh dear, haven't you already gotten enough men in trouble? Run along, ladies, and tell one of my guards to fetch a satchel of %reward_completion% crowns.%SPEECH_OFF% | You find %employer% trying to train his cat to shake.%SPEECH_ON%Look at this little bugger. He won't even meet my eyes! And when I feed him, he behaves as though it was expected of me. I could punt this little fark out that damn window if I wanted.%SPEECH_OFF%You respond.%SPEECH_ON%It'd land on its feet.%SPEECH_OFF%The nobleman nods.%SPEECH_ON%That's the damnedest part.%SPEECH_OFF%Your employer picks the resilient cat up and throws it out the window. He claps his hands before giving you a satchel of %reward_completion% crowns.%SPEECH_ON%Sorry if I seem preoccupied. You did well out there. %feudfamily%'s army in retreat and I couldn't possibly ask for more these days.%SPEECH_OFF% | You find %employer% having an impromptu trial for one of his commanders. You're not sure what it is over, but the commander's chin is high and defiant. When it's over, he's roughed up and taken outside. %employer% beckons you to him.%SPEECH_ON%\x7bThank you, mercenary. Victory is ours and I'm not sure that could have been the case without your help. Of course, your reward of %reward_completion% crowns, as agreed upon. | The man refused my orders, it is what it is. You, however, performed exemplarily! Your %reward_completion% crowns, as agreed upon. | That man would not fight for me. Said he wouldn't raise a sword against his half-brother who fights for the enemy. What a crock. You did well, sellsword. Your %reward_completion% crowns, as promised.\x7d%SPEECH_OFF% | You return to %employer% who is in the middle of a line of commanders.%SPEECH_ON%\x7bThank you, mercenary. Victory belongs to us now. Your %reward_completion% crowns, as agreed upon. | The war goes on, but the end is perhaps nigh because of you. With the enemy army in full retreat, we are one step closer to ending this damned thing once and for all. Your %reward_completion% crowns are crowns well-earned, sellsword.\x7d%SPEECH_OFF% | One of %employer%'s guards stops you from getting close. He carries a satchel of %reward_completion% crowns which are quickly handed over.%SPEECH_ON%My liege tells me that you did well in battle.%SPEECH_OFF%The guard looks around awkwardly.%SPEECH_ON%That... that was all I was supposed to say.%SPEECH_OFF% | %employer% welcomes you into his war room which has been emptied of his commanders.%SPEECH_ON%Good seeing you, sellsword. As I'm sure you're aware, the army of %feudfamily% is already in retreat. Who knows if we could have done it without you. %reward_completion% crowns just for you, as agreed upon.%SPEECH_OFF% | %employer% is feeding a tall, dumb looking bird. You've never seen a bird of that proportion before and so keep your distance. An amused nobleman talks as he lets the creature eat out of his hand.%SPEECH_ON%Nothing to fear here, sellsword. Just so you know, I already have word of your doings. The army of %feudfamily% is in retreat and so we're stepping ever closer to ending this damned war. That guard yonder, the one holding the satchel, has your %reward_completion% crowns.%SPEECH_OFF%The bird flaps its wings and squawks as you leave. | You find %employer% hanging out at a man-made pond. He's scooping up frogs with a gentle hand. The slimy critters squirm and jump away.%SPEECH_ON%Victory belongs to us. I'd say that is a job well done, sellsword. I gave you a huge opportunity and you really... jumped, on it.%SPEECH_OFF%You must have visibly cringed for the nobleman quickly gets to his feet, wiping his hands on his pants.%SPEECH_ON%Hell, that wasn't so bad, was it? Well, the guard yonder has your payment of %reward_completion% crowns.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_04.png[/img]\x7bEncuentras a %employer% borracho como una cuba. Te mira por encima del borde de su copa y habla dentro de ella antes de seguir bebiendo.%SPEECH_ON%Ah, demonios, has vuelto.%SPEECH_OFF%La copa cae mientras traga. Informas rápidamente de tu éxito. El hombre sonríe, aunque está tan borracho que casi parece confundido.%SPEECH_ON%Entonces está hecho. La victoria es mía. Eso es lo que quería. Espero que no hayan muerto demasiados haciendo lo que yo quería.%SPEECH_OFF%Se echa a reír. Uno de sus guardias te entrega una bolsa y te hace salir de la habitación. | %employer% te da la bienvenida con una bolsa de coronas.%SPEECH_ON%\x7bLa victoria es nuestra. Gracias, mercenario. | Trabajo increíble ahí fuera, mercenario. La victoria nos pertenece y tenemos, en parte, que agradecértelo. Tus %reward_completion% coronas están aquí. | ¿Eran %reward_completion% coronas, verdad? Un pequeño precio a pagar por derrotar a ese ejército y acercarnos un paso más a poner fin a esta guerra. | Mis pajaritos me dijeron que lo hiciste bien allá fuera, mercenario. Por supuesto, también me dijeron que el ejército de %feudfamily% está en retirada. ¿Qué más podría pedir? Tus %reward_completion% coronas, como te prometi.\x7d%SPEECH_OFF% | Encuentras a %employer% dando órdenes a sus comandantes. Al verte, te señala rápidamente.%SPEECH_ON%¿Ven a este hombre aquí? Es un hombre que hace que las cosas sucedan. ¡Guardias! Entréguenle %reward_completion% coronas. ¡Si tan solo pudiera pagaros a vosotros, perros desgraciados, para que hicierais la mitad de buen trabajo que él!%SPEECH_OFF% | Encuentras a %employer% intentando entrenar a su gato para que dé la pata.%SPEECH_ON%Mira a este pequeño diablillo. ¡Ni siquiera me mirará a los ojos! Y cuando lo alimento, actúa como si fuera lo esperado de mí. Podría patear a ese pequeño demonio por la maldita ventana si quisiera.%SPEECH_OFF%Respondes.%SPEECH_ON%Aterrizaría de pie.%SPEECH_OFF%El noble asiente.%SPEECH_ON%Es la parte maldita.%SPEECH_OFF%Tu empleador recoge al gato y lo lanza por la ventana. Luego aplaude antes de entregarte una bolsa con %reward_completion% coronas.%SPEECH_ON%Perdón si parezco distraído. Lo hiciste bien allá fuera. El ejército de %feudfamily% está en retirada y no podría pedir más en estos días.%SPEECH_OFF% | Encuentras a %employer% llevando a cabo un juicio improvisado para uno de sus comandantes. No estás seguro de qué se trata, pero el comandante mantiene la barbilla alta y desafiante. Cuando termina, está maltrecho y lo llevan afuera. %employer% te hace un gesto para que te acerques.%SPEECH_ON%\x7bGracias, mercenario. La victoria es nuestra y no estoy seguro de que hubiera sido posible sin tu ayuda. Por supuesto, tu recompensa de %reward_completion% coronas, como acordamos. | El hombre se negó a seguir mis órdenes, es lo que hay. ¡Tú, en cambio, actuaste de manera ejemplar! Tus %reward_completion% coronas, como acordamos. | Ese hombre no pelearía por mí. Dijo que no levantaría una espada contra su medio hermano, que lucha por el enemigo. Vaya tontería. Lo hiciste bien, mercenario. Tus %reward_completion% coronas, como te prometi.\x7d%SPEECH_OFF% | Regresas con %employer%, quien está en medio de sus comandantes.%SPEECH_ON%\x7bGracias, mercenario. La victoria nos pertenece ahora. Tus %reward_completion% coronas, como acordamos. | La guerra continúa, pero el final está más cerca gracias a ti. Con el ejército enemigo en plena retirada, estamos un paso más cerca de poner fin a esta maldita situación de una vez por todas. Tus %reward_completion% coronas son coronas bien ganadas, mercenario.\x7d%SPEECH_OFF% | Uno de los guardias de %employer% te impide acercarte. Lleva una bolsa con %reward_completion% coronas que te entrega rápidamente.%SPEECH_ON%Mi señor me dice que lo hiciste bien en la batalla.%SPEECH_OFF%El guardia mira a su alrededor incómodo.%SPEECH_ON%Eso... eso era todo lo que se suponía que debía decir.%SPEECH_OFF% | %employer% te da la bienvenida a su sala de guerra, que ha sido vaciada de sus comandantes.%SPEECH_ON%Es bueno verte, mercenario. Como seguramente sabrás, el ejército de %feudfamily% ya está en retirada. Quién sabe si podríamos haberlo logrado sin ti. %reward_completion% coronas solo para ti, como acordamos.%SPEECH_OFF% | %employer% está alimentando a un pájaro alto y tonto. Nunca habías visto un pájaro de esa proporción antes, así que te mantienes a distancia. Un noble entretenido habla mientras deja que la criatura coma de su mano.%SPEECH_ON%Nada que temer aquí, mercenario. Solo para que lo sepas, ya tengo noticias de tus acciones. El ejército de %feudfamily% está en retirada y nos acercamos cada vez más a poner fin a esta maldita guerra. El guardia de allá, el que sostiene la bolsa, tiene tus %reward_completion% coronas.%SPEECH_OFF%El pájaro agita sus alas y grazna mientras te alejas. | Encuentras a %employer% en un estanque artificial. Está recogiendo ranas con delicadeza. Las criaturas resbaladizas se retuercen y saltan lejos.%SPEECH_ON%La victoria nos pertenece. Diría que hiciste un buen trabajo, mercenario. Te di una gran oportunidad y realmente... saltaste, en ella.%SPEECH_OFF%Debes haber hecho una mueca visible, ya que el noble se levanta rápidamente, limpiándose las manos en sus pantalones.%SPEECH_ON%Diablos, eso no estuvo tan mal, ¿verdad? Bueno, el guardia de allá tiene tu pago de %reward_completion% coronas.%SPEECH_OFF%\x7d"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Won an important battle");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "feudfamily"
+        es = ""
+    }
+    {
+        en = "cost"
+        es = ""
+    }
+    {
+        en = "bribe"
+        es = ""
+    }
+    {
+        en = "bigdog"
+        es = ""
+    }
+    {
+        en = "motivator"
+        es = ""
+    }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\defend_holy_site_contract.nut
     {
         en = "Defend Holy Site"
@@ -18711,10 +19944,6 @@ local pairs = [
         es = ""
     }
     {
-        en = "Ambush"
-        es = ""
-    }
-    {
         en = "[img]gfx/ui/events/event_61.png[/img]\x7b%employer%'s reading a scroll when you enter. He waves you off, perhaps thinking you're just a servant. You clank your scabbard against the wall. The man glances up, then quickly drops his papers.%SPEECH_ON%Ah, sellsword! It is good to see you. I have a problem specifically for a man of your... proclivities.%SPEECH_OFF%He pauses as if expecting your input. When you've none, he awkwardly continues.%SPEECH_ON%Yes, of course, the task. There are goblins %direction% of %origin% who have established something of a foothold. I'd take myself and some of my knights to go take care of it, but as it turns out, 'killing gobbos' is beneath those men. Hogwash, I say. I think they just don't want to die at the hands of the stunty little gits. Honor, valor, all that.%SPEECH_OFF%He smirks and raises a hand.%SPEECH_ON%But it's not beneath you, so long as the pay is right, yes?%SPEECH_OFF% | %employer%'s yelling at a man leaving his room. When he settles down, he bids you a fair greeting.%SPEECH_ON%Farkin' hell, it's good to see you. Do you have any notion as to how hard it is to get your 'loyal' men to go kill some goblins?%SPEECH_OFF%He spits and wipes his mouth on his sleeve.%SPEECH_ON%Apparently it is not the most noble of tasks. Something about how those little gits don't ever fight fair. Can you believe that? Men telling me, a highborn nobleman, what is 'noble' or not. Well, there it is anyway, sellsword. I need you to go %direction% of %origin% and root out some goblins that have set up a camp. Can you do that for me?%SPEECH_OFF% | %employer%'s unsheathing and sheathing a sword. He seems to look at himself in the blade's reflection before snapping it away again.%SPEECH_ON%The peasants are badgering me again. They say there are goblins camping at a place called %location% %direction% of %origin%. I've no reason to disbelieve them after a young boy was brought to my feet today, a poison dart in his neck.%SPEECH_OFF%He slams the sword into its scabbard.%SPEECH_ON%Are you willing to take care of this problem for me?%SPEECH_OFF% | Red in the face, a drunken %employer% slams a mug down when you enter his room.%SPEECH_ON%Sellsword, right?%SPEECH_OFF%His guard looks in and nods. The nobleman laughs.%SPEECH_ON%Oh. Good. More men to send to their deaths.%SPEECH_OFF%He pauses before bursting into laughter.%SPEECH_ON%I joke, what a joke, right? We are having an issue with some goblins %direction% of %origin%. I need you to go take care of them, are you -hic- up for that or should I go ask someone else to dig their own... I mean...%SPEECH_OFF%He shuts himself up with another drink. | %employer%'s comparing two scrolls when you enter.%SPEECH_ON%My taxmen are falling a little short these days. A shame, though I guess it's good business for you now that I can't afford to send my so called 'loyal' knights anywhere.%SPEECH_OFF%He throws the papers aside and tents his hands over his table.%SPEECH_ON%My spies are reporting goblins have set up camp at a place they call %location% %direction% of %origin%. I need you to go there and do what my bannermen refuse to do.%SPEECH_OFF% | %employer% breaks bread as you enter, but he doesn't share any. He dips both ends into a goblet of wine and stuffs his mouth. He speaks, but it's more crumbs than words.%SPEECH_ON%Good seeing you, sellsword. I have some goblins %direction% of %origin% that need rooting out. I'd send my knights to go take care of them, but they're, uh, a little more important and less expendable. I'm sure you understand.%SPEECH_OFF%He manages to stuff the rest of the bread into his ugly maw. For a moment, he chokes, and for a moment you consider shutting the door and letting this end here and now. Unfortunately, his throes of anguish garner the attention of a guard who swoops in and slams the nobleman in the chest, spilling the hazard right out in all its goopy, near-assassinating glory. | When you find %employer%, he's sending off a few knights, chasing them out the door with a few parting curses. The sight of you, however, seems to momentarily settle the man.%SPEECH_ON%Sellsword! Good to see you! Better you than those so-called 'men'.%SPEECH_OFF%He takes a seat and pours himself a drink. He takes a sip, stares at it, then downs it all in one go.%SPEECH_ON%My loyal bannermen refuse to go take on the goblins which have camped %direction% of %origin%. They talk of ambushes, poison, all that...%SPEECH_OFF%His speech is increasingly slurred.%SPEECH_ON%Well... -hic-, you know all that, right? And you know what I'm asking next, right? Of - of course you do, -hic-, I need you to hand me another drink! Ha, kidding. Go kill those goblins, wouldya?%SPEECH_OFF%\x7d"
         es = "[img]gfx/ui/events/event_61.png[/img]\x7b%employer% está leyendo un pergamino cuando entras. Te hace un gesto para que te vayas, quizás pensando que eres solo un sirviente. Haces chocar tu vaina contra la pared. El hombre levanta la vista y luego rápidamente deja caer sus papeles.%SPEECH_ON%¡Ah, mercenario! Es bueno verte. Tengo un problema específicamente para un hombre de tus... inclinaciones.%SPEECH_OFF%Hace una pausa como si esperara tu opinión. Cuando no dices nada, continúa de manera insegura.%SPEECH_ON%Sí, por supuesto, la tarea. Hay goblins al %direction% de %origin% que han establecido algo así como un poblado. Iría yo mismo con algunos de mis caballeros para encargarnos de ello, pero resulta que 'matar goblins' está por debajo de esos hombres. Tonterías, digo yo. Creo que simplemente no quieren morir a manos de esos pequeños diablos. Honor, valor y todo eso.%SPEECH_OFF%Él sonríe y levanta una mano.%SPEECH_ON%Pero no está por debajo de ti, siempre y cuando la paga sea la adecuada, ¿verdad?%SPEECH_OFF% | %employer% está gritando a un hombre que sale de su habitación. Cuando se calma, te saluda cortésmente.%SPEECH_ON%¡Maldita sea, es bueno verte! ¿Tienes alguna idea de lo difícil que es hacer que tus hombres 'leales' vayan a matar algunos goblins?%SPEECH_OFF%Escupe y se limpia la boca con la manga.%SPEECH_ON%Aparentemente, no es la tarea más noble. Algo sobre cómo que esos pequeños diablos nunca pelean limpio. ¿Puedes creer eso? Hombres diciéndome a mí, un noble de alta cuna, qué es la 'nobleza'. Bueno, ahí lo tienes, mercenario. Necesito que vayas al %direction% de %origin% y desalojes a unos goblins que han establecido un campamento. ¿Puedes hacer eso por mí?%SPEECH_OFF% | %employer% desenvaina y envaina una espada repetidamente. Parece mirarse a sí mismo en el reflejo de la hoja antes de guardarla nuevamente.%SPEECH_ON%Los campesinos me están fastidiando de nuevo. Dicen que hay goblins acampando en un lugar llamado %location% al %direction% de %origin%. No tengo razón para no creerles después de que un joven muchacho fue llevado a mis pies hoy, con un dardo envenenado en el cuello.%SPEECH_OFF%Golpea la espada en su vaina.%SPEECH_ON%¿Estás dispuesto a encargarte de este problema por mí?%SPEECH_OFF% | %employer%, con la cara roja por la borrachera, deja caer una jarra cuando entras a su habitación.%SPEECH_ON%¿Mercenario, verdad?%SPEECH_OFF%Su guardia mira y asiente. El noble se ríe.%SPEECH_ON%Oh. Bueno. Más hombres para enviar a sus muertes.%SPEECH_OFF%Hace una pausa antes de soltar una risotada.%SPEECH_ON%Solo estoi bromeando, ¿verdad? Tenemos un problema con algunos goblins al %direction% de %origin%. Necesito que vayas a encargarte de ellos, ¿estás -hic- dispuesto para eso o debería ir a preguntarle a alguien más que cave su propia...? Quiero decir...%SPEECH_OFF%Se calla mientras toma otro trago. | %employer% está comparando dos pergaminos cuando entras.%SPEECH_ON%Mis recaudadores de impuestos están dejando de cumplir últimamente. Una pena, aunque supongo que es buen negocio para ti ahora que no puedo permitirme enviar a mis llamados caballeros 'leales' a ningún lado.%SPEECH_OFF%Él arroja los papeles a un lado y junta sus manos sobre la mesa.%SPEECH_ON%Mis espías me informan que los goblins han establecido un campamento en un lugar que llaman %location% al %direction% de %origin%. Necesito que vayas allí y hagas lo que mis vasallos se niegan a hacer.%SPEECH_OFF% | %employer% parte una hogaza de pan mientras entras, pero no te ofrece. Sumerge ambos extremos en una copa de vino y se llena la boca. Habla, pero son más migajas que palabras.%SPEECH_ON%Un placer verte, mercenario. Tengo unos goblins al %direction% de %origin% que necesitan ser eliminados. Enviaría a mis caballeros a encargarse de ellos, pero, eh, son un poco más importantes y menos desechables. Estoy seguro de que lo entiendes.%SPEECH_OFF%Logra meter el resto del pan en su horrenda boca. Entonces se atraganta, y por un momento consideras cerrar la puerta y dejar que todo termine aquí y ahora. Desafortunadamente, sus espasmos de angustia llaman la atención de un guardia que entra de golpe y le golpea en el pecho al noble, derramando el peligro justo en todo su esplendor pegajoso, casi asesino. | Cuando encuentras a %employer%, está despidiendo a algunos caballeros, echándolos fuera de la puerta con algunas maldiciones de despedida. Sin embargo, verte parece tranquilizar momentáneamente al hombre.%SPEECH_ON%¡Mercenario! ¡Es bueno verte! Mejor tú que esos llamados 'hombres'.%SPEECH_OFF%Se sienta y se sirve una bebida. Da un sorbo, la mira, luego se la bebe de un trago.%SPEECH_ON%Mis leales vasallos se niegan a ir a enfrentar a los goblins que han acampado al %direction% de %origin%. Hablan de emboscadas, veneno, todo eso...%SPEECH_OFF%Ha medida que habla empieza a arrastra las palabras.%SPEECH_ON%Bueno... -hic-, ya sabes todo eso, ¿verdad? Y sabes lo que voy a preguntar a continuación, ¿verdad? Por supuesto que sí, -hic-, ¡necesito que me des otra bebida! Ja, bromeo. Ve y mata a esos goblins, ¿quieres?%SPEECH_OFF%\x7d"
     }
@@ -18995,10 +20224,6 @@ local pairs = [
         mode = "pattern"
         en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
         es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
-    }
-    {
-        en = "bribe"
-        es = ""
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\drive_away_bandits_contract.nut
     {
@@ -19615,10 +20840,6 @@ local pairs = [
         es = "[img]gfx/ui/events/event_31.png[/img]\x7bMientras te acercas a %noblesettlement%, %noble% se aleja rápidamente hacia unos arbustos.%SPEECH_ON%Permitidme, buenos amigos, pero tengo una necesidad urgente.%SPEECH_OFF%Tú asientes y esperas. Y esperas. Y esperas. Al darte cuenta de tu error, te apresuras detrás del arbusto y descubres que el hombre ha desaparecido por completo y hay mierda en tus zapatos. | %noble% te pide que te detengas. Se dirige a un arroyo.%SPEECH_ON%Esperad. Permítanme limpiarme para que mi familia no me vea en un estado tan lamentable.%SPEECH_OFF%Tiene sentido. Dejas al hombre a su suerte, pero cuando regresas para verificar cómo está, ha desaparecido. Huellas embarradas conducen hacia una colina y las sigues. Al otro lado se revela un campo y un espeso cultivo a través del cual cualquier mentiroso podría escapar fácilmente. %randombrother% se coloca a tu lado.%SPEECH_ON%Maldición.%SPEECH_OFF%Así es, maldita sea. | Hay unos campesinos a lo largo del camino hacia %noblesettlement%. Se están cortando el pelo y esto parece captar la atención de %noble%.%SPEECH_ON%PEsperad, necesito arreglarme. No quiero que mi anciana madre me vea en este estado, ¿de acuerdo?%SPEECH_OFF%Tú asientes y te pones a contar el inventario para pasar el tiempo. Cuando regresas con los campesinos, preguntas dónde ha ido el noble. Uno de ellos te mira.%SPEECH_ON%No he visto a ningún noble.%SPEECH_OFF%Explicas que estaba vestido con harapos, luego lo describes rápidamente. Encogen los hombros.%SPEECH_ON%Vi a ese bribón correr hacia los campos de allí, luego montar a caballo y seguir cabalgando cada vez más lejos. Pensamos que estaba mal de la cabeza, ya que no dejaba de reír.%SPEECH_OFF%La ira te consume. | Llevas a %noble% a %noblesettlement%. Está casi temblando cuando entras en la ciudad.%SPEECH_ON%Ah, estoy un poco nervioso.%SPEECH_OFF%Ninguno de los guardias reconoce al hombre, pero es comprensible considerando su estado de vestimenta. Te acercas a un hombre muy bien armado y le pides que traiga a alguien de la familia noble. Se inclina hacia ti, sin apenas moverse de su posición.%SPEECH_ON%¿Y a quién debo anunciar?%SPEECH_OFF%Te giras y señalas.%SPEECH_ON%Oh, es... ese... eh...%SPEECH_OFF%%noble% no se encuentra en ninguna parte. Miras a tu alrededor. La atención de %randombrother% está centrada en una mujer y el resto de la compañía está dispersa. Una multitud de gente del pueblo se mueve de un lado a otro, una masa gris en la que un mentiroso podría desaparecer fácilmente. Aprietas los puños. El guardia te empuja hacia atrás.%SPEECH_ON%Si no tienes asuntos aquí, te pido que abandones las instalaciones o te sacaremos por la fuerza.%SPEECH_OFF%\x7d"
     }
     {
-        en = "Damnit!"
-        es = "¡Maldición!"
-    }
-    {
         en = "[img]gfx/ui/events/event_33.png[/img]\x7bWhile the caravan is stopped for a rest, you hear an odd noise, like a man biting into an apple and sucking in the juices. Walking around the end of a cart, you find a pale figure drooped over a dead caravan guard, the strange creature's fangs plunged deep into the man's neck. You can see the flesh lifting to the bite, the bloodslaked creature grinning as it drinks.\n\n Drawing your sword, you scream out to your mercenaries.%SPEECH_ON%Foul beasts! To arms, men!%SPEECH_OFF% | The lid of a box shifts around. You stare at it, exchanging a glance with a caravan guard.%SPEECH_ON%Y'all shipping dogs around?%SPEECH_OFF%Suddenly, the box lid explodes, splinters cascading from a source of great, angry power. Moaning, a creature rises up from the box, arms crossed over its chest. The face is pale, the skin taut and clearly cold. That's... a...\n\n The caravan guard runs away shouting.%SPEECH_ON%The cargo is loose! The cargo is loose!%SPEECH_OFF%Cargo? Who would dare call such horrors 'cargo'? | You watch as one of the caravan guards lifts a cat from a crate. The creature mewls as its legs dangle, kicking around for some footing, and then angrily kicking around to scratch what has lofted it just so. Interested, you inquire as to what the man is doing. He shrugs, lifting up the lid of a box and dropping the cat in.%SPEECH_ON%Feeding.%SPEECH_OFF%The cat shrieks, its feline squalls as fierce as its fight, but soon enough you hear nothing at all. Just as the caravan guard turns to leave the box, its lid bursts open and a pale creature shifts upward, almost incorporeal in its movement, and closes its arms around the man. It plunges its fangs into his neck. The guard's neck glows purple, then quickly begins to fade, his veins pressing out of his forehead as if trying to help his blood escape consumption.\n\n Backing away, you draw out your sword and alert your men to this newfound horror. | While taking a rest, a young caravan guard almost sneaks up on you.%SPEECH_ON%Hey sellsword, wanna see something?%SPEECH_OFF%You've got the time and time's got you bored, so yeah, of course you do. He takes you to one of the carts and lifts back a lid on a box. A pale figure is inside, arms crossed over its chest, its face colorless and taut in some sleepy content. You jump back, though, because that's no ordinary corpse. The caravan guard laughs.%SPEECH_ON%What, ya a little scared of the dead?%SPEECH_OFF%And just then, the creature's arm shoots up, grabbing the kid and dragging him into the box. You don't bother saving the idiot, but instead go to rally the battle brothers, all the while more boxes springing open all around you as you run. | Resting beside the road, you hear a horrid scream somewhere down the line of wagons. Drawing your sword, you quickly rush to the noise. A caravan guard limps past you, clutching his neck. His eyes are wide, his mouth frozen agape and speechless.%SPEECH_ON%They got out! They got out!%SPEECH_OFF%Another guard sprints by, not even bothering to stop to help the other. You look ahead to see a group of pale figures leaping from guard to guard, wrapping black cloaks around their victims to shade them into gruesome deaths. Before they can get to you, you turn back and alert the company of this horrifying danger. | While the wagontrain takes a break, you go around to check the carts and make sure everything is tidied up. The last wagon, though, is tilted into the ground, its draught animal dead in the mud. Nearby are two dead guards. They are completely white, yet posed in a freshly manner. Taking your gaze up, you find blood-faced creatures hunched atop the wagon, and they've got men dangling from their mouths!\n\n%randombrother% comes up behind you, weapon in hand, and pushes you back.%SPEECH_ON%Let's alert the men, sir!%SPEECH_OFF%That's about as good of an idea as one can have at the moment. You shout as loud as you can, ushering the rest of your men to combat. | You go to take a piss when a horrid shriek gives you pause. Dressing yourself, you turn back around and rush to the disturbance. There you find a caravan guard falling forward, his legs scissoring and stumbling before he falls on his face. Behind him, a pale creature is wiping blood from its mouth. And on the wagons there are boxes opening up, pallid shapes rising up out of them with bloodlust in their eyes.\n\n You've seen more than enough and go to alert the men.\x7d"
         es = "[img]gfx/ui/events/event_33.png[/img]\x7bMientras el convoy se detiene para descansar, escuchas un ruido extraño, como si un hombre mordiera una manzana y absorviera su jugo. Caminas alrededor de un carro, y encuentras a una figura pálida inclinada sobre un guardia del convoy muerto, con los colmillos extraños del ser hundidos profundamente en el cuello del hombre. Puedes ver cómo la piel del guarda palidece mientras  la criatura empapada de sangre sonríe mientras bebe.\n\nDesenvainas tu espada y gritas a tus mercenarios.%SPEECH_ON%¡Maldita bestia! ¡A las armas, hombres!%SPEECH_OFF% | La tapa de una caja se mueve. La miras, intercambiando una mirada con un guardia del convoy.%SPEECH_ON%¿Están transportando perros?%SPEECH_OFF%De repente, la tapa de la caja explota, cascadas de astillas provenientes de una fuente de gran y enojado poder. Gimiendo, una criatura se levanta de la caja, con los brazos cruzados sobre su pecho. Su rostro es pálido, la piel tensa y claramente fría. Eso es... un...\n\nEl guardia del convoy sale corriendo gritando.%SPEECH_ON%¡El cargamento está suelto! ¡El cargamento está suelto!%SPEECH_OFF%Cargamento, ¿quién se atrevería a llamar a tales horrores 'cargamento'? | Observas cómo uno de los guardias del convoy saca un gato de una caja. El animal maulla mientras sus patas cuelgan, pateando en busca de apoyo, y luego pateando con enojo para arañar lo que lo ha levantado de esa manera. Interesado, preguntas qué está haciendo el hombre. Él encoge los hombros, levanta la tapa de una caja y deja caer al gato dentro.%SPEECH_ON%Alimentándolo.%SPEECH_OFF%El gato grita, sus maullidos felinos son tan feroces como su lucha, pero pronto no escuchas nada en absoluto. Justo cuando el guardia del convoy se da la vuelta para alejarse de la caja, la tapa estalla abriéndose y una criatura pálida se levanta, casi incorpórea en su movimiento, y cierra sus brazos alrededor del hombre. Clava sus colmillos en su garganta. El cuello del guardia brilla de color púrpura por la sangre que se derrama y luego comienza a palidecer rápidamente. Sus venas resaltan en su frente como si estuviera haciendo un gran esfuerzo.\n\nRetrocediendo, desenvainas tu espada y alertas a tus hombres sobre esta nueva terrible amenaza. | Mientras descansas junto al camino, escuchas un grito horripilante en algún lugar de la fila de carromatos. Desenvainas tu espada y corres rápidamente hacia el ruido. Un guardia del convoy pasa junto a ti cojeando, agarrándose el cuello. Sus ojos están abiertos de par en par, su boca congelada y apenas balbuceando.%SPEECH_ON%¡Han escapado! ¡Han escapado!%SPEECH_OFF%Otro guardia corre a toda velocidad, sin siquiera detenerse para ayudar al otro. Miras hacia adelante y ves a un grupo de figuras pálidas saltando de guardia en guardia, envolviendo a sus víctimas con capas negras para convertirlas en objetos muertos. Antes de que puedan alcanzarte, te das la vuelta y alertas a la compañía sobre esta terrible amenaza. | Mientras revisas los carros para asegurarte de que todo esté en orden, encuentras que el último carro está inclinado en el suelo, el animal de tiro muerto en el barro. Cerca hay dos guardias abatidos. Están completamente blancos, pero parece unas muertes recientes. Levantas la vista y encuentras unas criaturas ensangrentadas encaramadas en el carro, ¡y tienen hombres colgando de sus bocas!\n\n%randombrother% se acerca por detrás, con su arma en mano, y te empuja hacia atrás.%SPEECH_ON%¡Alertemos a los hombres, capitán!%SPEECH_OFF%Es la mejor idea que se puede tener en ese momento. Gritas tan fuerte como puedes, instando al resto de tus hombres a luchar. | Te dispones a orinar cuando un grito horripilante te detiene. Vistiéndote rápidamente, te das la vuelta y corres hacia el disturbio. Allí encuentras a un guardia del convoy cayendo hacia adelante, sus piernas tambaleándose y tropezando antes de caer de bruces. Detrás de él, una criatura pálida está limpiandose la sangre de su boca. Y en los carromatos hay cajas que se abren, con formas pálidas que se levantan con sed de sangre en sus ojos.\n\nYa has visto más que suficiente y vas a alertar a los hombres mientras más cajas se abren a tu alrededor mientras corres.\x7d"
     }
@@ -19898,10 +21119,6 @@ local pairs = [
         es = "[img]gfx/ui/events/event_60.png[/img]\x7bEl enviado no lo logró. %employer% puede aceptar pérdidas de vez en cuando, pero no estará contento con esto. Trata de no fallarle de nuevo. | Lamentablemente, %envoy% %envoy_title% yace muerto a tus pies. ¡Qué destino tan terrible para un hombre que prometiste proteger! Bueno, de cara al futuro, sería mejor no seguir fallándole a %employer%. | Bueno, mira eso: el enviado está muerto. Tu único trabajo era mantener a ese hombre con vida. No necesitas hablar con %employer% para saber que no estará contento con esto. | Prometiste mantener al enviado a salvo de cualquier daño. Es difícil sufrir un daño mayor que estar completamente muerto, así que parece que fallaste de manera bastante espectacular en esta tarea. | Protege al enviado. Solo mantén al enviado con vida. El enviado debe sobrevivir. ¡Eh, soy un enviado, soy demasiado importante para morir!\n\nEstas palabras deben haber caído en oídos sordos, porque el enviado está efectivamente muerto. | Es difícil mantener a un hombre con vida cuando el mundo quiere que muera. Lamentablemente, %envoy% %envoy_title% no logró su viaje. %employer% probablemente no estará contento con esta alma perdida.\x7d"
     }
     {
-        en = "Damn this!"
-        es = "¡Maldita sea!"
-    }
-    {
         en = "envoy"
         es = ""
     }
@@ -20069,10 +21286,6 @@ local pairs = [
     {
         en = "[img]gfx/ui/events/event_07.png[/img]\x7bAfter some discussion, the thieves agree to your offer. You hand over the crowns and they hand over the artifact. This was easier than expected. | The brigands talk amongst themselves, huddled together and occasionally looking out at you. It's a strange ordeal, considering that in a few minutes you all could be killing one another based on what they decide. Finally, they break the huddle and the leader waves you over.%SPEECH_ON%Our employer isn't going to be happy, but those crowns are hard to pass up. You have yourself a deal, sellsword.%SPEECH_OFF% | The vandals argue over your offer. Some say that their employer will be most unhappy if they come back emptyhanded while others state that this is not worth dying over. The latter party wins. You are handed the artifact in return for crowns. | An honorable party may have tried to fight the %companyname%, but you're dealing with thieves here, not men of the most honorable report. They agree to hand over the artifact for crowns. | The thieves' leader draws out his sword.%SPEECH_ON%Do you seriously think we would ever accept that off...%SPEECH_OFF%A spurt of blood finishes the word and it splashes on the length of a blade suddenly protruding from his chest. The brigand's eyes roll back as his killer puts a boot on his back and kicks him off the sword. The killer cleans his weapon.%SPEECH_ON%We ain't dying for that sonuvabitch. Your offer is accepted, sellsword.%SPEECH_OFF% | An argument breaks out between the thieves. Some think they can take you on while others are a little more aware of who the %companyname% is and that latter party argues quite strongly against any hostilities. Finally, they come to an agreement: the bribe is accepted. | Your offer to pay for the artifact spurs quite the debate between the thieves. They argue in hushed tones, but their glancing stares seem to indicate they regard you as a most existential threat. Finally, they break their huddle and come to agree with your terms. You're happy that it did not come to bloodshed. | The thieves scoff.%SPEECH_ON%Do you think we can go back to our benefactors emptyhanded?%SPEECH_OFF%You run a hand through your hair and respond.%SPEECH_ON%Beats not coming back at all, doesn't it?%SPEECH_OFF%Each thief warily takes a step back. Their leader shakes his head then nods all in one swift go.%SPEECH_ON%Hell, sellsword, you put us in a bind here. But alright, we'll accept.%SPEECH_OFF%The artifact is handed over and violence avoided. | The leader of the thieves turns to his band and asks earnestly.%SPEECH_ON%What say you, men, think we can take them?%SPEECH_OFF%One shrugs.%SPEECH_ON%I think we can take that gold they be offerin'.%SPEECH_OFF%Another one pipes in.%SPEECH_ON%This was to be an expedition, we ain't paid well enough to die over the damned artifact.%SPEECH_OFF%Slowly, the brigands come to agreement: they'll take the bribe rather than be slaughtered. Smart move by most metrics.\x7d"
         es = "[img]gfx/ui/events/event_07.png[/img]\x7bDespués de alguna discusión, los ladrones aceptan tu oferta. Entregas las coronas y ellos entregan el artefacto. Esto fue más fácil de lo esperado. | Los bandidos hablan entre ellos, agrupados y ocasionalmente mirándote. Es un asunto extraño, considerando que en pocos minutos todos podrían estar matándose entre sí según lo que decidan. Finalmente, rompen el círculo y el líder te hace señas para acercarte.%SPEECH_ON%Nuestro empleador no estará contento, pero esas coronas son difíciles de rechazar. Tenemos un trato, mercenario.%SPEECH_OFF% | Los bandidos discuten sobre tu oferta. Algunos dicen que su empleador estará muy descontento si regresan con las manos vacías, mientras que otros afirman que no vale la pena morir por esto. El último grupo gana. Te entregan el artefacto a cambio de coronas. | Un grupo honorable podría haber intentado luchar contra %companyname%, pero estás tratando con ladrones aquí, no con hombres de reputación más honorable. Aceptan entregarte el artefacto a cambio de las coronas. | El líder de los ladrones saca su espada.%SPEECH_ON%¿De verdad crees que aceptaríamos esa ofe...%SPEECH_OFF%Un chorrito de sangre termina la palabra y salpica sobre la hoja que de repente sobresale de su pecho. Los ojos del bandido ruedan hacia atrás cuando su asesino pone una bota en su espalda y le saca la espada. El asesino limpia su arma.%SPEECH_ON%No vamos a morir por ese hijo de puta. Tu oferta es aceptada, mercenario.%SPEECH_OFF% | Estalla una discusión entre los ladrones. Algunos creen que pueden enfrentarte, mientras que otros son un poco más conscientes de quién es %companyname% y ese último grupo argumenta con fuerza en contra de cualquier hostilidad. Finalmente, llegan a un acuerdo: se acepta el soborno. | Tu oferta de pagar por el artefacto provoca un acalorado debate entre los ladrones. Discuten en voz baja, pero sus miradas furtivas parecen indicar que te consideran una amenaza existencial. Finalmente, rompen su círculo y están de acuerdo con tus términos. Te alegra que no haya habido derramamiento de sangre. | Los ladrones se burlan.%SPEECH_ON%¿Creen que podemos volver con las manos vacías ante nuestros benefactores?%SPEECH_OFF%Te pasas una mano por el pelo y respondes.%SPEECH_ON%Supongo que teneis en cuenta la opción de no volver en absoluto, ¿verdad?%SPEECH_OFF%Cada ladrón da un paso atrás con cautela. Su líder niega con la cabeza y luego asiente en un solo movimiento rápido.%SPEECH_ON%Maldición, mercenario, nos has puesto en un aprieto aquí. Pero está bien, aceptaremos.%SPEECH_OFF%El artefacto se entrega y se evita la violencia. | El líder de los ladrones se vuelve hacia su banda y pregunta sinceramente.%SPEECH_ON%¿Qué dicen, hombres, creen que podemos enfrentarlos?%SPEECH_OFF%Uno se encoge de hombros.%SPEECH_ON%Creo que podemos tomar el oro que nos están ofreciendo.%SPEECH_OFF%Otro interviene.%SPEECH_ON%Esto iba a ser una expedición, no nos pagan lo suficiente como para morir por el maldito artefacto.%SPEECH_OFF%Poco a poco, los bandidos llegan a un acuerdo: aceptarán el soborno en lugar de ser masacrados. Una jugada inteligente se mire por donde se mire.\x7d"
-    }
-    {
-        en = "You made the right decision."
-        es = "Una lástima, pero tenía que hacerse."
     }
     {
         // text = "You spend [color=" + this.Const.UI.Color.NegativeEventValue + "]" + bribe + "[/color] Crowns"
@@ -22272,12 +23485,6 @@ local pairs = [
         es = "Regresa después de 5 día"
     }
     {
-        // local party = f.spawnEntity(origin.getTile(), origin.getName() + " Company", true, this.Const.World.Spawn.Noble, 190 * this.Contract.getDifficultyMult() * this.Contract.getScaledDifficultyMult(), this.Contract.getMinibossModifier());
-        mode = "pattern"
-        en = "<this.Contract.getHome().getName()> Company"
-        es = "<this.Contract.getHome().getName()> Compañia"
-    }
-    {
         // this.Contract.m.BulletpointsObjectives.push("Destroy " + obj.getName() + " near " + obj.getSettlement().getName());
         mode = "pattern"
         en = "Destroy <obj.getName()> near <obj.getSettlement().getName()>"
@@ -22384,10 +23591,6 @@ local pairs = [
         es = ""
     }
     {
-        en = "feudfamily"
-        es = ""
-    }
-    {
         en = "maxdays"
         es = ""
     }
@@ -22399,6 +23602,220 @@ local pairs = [
         // days > 1 ? "" + days + " days" : "1 day"
         en = "1 day"
         es = "1 día"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\raid_caravan_contract.nut
+    {
+        en = "Raid Caravan"
+        es = "Asaltar caravana"
+    }
+    {
+        mode = "pattern"
+        en = "Raid the caravan going from %start% to %dest%"
+        es = "Asalta la caravana que partió desde %start% y va hacia %dest%"
+    }
+    {
+        en = "Return to %townname%"
+        es = "Regresa a %townname%"
+    }
+    {
+        en = "Caravan"
+        es = "Caravana"
+    }
+    {
+        en = "A caravan with armed escorts transporting something worth protecting between settlements."
+        es = "Una caravana con escoltas armados que transporta algo digno de proteger entre asentamientos."
+    }
+    {
+        en = "Bribe1"
+        es = ""
+    }
+    {
+        en = "[img]gfx/ui/events/event_45.png[/img]\x7bYou take a seat as %employer% folds out a map before you. He drags a finger along one of the poorly drawn roads.%SPEECH_ON%A caravan travels this route. I need it attacked, but wait!%SPEECH_OFF%He holds up the finger.%SPEECH_ON%I need it to look like the work of brigands. No one must know that its destruction came by my order, understand?%SPEECH_OFF% | %employer% explains that he needs a caravan destroyed. You inquire as to why, exactly, a nobleman such as himself would have such a task to complete, but the man is scarce on details. His primary demand is simple enough, destroy the caravan and kill everyone there. It must look like the work of \x7bbrigands | vandals | vagabonds | greenskins\x7d, otherwise the nobleman might be incriminated.%SPEECH_ON%Did you get that last part, sellsword? Of course you did. You're a smart guy, right?%SPEECH_OFF% | You take a seat as %employer% takes a large book from his shelf and opens it before you. Its width encompasses the entire table and the pages are filled with very detailed maps. The nobleman points to a line on one of the topographies.%SPEECH_ON%That's the route of a caravan I need destroyed. Don't ask me anymore questions, I just need it destroyed. Now, all I ask is that you make it look like the work of brigands, alright? It can't be known that I gave the order here. Does that sound doable to you?%SPEECH_OFF% | %employer% greets you with a handshake, but when you try to get your hand back he holds firm.%SPEECH_ON%What I'm about to say can't leave this room, understand?%SPEECH_OFF%You nod and just like that get your hand back.%SPEECH_ON%Good. I need a caravan destroyed, but... no one must know it was you, mercenaries, who did it. If they do, they'll easily track it back to me. I need it to look like the work of brigands. No one must survive, alright?%SPEECH_OFF%You shrug as if to say, 'easily done.'%SPEECH_ON%Good, so then we have a deal?%SPEECH_OFF% | As you take a seat in %employer%'s study, a stranger comes in behind you and whispers into the nobleman's ear. Then, just like that, the mysterious man turns and makes his leave. %employer% stands and pours himself a goblet of wine. He doesn't offer you any.%SPEECH_ON%I need a caravan destroyed, but I need this done with a certain amount of discretion. It cannot be known that I, %employer%, told you to do this. No, it was the work of brigands, those bastards... got it? Do you understand? Let's talk numbers if you do.%SPEECH_OFF% | As you take a seat, %employer% inquires as to how familiar you are with the work of brigands. You state that their lives are not too dissimilar from your own, only that you're smarter and have the ear of people who pay better than what you get for robbing peasants. %employer% nods.%SPEECH_ON%Good, because I need you to pretend to be a brigand for a day and destroy a caravan. No one must survive. No one must know that you, a mercenary, did it. Understand? If you do, let's talk numbers.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_45.png[/img]\x7bTomas asiento mientras el %employer% despliega un mapa ante ti. Arrastra un dedo a lo largo de una de las carreteras dibujadas pobremente.%SPEECH_ON%Un convoy viaja por esta ruta. Necesito que sea atacado, pero espera.%SPEECH_OFF%Levanta un dedo.%SPEECH_ON%Necesito que parezca obra de bandidos. Nadie debe saber que su destrucción fue por mi orden, ¿entiendes?%SPEECH_OFF% | %employer% explica que necesita un convoy destruido. Preguntas por qué, exactamente, un noble como él tendría una tarea así que completar, pero el hombre es escaso en detalles. Su demanda principal es bastante simple: destruye el convoy y mata a todos allí. Debe parecer obra de \x7bbandidos | vándalos | vagabundos | pieles verdes\x7d, de lo contrario, el noble podría ser incriminado. %SPEECH_ON%¿Entendiste esa última parte, mercenario? Por supuesto que sí. Eres un tipo inteligente, ¿verdad?%SPEECH_OFF% | Te sientas mientras %employer% saca un gran libro de su estantería y lo abre ante ti. Su ancho abarca toda la mesa y las páginas están llenas de mapas muy detallados. El noble señala una línea en una de las topografías. %SPEECH_ON%Esa es la ruta de un convoy que necesito que se destruya. No me hagas más preguntas, solo necesito que se destruya. Lo único que te pido es que parezca obra de bandidos, ¿de acuerdo? No puede saberse que di la orden aquí. ¿Te parece factible?%SPEECH_OFF% | %employer% te saluda con un apretón de manos, pero cuando intentas recuperar tu mano, la sujeta firmemente. %SPEECH_ON%Lo que estoy a punto de decir no puede salir de esta habitación, ¿entendido?%SPEECH_OFF% Asientes y, de repente, recuperas tu mano. %SPEECH_ON%Bien. Necesito que se destruya un convoy, pero... no debe saberse que fuiste tú, mercenarios, quienes lo hicieron. Si lo hacen, me rastrearán fácilmente. Necesito que parezca obra de bandidos. Nadie debe sobrevivir, ¿de acuerdo?%SPEECH_OFF% Encoges los hombros como si dijeras, 'pan comido'.%SPEECH_ON%Bien, ¿entonces tenemos un trato?%SPEECH_OFF% | Mientras tomas asiento en el estudio de %employer%, un desconocido entra tras de ti y susurra al oído del noble. Luego, así de repente, el misterioso hombre se da la vuelta y se va. %employer% se levanta y se sirve una copa de vino. No te ofrece nada. %SPEECH_ON%Necesito que se destruya un convoy, pero debe hacerse con cierta discreción. No puede saberse que yo, el %employer%, te dije que lo hicieras. No, fue obra de bandidos, esos bastardos... ¿Entiendes? Hablemos de números si lo haces.%SPEECH_OFF% | Al tomar asiento, %employer% pregunta cuán familiarizado estás con el trabajo de los bandidos. Afirmas que sus vidas no son demasiado diferentes de la tuya, excepto que eres más inteligente y tienes el oído de personas que pagan mejor que lo que obtienes por robar a campesinos. %employer% asiente. %SPEECH_ON%Bien, porque necesito que finjas ser un bandido por un día y destruyas un convoy. Nadie debe sobrevivir. Nadie debe saber que tú, un mercenario, lo hiciste. ¿Entiendes? Si es así, hablemos de números.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "\x7bWhat's this worth to you? | Let's talk pay.\x7d"
+        es = "\x7b¿Cuánto vale esto para ti? | Hablemos de la paga.\x7d"
+    }
+    {
+        en = "\x7bThis doesn't sound like our kind of work. | I don't think so.\x7d"
+        es = "\x7bEsto no suena como nuestro tipo de trabajo. | No lo creo.\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_41.png[/img]\x7bWhile closing in on the caravan, one of the guards spots you and everyone draws their weapons. A man, shouting and running with his hands in the air, asks everyone to put their weapons down. He has a satchel in hand, heavy with %bribe% crowns, and says you can take it if you simply let them go. You wonder aloud why you would take the bribe when you could kill them all and take it anyway. The man shrugs.%SPEECH_ON%Well, it'd certainly save you the trouble of 'killing' us, seeing as how we're not gonna go down without a fight. Just take it and walk, sellsword.%SPEECH_OFF% | As your men approach the caravan, one of the guards spots you and blows a horn, alarming the rest to your presence. Soon, an entire armed guard stands before you, ready to fight. The head of the wagon train comes through their line, holding his hands up.%SPEECH_ON%Stay your weapons, men! Sellsword, I'd like to make you an offer. You take this satchel of %bribe% crowns and walk and nobody has to die here.%SPEECH_OFF%You open your mouth to respond, but the man holds a finger up and keeps talking.%SPEECH_ON%Whoa, think carefully, mercenary. You no longer have the drop on us and I hired these men to protect these wagons for good reason - they're killers, just like you.%SPEECH_OFF% | With your men on the approach, the destruction of the caravan seems to be at hand. Unfortunately, you watch as one of the mercenaries missteps, sliding his foot on a rolling tree limb that sends him skittering and rolling down a small hillside. The disturbance is loud enough to alert the entire wagon train to your presence and you watch as armed guards stream out to meet you. Their lieutenant runs in between the two war bands, his arms in the air.%SPEECH_ON%Wait. Just wait. Before we commence the killin' and slaughterin', let's exchange a few words, shall we? I have here %bribe% crowns.%SPEECH_OFF%The man holds up a satchel and waves it toward you.%SPEECH_ON%You take this, walk, and we can all go on our ways. No need for men to be impasses upon one another, right? I'd say it's a mighty fine deal, sellsword, seeing as how you ain't got your sneaking ways on your side anymore - it's gonna be man against man. So what say you?%SPEECH_OFF% | Just as you think your men are about to begin the assault on the caravan, a guard watching the wagons spots them. He hurries to an alarm bell, sounding it loudly just as %randombrother% caves his skull in. Unfortunately, a great number of the guard's compatriots fly out, weapons raised. Their leader is beside them, holding the order back for them to charge.%SPEECH_ON%Ho', men! Not yet. Let us, perhaps, discuss a less... violent end to this here junction.%SPEECH_OFF%He glances at the stoved in head of the guard.%SPEECH_ON%Well, for the rest of us, anyway. I have here in my hand %bribe% crowns. It's yours, ambusher, assassin, whatever you call yourself, if you simply take it and walk. And I'd suggest you do just that - you no longer have the drop on us and I paid good money for these men to watch my goods, understand?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_41.png[/img]\x7bMientras te acercas al convoy, uno de los guardias te avista, y todos sacan sus armas. Un hombre corre hacia ti con las manos en alto, gritando, y pide a todos que bajen sus armas. Lleva una bolsa en la mano, llena de %bribe% coronas, y dice que puedes tomarla si simplemente los dejas ir. Te preguntas en voz alta por qué aceptarías el soborno cuando podrías matarlos a todos y tomarlo de todos modos. El hombre encoge los hombros. %SPEECH_ON%Bien, ciertamente te ahorraría la molestia de 'matarnos', o al menos intentarlo, ya que no vamos a rendirnos sin pelear. Simplemente tómalo y vete, mercenario.%SPEECH_OFF% | A medida que tus hombres se acercan al convoy, uno de los guardias te ve y sopla un cuerno, alertando al resto de tu presencia. Pronto, todo un grupo armado se para frente a ti, listo para pelear. El jefe de la caravana atraviesa su línea, levantando las manos. %SPEECH_ON%¡Detengan sus armas, hombres! Mercenario, me gustaría hacerte una oferta. Toma éstas %bribe% coronas y vete, y nadie tiene que morir aquí.%SPEECH_OFF% Abres la boca para responder, pero el hombre levanta un dedo y sigue hablando. %SPEECH_ON%Espera, piensa detenidamente, mercenario. Ya no tienes ventaja y contraté a estos hombres para proteger estas caravanas por una buena razón: son asesinos, al igual que tú.%SPEECH_OFF% | Con tus hombres acercándose, la destrucción del convoy parece inminente. Desafortunadamente, observas cómo uno de los mercenarios da un paso en falso, resbalando el pie sobre un tronco rodante que lo hace resbalar y rodar por una pequeña colina. El disturbio es lo suficientemente ruidoso como para alertar a todo el convoy de tu presencia, y ves cómo un grupo de guardias armados sale a tu encuentro. Su teniente corre entre las dos bandas de guerra, con los brazos en alto. %SPEECH_ON%Espera. Solo espera. Antes de que comencemos con la matanza, cambiemos algunas palabras, ¿de acuerdo? Tengo aquí %bribe% coronas.%SPEECH_OFF% El hombre sostiene una bolsa y te la muestra. %SPEECH_ON%Toma esto, vete y todos podemos seguir nuestro camino. No es necesario que seamos un obstáculo unos para otros, ¿verdad? Diría que es un trato bastante bueno, mercenario, considerando que ya no cuentas con el sigilo y la sorpresa de tu lado. Será hombre contra hombre. Entonces, ¿qué dices?%SPEECH_OFF% | Justo cuando crees que tus hombres están a punto de iniciar el asalto al convoy, un guardia que vigilaba las carretas los avista. Corre hacia una campana de alarma y la hace sonar fuertemente justo cuando %randombrother% le aplasta la cabeza. Desafortunadamente, una gran cantidad de los compañeros del guardia salen disparados con las armas en alto. Su líder está a su lado, sosteniendo la orden de que carguen. %SPEECH_ON%¡Espera, hombres! Aún no. Permítanos, quizás, discutir un final menos... violento para este cruce. %SPEECH_OFF% Mira la cabeza destrozada del guardia. %SPEECH_ON%Bueno, al menos para el resto de nosotros. Tengo aquí en mi mano %bribe% coronas. Son tuyas, emboscador, asesino, como sea que te llames, si simplemente las tomas y te vas. Y te sugiero que hagas precisamente eso; ya no tienes la ventaja sobre nosotros y pagué un buen dinero para que estos hombres vigilen mis mercancías, ¿entendido?%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "\x7bSo be it. Hand over the crowns. | A fair offer, we'll take it.\x7d"
+        es = "\x7bQue así sea. Entrega las coronas. | Una oferta justa, la aceptamos.\x7d"
+    }
+    {
+        en = "Nothing personal, but this caravan is going to burn. And you with it."
+        es = "Nada personal, pero esta caravana va a arder. Y tú con ella."
+    }
+    {
+        en = "[img]gfx/ui/events/event_41.png[/img]\x7bAs you begin to leave, the caravan leader grabs you by the arm.%SPEECH_ON%Hey, I'm curious about something, and I bet you got something to scratch that curiosity.%SPEECH_OFF%You angrily retrieve your arm from his grip. He apologizes, but quickly goes into his question.%SPEECH_ON%I'd like to know just who sent you. How does %bribe2% more crowns sound to make my ears privy to such information?%SPEECH_OFF% | The caravan leader catches you before you can depart.%SPEECH_ON%I'm wonderin' something, sellsword, and I know you got the answer for me: who sent you?%SPEECH_OFF%You glance around. He laughs and then slaps you on the shoulder.%SPEECH_ON%Obviously I ain't gonna take an answer for free. How does %bribe2% more crowns in that there satchel sound? Just for a few words that shape to be what they call 'a name.' So how about you give me that name, mercenary.%SPEECH_OFF% | The leader calls out to you before you can leave. He's got his arms crossed, his feet mindlessly kicking rocks.%SPEECH_ON%Ya know, I can't just let you leave quite yet. There's some rather pertinent information I'd like to learn of and I'm willing to drop %bribe2% crowns in that satchel there to learn said information.%SPEECH_OFF%You look around, making there isn't an ambush waiting for you. Then you turn back to the man and nod.%SPEECH_ON%You want to know who sent me.%SPEECH_OFF%The leader grins and clasps his hands together.%SPEECH_ON%Boy, you are certainly a quick learner! Why, yes! I do!%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_41.png[/img]\x7bMientras comienzas a alejarte, el líder de la caravana te agarra del brazo. %SPEECH_ON%Oye, tengo curiosidad por algo, y apuesto a que tienes algo para saciar esa curiosidad.%SPEECH_OFF% Retiras tu brazo, molesto de que se atreva a tomarte del brazo. Se disculpa, pero rápidamente formula su pregunta.%SPEECH_ON%Me gustaría saber quién te envió. ¿Qué te parece si te doy %bribe2% coronas adicionales para que compartas esa información conmigo?%SPEECH_OFF% | El líder de la caravana te corta el paso antes de que puedas partir.%SPEECH_ON%Me estoy preguntando algo, mercenario, y sé que tienes la respuesta: ¿quién te envió?%SPEECH_OFF%Miras a tu alrededor. Él se ríe y luego te da una palmada en el hombro. %SPEECH_ON%Obviamente, no voy a aceptar una respuesta gratis. ¿Qué te parece si te añado %bribe2% coronas adicionales a esa bolsa? Solo necesito un par de palabras, lo que llamarían 'un nombre'. Así que, ¿cómo te suena darme ese nombre, mercenario?%SPEECH_OFF% | El líder llama tu atención antes de que puedas irte. Tiene los brazos cruzados y patea piedras distraídamente. %SPEECH_ON%Sabes, no puedo dejarte ir tan rápido. Hay información bastante pertinente que me gustaría conocer y estoy dispuesto a agregar %bribe2% coronas a esa bolsa para obtener dicha información.%SPEECH_OFF%Miras a tu alrededor, asegurándote de que no haya una emboscada esperándote. Luego te vuelves hacia el hombre y asientes. %SPEECH_ON%Quieres saber quién me envió.%SPEECH_OFF% El líder sonríe y junta las manos. %SPEECH_ON%¡Vaya, eres sin duda un rápido aprendiz! ¡Sí, eso quiero saber!%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "\x7bHand over the crowns, then. | Very well, not that it makes a difference at this point. | A good deal just got even sweeter.\x7d"
+        es = "\x7bEntonces entrega las coronas. | Muy bien, no es que haga ninguna diferencia en este momento. | Un buen trato se ha vuelto aún más dulce.\x7d"
+    }
+    {
+        en = "I won't betray our reputation like this, we'll be leaving."
+        es = "No traicionaré nuestra reputación de esta manera, nos iremos."
+    }
+    {
+        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Flags.get("Bribe1") + "[/color] Crowns"
+        mode = "pattern"
+        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
+        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+    }
+    {
+        en = "[img]gfx/ui/events/event_41.png[/img]\x7bYou take the extra crowns, sacking them away, and then give the leader the name: %employer%. He bounces it on his tongue like some sort of poisoned nut.%SPEECH_ON%%employer%. %employer%! Yech, that name. %employer%, like some sort of... well, I won't bore you with my sudden urge to stoop my language into the pits. I thank you, sellsword, and bid you farewell.%SPEECH_OFF%You nod and make your leave. | Sacking the extra crowns, you tell the leader the word of the day: %employer%. The man laughs upon hearing it and nods repeatedly as though he expected it all along.%SPEECH_ON%You've done good, sellsword. What a day though, right? First you come here to put a sword through me, but a few minutes later and we are leaving on such good terms. Truly you are a man of business. A shame you decided to put that skill behind a blade instead of a pen. Farewell and godspeed.%SPEECH_OFF% | \x7bIn for an ounce, in for a pound. | In for an inch, in for a mile.\x7d You take the man's offer and spill the beans on %employer%'s doings. The caravan leader nods solemnly.%SPEECH_ON%You know, we men of business don't wield weapons like you do, but trust me, it's just as cutthroat. Godspeed, sellsword.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_41.png[/img]\x7bTomas las monedas adicionales, guardándolas, y luego le das el nombre al líder: el %employer%. Él lo repite en voz alta como si fuera una especie de nuez envenenada.%SPEECH_ON%El %employer%... ¡El %employer%! Uf, ese tipo. El %employer%, como si fuera algún tipo de... Bueno, no te aburriré con mi súbito deseo de ensuciar mi lenguaje. Te agradezco, mercenario, y te deseo un buen viaje.%SPEECH_OFF% Asientes y te retiras. | Guardando las monedas extra, le dices al líder la palabra del día: El %employer%. El hombre se ríe al escucharla y asiente repetidamente como si ya lo hubiera esperado.%SPEECH_ON%Has hecho un buen trabajo, mercenario. ¿Qué día, verdad? Primero vienes aquí para clavarme una espada, pero unos minutos después nos despedimos en tan buenos términos. Realmente eres un hombre de negocios. Es una lástima que hayas decidido poner esa habilidad detrás de una espada en lugar de una pluma. Adiós y buena suerte.%SPEECH_OFF% | \x7bEn la misma para un gramo, en la misma para una libra. | De perdidos al río.\x7d Aceptas la oferta del hombre y revelas las actividades del %employer%. El líder de la caravana asiente solemnemente.%SPEECH_ON%Sabes, nosotros, los hombres de negocios, no manejamos armas como tú, pero créeme, es igual de despiadado. Buena suerte, mercenario.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "Payment without having to kill anyone. I can get used to that."
+        es = "Paga sin tener que matar a nadie. Puedo acostumbrarme a eso."
+    }
+    {
+        en = "[img]gfx/ui/events/event_41.png[/img]\x7bYou tell the man to bugger off. He's already gotten lucky enough. The man nods, agreeing, though his narrowed face tells you all you need to know about your rejection. | You shake your head.%SPEECH_ON%I'll be letting you go, but I can't take it that far. I still need the employment %employer% offers, understand?%SPEECH_OFF%The man nods.%SPEECH_ON%A smart decision, though a poor one for me, obviously. But yes, I understand you, sellsword. May the old gods be with you in your travels. Shall we meet again, I hope it is under better terms!%SPEECH_OFF% | Betraying %employer% probably isn't the best of ideas and you tell the man as much. He nods, understanding.%SPEECH_ON%Well, alright then. I can't blame you for keeping those cards in your hand, but damned if I wish you'd have shown them all the same. Godspeed, mercenary.%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_41.png[/img]\x7bLe dices al hombre que se largue. Ya ha tenido suficiente suerte. El hombre asiente, aunque su rostro fruncido te dice todo lo que necesitas saber sobre tu rechazo. | Niegas con la cabeza.%SPEECH_ON%Te dejaré ir, pero no confundas negocios con estupidez. Aún necesito el empleo que el %employer% ofrece, ¿entiendes?%SPEECH_OFF% El hombre asiente.>%SPEECH_ON%Una decisión inteligente, aunque una mala para mí, obviamente. Pero sí, te entiendo, mercenario. Que los dioses antiguos estén contigo en tus viajes. Si debemos encontrarnos de nuevo, ¡espero que sea en mejores términos!%SPEECH_OFF% | Traicionar al %employer% probablemente no es la mejor de las ideas, y le dices eso al hombre. Él asiente, entendiendo.%SPEECH_ON%Bien, está bien entonces. No puedo culparte por mantener esas cartas en tu mano, pero maldita sea si desearía que las hubieras mostrado de todos modos. Buena suerte, mercenario.%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "We're moving out!"
+        es = "¡Nos largamos!"
+    }
+    {
+        // Text = "[img]gfx/ui/events/event_35.png[/img]{While preparing to assault the caravan, %randombrother% comes to your side and points to one of the men in the wagontrain.%SPEECH_ON%Know who that is?%SPEECH_OFF%You shake your head.%SPEECH_ON%That\'s %swordmaster%.%SPEECH_OFF%Slimming your eyes to get a clearer picture, all you see is an ordinary looking man. The mercenary explains that he\'s a renowned swordmaster who has killed untold numbers of men. He thumbs his nose and spits.%SPEECH_ON%Still want to attack?%SPEECH_OFF% | You glass the caravan with some spectacles and spot a familiar face: %swordmaster%. A man you saw compete in a jousting tournament in %randomtown% a few years back. If you recall correctly, he won with an arm tied behind his back. Anyone who met him off the horses was quickly slain as he displayed expert swordsmanship. This fellow is a dangerous one and should be approached carefully. | Scouting the wagontrain, you see a face that gives you\'ve seen before. %randombrother% joins you, picking his fingernails with a knife.%SPEECH_ON%That\'s %swordmaster%, the swordmaster. He\'s killed twenty men this year.%SPEECH_OFF%A voice barks from behind you.%SPEECH_ON%I heard fifty! Sixty maybe. Forty-five if we\'re being realistic...%SPEECH_OFF%Hmm, it appears there is a most dangerous opponent in that caravan\'s guard...}",
+        mode = "pattern"
+        en = "[img]gfx/ui/events/event_35.png[/img]\x7bWhile preparing to assault the caravan, %randombrother% comes to your side and points to one of the men in the wagontrain.%SPEECH_ON%Know who that is?%SPEECH_OFF%You shake your head.%SPEECH_ON%That's %swordmaster%.%SPEECH_OFF%Slimming your eyes to get a clearer picture, all you see is an ordinary looking man. The mercenary explains that he's a renowned swordmaster who has killed untold numbers of men. He thumbs his nose and spits.%SPEECH_ON%Still want to attack?%SPEECH_OFF% | You glass the caravan with some spectacles and spot a familiar face: %swordmaster%. A man you saw compete in a jousting tournament in %randomtown% a few years back. If you recall correctly, he won with an arm tied behind his back. Anyone who met him off the horses was quickly slain as he displayed expert swordsmanship. This fellow is a dangerous one and should be approached carefully. | Scouting the wagontrain, you see a face that gives you've seen before. %randombrother% joins you, picking his fingernails with a knife.%SPEECH_ON%That's %swordmaster%, the swordmaster. He's killed twenty men this year.%SPEECH_OFF%A voice barks from behind you.%SPEECH_ON%I heard fifty! Sixty maybe. Forty-five if we're being realistic...%SPEECH_OFF%Hmm, it appears there is a most dangerous opponent in that caravan's guard...\x7d"
+        es = "[img]gfx/ui/events/event_35.png[/img]\x7bMientras te preparas para asaltar la caravana, %randombrother% se acerca a tu lado y señala a uno de los hombres en el convoy.%SPEECH_ON%¿Sabes quién es ese?%SPEECH_OFF% Niegas con la cabeza.%SPEECH_ON%Ese es %swordmaster%.%SPEECH_OFF% Estrechas los ojos para ver con más claridad, pero todo lo que ves es a un hombre común. El mercenario explica que es un renombrado maestro de la espada que ha matado a innumerables hombres. Se limpia la nariz y escupe.%SPEECH_ON%¿Todavía quieres atacar?%SPEECH_OFF%Todos sangran. Él también sangrará. | Observas la caravana a través de unos anteojos y ves un rostro familiar: %swordmaster%. Un hombre al que viste competir en un torneo de justas en %randomtown% hace unos años. Si recuerdas correctamente, ganó con un brazo atado a la espalda. Cualquiera que lo desafiara fuera de los caballos era rápidamente derrotado, ya que demostró ser un experto espadachín. Este individuo es peligroso y debe abordarse con cautela. | Al explorar la caravana, ves un rostro que te resulta familiar. %randombrother% se te une, sacándose la suciedad bajo las uñas con un cuchillo.%SPEECH_ON%Ese es %swordmaster%, el maestro de la espada. Ha matado a veinte hombres este año.%SPEECH_OFF%Una voz se hace oír desde atrás.%SPEECH_ON%¡Oí que fueron cincuenta! O sesenta tal vez. Cuarenta y cinco si somos realistas...%SPEECH_OFF%Parece que hay un oponente muy peligroso en la guardia de esa caravana...\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_29.png[/img]\x7bOrdering the assault, your men launch across the grass. The caravan guards are already running your way, but they look scared. Behind them follow a throng of garish looking creatures. It's safe to say this is going to be the strangest of meetings... | As the %companyname% sprints toward the caravan, weapons drawn, a few men slow down to point out that there's an even larger party approaching the wagon train from the other side. Pausing to get a good eye at it, you realize that there is a horde of undead converging on this very spot! | Well, it looks like this won't be as easy as you'd thought: as your men begin the attack on the caravan, %randombrother% spots a horde of ghastly undead approaching from the other side! Undead or soon-to-be-dead, it doesn't matter. You're here to do what %employer% paid you to do.\x7d"
+        es = "[img]gfx/ui/events/event_29.png[/img]\x7bOrdenando el asalto, tus hombres avanzan por el campo. Los guardias de la caravana ya se dirigen hacia ti, pero parecen asustados. Detrás de ellos, los sigue una multitud de criaturas monstruosas. Es seguro decir que este será el encuentro más extraño... | Mientras %companyname% se precipita hacia la caravana, armas en mano, algunos hombres se detienen para señalar que hay un grupo aún más grande acercándose al convoy desde el otro lado. Al detenerte para observar con detenimiento, te das cuenta de que ¡hay una horda de muertos vivientes convergiendo en este mismo lugar! | Bueno, parece que esto no será tan fácil como pensabas: mientras tus hombres comienzan el ataque a la caravana, %randombrother% avista una horda de horribles no muertos que se acercan desde el otro lado. No importa si son no muertos o pronto estarán muertos, estás aquí para hacer lo que %employer% te pagó para hacer.\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_97.png[/img]\x7bAs your men clean the field of any wounded, %randombrother% comes to you with a line of women and children being toted behind him. You raise your sword and ask what is this.%SPEECH_ON%Looks like they brought their families with them. What do you want us to do?%SPEECH_OFF%If you let them go, there's a good chance they'll spread word of your being here. If you kill them, well, that's got a cost that'll weigh heavy on any mind... | Having won the battle, your men spread out to collect the goods and make sure every caravan guard is good and dead. Unfortunately, not everyone you come across is dead - and not all of them grown men. A throng of women and children emerge from the ruins of the fight, slowly approaching with all the frailty of a wounded dog. Some are covered in blood, others have been shielded from the combat. %randombrother% asks what should be done with them.%SPEECH_ON%We should probably let them go because, well, look at them. But... they might tell someone. You know women and their big mouths.%SPEECH_OFF%The mercenary laughs nervously. One of the women clutches her bosom.%SPEECH_ON%We shan't tell a soul, we swear!%SPEECH_OFF% | The fighting over, you stumble across a party of women and children in the ruins of the caravan. They saunter over, seeming to understand that if they just took off running you'd have reason to chase. One of the women, clutching a babe close to her chest, pleads.%SPEECH_ON%Please, you've already done so much hurt and pain. Our fathers, husbands, brothers, you already killed them all. Is that not enough? Let us go.%SPEECH_OFF%%randombrother% spits.%SPEECH_ON%Them children seen what we did. They gonna grow up remembering it, too. And those women, well, they'll be telling everybody. That's what they do.%SPEECH_OFF%He looks toward you, gesturing toward a half-cocked blade.%SPEECH_ON%What do you want us to do, sir?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_97.png[/img]\x7bA medida que tus hombres limpian el campo de batalla de los heridos, %randombrother% se acerca a ti con una fila de mujeres y niños que son llevados detrás de él. Levantas tu espada y preguntas qué está pasando.\n\nParece que trajeron a sus familias con ellos. ¿Qué quieres que hagamos? Si los dejas ir, existe una buena posibilidad de que divulguen que estuviste aquí. Si los matas, bueno, eso tendrá un costo que pesará en cualquier mente... | Habiendo ganado la batalla, tus hombres se dispersan para recoger los bienes y asegurarse de que todos los guardias de la caravana estén muertos. Desafortunadamente, no todos los que encuentran están muertos, y no todos son hombres adultos. Una multitud de mujeres y niños emerge de los restos de la pelea, acercándose lentamente con toda la fragilidad de un perro herido. %randombrother% pregunta qué se debe hacer con ellos.%SPEECH_ON%Probablemente deberíamos dejarlos ir porque, mira cómo están. Pero... podrían contarle a alguien. Ya sabes cómo son las mujeres y sus bocas grandes.%SPEECH_OFF%El mercenario se ríe nerviosamente. Una de las mujeres se agarra el pecho.%SPEECH_ON%¡No diremos nada, lo juramos!%SPEECH_OFF% | Terminada la lucha, te encuentras con un grupo de mujeres y niños entre los restos de la caravana. Se acercan lentamente, como si comprendieran que si simplemente salieran corriendo tendrías motivos para perseguirlos. Una de las mujeres, abrazando a un bebé cerca de su pecho, suplica.%SPEECH_ON%Por favor, ya han causado tanto dolor y sufrimiento. Ya mataron a nuestros padres, esposos, hermanos, a todos ellos. ¿No es suficiente? Déjennos ir.%SPEECH_OFF%%randombrother% escupe.%SPEECH_ON%Esos niños vieron lo que hicimos. Crecerán recordándolo, y esas mujeres, bueno, contarán todo a todo el mundo. Eso es lo que hacen.%SPEECH_OFF%Mira en tu dirección, haciendo un gesto hacia una espada entreabierta.%SPEECH_ON%¿Qué quieres que hagamos, señor?%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "We're paid to leave no one alive, so that's what we'll do."
+        es = "Nos pagan para no dejar a nadie con vida, así que eso es lo que haremos."
+    }
+    {
+        en = "To hell with it - let them leave."
+        es = "Al diablo con esto - déjenlos irse. No mataremos mujeres y niños."
+    }
+    {
+        en = "[img]gfx/ui/events/event_60.png[/img]\x7bYou nod to %randombrother%. He steps forward, weapon in hand, and with a quick slash removes a woman's head. A geyser of crimson fountains forth and her children are too blinded by the blood to see the rest of the blades coming.  The screams gradually die down as your brothers hack their way through the horrified crowd, dwindling their numbers into scattered whimpers. Your men double check their work until the victims are mute and the silence is dripping. | With a quick flick of your hand, you give the order. %randombrother% doesn't take but a moment to drive a blade through a kid's face, pegging the child against its mother's womb before slicing upward to claim her life as well. The rest of the men fan out, some reluctant while others yet go about with reverent diligence.\n\n As the horrific shrieks fill the air, you get the sense that some mercenaries are hacking and slashing simply to drive the noise out of their heads. The violence consumes all, an orgy of madness you know not whether to claim the pinnacle or nadir of man's doings for all meaning is lost in the event and the words to describe it have yet to be found in your tongue or any that is ancestral or beyond the dimly lit reckoning of what your eye can see. It is simply a happening. | Unfortunately, none can be allowed to live. You bark out an order and the mercenaries jump to the task. A woman approaches, seemingly having misheard you, and asks for directions to the nearest town. %randombrother% answers by stoving her head in with a stone. Frightened children fan out in a winding scatter that reminds you of your rabbit hunting days. Your quickest mercenaries give chase while the rest stay behind to make short work of the parents. It is a gruesome sight indeed.\x7d"
+        es = "[img]gfx/ui/events/event_60.png[/img]\x7bAsientes  a %randombrother%. El da un paso adelante, arma en mano, y con un rápido tajo le corta la cabeza a una mujer. Un géiser de fuentes carmesí brota y sus hijos están demasiado cegados por la sangre para ver venir el resto de las espadas. Los gritos se apagan gradualmente a medida que tus hermanos se abren paso entre la multitud horrorizada, reduciendo su número a gemidos dispersos. Tus hombres vuelven a comprobar su trabajo hasta que las víctimas enmudecen y el silencio gotea. | Con un rápido movimiento de tu mano, das la orden. %randombrother% no tarda más que un momento en clavar una espada en la cara de un niño, pegándolo al útero de su madre antes de cortarlo hacia arriba para reclamar su vida también. El resto de los hombres se abren en abanico, algunos reacios mientras que otros avanzan con reverente diligencia.\n\nA medida que los horribles gritos llenan el aire, tienes la sensación de que algunos mercenarios están cortando y cortando simplemente para acallar el ruido de sus cabezas. La violencia lo consume todo, una orgía de locura que no sabes si reclamar el pináculo o el nadir de las acciones del hombre porque todo significado se pierde en el evento y las palabras para describirlo aún no se han encontrado en tu lengua o en cualquier otra que es ancestral o está más allá del cálculo poco iluminado de lo que tus ojos pueden ver. Es simplemente un suceso espantoso. | Desgraciadamente, a nadie se le puede permitir vivir. Gritas una orden y los mercenarios se lanzan a la tarea. Una mujer se acerca, aparentemente haberte escuchado mal, y te pregunta cómo llegar al pueblo más cercano. %randombrother% responde clavándole una piedra en la cabeza. Los niños asustados se despliegan en un sinuoso disperso que te recuerda tus días de caza de conejos. Tus mercenarios más rápidos los persiguen mientras el resto se queda atrás para acabar con los padres. Es realmente un espectáculo espantoso.\x7d"
+    }
+    {
+        en = "Well, it's not a pretty job, but that's what we're being paid for."
+        es = "Bueno, no es un trabajo bonito, pero para eso nos pagan..."
+    }
+    {
+        en = "[img]gfx/ui/events/event_60.png[/img]\x7bAs the caravan burns, your men pick through the remains. %randombrother% comes to you with some papers in hand.%SPEECH_ON%These might be of some interest, sir.%SPEECH_OFF%You unfurl one of them and take a read. It appears %employer% had a very, very ulterior motive for attacking this particular wagon train. It would be a shame if anyone were to find out these details... | The wagons still burning, you come to a wooden chest and kick it open. Scrolls pop out, unfurling and scattering in the wind. You catch one and give it a read. It's a report on the earnings - or lack thereof - of %employer%'s territory. It appears to have been intended to reveal the man's financial fragility. You could, if you wanted, use this against him... | You find a cache of papers in the ruins of the caravan. One of the scrolls reveals something about %employer% that, more than likely, he knew was traveling with the wagons. This must be the reason why he had you attack it... it could also be used against him. You doubt he expected it to fall into your hands. You're just a stupid sellsword, after all...\x7d"
+        es = "[img]gfx/ui/events/event_60.png[/img]\x7bMientras el convoy arde, tus hombres revisan los restos. %randombrother% se acerca a ti con algunos papeles en la mano.%SPEECH_ON%Estos podrían ser de interés, señor.%SPEECH_OFF%Despliegas uno de ellos y lo lees. Parece que el %employer% tenía un motivo oculto muy, muy específico para atacar este convoy en particular. Sería una lástima si alguien descubriera estos detalles... | Las carretas aún arden cuando te acercas a un cofre de madera y lo abres de una patada. Los pergaminos salen volando, desenrollándose y esparciéndose al viento. Atrapas uno y lo lees. Es un informe sobre los ingresos, o más bien la falta de ellos, de los territorios del %employer%. Aparentemente, estaba destinado a revelar la fragilidad financiera del hombre. Podrías, si quisieras, usar esto en su contra... | Encuentras un conjunto de papeles en los restos del convoy. Uno de los pergaminos revela algo sobre %employer% que, con toda probabilidad, sabía que viajaba con las caravanas. Debe ser la razón por la que te encargó atacarla... y también podría usarse en su contra. Dudas que esperara que cayera en tus manos. Después de todo, eres solo un 'estúpido' mercenario...\x7d"
+    }
+    {
+        en = "Burn them with the rest."
+        es = "Quémenlos con el resto."
+    }
+    {
+        en = "We shall give them to our employer as a token of loyalty."
+        es = "Se los daremos a nuestro empleador como muestra de lealtad."
+    }
+    {
+        en = "Our employer will have to pay us extra to get these."
+        es = "Nuestro empleador tendrá que pagarnos más para conseguirlos."
+    }
+    {
+        en = "[img]gfx/ui/events/event_63.png[/img]\x7bYou return to %employer% and hold the papers up. He almost instantly seems to recognize a seal on one of the scrolls.%SPEECH_ON%What... what are those?%SPEECH_OFF%Lowering the papers, and about to explain, the man takes a lunge, trying to snatch them from you. He falls short as you pull back. He straightens up, seeming to correct a loss of composure.%SPEECH_ON%Alright sellsword. I see where this is going. How much more do you want?%SPEECH_OFF%With the doors closed, the two of you hash out a deal. | %employer% welcomes your return, turning around with two mugs of wine in hand, but his smile quickly fades.%SPEECH_ON%What's that in your hand? Where did you get that?%SPEECH_OFF%You stuff one of the incriminating papers away and nod, answering.%SPEECH_ON%I think you know exactly where I got it. And I think you know exactly where this is going. Now... let's you and I talk business, yeah?%SPEECH_OFF%The man drinks one of the mugs, then downs the other.%SPEECH_ON%Yeah. Alright. Close the door, would ya?%SPEECH_OFF% | You enter %employer%'s room and throw the incriminating papers on his desk. He looks at them and then laughs.%SPEECH_ON%What a mistake!%SPEECH_OFF%He crumbles the papers up and stuffs them under his table. You laugh in return and retrieve another set of scrolls.%SPEECH_ON%How stupid do you think I am?%SPEECH_OFF%The man quickly takes his stuffed notes back out and stares at them. He realizes you only put one page in there, the rest just blank spaces. Grinning, you lay out the ground rules.%SPEECH_ON%Now that I know how important these are to you, let us talk business so that ALL of them may return to you, yeah?%SPEECH_OFF%The man takes a solemn seat and nods. He retrieves a personal satchel of crowns and sets it on his desk before gesturing toward the entryway.%SPEECH_ON%Please, close the door.%SPEECH_OFF% | When you return, %employer% immediately notices the seal on the papers you've brought. He has a few guards in his room, but quickly hurries them out, telling them to chase the rabbits from his gardens. He closes the door and turns to you.%SPEECH_ON%I see I've been found out.%SPEECH_OFF%You nod. The man licks his lips and nods in return.%SPEECH_ON%Alright then. Nothing on those papers can leave this room. How much do you want?%SPEECH_OFF%You lift a leg over the edge of his table and take a seat, putting the papers beside you and clasping your hands together. Grinning, you answer.%SPEECH_ON%Everything is worth what the purchaser is willing to pay for it, is it not, nobleman?%SPEECH_OFF%\x7d"
+        es = "[img]gfx/ui/events/event_63.png[/img]\x7bRegresas con %employer% y sostienes los papeles en alto. Casi al instante, parece reconocer un sello en uno de los pergaminos.%SPEECH_ON%¿Qué... qué son esos?%SPEECH_OFF%Al bajar los papeles y estar a punto de explicar, el hombre intenta arrebatarlos de tus manos, pero no llega a alcanzarlos cuando los retiras. Se endereza, aparentemente corrigiendo una pérdida de compostura.%SPEECH_ON%E-está bien, mercenario. Veo a dónde va esto. ¿Cuánto más quieres?%SPEECH_OFF%Con la puerta cerrada, ambos acuerdan un trato. | %employer% te recibe con una sonrisa y dos copas de vino en mano, pero su expresión cambia rápidamente.%SPEECH_ON%¿Qué tienes en la mano? ¿¡Dónde conseguiste eso!?%SPEECH_OFF%Guardas uno de los papeles incriminatorios y asientes, respondiendo.%SPEECH_ON%Creo que sabes exactamente de dónde lo obtuve. Y creo que sabes hacia dónde se dirige esto. Ahora... hablemos de negocios, ¿vale?%SPEECH_OFF%El hombre bebe una de las copas, y luego se toma la otra de un trago. %SPEECH_ON%Sí. Está bien. Cierra la puerta, ¿quieres?%SPEECH_OFF% | Entras en la habitación de %employer% y arrojas los papeles incriminatorios sobre su escritorio. Él los mira y luego se ríe.%SPEECH_ON%¡Qué error!%SPEECH_OFF%Arruga los papeles y los esconde bajo su mesa. Tú te ríes en respuesta y sacas otro conjunto de pergaminos.%SPEECH_ON%¿Qué tan estúpido crees que soy, oh 'noble' señor?%SPEECH_OFF%El hombre saca rápidamente sus notas escondidas y las mira. Se da cuenta de que solo pusiste una página, el resto solo son espacios en blanco. Sonríes y estableces las reglas.%SPEECH_ON%Ahora que sé cuán importantes son estos papeles para ti, hablemos de negocios para que TODOS ellos puedan volver a ti, ¿de acuerdo?%SPEECH_OFF%El hombre toma una postura solemne y asiente. Saca pequeño cofre personal ornamentado con monedas y lo coloca en su escritorio antes de hacer un gesto hacia la entrada.%SPEECH_ON%Por favor, cierra la puerta.%SPEECH_OFF% | Cuando regresas, %employer% nota de inmediato el sello en los papeles que has traído. Tiene algunos guardias en su habitación, pero los apura para que persigan a los conejos de sus jardines. Cierra la puerta y se vuelve hacia ti.%SPEECH_ON%Veo que me has descubierto.%SPEECH_OFF%Tú asientes. El hombre se lame los labios de ansiedad, y asiente a su vez.%SPEECH_ON%Está bien entonces. Nada de lo que está en esos papeles puede salir de esta habitación. ¿Cuánto quieres?%SPEECH_OFF%Levantas una pierna por encima del borde de su mesa y te sientas 'demasiado' cómodamente, colocando los papeles a un lado y entrelazando tus manos. Con una sonrisa, respondes.%SPEECH_ON%Todo vale lo que el comprador esté dispuesto a pagar, ¿no es así, noble sir?%SPEECH_OFF%\x7d"
+    }
+    {
+        en = "A good payday at last."
+        es = "Por fin un buen día de pago."
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail * 2, "Extorted Money");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        // text = "You gain [color=" + this.Const.UI.Color.PositiveEventValue + "]" + this.Contract.m.Payment.getOnCompletion() * 2 + "[/color] Crowns"
+        mode = "pattern"
+        en = "You gain [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Crowns"
+        es = "Obtienes [color=<this.Const.UI.Color.PositiveEventValue>]<money>[/color] Coronas"
+    }
+    {
+        en = "[img]gfx/ui/events/event_63.png[/img]\x7bYou return to %employer% and he turns to you, seemingly angry.%SPEECH_ON%You know folks are speaking about what you did, right?%SPEECH_OFF%Smiling, you hold up the incriminating papers.%SPEECH_ON%Would you rather they speak about this instead?%SPEECH_OFF%The man almost gasps before settling down into his chair.%SPEECH_ON%Alright, are you extorting me?%SPEECH_OFF%You put the papers on his table and shake your hand.%SPEECH_ON%I thought about it, but I'd rather not bite the hand that feeds just because it so happens to be holding something tasty this one time.%SPEECH_OFF% | %employer% waves you into his room.%SPEECH_ON%The peasantfolk are talking of ya. People in that caravan got away and between still drawing breath they saw fit to speak of what they experienced.%SPEECH_OFF%You nod and agree.%SPEECH_ON%That is quite understandable.%SPEECH_OFF%The man growls and points a finger, but you point the incriminating papers back in his face. He seizes up in rather strained silence.%SPEECH_ON%I... I see... Are you wanting more money?%SPEECH_OFF%You toss him the papers.%SPEECH_ON%No. You forget one of my faults, and I forget one of yours. Fair enough, right?%SPEECH_OFF%The man hastily stuffs the papers into his coat and nods. | You find %employer% tending to his garden. A few guard stand a ways off, and you imagine one of the handful of peasants lingering is really just a guard in disguise.%SPEECH_ON%Sellsword! It is good to see you, except for one little thing.%SPEECH_OFF%He waves you close and lowers his voice.%SPEECH_ON%You let a few of those caravan folk get away. I don't remember that being part of the deal.%SPEECH_OFF%You hold up the incriminating papers.%SPEECH_ON%I don't remember this being part of the deal either.%SPEECH_OFF%%employer% leers back, then composes himself so his guards don't get suspicious.%SPEECH_ON%Alright, I take those, and I forget about the whole letting people live who should be dead ordeal, alright?%SPEECH_OFF%You hand the papers over.\x7d"
+        es = "[img]gfx/ui/events/event_63.png[/img]\x7bRegresas con el %employer% y él se gira hacia ti, aparentemente enojado.%SPEECH_ON%Sabes que la gente está hablando de lo que hiciste, ¿verdad?%SPEECH_OFF%Sonríes y sostienes los papeles incriminatorios en alto.%SPEECH_ON%¿Preferirías que hablaran de esto en su lugar?%SPEECH_OFF%El hombre casi se cae de si silla, antes de recuperar la compostura.%SPEECH_ON%Bien, ¿me estás extorsionando?%SPEECH_OFF%Pones los papeles sobre su mesa y sacudes la cabeza.%SPEECH_ON%Lo pensé, pero preferiría no morder la mano que me alimenta solo porque resulta que está sosteniendo algo sabroso esta vez.%SPEECH_OFF% | %employer% te hace un gesto para que entres a su habitación.%SPEECH_ON%La gente del pueblo está hablando de ti. Algunas personas de esa caravana escaparon y, mientras aún tienen aliento, consideraron adecuado hablar de lo que experimentaron.%SPEECH_OFF%Asientes.%SPEECH_ON%Es bastante comprensible.%SPEECH_OFF%El hombre gruñe y señala con el dedo, pero tú cuándo le muestras los papeles incriminatorios, se queda en silencio, evidentemente consternado.%SPEECH_ON%Lo veo... ¿Quieres más dinero, acaso?%SPEECH_OFF%Le arrojas los papeles.%SPEECH_ON%No. Tú olvidas uno de mis errores, y yo olvido uno de los tuyos. ¿Justo, no?%SPEECH_OFF%El hombre guarda rápidamente los papeles en su abrigo, y asiente. | Encuentras al %employer% ocupado en su jardín. Algunos guardias están a cierta distancia, y te imaginas que uno de los pocos campesinos que merodean es en realidad un guardia disfrazado.%SPEECH_ON%¡Mercenario! Es bueno verte, excepto por una pequeña cosa.%SPEECH_OFF%Te hace un gesto para que te acerques y baja la voz.%SPEECH_ON%Dejaste que algunos de esos campesinos de la caravana escaparan. No recuerdo que eso fuera parte del trato.%SPEECH_OFF%Sacas los papeles incriminatorios en alto.%SPEECH_ON%Tampoco recuerdo que esto fuera parte del trato.%SPEECH_OFF%%employer% te mira con desdén y luego se compone para que sus guardias no se pongan sospechosos.%SPEECH_ON%De acuerdo, tomo esto y olvido todo el asunto de dejar vivir a personas que deberían estar muertas, ¿de acuerdo?%SPEECH_OFF%Le entregas los papeles.\x7d"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Procured compromising papers");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_04.png[/img]\x7bYou return to %employer% with news of your success. He's got a warm greeting - a satchel heavy with crowns.%SPEECH_ON%Good job sellsword. Did you, uh, see anything else while down there?%SPEECH_OFF%It's an odd question, but you don't pursue it. You tell the man it went down just as the results show. He nods and quickly thanks you before returning to his work. | %employer%'s standing by a window when you return. He's drinking a goblet of wine, swishing it around in both cup and mouth.%SPEECH_ON%My little birds tell me the caravan was destroyed. The songs they sing, are they true?%SPEECH_OFF%You nod and tell him of the news. He hands over a chest of crowns, thanking you for your service before returning to the window. You catch a wry grin on the side of his face just before you leave. | %employer%'s petting a dog as you return. His hand his shaking through the fur.%SPEECH_ON%I take it the wagon train is destroyed?%SPEECH_OFF%You tell him the details. He nods, but his petting hand comes to a rest.%SPEECH_ON%Did you by any chance... find something interesting?%SPEECH_OFF%You think it over, but can't come up with anything out of the ordinary. The man grins and returns to petting his dog.%SPEECH_ON%Thank you for services, sellsword.%SPEECH_OFF% | %employer%'s writing when you enter his room. He drops the quill pen in a hurry and stands up.%SPEECH_ON%So it's destroyed then? The caravan, I mean.%SPEECH_OFF%You report the results of your 'services.' He laughs and claps his hands together.%SPEECH_ON%Excellent! Most excellent, sellsword! You've no idea what your work has done for me today. Of course, your payment, as promised...%SPEECH_OFF%He hands over a satchel of %reward_completion% crowns. It's all there, but you have to wonder why the man was so giddy about something so seemingly ordinary... did you miss something? | %employer%'s talking to his council when you return. He shoos them out. It is a strange sight - seeing these powerful figures making way for a motley sellsword. You stand a little taller as you report the news of the caravan's destruction.%SPEECH_ON%Thank you, mercenary. This is the sort of news I've been waiting for. And your payment, of course...%SPEECH_OFF%He heaves a wooden chest onto his desk and pushes it across. Its heavy enough to leave a mark.%SPEECH_ON%%reward_completion% crowns, as we agreed upon.%SPEECH_OFF%You're curious as to why the nobleman would excuse his council to take in a sellsword, but decide not to dwell on it.\x7d"
+        es = "[img]gfx/ui/events/event_04.png[/img]\x7bRegresas con el %employer% con noticias de tu éxito. Él te saluda con calidez y te entrega una bolsa llena de coronas.%SPEECH_ON%Buen trabajo, mercenario. ¿Viste algo más mientras estabas allí abajo?%SPEECH_OFF%Es una pregunta extraña, pero no la persigues. Le dices al hombre que todo transcurrió como indican los resultados. Él asiente y te agradece rápidamente antes de regresar a su trabajo. | %employer% está de pie junto a una ventana cuando regresas. Bebe de una copa de vino, jugueteando con ella en la copa y en la boca.%SPEECH_ON%Mis pequeños pajaritos me dicen que la caravana fue destruida. ¿Son ciertas las canciones que cantan?%SPEECH_OFF%Asientes y le cuentas la noticia. Él te entrega un cofre de coronas, agradeciéndote por tus servicios antes de regresar a la ventana. Captas una sonrisa irónica en su rostro justo antes de marcharte. | %employer% está acariciando a un perro cuando regresas. Su mano tiembla a través del pelaje.%SPEECH_ON%Supongo que la caravana fue destruida, ¿verdad?%SPEECH_OFF%Le cuentas los detalles. Él asiente, pero su mano de acariciar se detiene.%SPEECH_ON%¿Por casualidad encontraste algo interesante?%SPEECH_OFF%Lo piensas detenidamente, pero no puedes encontrar nada fuera de lo común. El hombre sonríe y vuelve a acariciar a su perro.%SPEECH_ON%Gracias por tus servicios, mercenario.%SPEECH_OFF% | %employer% está escribiendo cuando entras en su habitación. Deja caer la pluma de escribir con prisa y se pone de pie.%SPEECH_ON%Entonces, ¿está destruida? La caravana, me refiero.%SPEECH_OFF%Informas sobre los resultados de tus \x22servicios\x22. Él ríe y aplaude con las manos juntas.%SPEECH_ON%¡Excelente! ¡Muy excelente, mercenario! No tienes idea de lo que tu trabajo ha hecho por mí hoy. Por supuesto, tu pago, como se prometió...%SPEECH_OFF%Te entrega una bolsa de %reward_completion% coronas. Está todo allí, pero te preguntas por qué el hombre estaba tan emocionado por algo que aparentemente es tan ordinario... ¿te perdiste algo? | %employer% está hablando con su consejo cuando regresas. Los aparta. Es una vista extraña: ver a estas figuras poderosas ceder el paso a un mercenario de dudosa reputación. Te mantienes un poco más erguido cuando informas las noticias sobre la destrucción de la caravana.%SPEECH_ON%Gracias, mercenario. Este es el tipo de noticias que he estado esperando. Y tu pago, por supuesto...%SPEECH_OFF%Él coloca un cofre de madera en su escritorio y lo empuja hacia ti. Es lo suficientemente pesado como para dejar una marca.%SPEECH_ON%Tienes tus %reward_completion% coronas, como acordamos.%SPEECH_OFF%Te preguntas por qué el noble despidió a su consejo para recibir a un mercenario, pero decides no darle más vueltas.\x7d"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractSuccess, "Destroyed a caravan");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_45.png[/img]\x7bYou return to find %employer% sitting at his desk, tented hands before him, his thumbs practically plugged into his forehead. His hands fall forward when he begins to talk.%SPEECH_ON%You let... them live...%SPEECH_OFF%You raise a finger and make your case: not all of them lived.%SPEECH_ON%By the old gods' endless might, what on earth did I hire you for?%SPEECH_OFF%He pauses, then shrugs.%SPEECH_ON%Alright, I'll give you half of what we agreed to. You did destroy the wagon train, after all, I'll give you that.%SPEECH_OFF% | %employer% welcomes your return with his feet up on his desk, the bottom of his muddied shoes greeting you with a drip of slop.%SPEECH_ON%So, mercenary, explain to me what it was that I hired you for?%SPEECH_OFF%He throws a hand out as if to say, 'go ahead.' You state that you were hired to destroy a caravan and leave no survivors. The man shoots a finger up.%SPEECH_ON%Repeat that last part.%SPEECH_OFF%You do. The man grins, satisfied with himself, but then the smile sours to your failure.%SPEECH_ON%Alright, you didn't do what I asked. That's fine. You did do... some of it, I suppose. The caravan is destroyed...%SPEECH_OFF%He shrugs and throws you a satchel. It's half of what you were owed. You figure better that than nothing. | %employer%'s talking to his guards when you return. He fans them away, though one lingers just outside the hall, his eyes nearly poking around his head to check in on you from time to time. You drag out one of %employer%'s chairs, but he tells you to keep standing.%SPEECH_ON%This'll be brief. You didn't do all that I asked, sellsword. People are talking, talking about you. How are they talking about you if I asked that you kill all witnesses? A little curious, no? I suppose it's because you didn't kill all those witnesses, which means you didn't do what I asked.%SPEECH_OFF%He pauses, rubbing two knuckles into his forehead.%SPEECH_ON%Alright, this is what I'll do. I'll give you half of what we agreed. Half to you for destroying the caravan, half to me because I gotta pay for the cover-up. Hope that suits you.%SPEECH_OFF%The guard leers in. You nod and take the payment. | %employer% waves you in. He's standing with a scribe who looks ready to spin a tale. Your employer crosses his arms.%SPEECH_ON%People are talking of what you did...%SPEECH_OFF%The man gestures toward the scribe who, surprisingly, doesn't begin writing.%SPEECH_ON%I've had to make some payments to keep lips sealed, understand? So that means you're only getting half of what we agreed upon.%SPEECH_OFF%The elder scribe grins. You notice a ring on his finger. It looks newly minted. %employer%'s almost scowling, but the scribe isn't writing anything so you take that for a good sign. You take your pay and make your leave. | A group of grinning men are leaving %employer%'s room when you arrive. He asks you to shut the door behind you then immediately opens up.%SPEECH_ON%Recognize those faces? They were the men who found out what you did. Do you realize how many crowns it took for them to keep their lips sealed? Do you know where those crowns came from?%SPEECH_OFF%You shrug. The man continues.%SPEECH_ON%Your pay, of course. You're only getting half. Do you understand why?%SPEECH_OFF%You nod. Business is business. As you turn to leave, %employer% catches you.%SPEECH_ON%And don't dare think about killing one of those men to get the other half of your pay back, sellsword!%SPEECH_OFF%Damn.\x7d"
+        es = "[img]gfx/ui/events/event_45.png[/img]\x7bRegresas para encontrar a %employer% sentado en su escritorio, con las manos unidas y los pulgares prácticamente clavados en su frente. Sus manos caen hacia adelante cuando empieza a hablar.%SPEECH_ON%Dejaste... que ellos vivieran...%SPEECH_OFF%Levantas un dedo y expones tu caso: no todos sobrevivieron.%SPEECH_ON%¡Por el poder sin fin de los antiguos dioses! ¿Para qué diablos te contraté?%SPEECH_OFF%Hace una pausa y luego encoge los hombros.%SPEECH_ON%Está bien, te daré la mitad de lo que acordamos. Destruíste la caravana, después de todo, te lo daré.%SPEECH_OFF% | %employer% da la bienvenida a tu regreso con los pies apoyados en su escritorio, la parte inferior de sus zapatos embarrados te saluda con una gota de lodo.%SPEECH_ON%Entonces, mercenario, explícame para qué te contraté, ¿eh?%SPEECH_OFF%Él extiende una mano como si dijera \x22adelante\x22. Dices que fuiste contratado para destruir una caravana y no dejar testigos vivos. El hombre levanta un dedo.%SPEECH_ON%Repite esa última parte.%SPEECH_OFF%Lo haces. El hombre sonríe, satisfecho consigo mismo, pero luego la sonrisa se agria por tu fracaso.%SPEECH_ON%Está bien, no hiciste lo que te pedí. Eso está bien. Lo que hiciste, supongo, es destruir la caravana...%SPEECH_OFF%Encoge los hombros y te lanza una bolsa. Es la mitad de lo que te debían. Piensas que es mejor eso que nada. | %employer% está hablando con sus guardias cuando regresas. Los despide, aunque uno se queda justo afuera del pasillo, con los ojos a punto de salirse de su cabeza para echar un vistazo a lo que estás haciendo. Arrastras una de las sillas de %employer%, pero él te dice que te mantengas de pie.%SPEECH_ON%Esto será breve. No hiciste todo lo que te pedí, mercenario. La gente está hablando, hablando de ti. ¿Cómo pueden hablar de ti si te pedí que mataras a todos los testigos? Un poco curioso, ¿no? Supongo que es porque no mataste a todos esos testigos, lo que significa que no hiciste lo que te pedí.%SPEECH_OFF%Hace una pausa, frotándose dos nudillos en la frente.%SPEECH_ON%Bien, esto es lo que haré. Te daré la mitad de lo que acordamos. La mitad para ti por destruir la caravana, la mitad para mí porque tengo que pagar para mantener todo en silencio. Espero que eso te convenga.%SPEECH_OFF%El guardia finalmente se asoma. Tú asientes y tomas el pago. | %employer% te da la bienvenida. Está parado con un escribano que parece listo para tejer una historia. Tu empleador cruza los brazos.%SPEECH_ON%La gente está hablando de lo que hiciste...%SPEECH_OFF%El hombre hace un gesto hacia el escribano, que sorprendentemente no comienza a escribir.%SPEECH_ON%He tenido que hacer algunos pagos para mantener los labios sellados, ¿entiendes? Así que eso significa que solo recibirás la mitad de lo que acordamos.%SPEECH_OFF%El anciano escribano sonríe. Te das cuenta de un anillo en su dedo. Parece recién acuñado. %employer% casi frunce el ceño, pero el escribano no está escribiendo nada, así que consideras que es una buena señal. Tomas tu pago y te marchas. | Un grupo de hombres sonrientes está saliendo de la habitación del %employer% cuando llegas. Te pide que cierres la puerta detrás de ti y luego la abre inmediatamente.%SPEECH_ON%¿Reconoces esos rostros? Fueron los hombres que descubrieron lo que hiciste. ¿Te das cuenta de cuántas coronas les costó mantener sus labios sellados? ¿Sabes de dónde vienen esas coronas?%SPEECH_OFF%Encoges los hombros. El hombre continúa.%SPEECH_ON%Tu paga, por supuesto. Solo recibirás la mitad. ¿Lo entiendes?%SPEECH_OFF%Asientes. Los negocios son negocios. Cuando te dispones a salir, %employer% te atrapa.%SPEECH_ON%¡Y no se te ocurra pensar en matar a uno de esos hombres para recuperar la otra mitad de tu pago, mercenario!%SPEECH_OFF%Diablos, ¿cómo lo supo?\x7d"
+    }
+    {
+        en = "Could have been worse..."
+        es = "Podría haber sido peor..."
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Failed to destroy a caravan without letting anyone escape");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "[img]gfx/ui/events/event_45.png[/img]\x7bYou return to find %employer% sitting at his desk with his elbows on its edge, forearms cocked, his thumbs practically plugged into his forehead. His hands fall forward as he begins to talk.%SPEECH_ON%You let... them live...%SPEECH_OFF%You raise a finger and make your case: not all of them lived.%SPEECH_ON%By the old gods' endless might, what on earth did I hire you for?%SPEECH_OFF%He pauses, then bursts with anger.%SPEECH_ON%Like I give a shite? You let enough of them that it's the talk of this godforsaken village. Get the hell out of my sight before I get one of my guards to take you out.%SPEECH_OFF% | The soles of %employer%'s feet welcome your return, his legs up on his desk. You notice that there's blood on his boots.%SPEECH_ON%So, mercenary, explain to me what it was that I hired you for?%SPEECH_OFF%He throws a hand out as if to say, 'go ahead.' You state that you were hired to destroy a caravan and leave no survivors. The man shoots a finger up.%SPEECH_ON%Repeat that last part.%SPEECH_OFF%You do. The man grins, satisfied with himself.%SPEECH_ON%Alright, you didn't do what I asked. So, what are you doing here? Shall I fetch one of my guards or will you excuse yourself willingly? Because you and I no longer have business together.%SPEECH_OFF% | %employer%'s talking to his guards when you return. He fans a few away while ordering the biggest of the bunch to stay put. He eyes you down as you enter.\n\nYou drag out one of %employer%'s chairs, but he tells you to keep standing.%SPEECH_ON%This'll be brief. You didn't do all that I asked, sellsword. People are talking, talking about you. How are they talking about you if I asked that you kill all witnesses? A little curious, no? Last I recall, a dead witness doesn't talk at all, which leads me to believe that these witnesses were very much left alive. Curious indeed, as that is not what I was paying you to do. Now before I ask my fellow guard here to take out his sword and run you through with it, why don't you just turn right around and get the hell out of my sight?%SPEECH_OFF% | A group of grinning men are leaving %employer%'s room when you arrive. He asks you to shut the door behind you, but not before a guard steps in. He and %employer% exchange a nod and a glance, and you then shut the door. Your employer speaks frankly.%SPEECH_ON%Recognize those people who just walked out of here? They were the men who found out what you did. Do you realize how many crowns it took for them to keep their lips sealed? Do you know where those crowns came from?%SPEECH_OFF%You shrug. The man continues.%SPEECH_ON%Your pay, of course. To keep all their traps shut I had to pay a pretty penny indeed.%SPEECH_OFF%You nod. Business is business and, in this case, you'll be getting none. As you turn to leave, %employer% catches you.%SPEECH_ON%And don't dare think about killing one of those men to get your pay back, sellsword!%SPEECH_OFF%Damn.\x7d"
+        es = "[img]gfx/ui/events/event_45.png[/img]\x7bRegresas para encontrar a %employer% sentado en su escritorio con los codos apoyados en el borde, los antebrazos apoyados, y los pulgares prácticamente clavados en su frente. Sus manos caen hacia adelante cuando empieza a hablar.%SPEECH_ON%¡Los dejaste... vivir!%SPEECH_OFF%Levantas un dedo y expones tu caso: no todos sobrevivieron.%SPEECH_ON%¡Por los dioses antiguos y su poder sin fin! ¿Para qué diablos te contraté?%SPEECH_OFF%Hace una pausa y luego explota de ira.%SPEECH_ON%¿Qué me importa? Los dejaste con vida en cantidad suficiente como para que sea el tema de conversación de este maldito pueblo. Lárgate de mi vista antes de que uno de mis guardias te aplaste. Lárgate, y nosotros ya no tenemos asuntos pendientes.%SPEECH_OFF% | Las plantas de los pies de %employer% dan la bienvenida a tu regreso, con las piernas encima de su escritorio. Notas que hay sangre en sus botas.%SPEECH_ON%Entonces, mercenario, explícame para qué te contraté, ¿eh?%SPEECH_OFF%Él extiende una mano como si dijera, 'adelante'. Indicas que te contrataron para destruir una caravana y no dejar sobrevivientes. El hombre levanta un dedo.%SPEECH_ON%Repite esa última parte.%SPEECH_OFF%Lo haces. El hombre sonríe, satisfecho consigo mismo.%SPEECH_ON%Está bien, no hiciste lo que te pedí. Entonces, ¿qué haces aquí? ¿Debo pedirle a uno de mis guardias que saque su espada y te atraviese? ¿O mejor te das la vuelta y te largas de mi vista?%SPEECH_OFF% | %employer% está hablando con sus guardias cuando regresas. Aleja a algunos de ellos mientras ordena al más grande del grupo que se quede en su lugar. Te mira fijamente cuando entras.\n\nArrastras una de las sillas de %employer%, pero él te dice que te mantengas de pie.%SPEECH_ON%Esto será breve. No hiciste todo lo que te pedí, mercenario. La gente está hablando de ti. ¿Cómo están hablando de ti si te pedí que mataras a todos los testigos? Un poco curioso, ¿no? La última vez que lo comprobé, un testigo muerto no habla en absoluto, lo que me lleva a pensar que estos testigos quedaron muy vivos. Curioso, ya que no era eso por lo que te estaba pagando. Ahora, antes de que pida a uno de mis guardias que saque su espada y te atraviese, ¿por qué no te das la vuelta y te largas de mi vista?%SPEECH_OFF% | %employer% te hace señas para entrar. Está de pie con un escribano que parece listo para tejer una historia. Tu empleador cruza los brazos.%SPEECH_ON%La gente está hablando de lo que hiciste...%SPEECH_OFF%El hombre hace un gesto hacia el escribano, que sorprendentemente no comienza a escribir.%SPEECH_ON%He tenido que hacer algunos pagos para mantener los labios sellados, ¿entiendes? Así que eso significa que solo recibirás la mitad de lo que acordamos.%SPEECH_OFF%El anciano escribano sonríe. Te das cuenta de un anillo en su dedo. Parece recién acuñado. %employer% casi frunce el ceño, pero el escribano no está escribiendo nada, así que consideras que es una buena señal. Tomas tu pago y te marchas. | Un grupo de hombres sonrientes está saliendo de la habitación de %employer% cuando llegas. Te pide que cierres la puerta detrás de ti, pero no antes de que un guardia entre. Él y %employer% intercambian una mirada y un gesto, y luego cierras la puerta. Tu empleador habla con franqueza.%SPEECH_ON%¿Reconoces a esas personas que acaban de salir de aquí? Fueron los hombres que descubrieron lo que hiciste. ¿Te das cuenta de cuántas coronas les costó mantener sus labios sellados? ¿Sabes de dónde vienen esas coronas?%SPEECH_OFF%Encoges los hombros. El hombre continúa.%SPEECH_ON%Tu paga, por supuesto. Para mantener todos esos labios sellados, tuve que pagar una buena cantidad, de hecho.%SPEECH_OFF%Asientes. Los negocios son negocios y, en este caso, no tendrás nada. Mientras te dispones a irte, %employer% te atrapa.%SPEECH_ON%¡Y no te atrevas a pensar en matar a uno de esos hombres para recuperar tu pago, mercenario!%SPEECH_OFF%Maldición.\x7d"
+    }
+    {
+        en = "[img]gfx/ui/events/event_75.png[/img]\x7bAwaiting the caravan, a pair of travelers come up from where the convoy should be going. They remark in detail about a cart which is no doubt the one which you were supposed to be hunting down. No point in returning to %employer%. | Word on the road hints that the caravan you were supposed to be hunting down has given you the slip and reached its destination. The company shouldn't bother reaching %employer%.\x7d"
+        es = "[img]gfx/ui/events/event_75.png[/img]\x7bA la espera de la caravana, un par de viajeros llegan desde donde debería dirigirse el convoy. Comentan en detalle sobre un carro que sin duda es el que se suponía que debías cazar. No tiene sentido volver a %employer%. | En el camino se dice que la caravana que se suponía que debías perseguir se te ha escapado y ha llegado a su destino. La compañía no debería molestarse en llegar a %employer%.\x7d"
+    }
+    {
+        // this.World.FactionManager.getFaction(this.Contract.getFaction()).addPlayerRelation(this.Const.World.Assets.RelationNobleContractFail, "Failed to destroy a caravan");
+        mode = "pattern"
+        en = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Broke a contract)>"
+        es = "<this.World.FactionManager.getFaction(this.m.Faction).addPlayerRelation(this.Const.World.Assets.RelationContractCancel, Romper un contrato)>"
+    }
+    {
+        en = "bribe2"
+        es = ""
+    }
+    {
+        en = "start"
+        es = ""
+    }
+    {
+        en = "dest"
+        es = ""
+    }
+    {
+        en = "swordmaster"
+        es = ""
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\contracts\contracts\raze_attached_location_contract.nut
     {
@@ -22529,10 +23946,6 @@ local pairs = [
         es = ""
     }
     {
-        en = "Return to %townname%"
-        es = "Regresa a %townname%"
-    }
-    {
         en = "Escort"
         es = ""
     }
@@ -22547,10 +23960,6 @@ local pairs = [
     {
         en = "\x7bSounds easy enough. | Let's talk crowns.\x7d"
         es = "\x7bSuena bastante fácil. | Hablemos de coronas.\x7d"
-    }
-    {
-        en = "\x7bThis doesn't sound like our kind of work. | I don't think so.\x7d"
-        es = "\x7bEsto no suena como nuestro tipo de trabajo. | No lo creo.\x7d"
     }
     {
         en = "[img]gfx/ui/events/event_71.png[/img]\x7bArriving at the %location%, you have the men fan out and slowly creep into the area. You march in yourself, carefully weaving your way toward the buildings whose windows whistle as a spurting wind comes through. Investigating further, there doesn't appear to be anyone here. Not even evidence that they'd just left, either. You gather your men and head back to inform %employer%. | %location% is surprisingly empty. You mosey about one of the homes, picking up dusted cups and flipping over straw beds, but find neither insect nor man. The place has been wholly abandoned. You head back to tell %employer% of the news. | A deerscare nods and tips at the edge of %location%, its wooden chiming the only thing around that seems to be alive. If anyone was living here, they left a long time ago. Buildings stand empty. Hollowed out. You can tell just by looking at them that no one is inside. The old gods themselves could destroy this place and not a single person would know or care. Sad. Best let %employer% know of the 'good' news. | %location%'s abandoned, just as you figured, but there is not a bandit or vagabond in sight. You can't blame them for not wanting the place: even though there's few buildings around, everything about them make you on edge. Old, frail... haunted? As though they were home to immeasurable crimes. Maybe %employer%'s workers will tear them down and start anew. | Not a bandit is to be found at %location%. Half the buildings are destroyed while the other half stand empty and abandoned. A few of %employer%'s workers could probably get this place into shape so you'd best go inform him. | You find a weathervane stuck in the mud and a cow carcass beside it. A pig pen is layered with fresh green grass. One of the buildings has been verdantly painted by a crawl of vines. The cemetery's markings are tilted and some flat on the ground. You find a shovel and a hole beside it. Water's filled the unused grave and there blue birds are bathing. You wonder if this place would be best left as is, but it's not your place to wonder. You head back to inform %employer% on the state of things. | You enter the %location% and have the men fan out and start searching the buildings. Not one to leave an investigation entirely to a bunch of sellswords, you enter a nearby home. The door peels open and almost immediately your foot kicks through a pile of pots and pans left on the earthen floor. Trudging in, you spot a few dead mice in the corner of the place, their skeletons still in a state of scurrying, and adjacent to them is a dead cat. There's a bird nest in the rafters. Yellowed eggs wink their shelled hoods, but you have yet to see much less hear a bird.\n\n%randombrother% comes in through the door and says nothing has been found. If brigands were here, they left long ago. You tell the mercenary to gather the men as it is time to report your findings to %employer%.\x7d"
@@ -22724,10 +24133,6 @@ local pairs = [
     {
         en = "[img]gfx/ui/events/event_20.png[/img]\x7b%employer% restlessly walks back and forth while explaining what troubles him.%SPEECH_ON%There has been an audacious act of thievery! The despicable brigands stole my %itemLower% which is of immeasurable value to me. I implore you to hunt down those thieves and return that item to me.%SPEECH_OFF%He lowers his voice to an insisting tone.%SPEECH_ON%Not only will you get paid handsomely, but you would also set the worried minds of the good people of %townname% to rest!%SPEECH_OFF% | %employer%'s reading one of many scrolls. He angrily tosses it onto a pile of others.%SPEECH_ON%The people of %townname% are rightfully furious. Do you know a brigand, possibly in league with other vagabonds, managed to steal my %itemLower% from us? That artifact is of immeasurable value to me! And... to the people, of course.%SPEECH_OFF%You shrug.%SPEECH_ON%And you want me to get it back for you?%SPEECH_OFF%The man points a finger.%SPEECH_ON%Precisely, smart sellsword! That is exactly what I want you to do. Follow the footprints of thievery and return to me the item which I... the town, rightfully owns!%SPEECH_OFF% | %employer%'s turning an apple in hand. He seems frustrated with it, almost as if he wishes it were something else like a valuable trinket or perhaps just a tastier fruit.%SPEECH_ON%Have you ever lost something you loved?%SPEECH_OFF%You shrug and answer.%SPEECH_ON%There was this girl...%SPEECH_OFF%The man shakes his head.%SPEECH_ON%No, not some woman. More important. Because I have! Thieves stole my %itemLower%. How they managed to do get beyond my guards is, well, beyond me. But I know if I set you on them I'll be having what is rightfully mine back where it belongs. Isn't that right? Or have I been mislead as to the quality of your services?%SPEECH_OFF% | A dog is snoring at the feet of %employer%. He leans forward to gently pet the hound behind its ears.%SPEECH_ON%I hear you have a nose for finding people, sellsword. For... solving problems.%SPEECH_OFF%You nod. It is true, after all.%SPEECH_ON%Good... good... I have a task for you. A simple one. Something of great value to me has been stolen, my %itemLower%. I need you to track down those who stole it, kill them, obviously, and then bring back the item.%SPEECH_OFF% | A bird is perched on %employer%'s window. The man, seated, points at it.%SPEECH_ON%I wonder if that's how they got in. The brigands, I mean. I think they must've snuck through a window and then right back out. That's how they got away with my %itemLower%.%SPEECH_OFF%The man slowly rises and stalks across the room. He crouches, about ready to pounce on the bird, but the creature scatters before the man can so much as flinch.%SPEECH_ON%Damn.%SPEECH_OFF%He returns to his seat, wiping his hands as if he'd worked up a sweat during his attempted avian ambush.%SPEECH_ON%My task is simple, sellsword. Bring my property back to me. Kill the brigands, too, if you wouldn't mind.%SPEECH_OFF% | Dust covers %employer%'s table, but there is a spot oddly cleaner than the rest. He gestures to it.%SPEECH_ON%That's where my %itemLower% used to sit. If you couldn't tell, it's gone.%SPEECH_OFF%You nod. It does appear to be missing.%SPEECH_ON%The thieves who took it should be easy to track down. They're good thinkers in the night, those brigands, but they make mistakes aplenty during the day. Footprints, crowns ill-spent... you should be able to track them down with ease.%SPEECH_OFF%He looks at you with a stern eye.%SPEECH_ON%Do you understand, mercenary? I want you to get my property back. I want it placed right where it belongs. And... I want those thieves dead in the mud.%SPEECH_OFF%\x7d"
         es = "[img]gfx/ui/events/event_20.png[/img]\x7b%employer% camina de un lado a otro inquieto mientras explica lo que le preocupa.%SPEECH_ON%¡Ha ocurrido un despreciable robo! ¡Esos ruines bandidos han robado mi %itemLower%, que tiene un valor incalculable para mí! Te ruego que persigas a esos ladrones y me devuelvas ese objeto.%SPEECH_OFF%Baja la voz con tono insistente.%SPEECH_ON%¡No solo serás generosamente recompensado, sino que también tranquilizarás las preocupaciones de la buena gente de %townname%!%SPEECH_OFF% | %employer% está leyendo uno de los muchos pergaminos encima de su escritorio. Finalmente lo lanza enfadado sobre la pila donde descansan los otros.%SPEECH_ON%Los habitantes de %townname% están justamente furiosos. ¿Sabes que un bandido, posiblemente en complicidad con otros vagabundos, logró robarnos mi %itemLower%? ¡Ese artefacto tiene un valor incalculable para mí! Y... para la gente del pueblo, por supuesto.%SPEECH_OFF%Encoges los hombros.%SPEECH_ON%¿Y quieres que lo recupere por ti?%SPEECH_OFF%El hombre señala con el dedo.%SPEECH_ON%¡Exactamente, mercenario! Eso es precisamente lo que quiero que hagas. ¡Sigue las huellas de los  ladrones y devuelveme el objeto que... el pueblo posee legítimamente!%SPEECH_OFF% | %employer% está girando una manzana en su mano. Parece frustrado con ella, como si deseara que fuera otra cosa, como un objeto valioso o tal vez una fruta más sabrosa.%SPEECH_ON%¿Alguna vez has perdido algo que amas?%SPEECH_OFF%Encoges los hombros y respondes.%SPEECH_ON%Había una chica...%SPEECH_OFF%El hombre niega con la cabeza.%SPEECH_ON%No, no me refiero a una mujer. Algo más importante. ¡Porque yo sí lo he perdido! Unos ladrones se llevaron mi %itemLower%. Cómo lograron burlar a mis guardias, eso es, bueno, un misterio para mí. Pero sé que si los persigues, tendría de vuelta lo que legítimamente me pertenece. ¿No es así? ¿O he sido engañado respecto a la calidad de tus servicios?%SPEECH_OFF% | Un perro duerme roncando a los pies de %employer%. Se inclina hacia adelante para acariciar suavemente al can detrás de las orejas.%SPEECH_ON%He oído decir que tienes un buen olfato para encontrar personas, mercenario. Para... resolver problemas.%SPEECH_OFF%Asientes. Es cierto, después de todo.%SPEECH_ON%Bien... bien... Tengo una tarea para ti. Una tarea sencilla. Algo de gran valor para mí me ha sido robado, mi %itemLower%. Necesito que encuentres a los que lo hurtaron, los mates, obviamente, y luego me traigas de vuelta el objeto.%SPEECH_OFF% | Un pájaro está posado en la ventana de %employer%. El hombre, sentado, señala hacia él.%SPEECH_ON%Me pregunto si por ahí es por donde entraron. Los bandidos, me refiero. Creo que deben haberse colado por una ventana y luego salido rápidamente. Así es como se llevaron mi %itemLower%.%SPEECH_OFF%El hombre se levanta lentamente y camina sigilosamente por la habitación. Se agacha, listo para atacar al pájaro, pero la criatura se aleja antes de que el hombre pueda siquiera mover un dedo.%SPEECH_ON%Maldición.%SPEECH_OFF%Regresa a su asiento, limpiándose las manos como si hubiera sudado durante su intento fallido de ataque aviar.%SPEECH_ON%Mi tarea es simple, mercenario. Trae de vuelta mi propiedad. Mata a los bandidos, si no te importa.%SPEECH_OFF% | El polvo cubre la mesa de %employer%, pero hay un lugar extrañamente más limpio que el resto. Él señala hacia él.%SPEECH_ON%Ahí es donde solía estar mi %itemLower%. Si no lo notaste, ha desaparecido.%SPEECH_OFF%Asientes. Parece que ahí falta algo.%SPEECH_ON%Los ladrones que lo tomaron deberían ser fáciles de rastrear. Son buenos actuando en la oscuridad, esos bandidos, pero cometen muchos errores durante el día. Huellas, coronas gastadas de manera indebida... deberías poder encontrarlos con facilidad.%SPEECH_OFF%Te mira con ojos severos.%SPEECH_ON%¿Lo entiendes, mercenario? Quiero que recuperes mi propiedad. Quiero que regrese a donde pertenece. Y... quiero a esos ladrones agonizando en el barro.%SPEECH_OFF%\x7d"
-    }
-    {
-        en = "\x7bWhat's this worth to you? | Let's talk pay.\x7d"
-        es = "\x7b¿Cuánto vale esto para ti? | Hablemos de la paga.\x7d"
     }
     {
         en = "[img]gfx/ui/events/event_80.png[/img]\x7bBrigands! Just as your employer had thought. They look scared, presumably understanding that %employer%'s well-paid wrath is about to descend upon them. | Ah, the thieves are quite human - a simple crew of vagabonds and brigands. They arm themselves as you order your men to attack. | You catch a group of brigands lugging your employer's property around. They seem shocked that you have found them here and no time is wasted trying to parlay - they arm themselves and you order the %companyname% to charge.\x7d"
@@ -23376,14 +24781,6 @@ local pairs = [
         mode = "pattern"
         en = "<this.m.Origin.getOwner().getName()> Army"
         es = "Ejército de <this.m.Origin.getOwner().getName()>"
-    }
-    {
-        en = "Supply Caravan"
-        es = "Caravana de suministros"
-    }
-    {
-        en = "A caravan with armed escorts transporting provisions, supplies and equipment between settlements."
-        es = "Una caravana con escoltas armadas transportando provisiones, suministros y equipo entre asentamientos."
     }
     {
         // local party = f.spawnEntity(tile, castles[this.Math.rand(0, castles.len() - 1)].getName() + " Company", true, this.Const.World.Spawn.Noble, castles[this.Math.rand(0, castles.len() - 1)].getResources(), this.getMinibossModifier());
@@ -29338,7 +30735,30 @@ local pairs = [
         en = "pelts"
         es = ""
     }
-    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\situation.nut
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\abducted_children_situation.nut
+    {
+        en = "Abducted Children"
+        es = "Niños secuestrados"
+    }
+    {
+        en = "Children have been disappearing from this settlement. Distrust and fear rule the streets and are slowly poisoning the community."
+        es = "Los niños han ido desapareciendo de este asentamiento. La desconfianza y el miedo dominan las calles y poco a poco están envenenando a la comunidad."
+    }
+    {
+        mode = "pattern"
+        en = "Rumor is that children disappear from their cribs in %settlement% into thin air. Imagine the parents' terror..."
+        es = "Se rumorea que los niños desaparecen de sus cunas en %settlement% en el aire. Imagina el terror de los padres..."
+    }
+    {
+        mode = "pattern"
+        en = "My grandma told me a story about witches abducting children for their innocent blood. And now in %settlement%, kids have gone missing just like in the stories."
+        es = "Mi abuela me contó una historia sobre brujas que secuestraban a niños para obtener su sangre inocente. Y ahora, en %settlement%, los niños han desaparecido como en las historias."
+    }
+    {
+        mode = "pattern"
+        en = "Never ever strike a deal with witches! A relative in %settlement% did it years ago and now his kid is gone missing."
+        es = "¡Nunca jamás hagas un trato con brujas! Un pariente en %settlement% lo hizo hace años y ahora su hijo ha desaparecido."
+    }
     {
         // return _s + " now has " + this.m.Name;
         mode = "pattern"
@@ -29350,6 +30770,1051 @@ local pairs = [
         mode = "pattern"
         en = "<_s> no longer has <this.m.Name>"
         es = "<_s> ya no tiene <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\ambushed_trade_routes_situation.nut
+    {
+        en = "Ambushed Trade Routes"
+        es = "Rutas comerciales asaltadas"
+    }
+    {
+        en = "The roads leading here are unsafe of late, and many a caravan has been ambushed and plundered. With little successful trade, the selection of goods is lower and the prices higher."
+        es = "Los caminos que conducen hasta aquí últimamente son inseguros y muchas caravanas han sido emboscadas y saqueadas. Con poco éxito en el comercio, la selección de bienes es menor y los precios más altos."
+    }
+    {
+        mode = "pattern"
+        en = "Brigands and raiders are the bane of us traveling merchants! An old friend of mine got ambushed, robbed and beaten just outside of %settlement%!"
+        es = "¡Los bandidos y asaltantes son la pesadilla de nosotros, los comerciantes ambulantes! ¡Un viejo amigo mío fue emboscado, robado y golpeado en las afueras de %settlement%!"
+    }
+    {
+        mode = "pattern"
+        en = "If you have any valuables on you, stay away from %settlement%. The place is scourged by cutthroats, bandits and highwaymen!"
+        es = "Si llevas objetos de valor contigo, mantente alejado de %settlement%. ¡El lugar está azotado por asesinos, bandidos y bandoleros!"
+    }
+    {
+        mode = "pattern"
+        en = "The guardsmen are doing what they can, but these brigands just move on to the next town and waylay traders on the road. They're said to lurk around %settlement% now!"
+        es = "Los guardias están haciendo lo que pueden, pero estos bandidos simplemente se trasladan a la siguiente ciudad y asaltan a los comerciantes en el camino. ¡Se dice que ahora acechan alrededor del %settlement%!"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\archery_contest_situation.nut
+    {
+        en = "Archery Contest"
+        es = "Concurso de tiro con arco"
+    }
+    {
+        en = "A contest in archery has attracted anyone proficient with a bow. A good time, perhaps, to look for according recruits."
+        es = "Un concurso de arquería ha atraído a cualquiera que domine el arco. Quizás sea un buen momento para buscar reclutas adecuados."
+    }
+    {
+        mode = "pattern"
+        en = "If you're a skilled archer, you might want to head to that big contest over in %settlement% and let fly some arrows!"
+        es = "Si eres un arquero experto, tal vez quieras ir a ese gran concurso en %settlement% y lanzar algunas flechas."
+    }
+    {
+        mode = "pattern"
+        en = "You know, I myself was once the best archer near and far, I swear! Until a damned donkey stepped on my hand, that is. Otherwise, I'd be in %settlement% for the archery contest right now..."
+        es = "Sabes, yo mismo fui una vez el mejor arquero de cerca y de lejos, ¡lo juro! Hasta que un maldito burro me pisó la mano, claro está. De lo contrario, estaría en %settlement% para el concurso de arqueros ahora mismo... "
+    }
+    {
+        mode = "pattern"
+        en = "Anyone skilled with a bow is making their way to %settlement% these days for some contest. Most of them poachers and other lowlifes, I imagine."
+        es = "Cualquier persona hábil con el arco se dirige a %settlement% estos días para alguna competencia. Me imagino que la mayoría de ellos son cazadores furtivos y otros maleantes."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\arena_tournament_situation.nut
+    {
+        en = "Tournament"
+        es = "Torneo en la arena"
+    }
+    {
+        en = "A large tournament is to be held at the arena. Enter it to win marvelous prizes!"
+        es = "En la arena se celebrará un gran torneo. ¡Participa para ganar maravillosos premios!"
+    }
+    {
+        mode = "pattern"
+        en = "You look like an able fighter. The arena in %settlement% is hosting a tournament and you can surely still enter!"
+        es = "Pareces un luchador capaz. ¡La arena en %settlement% está organizando un torneo y seguramente aún puedes participar!"
+    }
+    {
+        mode = "pattern"
+        en = "After this drink I will head straight out towards %settlement% to watch the great arena tournament! Best entertainment all year!"
+        es = "¡Después de esta bebida me dirigiré directamente hacia %settlement% para ver el gran torneo en la arena! ¡El mejor entretenimiento de todo el año!"
+    }
+    {
+        mode = "pattern"
+        en = "I heard the prize for the arena tournament winner in %settlement% is even more marvelous this year!"
+        es = "¡Escuché que el premio para el ganador del torneo de arena en %settlement% es aún más maravilloso este año!"
+    }
+    {
+        // return _s + " now has a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> now has a <this.m.Name>"
+        es = "<_s> está celebrando un <this.m.Name>"
+    }
+    {
+        // return _s + " no longer has a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> no longer has a <this.m.Name>"
+        es = "<_s> ya no está celebrando <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\besieged_situation.nut
+    {
+        en = "Besieged"
+        es = "Bajo asedio"
+    }
+    {
+        en = "This place is or has until recently been besieged by the enemy! It's suffered damage, the supplies are low and many have lost their lives."
+        es = "¡Este lugar está o ha estado hasta hace poco asediado por el enemigo! Ha sufrido daños, los suministros son escasos y muchos han perdido la vida."
+    }
+    {
+        mode = "pattern"
+        en = "Rocks and fire arrows flying, hot oil being poured, people starving and dying - that is a siege. You can head over to %settlement% and get a good close look yourself."
+        es = "Rocas y flechas de fuego volando, aceite caliente vertido, gente muriéndose de hambre... eso es un asedio. Puedes dirigirte a %settlement% y verlo bien de cerca."
+    }
+    {
+        mode = "pattern"
+        en = "When I was younger, I served in %randomnoble%'s army. The worst was a siege we partook in, it lasted for months. A shame that it is happening again right now in %settlement%."
+        es = "Cuando era más joven, serví en el ejército de %randomnoble%. Lo peor fue un asedio en el que participamos, que duró meses. Es una pena que esté sucediendo de nuevo ahora mismo en %settlement%."
+    }
+    {
+        mode = "pattern"
+        en = "Heard the word? %settlement% is under siege! Poor folks up in there will suffer a lot."
+        es = "¿Oíste la noticia? ¡%settlement% está bajo asedio! La gente pobre de allí sufrirá mucho."
+    }
+    {
+        // return _s + " now is " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> now is <this.m.Name>"
+        es = "<_s> está <this.m.Name>"
+    }
+    {
+        // return _s + " no longer is " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> no longer is <this.m.Name>"
+        es = "<_s> ya no está <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\bread_and_games_situation.nut
+    {
+        en = "Bread and Games"
+        es = "Pan y circo"
+    }
+    {
+        en = "The city council ordered a time of food, drink and games for everyone to keep the population happy. Food and drink are easy to come by, gladiators are flocking to the city, and arena fights pay more than usual."
+        es = "El consejo de la ciudad decretó una temporada de comida, bebida y juegos para todos para mantener contenta a la población. Es fácil conseguir comida y bebida, los gladiadores acuden en masa a la ciudad y las peleas en la arena pagan más de lo habitual."
+    }
+    {
+        mode = "pattern"
+        en = "Praise the wise council of %settlement%! A time of food, drink and games is upon us!"
+        es = "¡Alabado sea el sabio consejo de %settlement%! ¡Se acerca una época de comida, bebida y circo!"
+    }
+    {
+        mode = "pattern"
+        en = "Ever been to the famed games of the south? Head to %settlement% and see for yourself the glory of the festivities!"
+        es = "¿Has estado alguna vez en los famosos juegos del sur? ¡Dirígete a %settlement% y comprueba por ti mismo la gloria de las festividades!"
+    }
+    {
+        mode = "pattern"
+        en = "All the hard work through the year and for what? I will tell you: Food, drink and games! I will head out to %settlement% to join in, and so should you."
+        es = "Todo el trabajo duro durante todo el año y ¿para qué? Te lo diré: ¡comida, bebida y juegos! Iré a %settlement% para unirme, y tú también deberías hacerlo."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\ceremonial_season_situation.nut
+    {
+        en = "Ceremonial Season"
+        es = "Temporada ceremonial"
+    }
+    {
+        en = "During the ceremonial season, large amounts of incense are used by temples. The demand and prices for incense are at an all-time high."
+        es = "Durante la temporada ceremonial, los templos utilizan grandes cantidades de incienso. La demanda y los precios del incienso alcanzan su punto máximo histórico."
+    }
+    {
+        mode = "pattern"
+        en = "During this time of the year, the temples in %settlement% smoke like a hovel that's on fire! I wonder where they get all that incense from..."
+        es = "En esta época del año, ¡los templos de %settlement% humean como una choza en llamas! Me pregunto de dónde sacan tanto incienso..."
+    }
+    {
+        mode = "pattern"
+        en = "If you are a godly person you might want to head to %settlement% to burn some incense and say some prayers."
+        es = "Si eres una persona piadosa, quizás quieras dirigirte a %settlement% para quemar un poco de incienso y decir algunas oraciones."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\collectors_situation.nut
+    {
+        en = "Collectors"
+        es = "Coleccionistas"
+    }
+    {
+        en = "Several collectors seeking exotic curios have made their way into town. There's good coin to be made selling beast trophies and like here."
+        es = "Varios coleccionistas en busca de curiosidades exóticas han llegado a la ciudad. Se puede ganar mucho dinero vendiendo trofeos de bestias y cosas como aquí."
+    }
+    {
+        mode = "pattern"
+        en = "Are you lot beast hunters? I've heard that some strange characters have shown up in %settlement% and are buying every exotic monster trophy they can find."
+        es = "¿Sois cazadores de bestias? He oído que algunos personajes extraños han aparecido en %settlement% y están comprando todos los trofeos de monstruos exóticos que pueden encontrar."
+    }
+    {
+        mode = "pattern"
+        en = "See this here dog tooth? I plan on selling it over in %settlement%, I heard they pay good coin for animal parts there."
+        es = "¿Ves este diente de perro? Planeo venderlo en %settlement%, escuché que allí pagan buenas monedas por las partes de animales."
+    }
+    {
+        mode = "pattern"
+        en = "It seems all sorts of beast slayers and corpse-pickers are gathering in %settlement%. Something about selling beast trophies, I heard. Sounds like witchcraft to me."
+        es = "Parece que todo tipo de cazadores de bestias y recolectores de cadáveres se están reuniendo en %settlement%. Escuché algo sobre vender trofeos de bestias. Me suena a brujería."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\conquered_situation.nut
+    {
+        en = "Conquered"
+        es = "Conquistado"
+    }
+    {
+        en = "This place has recently been conquered. Many lives were lost, and the survivors had to endure the conquerors taking their spoils of war. Much of the settlement is still damaged, and spirits are low."
+        es = "Este lugar ha sido conquistado recientemente. Se perdieron muchas vidas y los supervivientes tuvieron que soportar que los conquistadores se llevaran el botín de guerra. Gran parte del asentamiento todavía está dañado y el ánimo está por los suelos."
+    }
+    {
+        mode = "pattern"
+        en = "%settlement% was recently captured, or so I have heard. 'New Lords - same shit' is what I always say..."
+        es = "%settlement% fue capturado recientemente, o eso he oído. 'Nuevos señores - misma mierda', es lo que siempre digo..."
+    }
+    {
+        mode = "pattern"
+        en = "Conquering new lands is the game of nobles. I heard they just sacked %settlement%."
+        es = "Conquistar nuevas tierras es juego de nobles. Escuché que acaban de saquear %settlement%. Este maldito juego de tronos..."
+    }
+    {
+        mode = "pattern"
+        en = "Oh, hey sellsword! Were you at the siege of %settlement%? Well, fucking congratulations. How many did you kill? How many did you rape? "
+        es = "¡Oh, hey mercenario! ¿Estuviste en el asedio de %settlement%? Bueno, malditas felicitaciones. ¿A cuántos mataste? ¿A cuántas violaste? "
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\cultist_procession_situation.nut
+    {
+        en = "Cultist Procession"
+        es = "Procesión cultista"
+    }
+    {
+        en = "There's a procession of cultists going through the city; a steady stream of people seemingly manifested themselves out of thin air and now slowly makes their way along the main roads. Clad in muted colors they ring bells and chant monotonously the name of Davkul."
+        es = "Hay una procesión de cultistas recorriendo la ciudad; Un flujo constante de personas aparentemente se manifestó de la nada y ahora lentamente avanza por las carreteras principales. Vestidos con colores apagados, tocan campanas y cantan monótonamente el nombre de Davkul."
+    }
+    {
+        mode = "pattern"
+        en = "I just saw the most bone chilling procession coming through %settlement%! Masked figures, whipping themselves on the backs until they were all bloodied up..."
+        es = "¡Acabo de ver la procesión más escalofriante pasando por %settlement%! Figuras enmascaradas, azotándose en la espalda hasta que quedaron todos ensangrentados..."
+    }
+    {
+        mode = "pattern"
+        en = "%settlement% is swarming with strange cultists, they are surely up to no good! Somebody should send the witch hunters their way, I'd say!"
+        es = "%settlement% está plagado de extraños cultistas, ¡seguramente no traman nada bueno! ¡Alguien debería enviar a los cazadores de brujas hacia ellos, diría yo!"
+    }
+    {
+        mode = "pattern"
+        en = "It has awakened! The sleeping beast is about to rise from its century long slumber! Go to %settlement% and my brothers in faith will tell you the same! Davkul will come!"
+        es = "¡Ha despertado! ¡La bestia dormida está a punto de despertarse de su letargo de un siglo! ¡Ve a %settlement% y mis hermanos en la fe te dirán lo mismo! ¡Davkul vendrá!"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\disappearing_villagers_situation.nut
+    {
+        en = "Disappearing Villagers"
+        es = "Aldeanos desaparecidos"
+    }
+    {
+        en = "Villagers have been disappearing from this town, putting everyone on edge. Fewer potential recruits are to be found on the streets, and people deal less favourably with strangers."
+        es = "Los aldeanos han ido desapareciendo de esta ciudad, poniendo a todos al límite. En las calles se encuentran menos reclutas potenciales y la gente trata menos favorablemente a los extraños."
+    }
+    {
+        mode = "pattern"
+        en = "I just cancelled my visit to %settlement% after I heard that people go missing over there. Staying out of trouble served me well so far!"
+        es = "Acabo de cancelar mi visita a %settlement% después de enterarme de que hay gente desaparecida allí. ¡Mantenerme alejado de los problemas me ha servido de mucho hasta ahora!"
+    }
+    {
+        mode = "pattern"
+        en = "Me neighbour %randomname% went to %settlement% 'bout a week ago. Haven't heard a word of him since. I just hope nothing happened to him, you know, with them brigands and monsters and all roaming 'bout..."
+        es = "Mi vecino %randomname% fue a %settlement% hace aproximadamente una semana. No he vuelto a saber nada de él desde entonces. Sólo espero que no le haya pasado nada, ya sabes, con esos bandidos, monstruos y todo deambulando por ahí..."
+    }
+    {
+        mode = "pattern"
+        en = "The forces of evil are strong in this world. They hide in the woods, and in the mountains, and in the shadows, and sometimes folk just disappear without a trace. It's happening again right now over in %settlement%."
+        es = "Las fuerzas del mal son fuertes en este mundo. Se esconden en los bosques, en las montañas y en las sombras, y a veces la gente simplemente desaparece sin dejar rastro. Está sucediendo de nuevo ahora mismo en %settlement%. "
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\disbanded_troops_situation.nut
+    {
+        en = "Disbanded Troops"
+        es = "Tropas disueltas"
+    }
+    {
+        en = "With a local conflict now solved, many levied troops and their weapons are no longer needed. A good time to grab a bargain or hire experienced new men."
+        es = "Ahora que el conflicto local está resuelto, muchas tropas reclutadas y sus armas ya no son necesarias. Un buen momento para conseguir una ganga o contratar hombres nuevos con experiencia."
+    }
+    {
+        mode = "pattern"
+        en = "Standing armies are expensive, my friend. I heard an entire regiment was disbanded at %settlement%. Surely there'll be some veteran fighters lingering there still, desperate for coin."
+        es = "Los ejércitos permanentes son caros, amigo mío. Escuché que un regimiento entero fue disuelto en %settlement%. Seguramente habrá algunos combatientes veteranos quedándose allí todavía, desesperados por conseguir dinero."
+    }
+    {
+        mode = "pattern"
+        en = "When I was young I used to be a soldier, and I liked it. Even the marching. But when my unit was disbanded I didn't know what the hell to do with myself. Now they're disbanding one of them regiments over at %settlement%, from what I hear."
+        es = "Cuando era joven solía ser soldado y me gustaba. Incluso marchar. Pero cuando disolvieron mi unidad no sabía qué diablos hacer conmigo mismo. Ahora están disolviendo a uno de esos regimientos en %settlement%, por lo que he oído."
+    }
+    {
+        mode = "pattern"
+        en = "I'm concerned for my niece; an entire unit of soldiers got disbanded at %settlement%, right near where she lives. Things won't end well if those brutes don't find employment soon!"
+        es = "Estoy preocupado por mi sobrina; una unidad entera de soldados fue disuelta en %settlement%, justo cerca de donde ella vive. ¡Las cosas no terminarán bien si esos brutos no encuentran empleo pronto!"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\draught_situation.nut
+    {
+        en = "Drought"
+        es = "Sequía"
+    }
+    {
+        en = "An unexpected heatwave burnt many of the local crops. There is less food available and prices are higher."
+        es = "Una inesperada ola de calor quemó muchos de los cultivos locales. Hay menos comida disponible y los precios son más altos."
+    }
+    {
+        mode = "pattern"
+        en = "A terrible drought is ailing %settlement% from what I hear. It's always been hard for the folks over there, but this time it's dire."
+        es = "Por lo que he oído, una terrible sequía está aquejando a %settlement%. Siempre ha sido difícil para la gente de allí, pero esta vez es terrible."
+    }
+    {
+        mode = "pattern"
+        en = "If you are as reckless as you look, you might make a quick crown selling food in %settlement%. A harsh drought has the people starving, so they'll pay anything to get something between their teeth."
+        es = "Si eres tan imprudente como pareces, podrías ganar una corona rápidamente vendiendo comida en %settlement%. Una dura sequía tiene a la gente hambrienta, por lo que pagarán cualquier cosa para tener algo entre los dientes."
+    }
+    {
+        mode = "pattern"
+        en = "Oh, son, I used to be a rainmaker over in %settlement%, but the fools chased me off! Now, admittedly, the village was suffering from a draught, but isn't that all the more reason to rely on me? Fools, I say!"
+        es = "Oh, hijo, yo solía ser un hacedor de lluvia en %settlement%, ¡pero los tontos me echaron! Ahora, es cierto, el pueblo estaba sufriendo una sequía, pero ¿no es esa una razón más para confiar en mí? ¡Tontos, digo!"
+    }
+    {
+        // return _s + " suffers from a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> suffers from a <this.m.Name>"
+        es = "<_s> sufre una <this.m.Name>"
+    }
+    {
+        // return _s + " no longer suffers from a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> no longer suffers from a <this.m.Name>"
+        es = "<_s> ya no sufre una <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\full_nets_situation.nut
+    {
+        en = "Full Nets"
+        es = "Redes repletas"
+    }
+    {
+        en = "The waters are teeming with swarms of fish. Fresh Fish is abundant and cheaply available."
+        es = "Las aguas están repletas de enjambres de peces. El pescado fresco es abundante y barato."
+    }
+    {
+        mode = "pattern"
+        en = "This time o' year large schools of fish always come by %settlement%. All they need do is throw some nets into the water and then pull out more fish than they could ever eat! Lucky bastards!"
+        es = "En esta época del año, los grandes bancos de peces siempre llegan por %settlement%. ¡Todo lo que necesitan hacer es tirar algunas redes al agua y luego sacar más peces de los que podrían comer! ¡Bastardos afortunados!"
+    }
+    {
+        mode = "pattern"
+        en = "Tomorrow I'll head out to %settlement% and fill my carts with fish. Rumor has it the fishermen over there hit a lucky streak!"
+        es = "Mañana iré a %settlement% y llenaré mis carros con pescado. ¡Se rumorea que los pescadores de allí tuvieron una racha de suerte!"
+    }
+    {
+        mode = "pattern"
+        en = "You in the trading business? I hear they have their nets filled to the brim with fish over at %settlement%."
+        es = "¿Estás en el negocio del comercio? He oído que tienen sus redes llenas hasta el borde con pescado en %settlement%."
+    }
+    {
+        // return _s + " has " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> has <this.m.Name>"
+        es = "<_s> goza de <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\good_harvest_situation.nut
+    {
+        en = "Good Harvest"
+        es = "Buena cosecha"
+    }
+    {
+        en = "Conditions for crops have been perfect. Food is readily available and offered at lower prices."
+        es = "Las condiciones para los cultivos han sido perfectas. La comida está fácilmente disponible y se ofrece a precios más bajos."
+    }
+    {
+        mode = "pattern"
+        en = "Head over to %settlement% if you need to restock on food. Those lucky bastards have had themselves a bountiful harvest season this year."
+        es = "Dirígete a %settlement% si necesitas reabastecerte de comida. Esos bastardos afortunados han tenido una abundante temporada de cosecha este año."
+    }
+    {
+        mode = "pattern"
+        en = "I came here from %settlement% to sell our extra produce. The gods have been smiling on us and granted us the best harvest in many years!"
+        es = "Vine aquí desde %settlement% para vender nuestra producción sobrante. ¡Los dioses nos han sonreído y nos han concedido la mejor cosecha en muchos años!"
+    }
+    {
+        mode = "pattern"
+        en = "I just learned that in %settlement% the granaries and larders are filled to the brim thanks to a good harvest. "
+        es = "Acabo de enterarme de que en %settlement% los graneros y las despensas se llenan hasta el borde gracias a una buena cosecha. "
+    }
+    {
+        // return _s + " benefits from a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> benefits from a <this.m.Name>"
+        es = "<_s> goza de una <this.m.Name>"
+    }
+    {
+        // return _s + " no longer benefits from a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> no longer benefits from a <this.m.Name>"
+        es = "<_s> ya no disfruta de una <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\greenskins_situation.nut
+    {
+        en = "Greenskins are terrorizing the surrounding lands, and many lives have been lost as orcs or goblins continue to raid outlying farms and raze caravans. Supplies are beginning to run low and people become desperate."
+        es = "Los pieles verdes están aterrorizando las tierras circundantes y se han perdido muchas vidas mientras los orcos o goblins continúan atacando granjas periféricas y arrasando caravanas. Los suministros están empezando a escasear y la gente se desespera."
+    }
+    {
+        mode = "pattern"
+        en = "I heard rumors that vile greenskins are marauding around %settlement%! Is it true? I hope they don't make their way over here..."
+        es = "¡Escuché rumores de que viles pieles verdes están merodeando por %settlement%! ¿Es cierto? Espero que no lleguen hasta aquí..."
+    }
+    {
+        mode = "pattern"
+        en = "Did you see the columns of smoke in the evening sky? They are rising over from %settlement% where greenskins are burning and pillaging the countryside."
+        es = "¿Viste las columnas de humo en el cielo al atardecer? Se elevan desde %settlement% donde los pieles verdes están quemando y saqueando el campo."
+    }
+    {
+        mode = "pattern"
+        en = "Here, take a look at what's left of my hand! Can hardly use it anymore on account of it having no fingers since that run-in with greenskins a while ago. Now I hear they are back, marauding around %settlement% right as we speak."
+        es = "¡Mira, mira lo que queda de mi mano! Ya casi no puedo usarla debido a que no tiene dedos desde ese encuentro con los pieles verdes hace un tiempo. Ahora escuché que han regresado, merodeando por %settlement% mientras hablamos."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\high_spirits_situation.nut
+    {
+        en = "High Spirits"
+        es = "Optimismo"
+    }
+    {
+        en = "Spirits are high here, and people are eager to do business with you."
+        es = "Los ánimos están elevados aquí y la gente está ansiosa por hacer negocios con usted."
+    }
+    {
+        mode = "pattern"
+        en = "I arrived from %settlement% today, my clothes are still dusty from the road. The folks over there surely were in a good mood, not quite sure why though..."
+        es = "Llegué de %settlement% hoy, mi ropa todavía está polvorienta del camino. La gente de allí seguramente estaba de buen humor, aunque no estoy muy seguro de por qué..."
+    }
+    {
+        mode = "pattern"
+        en = "No need to get me a mug, I am still drunk from the celebrations in %settlement%. They sure know how to have a good time!"
+        es = "No es necesario que me traigas una taza, todavía estoy borracho por las celebraciones en %settlement%. ¡Si que saben cómo pasar un buen rato!"
+    }
+    {
+        mode = "pattern"
+        en = "Rumor has it that the townsfolk of %settlement% just got an important relic back."
+        es = "Se rumorea que la gente del pueblo de %settlement% acaba de recuperar una importante reliquia."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\hunting_season_situation.nut
+    {
+        en = "Hunting Season"
+        es = "Temporada de caza"
+    }
+    {
+        en = "The forests are bustling with deer and it is hunting season. Venison and furs are in rich supply."
+        es = "Los bosques están llenos de ciervos y es temporada de caza. La carne de venado y las pieles abundan."
+    }
+    {
+        mode = "pattern"
+        en = "Do you like venison, sellsword? And how about your men? I heard that hunting season has started in %settlement%. Just saying."
+        es = "¿Te gusta el venado, mercenario? ¿Y qué hay de tus hombres? Escuché que la temporada de caza ha comenzado en %settlement%. Solo digo."
+    }
+    {
+        mode = "pattern"
+        en = "It's the time of the year that all hunters have been eagerly waiting for. The hunting season started around %settlement% just now!"
+        es = "Es la época del año que todos los cazadores estaban esperando ansiosamente. ¡La temporada de caza comenzó alrededor del %settlement% hace poco!"
+    }
+    {
+        mode = "pattern"
+        en = "Hunting outside the season might get you your hands cut right off! Doesn't matter, though, as the season will start any day now in the forests over by %settlement%."
+        es = "¡Cazar fuera de temporada podría provocar que te corten las manos! Sin embargo, no importa, ya que la temporada comenzará en cualquier momento en los bosques de %settlement%."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\local_holiday_situation.nut
+    {
+        en = "Local Holiday"
+        es = "Festividad local"
+    }
+    {
+        en = "A local holiday has the people in a generous mood. Time for food and drink!"
+        es = "Una fiesta local hace que la gente esté de buen humor. ¡Hora de comer y beber!"
+    }
+    {
+        mode = "pattern"
+        en = "If you're looking to have a good time, head on over to %settlement% and join their celebration! Boy, I wish I could be there."
+        es = "Si buscas pasar un buen rato, ¡dirígete a %settlement% y únete a su celebración! Vaya, desearía poder estar allí."
+    }
+    {
+        mode = "pattern"
+        en = "You don't look quite like the festive type, if I might say so, but perhaps your men would enjoy some food and drink. Alas, both can be found aplenty in %settlement%, as they're celebrating some holiday over there."
+        es = "No pareces del tipo festivo, si se me permite decirlo, pero tal vez tus hombres disfrutarían de algo de comida y bebida. Desgraciadamente, ambos se pueden encontrar en abundancia en %settlement%, ya que están celebrando alguna festividad allí."
+    }
+    {
+        mode = "pattern"
+        en = "The good folks over in %settlement% are having their annual holiday right now. I'd be there drinking and eating and all, if only I had the crowns. Mind getting me another ale, friend?"
+        es = "La buena gente de %settlement% está teniendo sus vacaciones anuales ahora mismo. Yo estaría allí bebiendo y comiendo y todo, si tan solo tuviera las coronas. ¿Te importaría traerme otra cerveza, amigo?"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\lost_at_sea_situation.nut
+    {
+        en = "Lost at Sea"
+        es = "Perdidos en el mar"
+    }
+    {
+        en = "A boat with fishermen has been lost at sea during a storm. Both fresh fish and willing recruits are a rare sight."
+        es = "Un barco con pescadores se ha perdido en el mar durante una tormenta. Tanto el pescado fresco como los reclutas dispuestos son algo raro de ver."
+    }
+    {
+        mode = "pattern"
+        en = "They never came back from the sea... thinking about all the poor souls lost from %settlement% makes me shiver."
+        es = "Nunca regresaron del mar... pensar en todas las pobres almas perdidas en %settlement% me hace temblar."
+    }
+    {
+        mode = "pattern"
+        en = "Damn wenches by %settlement%, wailin' and wailin'. Went over to sell them some of me pigs, but they only wailin' with nary a man to be found. Some boat lost at sea or sumthin'. Went right back with not a single pig sold."
+        es = "Malditas mozas de %settlement%, llorando y llorando. Fui a venderles algunos de mis cerdos, pero solo lloraron y no encontraron a ningún hombre. Algún barco perdido en el mar o algo así. Regresé sin vender ni un solo cerdo."
+    }
+    {
+        mode = "pattern"
+        en = "Seafaring has always been a dangerous profession. That's why I turned my back to the water. And right in time, might I say, for otherwise it might have been me on that boat that got lost by %settlement%."
+        es = "La navegación siempre ha sido una profesión peligrosa. Por eso le di la espalda al agua. Y justo a tiempo, debo decir, porque de lo contrario podría haber sido yo en ese barco que se perdió por %settlement%."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\mine_cavein_situation.nut
+    {
+        en = "Mine Cave In"
+        es = "Derrumbe en la mina"
+    }
+    {
+        en = "A tragic accident occured, and there was a cave-in in one of the mines. Production came to a halt until the damages are repaired, and miners are without means to feed their families."
+        es = "Se produjo un trágico accidente y se produjo un derrumbe en una de las minas. La producción se detuvo hasta que se reparen los daños y los mineros se quedan sin medios para alimentar a sus familias."
+    }
+    {
+        mode = "pattern"
+        en = "I'd never work underground, I am no stinkin' mole! It's a damn deathtrap! Not long ago a mine gave in by %settlement%, don't even want to know how many died that day..."
+        es = "¡Nunca trabajaría bajo tierra, no soy un topo apestoso! ¡Es una maldita trampa mortal! No hace mucho una mina se derrumbo en %settlement%, ni siquiera quiero saber cuántos murieron ese día..."
+    }
+    {
+        mode = "pattern"
+        en = "A delivery of ores and minerals from the mines of %settlement% was due today, but alas it did not arrive yet. Something must have happened over there."
+        es = "Hoy debía entregarse minerales de las minas de %settlement%, pero desgraciadamente aún no ha llegado. Algo debe haber sucedido allí."
+    }
+    {
+        mode = "pattern"
+        en = "Heard there was a cave-in on one of the mines at %settlement%. Just imagine being buried alive deep under rock and earth..."
+        es = "Escuché que hubo un derrumbe en una de las minas en %settlement%. Imagínese estar enterrado vivo en lo profundo de la roca y la tierra..."
+    }
+    {
+        // return _s + " had a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> had a <this.m.Name>"
+        es = "<_s> tuvo un <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\mirage_sightings_situation.nut
+    {
+        en = "Mirage Sightings"
+        es = "Avistamientos de espejismos"
+    }
+    {
+        en = "The cracking heat and flickering air have caused a lot of mirage sightings with reportedly strange figures shuffling within them. "
+        es = "El calor abrasador y el aire parpadeante han provocado muchos avistamientos de espejismos con figuras supuestamente extrañas moviéndose en su interior."
+    }
+    {
+        mode = "pattern"
+        en = "I tell you, a wonderous lush oasis, golden roofs flimmering in the distance, rainbow colored birds ahead! Where I saw that? Well, it was on the road to %settlement%. I swear!"
+        es = "Te lo digo, ¡un oasis maravilloso y exuberante, techos dorados parpadeando en la distancia, pájaros de colores del arco iris más adelante! ¿Dónde vi eso? Bueno, estaba en el camino hacia %settlement%. ¡Lo juro!"
+    }
+    {
+        mode = "pattern"
+        en = "Some evils do not come in the dark of the night or hide in the shadows. They come out in the scorching sun, during the mid of day. Head on to %settlement% if you want to find out what I am talking about."
+        es = "Algunos males no aparecen en la oscuridad de la noche ni se esconden en las sombras. Aparecen bajo el sol abrasador, durante el mediodía. Dirígete a %settlement% si quieres saber de qué estoy hablando. "
+    }
+    {
+        en = "Mirages can be seen occasionally in the deserts, and following them can lead to a fate way worse than getting lost in the desert."
+        es = "Ocasionalmente se pueden ver espejismos en los desiertos, y seguirlos puede conducir a un destino mucho peor que perderse en el desierto."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\moving_sands_situation.nut
+    {
+        en = "Moving Sands"
+        es = "Arenas movedizas"
+    }
+    {
+        en = "The area around the city has been infested with swarming serpents, some especially large. Trade has suffered and goods have become more rare and expensive."
+        es = "El área alrededor de la ciudad ha sido infestada de enjambres de serpientes, algunas especialmente grandes. El comercio se ha visto afectado y los bienes se han vuelto más escasos y caros."
+    }
+    {
+        mode = "pattern"
+        en = "Word is that traders on the road to %settlement% have been swallowed whole by shifting sands. But who believes nonsense like that?"
+        es = "Se dice que los comerciantes en el camino hacia %settlement% han sido tragados enteros por las arenas movedizas. Pero ¿quién cree en semejantes tonterías?"
+    }
+    {
+        mode = "pattern"
+        en = "You afraid of snakes? A lot have been seen near %settlement% lately, some as long as my arm, some as long as a whole trader's wagon!"
+        es = "¿Tienes miedo de las serpientes? Últimamente se han visto muchas cerca de %settlement%, algunas tan largas como mi brazo, otras tan largas como el carro de un comerciante entero."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\mustering_troops_situation.nut
+    {
+        en = "Mustering Troops"
+        es = "Reuniendo tropas"
+    }
+    {
+        en = "Order has been given to muster troops for service in this settlement. Equipment and recruits are in short supply, but a quick crown can be made by selling arms and armor here."
+        es = "Se ha dado orden de reunir tropas para prestar servicio en este asentamiento. El equipo y los reclutas escasean, pero puedes conseguir una corona rápida vendiendo armas y armaduras aquí."
+    }
+    {
+        mode = "pattern"
+        en = "Another damn noble is pressing younglings into a regiment at %settlement%. Ach, why am I even talking to you about this, sellsword? You are no better!"
+        es = "Otro maldito noble está presionando a los jóvenes para que ingresen a un regimiento en %settlement%. Ach, ¿por qué te estoy hablando de esto, mercenario? ¡No eres mejor!"
+    }
+    {
+        mode = "pattern"
+        en = "If I were a merchant with a wagonload full of weapons and armor, I'd know just where to sell it all - they're mustering troops at %settlement% and will surely pay good coin. Alas, I'm neither a merchant nor do I have any weapons."
+        es = "Si yo fuera un comerciante con un carro lleno de armas y armaduras, sabría exactamente dónde venderlas todas: están reuniendo tropas en %settlement% y seguramente pagarán buenas monedas. ¡Ay, ni soy comerciante ni tengo armas."
+    }
+    {
+        mode = "pattern"
+        en = "I'm just passing trough. Narrowly escaped from impressment at %settlement%. They wanted to force me to fight for some lord, but no thanks, I says, not gonna happen, and away I went. I'll strike my luck further down south."
+        es = "Sólo estoy de paso. Escapé por poco del reclutamiento en %settlement%. Querían obligarme a luchar por algún señor, pero no, gracias, dije, no va a suceder, y me fui. Voy a atacar mi suerte más al sur."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\preparing_feast_situation.nut
+    {
+        en = "Preparing Feast"
+        es = "Preparando un festín"
+    }
+    {
+        en = "The nobles are preparing for a feast. Cook houses and kitchens are buying food in bulk."
+        es = "Los nobles se preparan para un banquete. Las casas de cocción y las cocinas están comprando alimentos al por mayor."
+    }
+    {
+        mode = "pattern"
+        en = "The oh-so-noble highborns are preparing a feast at %settlement% while us peasants have but old grain to choke on..."
+        es = "Los excelentísimos y pomposos nobles están preparando un festín en %settlement% mientras que nosotros, los campesinos, sólo tenemos grano viejo con el que atragantarnos..."
+    }
+    {
+        mode = "pattern"
+        en = "My uncle is a servant at %settlement%, and he tells me that they're preparing a big feast. No point in going there unless you're invited, though."
+        es = "Mi tío es un sirviente en %settlement%, y me dice que están preparando un gran banquete. Aunque no tiene sentido ir allí a menos que estés invitado."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\public_executions_situation.nut
+    {
+        en = "Public Executions"
+        es = "Ejecuciones públicas"
+    }
+    {
+        en = "A public execution is not to be missed and provides entertainment for the whole family. Food and drink are abundant during such an occasion, but merchants may also try to take advantage of spectators."
+        es = "No se puede perder una ejecución pública que ofrece entretenimiento para toda la familia. La comida y la bebida abundan en tales ocasiones, pero los comerciantes también pueden intentar aprovecharse de los espectadores."
+    }
+    {
+        mode = "pattern"
+        en = "A whole bunch of folks is headin' over to %settlement% for the big spectacle! Men, womenfolk, young ones, all on the road to see the upcoming executions!"
+        es = "¡Un montón de gente se dirige a %settlement% para el gran espectáculo! ¡Hombres, mujeres y jóvenes, todos en camino para ver las próximas ejecuciones!"
+    }
+    {
+        mode = "pattern"
+        en = "I heard they grabbed some brigands near %settlement% and are putting them to the chopping block. Serves them just right, waylaying poor folk on the roads..."
+        es = "Escuché que agarraron a algunos bandidos cerca de %settlement% y los están ahorcando. Lo tienen bien merecido, acechando a la gente pobre en las carreteras..."
+    }
+    {
+        mode = "pattern"
+        en = "Us poor folks don't have much to enjoy these days, but a good hanging is always welcome. Hasn't been one here since autumn, but they is hanging folk over at %settlement% is what %randomname% tells me."
+        es = "Nosotros, los pobres, no tenemos mucho que disfrutar estos días, pero un buen ahorcamiento siempre es bienvenido. No ha habido uno aquí desde otoño, pero están ahorcando gente en %settlement%, es lo que %randomname% me dice."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\raided_situation.nut
+    {
+        en = "Raided"
+        es = "Asaltado"
+    }
+    {
+        en = "This place has been recently raided! It's suffered damage, has lost valuable goods and supplies, and lives were lost."
+        es = "¡Este lugar ha sido asaltado recientemente! Ha sufrido daños, ha perdido bienes y suministros valiosos y se han perdido vidas."
+    }
+    {
+        mode = "pattern"
+        en = "You one of them raiders? Sure look and smell like one! Your men pillage %settlement%? Get out of here, I says, we don't want your kind around!"
+        es = "¿Eres uno de esos asaltantes? ¡Claro que pareces y hueles como uno! ¿Tus hombres saquean %settlement%? ¡Fuera de aquí, digo, no queremos a los de tu clase cerca!"
+    }
+    {
+        mode = "pattern"
+        en = "Folks' arrivin' from %settlement%, sayin' it's been raided and plundered right good. Poor sobs, but what're we to do? Ain't got much ourselves. It's up to the lord to protect them!"
+        es = "La gente llega de %settlement%, diciendo que ha sido asaltado y bien saqueado. Pobres sollozos, pero ¿qué vamos a hacer? No tenemos mucho para nosotros, ¡es deber de su señor protegerlos!"
+    }
+    {
+        mode = "pattern"
+        en = "These are dangerous times indeed, sellsword. I just got word that %settlement% was plundered and raided not two nights past."
+        es = "Estos son tiempos realmente peligrosos, mercenario. Acabo de enterarme de que %settlement% fue saqueada y asaltada no hace dos noches."
+    }
+    {
+        // return _s + " has been " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> has been <this.m.Name>"
+        es = "<_s> ha sido <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\razed_situation.nut
+    {
+        en = "Razed"
+        es = "Arrasado"
+    }
+    {
+        en = "This place has been razed. Many of its inhabitants lie slain, and any valuables have been plundered."
+        es = "Este lugar ha sido arrasado. Muchos de sus habitantes han muerto y sus objetos de valor han sido saqueados."
+    }
+    {
+        mode = "pattern"
+        en = "Smoke columns can be seen from miles and miles away. There is naught more than a burning pile of rubble where %settlement% once stood."
+        es = "Las columnas de humo se pueden ver a kilómetros y kilómetros de distancia. No hay nada más que un montón de escombros en llamas donde una vez estuvo %settlement%."
+    }
+    {
+        mode = "pattern"
+        en = "Floods of refugees have been arriving from %settlement%. They claim that most of it has been burned to the ground! Can this be true?"
+        es = "Han estado llegando inundaciones de refugiados de %settlement%. ¡Afirman que la mayor parte ha sido quemada hasta los cimientos! ¿Puede ser esto cierto?"
+    }
+    {
+        mode = "pattern"
+        en = "%settlement% is no more, just a black charred skeleton smoking and smoldering... How did it come to this?"
+        es = "%settlement% ya no existe, sólo un esqueleto negro carbonizado humeando y ardiendo... ¿Cómo llegó a esto?"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\rebuilding_effort_situation.nut
+    {
+        en = "In an effort to rebuild a nearby site, building materials are in high demand and low supply."
+        es = "En un esfuerzo por reconstruir un sitio cercano, los materiales de construcción tienen una gran demanda y una oferta escasa."
+    }
+    {
+        mode = "pattern"
+        en = "Finally they're starting to rebuild around %settlement%. That place was in ruins for long enough."
+        es = "Finalmente están comenzando a reconstruir alrededor de %settlement%. Ese lugar estuvo en ruinas por mucho tiempo."
+    }
+    {
+        mode = "pattern"
+        en = "I heard they're bringing in wood to %settlement% with wagons now. The new Burgomeister is surely trying to fix things up over there."
+        es = "Escuché que ahora están trayendo madera a %settlement% en carros. El nuevo Burgmeister seguramente está tratando de arreglar las cosas allí."
+    }
+    {
+        // return "In an effort to rebuild the nearby " + this.m.Target.tolower() + ", building materials are in high demand and low supply.";
+        mode = "pattern"
+        en = "In an effort to rebuild the nearby <this.m.Target.tolower()>, building materials are in high demand and low supply."
+        es = "En un esfuerzo por reconstruir el cercano <this.m.Target.tolower()>, Los materiales de construcción tienen una gran demanda y una baja oferta."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\refugees_situation.nut
+    {
+        en = "With the war raging, a constant stream of refugees is pouring into this settlement. It puts a strain on local economy, but it also means cheap recruits for anyone that can offer work."
+        es = "Con la guerra en pleno apogeo, un flujo constante de refugiados llega a este asentamiento. Esto ejerce presión sobre la economía local, pero también significa contratación barata para cualquiera que pueda ofrecer trabajo."
+    }
+    {
+        mode = "pattern"
+        en = "Come morning I'll head out to %settlement%. Word is a large group of refugees just arrived and I need more hands for my farm."
+        es = "Cuando llegue la mañana me dirigiré a %settlement%. Se dice que acaba de llegar un gran grupo de refugiados y necesito más manos para mi granja."
+    }
+    {
+        mode = "pattern"
+        en = "From what I've heard, %settlement% is flooded with refugees nowadays. Those cowards should have stayed and fought for their home, I'd say!"
+        es = "Por lo que he oído, %settlement% está inundado de refugiados hoy en día. ¡Diría que esos cobardes deberían haberse quedado y luchar por su hogar!"
+    }
+    {
+        mode = "pattern"
+        en = "The beggars, the downtrodden, the fugitives, they all have to go somewhere. A large group of them just arrived at %settlement% from what I heard."
+        es = "Los mendigos, los oprimidos, los fugitivos, todos tienen que ir a alguna parte. Un gran grupo de ellos acaba de llegar a %settlement% por lo que escuché."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\rich_veins_situation.nut
+    {
+        en = "Rich Veins"
+        es = "Vetas ricas"
+    }
+    {
+        en = "Some lucky miner struck a particularly rich vein! Extraction of minerals and metals will be greatly increased until it is exhausted, but the settlement also experiences an inflation of prices."
+        es = "¡Algún minero afortunado encontró una veta particularmente rica! La extracción de minerales y metales aumentará considerablemente hasta agotarse, pero el asentamiento también experimenta una inflación de precios."
+    }
+    {
+        mode = "pattern"
+        en = "They struck a mother lode over in %settlement%. I myself worked the mines for decades, too, and all I got to show for it is a bad cough."
+        es = "En %settlement% encontraron un filón madre. Yo también trabajé en las minas durante décadas y lo único que obtuve fue una tos fuerte."
+    }
+    {
+        mode = "pattern"
+        en = "Those lucky bastards in %settlement% have found a new vein in the mine. Caravans can't come fast enough now with what they're shoveling up."
+        es = "Esos bastardos afortunados en %settlement% han encontrado una nueva veta en la mina. Las caravanas no pueden llegar lo suficientemente rápido ahora con lo que están paleando."
+    }
+    {
+        mode = "pattern"
+        en = "I hear that the mines in %settlement% are awfully productive these days. Not a bad way to make some coin if you're in the trading business."
+        es = "He oído que las minas en %settlement% son tremendamente productivas estos días. No es una mala manera de ganar monedas si estás en el negocio del comercio."
+    }
+    {
+        // return _s + " had " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> had <this.m.Name>"
+        es = "<_s> tiene <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\safe_roads_situation.nut
+    {
+        en = "Safe Roads"
+        es = "Caminos seguros"
+    }
+    {
+        en = "The roads leading here have been reasonably safe of late, which allowed for many a profitable trade to be made and the settlement to prosper somewhat."
+        es = "Los caminos que conducen hasta aquí han sido razonablemente seguros últimamente, lo que permitió que se realizaran muchos negocios rentables y que el asentamiento prosperara un poco."
+    }
+    {
+        mode = "pattern"
+        en = "Seems the brigands around %settlement% are having a rough time now with all those patrols going on."
+        es = "Parece que los bandidos alrededor de %settlement% están pasando por un momento difícil ahora con todas esas patrullas en marcha."
+    }
+    {
+        mode = "pattern"
+        en = "Just got back from %settlement% last night. No brigand in sight on the roads, thank the gods."
+        es = "Acabo de regresar de %settlement% anoche. No hay bandidos a la vista en las carreteras, gracias a los dioses."
+    }
+    {
+        mode = "pattern"
+        en = "Been telling my cousin for years to stop robbing people on the road. Ain't no way for it but to end badly. And right I was, it did. Got his comeuppance the other day by %settlement%. Place is crawling with militia."
+        es = "Le he estado diciendo a mi primo durante años que dejara de robar a la gente en la carretera. No hay otra manera que terminar mal. Y tenía razón, así fue. El otro día recibió su merecido gracias a %settlement%. El lugar está arrastrándose con la milicia."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\sand_storm_situation.nut
+    {
+        en = "Sand Storm"
+        es = "Tormentas de arena"
+    }
+    {
+        en = "Howling sandstorms have engulfed the city and hinder traders both from entering and leaving it safely. Goods are becoming more rare and prices higher."
+        es = "Tormentas de arena aullantes han envuelto la ciudad e impiden a los comerciantes entrar y salir de ella de forma segura. Los productos son cada vez más escasos y los precios más altos."
+    }
+    {
+        mode = "pattern"
+        en = "I just came back from %settlement%, barely made it out! A sandstorm has engulfed the whole city!"
+        es = "Acabo de regresar de %settlement%, ¡apenas logré salir! ¡Una tormenta de arena ha envuelto toda la ciudad!"
+    }
+    {
+        mode = "pattern"
+        en = "It happened again, %settlement% has been engulfed in the most terrible of sandstorms."
+        es = "Ocurrió de nuevo: %settlement% se vio envuelta en la más terrible de las tormentas de arena."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\seasonal_fair_situation.nut
+    {
+        en = "Seasonal Fair"
+        es = "Feria de temporada"
+    }
+    {
+        en = "Traders from far and wide gather here for the seasonal fair. Lots of people flock here from the surrounding countryside, and it's a great time to sell goods or rummage through plentiful offers."
+        es = "Comerciantes de todas partes se reúnen aquí para la feria de temporada. Mucha gente acude aquí desde el campo circundante y es un buen momento para vender productos o hurgar entre las numerosas ofertas."
+    }
+    {
+        mode = "pattern"
+        en = "What's going on around here you're asking? Well, there's a fair over in %settlement%. Merchants from far and wide gather to offer their wares."
+        es = "¿Qué está pasando por aquí, estás preguntando? Bueno, hay una feria en %settlement%. Comerciantes de todas partes se reúnen para ofrecer sus productos."
+    }
+    {
+        mode = "pattern"
+        en = "Me, I am more of the solitary type. Big fairs like the one over in %settlement% just don't appeal to me at all...."
+        es = "Yo soy más del tipo solitario. Las grandes ferias como la de %settlement% simplemente no me atraen en absoluto..."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\short_on_food_situation.nut
+    {
+        en = "Short on Food"
+        es = "Escasez de comida"
+    }
+    {
+        en = "Recent events have left this place short on food. As people are on the verge of starving, food is hard to come by and prices are on the rise."
+        es = "Los acontecimientos recientes han dejado a este lugar con escasez de comida. Como la gente está al borde de morir de hambre, es difícil conseguir alimentos y los precios van en aumento."
+    }
+    {
+        mode = "pattern"
+        en = "The men and women in %settlement% are starving, I heard, with nothing but dirt to eat. I don't think I'll ever complain about my mouldy grain soup again!"
+        es = "He oído que los hombres y mujeres del %settlement% se mueren de hambre y no tienen nada más que tierra para comer. ¡No creo que vuelva a quejarme nunca más de mi sopa de cereales mohosa!"
+    }
+    {
+        mode = "pattern"
+        en = "Some farmer just arrived today from %settlement%. Told stories of slain cattle, burned fields and empty larders. Looked like a damn walking skeleton himself!"
+        es = "Un granjero acaba de llegar hoy del %settlement%. Contó historias de ganado asesinado, campos quemados y despensas vacías. ¡Parecía un maldito esqueleto andante!"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\sickness_situation.nut
+    {
+        en = "Sickness"
+        es = "Enfermedad"
+    }
+    {
+        en = "A sickness has struck down many folks in this settlement. There are fewer recruits available, and food and medical supplies are scarce."
+        es = "Una enfermedad ha afectado a muchas personas en este asentamiento. Hay menos reclutas disponibles y los alimentos y los suministros médicos son escasos."
+    }
+    {
+        mode = "pattern"
+        en = "Don't go near %settlement%! A sickness struck that poor town and the folks are dying like flies over there..."
+        es = "¡No te acerques a %settlement%! Una enfermedad azotó ese pobre pueblo y la gente está muriendo como moscas allí..."
+    }
+    {
+        mode = "pattern"
+        en = "We had some folks coming here from %settlement%, but had to send them away at the gates. Everybody knows that a cruel disease is spreading in that cursed town."
+        es = "Tuvimos algunas personas que vinieron aquí desde %settlement%, pero tuvimos que despedirlos en las puertas. Todo el mundo sabe que una enfermedad cruel se está propagando en esa ciudad maldita."
+    }
+    {
+        mode = "pattern"
+        en = "Fancy my herbal necklace? It protects me against even the most pestilent disease. You better get yourself one, too, if you're planning to ahead on towards %settlement%."
+        es = "¿Te apetece mi collar de hierbas? Me protege incluso contra las enfermedades más pestilentes. Será mejor que te consigas uno también si planeas ir hacia %settlement%."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\slave_revolt_situation.nut
+    {
+        en = "Slave Revolt"
+        es = "Revuelta esclava"
+    }
+    {
+        en = "The indebted, the slave class of the city states, have taken up arms and rise against their masters! Indebted are hard to come by, and weapons and armors have been swept from the market."
+        es = "¡Los endeudados, la clase esclava de las ciudades-estado, han tomado las armas y se han levantado contra sus amos! Es difícil conseguir endeudados y las armas y armaduras han sido eliminadas del mercado."
+    }
+    {
+        mode = "pattern"
+        en = "The slaves over at %settlement% took up arms and turned to banditry and waylaying. Unsullied or whatever they call them, I mean. There is surely some work to be done for a mercenary like you."
+        es = "Los esclavos del %settlement% tomaron las armas y se dedicaron al bandidaje y al asalto. Inmaculados o como los llamen, quiero decir. Seguramente hay trabajo por hacer para un mercenario como tú."
+    }
+    {
+        mode = "pattern"
+        en = "Word has made it here that the slaves at %settlement% are rebelling. A proper revolt could topple their whole city, and I hope it does."
+        es = "Se ha corrido la voz aquí de que los esclavos en %settlement% se están rebelando. Una revuelta adecuada podría derribar toda su ciudad, y espero que así sea."
+    }
+    {
+        // return _s + " has a " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> has a <this.m.Name>"
+        es = "<_s> sufre una <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\snow_storms_situation.nut
+    {
+        en = "Snow Storms"
+        es = "Tormentas de nieve"
+    }
+    {
+        en = "Snow storms have more or less isolated this settlement from trade. Because few new goods have been coming in, the selection is lower and prices are higher."
+        es = "Las tormentas de nieve han aislado más o menos este asentamiento del comercio. Debido a que han llegado pocos productos nuevos, la selección es menor y los precios son más altos."
+    }
+    {
+        mode = "pattern"
+        en = "Bad weather out there towards %settlement%, looks like a full-blown blizzard."
+        es = "El mal tiempo que hay en %settlement% parece una tormenta de nieve en toda regla."
+    }
+    {
+        // return _s + " suffers from " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> suffers from <this.m.Name>"
+        es = "<_s> sufre <this.m.Name>"
+    }
+    {
+        // return _s + " no longer suffers from " + this.m.Name;
+        mode = "pattern"
+        en = "<_s> no longer suffers from <this.m.Name>"
+        es = "<_s> ya no sufre <this.m.Name>"
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\terrified_villagers_situation.nut
+    {
+        en = "Terrified Villagers"
+        es = "Aldeanos aterrorizados"
+    }
+    {
+        en = "The villagers here are terrified of unknown horrors. Fewer potential recruits are to be found on the streets, and people deal less favourably with strangers."
+        es = "Los aldeanos aquí están aterrorizados por horrores desconocidos. En las calles se encuentran menos reclutas potenciales y la gente trata menos favorablemente a los extraños."
+    }
+    {
+        mode = "pattern"
+        en = "The dead ain't really dead, sometimes they come back to haunt the living! Don't believe me? Just head over to %settlement% and see for yourself!"
+        es = "¡Los muertos no están realmente muertos, a veces regresan para perseguir a los vivos! ¿No me crees? ¡Dirígete a %settlement% y compruébalo por ti mismo!"
+    }
+    {
+        mode = "pattern"
+        en = "You look like an able swordsman! I heard rumors of the dead walking again near %settlement%. Humbug probably, but frightened folks often pay good crowns to feel safe again."
+        es = "¡Pareces un hábil espadachín! Escuché rumores de que los muertos volvieron a caminar cerca de %settlement%. Probablemente sea una patraña, pero la gente asustada a menudo paga buenas coronas para sentirse segura nuevamente."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\terrifying_nightmares_situation.nut
+    {
+        en = "Terrifying Nightmares"
+        es = "Pesadillas Aterradoras"
+    }
+    {
+        en = "The people of this settlement are terrorized by nightmares. Many prefer to stay awake all night just to be safe."
+        es = "La gente de este asentamiento está aterrorizada por pesadillas. Muchos prefieren permanecer despiertos toda la noche sólo para estar seguros."
+    }
+    {
+        mode = "pattern"
+        en = "The other day I came through %settlement%. Something is wrong there. Pale faces, tired eyes and shambling walks. It's like they didn't sleep in a week!"
+        es = "El otro día pasé por %settlement%. Algo anda mal allí. Caras pálidas, ojos cansados y caminan arrastrando los pies. ¡Es como si no hubieran dormido en una semana!"
+    }
+    {
+        mode = "pattern"
+        en = "I just got a letter from my aunt in %settlement% claiming that the whole town is troubled by terrible nightmares. I don't know, she's always been overly dramatic."
+        es = "Acabo de recibir una carta de mi tía en %settlement% afirmando que todo el pueblo está atormentado por terribles pesadillas. No lo sé, ella siempre ha sido demasiado dramática."
+    }
+    {
+        mode = "pattern"
+        en = "The best recipe for a good night's sleep is hard work and a pint of ale! Come to think of it, someone should tell it to the folks over in %settlement%; from what I've heard, whole town's got trouble sleeping."
+        es = "¡La mejor receta para dormir bien por la noche es trabajar duro y una pinta de cerveza! Ahora que lo pienso, alguien debería decírselo a la gente de %settlement%; por lo que he oído, toda la ciudad tiene problemas para dormir."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\unhold_attacks_situation.nut
+    {
+        en = "Unhold Attacks"
+        es = "Ataques de trols"
+    }
+    {
+        en = "Large Unholds have been seen and heard in the area. The townsfolk are scared of leaving the vicinity of the settlement."
+        es = "Se han visto y oído grandes trols en la zona. Los habitantes del pueblo tienen miedo de abandonar los alrededores del asentamiento."
+    }
+    {
+        mode = "pattern"
+        en = "A traveling merchant told me about giant footprints near the road from %settlement%. Sure as hell would not want to meet whatever beast left those!"
+        es = "Un comerciante ambulante me habló de huellas gigantes cerca de la carretera de %settlement%. ¡Seguro que no querría encontrarse con la bestia que los dejó!"
+    }
+    {
+        mode = "pattern"
+        en = "When I was in %settlement% the other day, a group of hunters went missing. They were after some sort of giant..."
+        es = "El otro día, cuando estaba en %settlement%, un grupo de cazadores desapareció. Estaban detrás de una especie de 'gigante'..."
+    }
+    {
+        mode = "pattern"
+        en = "Ever heard of unholds? Huge monsters that stomp whole carts under a foot! I heard rumors of sightings near %settlement%."
+        es = "¿Has oído hablar alguna vez de los trols? ¡Enormes monstruos que pisotean carros enteros con un pie! Escuché rumores de avistamientos cerca de %settlement%."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\warehouse_burned_down_situation.nut
+    {
+        en = "Warehouse Burned Down"
+        es = "Almacén incendiado"
+    }
+    {
+        en = "A recent fire in a warehouse caused significant damage. What survived the fire is now sold at high prices."
+        es = "Un reciente incendio en un almacén causó daños importantes. Lo que sobrevivió al incendio se vende ahora a precios elevados."
+    }
+    {
+        mode = "pattern"
+        en = "Seen the smoke on the horizon last night? They say it was the big warehouse in %settlement% burning down to the ground."
+        es = "¿Viste el humo en el horizonte anoche? Dicen que fue el gran almacén de %settlement% que se quemó hasta los cimientos."
+    }
+    {
+        mode = "pattern"
+        en = "I heard they caught the arsonist lighting the warehouse up in %settlement%. Hanged him from a tree right then and now, but it'll take them a lot longer to build up the warehouse again."
+        es = "Escuché que atraparon al pirómano prendiendo el almacén en %settlement%. Lo colgaron de un árbol en ese mismo momento, pero les llevará mucho más tiempo construir el almacén nuevamente."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\well_supplied_situation.nut
+    {
+        en = "Well Supplied"
+        es = "Bien provisto"
+    }
+    {
+        en = "This place has been recently supplied with fresh wares, and many of those can now be bought for the right price."
+        es = "Este lugar ha sido abastecido recientemente con productos frescos, y muchos de ellos ahora se pueden comprar por el precio correcto."
+    }
+    {
+        mode = "pattern"
+        en = "Trade with %settlement% is prospering, my friend! Safe roads and full stocks, let's hope it stays this way..."
+        es = "¡El comercio con %settlement% está prosperando, amigo mío! Carreteras seguras y existencias llenas, esperemos que siga así..."
+    }
+    {
+        mode = "pattern"
+        en = "My cousin over in %settlement% keeps bragging about how good they have it there. Well stocked market stands and all. Not like this rotten place."
+        es = "Mi primo de %settlement% sigue alardeando de lo bien que les va allí. Puestos de mercado bien abastecidos y todo. No como este lugar podrido."
+    }
+    // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\situations\witch_burnings_situation.nut
+    {
+        en = "Witch Burnings"
+        es = "Quema de brujas"
+    }
+    {
+        en = "A fiery spectacle, witch burnings attract spectators, and spectators attract food stands. And then, there's bound to be a number of witchhunters in town..."
+        es = "Un espectáculo de fuego, la quema de brujas atrae a los espectadores y los espectadores atraen los puestos de comida. Y además, seguramente habrá varios cazadores de brujas en la ciudad..."
+    }
+    {
+        mode = "pattern"
+        en = "Some witch hunters came by yesterday. They didn't find what they were looking for and headed on to %settlement%."
+        es = "Ayer vinieron unos cazadores de brujas. No encontraron lo que buscaban y se dirigieron a %settlement%."
+    }
+    {
+        mode = "pattern"
+        en = "From what I hear they found a witch in %settlement% and will put her to the pyre. Come to think of it, maybe I should report that old shrew that bested me on the market the other day, she's a witch for sure!"
+        es = "Por lo que he oído, encontraron una bruja en %settlement% y la arrojarán a la pira. Ahora que lo pienso, tal vez debería denunciar a esa vieja arpía que me superó en el mercado el otro día, ¡seguro que es una bruja!"
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\entity\world\settlements\small_coast_fort.nut
     {
@@ -30865,10 +33330,6 @@ local pairs = [
     {
         en = "[img]gfx/ui/events/event_17.png[/img]You hear the old swordmaster sigh as you move away. Keeping up with the rest of the company, it seems, has become a battle in and of itself for him."
         es = "[img]gfx/ui/events/event_17.png[/img]Escuchas al viejo espadachín suspirar mientras te alejas. Al parecer, mantenerse al ritme del resto de la compañía se ha convertido en una batalla en sí misma para él."
-    }
-    {
-        en = "swordmaster"
-        es = ""
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\aging_swordmaster_paycut_event.nut
     {
@@ -45078,10 +47539,6 @@ local pairs = [
         en = "Yes, yes. Go."
         es = "Si, si. Largo."
     }
-    {
-        en = "cost"
-        es = ""
-    }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\events\events\pimp_vs_harlot_event.nut
     {
         en = "[img]gfx/ui/events/event_92.png[/img]You come across a man and woman arguing outside one of the town's buildings.%SPEECH_ON%Why do I give you all of it? I'm the one doing all the work!%SPEECH_OFF%She yells. The man rubs his chin and responds.%SPEECH_ON%I manage the minge! How would you find work without me?%SPEECH_OFF%The woman, seeing you, turns and asks if you'd sleep with her. She could be shaped like two circles and a triangle and you'd probably still have a go. The woman throws her hands out.%SPEECH_ON%See? Half this world's ready for business if I so much as open my legs!%SPEECH_OFF%The wannabe-pimp asks you to talk some sense into his 'prospect.'"
@@ -55859,10 +58316,6 @@ local pairs = [
         es = "%name% se unió a ti fuera de una taberna. La primera vez que lo viste tenía cicatrices que subían por sus brazos y cruzaban venas que implicarían que no debería seguir vivo. Pero cada mañana parece como si sus cicatrices se movieran, avanzando lentamente en una dirección: hacia su frente."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original\scripts\scenarios\world\deserters_scenario.nut
-    {
-        en = "Deserters"
-        es = ""
-    }
     {
         en = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]For too long have you been dragged from one bloody battle to another at the whim of lords sitting in high towers. Last night, you absconded from camp together with three others. You're dressed like soldiers still, but you're deserters, and the noose will be your end if you stay here for too long.\n\n[color=#bcad8c]Deserters:[/color] Start with three deserters and decent armor, but lower funds and a noble house that wants to hunt you down.\n[color=#bcad8c]First to Run:[/color] Your men always are first to act in the very first round of combat.[/p]"
         es = "[p=c][img]gfx/ui/events/event_88.png[/img][/p][p]Por demasiado tiempo te han arrastrado de una sangrienta batalla a otra, a merced de señores que se sientan en altas torres. Anoche, te escapaste del campamento junto con otros tres. Todavía están vestidos como soldados, pero son desertores, y la soga será su fin si se quedan aquí por demasiado tiempo.\n\n[color=#bcad8c]Desertores:[/color] Comienzas con tres desertores y una armadura decente, pero menos fondos y una casa noble que quiere darte caza.\n[color=#bcad8c]Primeros en huir:[/color] Tus hombres siempre son los primeros en actuar en la primera ronda del combate.[/p]"
