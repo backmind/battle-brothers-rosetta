@@ -7,7 +7,7 @@ if (!("Rosetta" in getroottable())) return;
 local def = {
     ID = "mod_rosetta_base_es"
     Name = "Battle Brothers en Castellano (Rosetta)"
-    Version = "1.5.1.8-1"
+    Version = "1.5.2.3-1"
 }
 local mod = ::Hooks.register(def.ID, def.Version, def.Name);
 mod.require("mod_rosetta >= 0.4.0");

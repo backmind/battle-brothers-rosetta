@@ -1,5 +1,44 @@
 # Estadisticas del corpus
 
+## Regeneracion 1.5.2.3 (2026-08-16, arbol 1.5.2.3, ref = corpus 1.5.1.8)
+
+Bump del arbol EN de origen: 1.5.1.8 (2343 ficheros `.nut`) -> 1.5.2.3
+(3103 ficheros `.nut`, +760 por crecimiento de contenido/parches).
+Regenerado con `-r es_pack/corpus/base_es.nut` (el propio corpus anterior
+como referencia, no el seed legacy) para que las traducciones existentes
+y los 87 pares de patron tipado recien convertidos sobrevivan via
+ref-matching.
+
+Comando: `es_pack/tools/extract_wrapper.py` (nunca `rosetta.py` directo)
+contra
+`D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original_current\scripts`,
+salida a fichero temporal, aceptado solo tras pasar las comprobaciones de
+umbral, y solo entonces copiado sobre `es_pack/corpus/base_es.nut`.
+
+| metrica | antes (1.5.1.8) | despues (1.5.2.3) |
+|---|---|---|
+| TOTAL (`en = "`) | 16031 | 16155 |
+| TRADUCIDOS | 13881 | 13805 |
+| VACIOS (`es = ""`) | 2150 | 2350 |
+| Patrones tipados (`<tag:tipo>`) | 244 | 244 (identico: 0 perdidas, incluye los 87 recien convertidos) |
+
+Build (`build_dist.py`, version de pack `1.5.2.3-1`):
+- total: 15511, dist: 12332, wip: 829, drop: 2350
+  (dist previo con corpus 1.5.1.8: 12412; -80, churn normal por el
+  crecimiento del arbol y strings modificadas en el parche).
+- `test_build_dist.py`: 11 passed.
+
+Ficheros no procesados: 17 excluidos por `FILES_SKIP_RE` de `rosetta.py`
+(nuevos desde 1.5.1.8: 16 bajo `scripts/mapgen/templates/tactical/test/`
++ `scripts/scenarios/tactical/scenario_test_bed.nut`, todos contenido
+tecnico de test/mapgen sin strings de jugador, comportamiento upstream
+correcto). Fallo de decompilacion conocido (fase 1, no de esta
+regeneracion): 1 fichero indecompilable de origen,
+`scripts/events/events/dlc4/cultist_origin_vs_old_gods_event.cnut`
+(bug de NutCracker "bad conversion"), ausente del arbol
+`original_current` y por tanto ausente del corpus; unico contenido
+conocido no cubierto por este bump.
+
 ## Regeneracion 2026-08-15 (arbol 1.5.1.8, seed legacy 13.804 pares)
 
 - Pares totales: 16031

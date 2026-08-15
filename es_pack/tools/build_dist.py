@@ -33,7 +33,7 @@ CORPUS = REPO / "es_pack" / "corpus" / "base_es.nut"
 SRC = REPO / "es_pack" / "src"
 BUILD = REPO / "es_pack" / "build"
 
-GAME_VERSION = "1.5.1.8"
+GAME_VERSION = "1.5.2.3"
 PACK_VERSION = GAME_VERSION + "-1"
 
 STR_RE = r'"(?:[^"\\]|\\.)*"'
