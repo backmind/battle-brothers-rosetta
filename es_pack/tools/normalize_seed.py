@@ -1,10 +1,14 @@
 """Convierte el base_es.nut del compilador legacy a bloques minimos que
 load_ref (rosetta.py 0.4.0) parsea seguro.
 
-Ademas re-codifica las comillas dobles internas como \\x22: el tokenizador
-de referencias de upstream ("[^"]+") no es consciente de escapes y trunca
-en la primera comilla, aunque este escapada. \\x22 es valido en Python
-(ast.literal_eval) y en el lexer de Squirrel, y evita el problema de raiz.
+Ademas re-codifica las comillas dobles internas como \\x22 y las llaves
+sueltas como \\x7b / \\x7d: el tokenizador de referencias de upstream
+("[^"]+") no es consciente de escapes y trunca en la primera comilla,
+aunque este escapada; y las llaves { } sueltas dentro de un valor
+desincronizan el contador de bloques de load_ref (no hay rama de token
+dedicada para "es = ...", cae al catch-all "other" que excluye { }).
+\\x22/\\x7b/\\x7d son validos en Python (ast.literal_eval) y en el lexer
+de Squirrel, y evitan ambos problemas de raiz.
 """
 import ast
 import re
@@ -22,6 +26,8 @@ PAIR_RE = re.compile(
 def sq(s):
     out = (s.replace("\\", "\\\\")
             .replace('"', "\\x22")
+            .replace("{", "\\x7b")
+            .replace("}", "\\x7d")
             .replace("\n", "\\n")
             .replace("\r", "\\r")
             .replace("\t", "\\t"))
