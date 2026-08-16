@@ -1583,8 +1583,8 @@ local pairs = [
     {
         // return "You gain extra Renown if one of your men levels up " + this.getBonusObjectiveGoal() + " times (" + this.getBonusObjectiveProgress() + "/" + this.getBonusObjectiveGoal() + ").";
         mode = "pattern"
-        en = "You gain extra Renown if one of your men levels up <goal:int> times (<progress:int>/<goal:int>)."
-        es = "Obtendrás renombre adicional si uno de tus hombres sube de nivel <goal> veces (<progress>/<goal>)."
+        en = "You gain extra Renown if one of your men levels up <goal:int> times (<progress:int>/<total:int>)."
+        es = "Obtendrás renombre adicional si uno de tus hombres sube de nivel <goal> veces (<progress>/<total>)."
     }
     // FILE: D:\GOG\Battle Brothers\!Downloads\bbros\bin\comparer\original_current\scripts\ambitions\oaths\oath_of_dominion_ambition.nut
     {

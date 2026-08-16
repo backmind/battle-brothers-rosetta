@@ -160,3 +160,11 @@ def test_emit_wip_has_no_rosetta_add(tmp_path):
     assert "::Rosetta.add" not in text
     assert "CUARENTENA" in text
     assert "Foo" in text and "Bar" in text
+
+
+def test_classify_rejects_duplicate_captures():
+    from build_dist import classify
+    block = ('{\n        mode = "pattern"\n'
+             '        en = "Level up <goal:int> times (<progress:int>/<goal:int>)"\n'
+             '        es = "Sube <goal> veces (<progress>/<goal>)"\n    }')
+    assert classify(block) == "wip"

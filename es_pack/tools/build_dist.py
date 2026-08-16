@@ -97,9 +97,11 @@ def classify(block):
     ph_es = re.findall(r"<[^>]*>", es)
     if not ph_en and not ph_es:
         return "dist"
-    en_labels = dict(re.findall(r"<(\w+):(\w+)>", en))
+    en_caps = re.findall(r"<(\w+):(\w+)>", en)
+    en_labels = dict(en_caps)
     ok_en = (all(EN_PLACE_RE.match(p) for p in ph_en)
              and all(t in SUBS for t in en_labels.values())
+             and len(en_caps) == len(en_labels)
              and not re.search(r"<\w+:str><\w+:str>", en))
     ok_es = (all(ES_PLACE_RE.match(p) for p in ph_es)
              and all(m.group(1) in en_labels
