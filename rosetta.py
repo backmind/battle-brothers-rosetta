@@ -550,6 +550,11 @@ class ContextTracker:
 
 SEEN = set()
 
+def _seen_key(opt):
+    # Numbers only vary the hint, not the pattern; literal ones make a distinct string
+    return re.sub(r'<[^>]*>', lambda m: re.sub(r'\d+', '1', m.group()), opt)
+
+
 def extract(code, filename=None):
     stream = TokenStream(code)
     context = ContextTracker(stream.clone())  # iterates independently
@@ -569,7 +574,7 @@ def extract(code, filename=None):
                 continue
             opt = str_opt(opt)
 
-            seen_key = re.sub(r'\d+', '1', opt)  # TODO: only in <expr>
+            seen_key = _seen_key(opt)
             if seen_key in SEEN: continue
             SEEN.add(seen_key)
 

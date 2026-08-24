@@ -425,6 +425,24 @@ def test_run_check_newlines_not_unmatched(clear_ref):
     assert unmatched_blocks == []
     assert partial_blocks == []
 
+def test_literals_differing_only_in_digits_both_extracted():
+    """Digits are normalized only inside <expr> hints: literal variants are distinct
+    strings and each needs its own translation."""
+    code = '''
+        addKeybind("a", "4x World Speed")
+        addKeybind("b", "8x World Speed")
+    '''
+    assert [p["en"] for p in list_pairs(code)] == ["a", "4x World Speed", "b", "8x World Speed"]
+
+def test_hint_digits_still_deduped():
+    """Two calls whose only difference is a number inside the expression produce the
+    same pattern - keep collapsing those."""
+    code = '''
+        log("Gained " + Math.floor(hp * 0.1) + " HP")
+        log("Gained " + Math.floor(hp * 0.25) + " HP")
+    '''
+    assert [p["en"] for p in list_pairs(code)] == ["Gained <Math.floor(hp*0.1)> HP"]
+
 def test_dup_captures():
     assert _dup_captures("<open:tag>a<close:tag> and <open:tag>b<close:tag>") == ["open", "close"]
     assert _dup_captures("<o1:tag>a<c1:tag> and <o2:tag>b<c2:tag>") == []
@@ -776,7 +794,7 @@ def test_context_anonymous_function():
 
 def test_context_call():
     code = '''function create() {
-        m.Names.push(["item1", "item2"])
+        m.Names.push(["Bob"])
     }'''
     assert list_context(code) == ["create.m.Names.push()"]
 
