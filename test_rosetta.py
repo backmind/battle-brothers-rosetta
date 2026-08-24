@@ -575,6 +575,21 @@ def test_check_new_not_reported_when_keyless_pattern_covers_it(clear_ref):
     new_blocks, unmatched_blocks, partial_blocks = _check(code, ref)
     assert new_blocks == []
 
+def test_check_int_capture_matches_hardcoded_number(clear_ref):
+    """A number baked into the source literal is what :int/:val match at runtime,
+    so a pattern survives rebalancing of that number."""
+    code = 'text = "Gain +2 armor, up to +60. Defense is increased by 75%."'
+    ref = dedent('''\
+        {
+            mode = "pattern"
+            en = "Gain <n:int> armor, up to <max:int>. Defense is increased by <pct:val>."
+            ru = "<n> к броне, до <max>. Защита увеличена на <pct>."
+        }''')
+    new_blocks, unmatched_blocks, partial_blocks = _check(code, ref)
+    assert new_blocks == []
+    assert unmatched_blocks == []
+    assert partial_blocks == []
+
 def test_check_partial_skips_new_blocks(clear_ref):
     """When source string changes (NEW) and old ref is UNMATCHED, the NEW block
     must not also appear in PARTIAL — it's already covered by the NEW report."""

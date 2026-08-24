@@ -303,6 +303,11 @@ def load_ref(ref_file, silent=False):
                 if level > 0:
                     meat = True
 
+LITERAL_SUB_RES = {  # mirror of subRes in !rosetta.nut for captures matching plain literals
+    'int': r'|[+\-]?\d+',
+    'val': r'|[+\-]?\d+(?:\.\d+)?%?',
+}
+
 def _pattern2re(pat):
     def _prepare(p):
         if not p or p[0] != '<':
@@ -312,7 +317,9 @@ def _pattern2re(pat):
             return (fr'(?:<[\w.:]*{FORMAT_FUNCS_RE}\({text}\)>'
                     fr'|\[\w+=<[^>]+>\]{text}\[/\w+\])')
         else:
-            return r'(?:\[color=<[^>]+>\][^\[]*\[/color\]|<[^>]+>)'
+            # A number may be dynamic or baked into the literal - runtime :int/:val match both
+            extra = LITERAL_SUB_RES.get(re_find(r'<\w+:(\w+)>', p), '')
+            return r'(?:\[color=<[^>]+>\][^\[]*\[/color\]|<[^>]+>%s)' % extra
 
     pat_re = ''.join(map(_prepare, re.split(r'(<\w+:tag>[^<]+<\w+:tag>|<[^>]+>)', pat)))
     return f'^{pat_re}$'
