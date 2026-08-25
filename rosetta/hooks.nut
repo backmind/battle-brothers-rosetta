@@ -89,6 +89,37 @@ mod.queue(">mod_msu", function () {
         }
     })
 
+    // Combat result screen: title matches literal pairs (Victory/Defeat/Retreat),
+    // subtitle matches the rounds patterns
+    mod.hook("scripts/ui/screens/tactical/tactical_combat_result_screen", function (q) {
+        q.onQueryCombatInformation = @(__original) function () {
+            local ret = __original();
+            if (ret != null) {
+                if ("title" in ret) ret.title = _(ret.title);
+                if ("subTitle" in ret) ret.subTitle = _(ret.subTitle);
+            }
+            return ret;
+        }
+    })
+
+    // Loading screen tips
+    mod.hook("scripts/ui/screens/loading/loading_screen", function (q) {
+        q.onQueryData = @(__original) function () {
+            local ret = __original();
+            if (ret != null && "text" in ret) ret.text = _(ret.text);
+            return ret;
+        }
+    })
+
+    // World map party labels ("Peasants (4)"): the engine draws the label but the text
+    // comes from updateStrength(), which concats getName() + " (" + n + ")", so the
+    // suffix stays outside the literal and no pattern is needed. Plain hook, not
+    // hookTree: the only subclass redefining getName (attached_location) delegates
+    // to the base in its live branch, so this point already covers it.
+    mod.hook("scripts/entity/world/world_entity", function (q) {
+        q.getName = simpleGetter;
+    })
+
     // Perks
     mod.hook("scripts/ui/global/data_helper", function (q) {
         q.convertEntityToUIData = @(__original) function (_entity, _activeEntity) {
@@ -159,9 +190,24 @@ mod.queue(">mod_msu", function () {
         q.getName = makeGetter("Name");
         q.getDescription = makeGetter("Description");
     })
+    // Event and contract text is hooked at buildText ENTRY, where %placeholders% are
+    // still raw as extracted pairs store them; at the sq-js border they are already
+    // substituted and no pair would match. One point per class covers event titles,
+    // bodies, dialog options, contract bulletpoints and the active contract panel
+    // title. Plain hook, not hookTree: no vanilla subclass redefines buildText, and
+    // hookTree would wrap every descendant on top of the base, translating twice per
+    // call. Internal strings passing through buildText may log NOT FOUND; harmless.
+    mod.hook("scripts/events/event", function (q) {
+        q.buildText = @(__original) function (_text) {
+            return __original(_(_text));
+        }
+    })
     mod.hook("scripts/contracts/contract", function (q) {
         q.getUITitle = simpleGetter;
         q.getUIButtons = tooltipHook;
+        q.buildText = @(__original) function (_text) {
+            return __original(_(_text));
+        }
     })
 
     // Translate MSU settings: setting labels, page tab names, panel (mod) names, slider labels
